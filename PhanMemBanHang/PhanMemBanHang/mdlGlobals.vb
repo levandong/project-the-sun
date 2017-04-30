@@ -13,6 +13,8 @@ Imports System.ComponentModel
 Imports Microsoft.Office.Interop
 
 Module mdlGlobals
+
+    ' LÊ VĂN ĐÔNG - 30/04/2017
     Public mh As New clsMaHoa
 
     Public ChuoiConnectString As String = mh.Decrypt(My.Settings.ThongTinKetNoi, "tmt6364")
