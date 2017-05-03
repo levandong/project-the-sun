@@ -11,11 +11,11 @@
         End Set
     End Property
     Private Sub ctrlTimKiemKhachHang_Load(sender As Object, e As EventArgs) Handles Me.Load
-        With CtrlDGVKhachHang1
-            .btnIn.Visible = False
-            .CongNoDauKy.Visible = False
-            .CongNoMax.Visible = False
-        End With
+        'With CtrlDGVKhachHang1
+        '    .btnIn.Visible = False
+        '    .CongNoDauKy.Visible = False
+        '    .CongNoMax.Visible = False
+        'End With
         TimKiemKhachHang(isNhaCungCap)
         Timer1.Interval = My.Settings.ThoiGianTimKiemCham
     End Sub
@@ -35,31 +35,32 @@
                             Or kh.SoDienThoai.Contains(key) Or (dt.f_nosymbol(kh.DiaChi).Contains(key))
                             Select kh).Take(My.Settings.SoDongTimKiem)
         End If
-        CtrlDGVKhachHang1.bsKhachHang.DataSource = rlsKhachHang
+        CtrlDGVKhachHang1.gridControl.DataSource = rlsKhachHang
+        CtrlDGVKhachHang1.gridViewData.RefreshData()
     End Sub
 
     Private Sub txtSearch_KeyDown(sender As Object, e As KeyEventArgs) Handles txtSearch.KeyDown
         If e.KeyCode = Keys.Enter Then
             btnChon_Click(Nothing, Nothing)
         ElseIf e.KeyCode = Keys.Down Then
-            If CtrlDGVKhachHang1.dgvMain.CurrentCell.RowIndex = CtrlDGVKhachHang1.dgvMain.RowCount - 1 Then
-                CtrlDGVKhachHang1.dgvMain.CurrentCell = CtrlDGVKhachHang1.dgvMain.Rows(0).Cells(CtrlDGVKhachHang1.dgvMain.CurrentCell.ColumnIndex)
+            If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle = CtrlDGVKhachHang1.gridViewData.DataRowCount - 1 Then
+                CtrlDGVKhachHang1.gridViewData.FocusedRowHandle = 0
             Else
-                CtrlDGVKhachHang1.dgvMain.CurrentCell = CtrlDGVKhachHang1.dgvMain.Rows(CtrlDGVKhachHang1.dgvMain.CurrentCell.RowIndex + 1).Cells(CtrlDGVKhachHang1.dgvMain.CurrentCell.ColumnIndex)
+                CtrlDGVKhachHang1.gridViewData.FocusedRowHandle += 1
             End If
         ElseIf e.KeyCode = Keys.Up Then
-            If CtrlDGVKhachHang1.dgvMain.CurrentCell.RowIndex = 0 Then
-                CtrlDGVKhachHang1.dgvMain.CurrentCell = CtrlDGVKhachHang1.dgvMain.Rows(CtrlDGVKhachHang1.dgvMain.RowCount - 1).Cells(CtrlDGVKhachHang1.dgvMain.CurrentCell.ColumnIndex)
+            If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle = 0 Then
+                CtrlDGVKhachHang1.gridViewData.FocusedRowHandle = CtrlDGVKhachHang1.gridViewData.DataRowCount - 1
             Else
-                CtrlDGVKhachHang1.dgvMain.CurrentCell = CtrlDGVKhachHang1.dgvMain.Rows(CtrlDGVKhachHang1.dgvMain.CurrentCell.RowIndex - 1).Cells(CtrlDGVKhachHang1.dgvMain.CurrentCell.ColumnIndex)
+                CtrlDGVKhachHang1.gridViewData.FocusedRowHandle -= 1
             End If
         End If
     End Sub
 
     Private Sub btnChon_Click(sender As Object, e As EventArgs) Handles btnChon.Click
-        If CtrlDGVKhachHang1.bsKhachHang.Current IsNot Nothing Then
-            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.bsKhachHang.Current
-            Dim KhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
+        If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle > 0 Then
+            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.gridViewData.GetRow(CtrlDGVKhachHang1.gridViewData.FocusedRowHandle)
+            Dim Khachhang As tbKhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
             RaiseEvent ChonKhachHangThanhCong(KhachHang)
         End If
     End Sub

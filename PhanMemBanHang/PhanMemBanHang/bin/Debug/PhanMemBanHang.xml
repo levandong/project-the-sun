@@ -6,752 +6,6 @@ PhanMemBanHang
 </name>
 </assembly>
 <members>
-<member name="T:PhanMemBanHang.dsQL">
-<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwMaVachDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuThuDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuChiDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwHoaDonDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSanPhamDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsDoanhThuDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsXuatNhapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwMaVachRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuThuRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuChiRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwHoaDonRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSanPhamRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsDoanhThuRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsXuatNhapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwMaVachRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuThuRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuChiRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwHoaDonRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSanPhamRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsDoanhThuRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.clsXuatNhapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="M:PhanMemBanHang.mdlGlobals.BoDauTiengViet(System.String)">
- <summary>
- Bỏ dấu tiếng việt
- </summary>
- <remarks></remarks>
-</member>
 <member name="T:PhanMemBanHang.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
@@ -1772,6 +1026,752 @@ Row event argument class
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwMaVachDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuThuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuChiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwHoaDonDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSanPhamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsDoanhThuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsXuatNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwMaVachRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuThuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuChiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwHoaDonRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSanPhamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsDoanhThuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsXuatNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuCuaHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwMaVachRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuThuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuChiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThongKeThuChiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwPhieuXuatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietPhieuXuatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.TinhTonKhoSanPhamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwHoaDonRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbNhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSanPhamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbTraNoNhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbThuNoKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.ThongKeCongNoNhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietKhachHangDatHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietKhachHangDatHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangDatHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoNhanVienRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhThuTuKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoSanPhamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietBaoGiaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietCongNoNhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietTonKhoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwNhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.prThongKeQuyTienMatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbSoChiTietCongNoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbLuongNhanVienRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbBangLuongChiTietRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietHoaDonRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.DoanhThuCuaHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.LoiNhuanCuaHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbCongGopSanPhamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoNhanVienRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbDoanhSoKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietDoanhSoKhachHangRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsDoanhThuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.clsXuatNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietHoaDonDeInRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.vwChiTietBaoGiaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbChiTietPhieuXuatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PhanMemBanHang.dsQL.tbPhieuUyNhiemChiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="M:PhanMemBanHang.mdlGlobals.BoDauTiengViet(System.String)">
+ <summary>
+ Bỏ dấu tiếng việt
+ </summary>
+ <remarks></remarks>
 </member>
 <member name="T:PhanMemBanHang.com.hayketnoi.iclickupdater.UpdateIClick">
 <remarks/>

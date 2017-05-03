@@ -262,7 +262,6 @@
         CtrlTimKiemTheoThoiGian1.dtpToiLuc.Value = New DateTime(Now.Year, Now.Month, Now.Day, 23, 59, 0)
         ctrl.Visible = False
         ctrl.Location = New Point(txtKhachHang.Location.X, Me.Size.Height - txtKhachHang.Location.Y - 245)
-        ctrl.ToolStrip1.Visible = False
         Me.Controls.Add(ctrl)
         btnTimKiem_Click(Nothing, Nothing)
     End Sub
@@ -669,9 +668,10 @@
         ctrl.BringToFront()
         If key <> "" Then
             ctrl.Visible = True
-            ctrl.bsKhachHang.DataSource = From itm In dt.vwKhachHangs
+            ctrl.gridControl.DataSource = From itm In dt.vwKhachHangs
                                           Where itm.MaKhachHang.Contains(key) Or itm.TenKhachHangString.Contains(key) Or itm.MaSoThue.StartsWith(key)
-            If ctrl.bsKhachHang.Count = 0 Then
+            ctrl.gridViewData.RefreshData()
+            If ctrl.gridViewData.DataRowCount = 0 Then
                 ctrl.Visible = False
             End If
             ctrl.Size = New Size(txtKhachHang.Size.Width, 380)
@@ -685,24 +685,24 @@
     End Sub
     Private Sub txtKhachHang_KeyDown(sender As Object, e As KeyEventArgs) Handles txtKhachHang.KeyDown
         If e.KeyCode = Keys.Enter Then
-            Dim vKhachHang As vwKhachHang = ctrl.bsKhachHang.Current
-            If vKhachHang Is Nothing Then
+            If ctrl.gridViewData.FocusedRowHandle < 0 Then
                 Exit Sub
             End If
+            Dim vKhachHang As vwKhachHang = ctrl.gridViewData.GetRow(ctrl.gridViewData.FocusedRowHandle)
             Dim Khachhang As tbKhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
             ChonKhachHang(Khachhang)
             ctrl.Visible = False
         ElseIf e.KeyCode = Keys.Down Then
-            If ctrl.dgvMain.CurrentCell.RowIndex = ctrl.dgvMain.RowCount - 1 Then
-                ctrl.dgvMain.CurrentCell = ctrl.dgvMain.Rows(0).Cells(ctrl.dgvMain.CurrentCell.ColumnIndex)
+            If ctrl.gridViewData.FocusedRowHandle = ctrl.gridViewData.DataRowCount - 1 Then
+                ctrl.gridViewData.FocusedRowHandle = 0
             Else
-                ctrl.dgvMain.CurrentCell = ctrl.dgvMain.Rows(ctrl.dgvMain.CurrentCell.RowIndex + 1).Cells(ctrl.dgvMain.CurrentCell.ColumnIndex)
+                ctrl.gridViewData.FocusedRowHandle += 1
             End If
         ElseIf e.KeyCode = Keys.Up Then
-            If ctrl.dgvMain.CurrentCell.RowIndex = 0 Then
-                ctrl.dgvMain.CurrentCell = ctrl.dgvMain.Rows(ctrl.dgvMain.RowCount - 1).Cells(ctrl.dgvMain.CurrentCell.ColumnIndex)
+            If ctrl.gridViewData.FocusedRowHandle = 0 Then
+                ctrl.gridViewData.FocusedRowHandle = ctrl.gridViewData.DataRowCount - 1
             Else
-                ctrl.dgvMain.CurrentCell = ctrl.dgvMain.Rows(ctrl.dgvMain.CurrentCell.RowIndex - 1).Cells(ctrl.dgvMain.CurrentCell.ColumnIndex)
+                ctrl.gridViewData.FocusedRowHandle -= 1
             End If
         End If
     End Sub
