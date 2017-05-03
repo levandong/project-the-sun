@@ -237,7 +237,7 @@ Partial Class ctrlThemSuaXoaKhachHang
         Me.TenNhomKhachHangDataGridViewTextBoxColumn.HeaderText = "Tên nhóm"
         Me.TenNhomKhachHangDataGridViewTextBoxColumn.Name = "TenNhomKhachHangDataGridViewTextBoxColumn"
         Me.TenNhomKhachHangDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TenNhomKhachHangDataGridViewTextBoxColumn.Width = 91
+        Me.TenNhomKhachHangDataGridViewTextBoxColumn.Width = 90
         '
         'GhiChuDataGridViewTextBoxColumn
         '

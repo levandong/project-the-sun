@@ -1,52 +1,62 @@
 ﻿Public Class ctrlDGVKhachHang
-    Private Sub bsKhachHang_ListChanged(sender As Object, e As System.ComponentModel.ListChangedEventArgs) Handles bsKhachHang.ListChanged
-        lblSoLuong.Text = bsKhachHang.Count.ToString + " khách hàng."
-    End Sub
-
     Event ChonKhachHang(nl As tbKhachHang)
-    Public Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        If bsKhachHang.Current Is Nothing Then Exit Sub
-        Dim vKhachHang As vwKhachHang = bsKhachHang.Current
-        Dim KhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
-        RaiseEvent ChonKhachHang(KhachHang)
-    End Sub
-
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
-        End If
-    End Sub
 
     Event InDanhSachKhachHang()
-    Private Sub btnIn_Click(sender As Object, e As EventArgs) Handles btnIn.Click
-        If bsKhachHang.Count > 0 Then
-            RaiseEvent InDanhSachKhachHang()
-        End If
-    End Sub
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsKhachHang.Position = e.RowIndex
-            End If
-        End If
-    End Sub
 
-    Private Sub XemThôngTinLiênHệToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XemThôngTinLiênHệToolStripMenuItem.Click
-        If bsKhachHang.Current Is Nothing Then
+    Private Sub mnuItemViewContact_Click(sender As Object, e As EventArgs) Handles mnuItemViewContact.Click
+        If gridViewData.FocusedRowHandle < 0 Then
             Exit Sub
         End If
-        Dim idKhachHang As Integer = bsKhachHang.Current.id
+        Dim vKhachHang As vwKhachHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         Dim frm As New frmDanhSachThongTinLienHe
-        frm.idKhachHang = idKhachHang
+        frm.idKhachHang = vKhachHang.id
         frm.ShowDialog()
     End Sub
 
-    Private Sub dgvMain_KeyDown(sender As Object, e As KeyEventArgs) Handles dgvMain.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            dgvMain_CellDoubleClick(Nothing, Nothing)
+
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        'If gridViewData.IsGroupRow(e.RowHandle) Then
+        If (e.Info.IsRowIndicator) Then
+                If e.RowHandle < 0 Then
+                    e.Info.ImageIndex = 0
+                    e.Info.DisplayText = ""
+                Else
+                    e.Info.ImageIndex = 1
+                    e.Info.DisplayText = (e.RowHandle + 1).ToString()
+                End If
+            End If
+        'Else
+        '    e.Info.ImageIndex = -1
+        '    'e.Info.DisplayText = String.Format("[{0}]", e.RowHandle * -1)
+        'End If
+    End Sub
+
+    Private Sub mnuItemExportExcel_Click(sender As Object, e As EventArgs) Handles mnuItemExportExcel.Click
+        If gridViewData.DataRowCount > 0 Then
+            'HISLib.AppCore.Other.GridDevExportToExcel.ExportToExcel(gridControl, DevExpress.XtraPrinting.TextExportMode.Value, False)
         End If
+    End Sub
+
+    Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
+        mnuItemExportExcel.Enabled = gridViewData.DataRowCount > 0
+        mnuItemPrint.Enabled = gridViewData.DataRowCount > 0
+    End Sub
+
+    Private Sub mnuItemPrint_Click(sender As Object, e As EventArgs) Handles mnuItemPrint.Click
+        RaiseEvent InDanhSachKhachHang()
+    End Sub
+
+    Private Sub gridControl_KeyDown(sender As Object, e As KeyEventArgs) Handles gridControl.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            If gridViewData.FocusedRowHandle < 0 Then
+                Exit Sub
+            End If
+            Dim vKhachHang As vwKhachHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+            RaiseEvent ChonKhachHang(dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id))
+        End If
+    End Sub
+
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        mnuItemViewContact_Click(Nothing, Nothing)
     End Sub
 End Class

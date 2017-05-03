@@ -44,8 +44,10 @@ Public Class ctrlThemSuaXoaKhachHang
     End Sub
 
     Public Sub CapNhatKhachHang()
-        CtrlDGVKhachHang1.bsKhachHang.DataSource = From kh In dt.vwKhachHangs
+        CtrlDGVKhachHang1.gridControl.DataSource = From kh In dt.vwKhachHangs
                                                    Order By kh.TenKhachHang Select kh
+
+        CtrlDGVKhachHang1.gridViewData.RefreshData()
     End Sub
 
     Private Sub btnCapNhat_Click() Handles btnCapNhat.Click
@@ -72,11 +74,12 @@ Public Class ctrlThemSuaXoaKhachHang
             End Try
         End If
         rlsKhachHang = (From kh In dt.vwKhachHangs
-                        Where (kh.TenKhachHangString.Contains(key)) Or (dt.f_nosymbol(kh.MaKhachHang).ToLower.Contains(key) Or kh.SoDienThoai.Contains(key) Or kh.MaSoThue.Contains(key) Or kh.DiaChi.Contains(key))
+                        Where (kh.TenKhachHangString.Contains(key)) Or (dt.f_nosymbol(kh.MaKhachHang).Contains(key) Or kh.SoDienThoai.Contains(key) Or kh.MaSoThue.Contains(key) Or kh.DiaChi.Contains(key))
                         Order By kh.TenKhachHang
                         Select kh).Take(SoDongTake)
 
-        CtrlDGVKhachHang1.bsKhachHang.DataSource = rlsKhachHang
+        CtrlDGVKhachHang1.gridControl.DataSource = rlsKhachHang
+        CtrlDGVKhachHang1.gridViewData.RefreshData()
     End Sub
 
     Private Sub btnQuayLai_Click(sender As Object, e As EventArgs) Handles btnQuayLai.Click
@@ -85,8 +88,8 @@ Public Class ctrlThemSuaXoaKhachHang
     End Sub
 
     Public Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVKhachHang1.bsKhachHang.Current IsNot Nothing Then
-            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.bsKhachHang.Current
+        If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.gridViewData.GetRow(CtrlDGVKhachHang1.gridViewData.FocusedRowHandle)
             Dim KhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
             If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa khách hàng " + KhachHang.TenKhachHang + "?",
                                                                    "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
@@ -125,9 +128,10 @@ Public Class ctrlThemSuaXoaKhachHang
     End Sub
 
     Public Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVKhachHang1.bsKhachHang.Current IsNot Nothing Then
+        If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.gridViewData.GetRow(CtrlDGVKhachHang1.gridViewData.FocusedRowHandle)
+
             Dim frm As New frmSuaKhachHang
-            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.bsKhachHang.Current
             Dim KhachHang = dt.tbKhachHangs.Single(Function(s) s.id = vKhachHang.id)
             dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, KhachHang)
             frm.MaKhachHangBanDau = vKhachHang.MaKhachHang
@@ -155,13 +159,14 @@ Public Class ctrlThemSuaXoaKhachHang
         frm.Text = "DANH SÁCH KHÁCH HÀNG"
         frm.rptName = ".\Report\KhachHang\rptDanhSachKhachHang.rdlc"
         frm.dsName = "dsDanhSachKhachHang"
-        frm._bs = CtrlDGVKhachHang1.bsKhachHang
+        frm._bs.DataSource = CtrlDGVKhachHang1.gridControl.DataSource
         frm.ShowDialog()
     End Sub
 
     Private Sub btnSetKhachHangMacDinh_Click(sender As Object, e As EventArgs) Handles btnSetKhachHangMacDinh.Click
-        If CtrlDGVKhachHang1.bsKhachHang.Current IsNot Nothing Then
-            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.bsKhachHang.Current
+        If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.gridViewData.GetRow(CtrlDGVKhachHang1.gridViewData.FocusedRowHandle)
+
             If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn chọn " + vKhachHang.TenKhachHang + " làm khách hàng mặc định?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                 My.Settings.idKhachHangMacDinh = vKhachHang.id
                 Dim docXML As XmlDocument = New XmlDataDocument
@@ -246,8 +251,8 @@ Public Class ctrlThemSuaXoaKhachHang
     End Sub
     Private Sub CtrlDGVKhachHang1_ChonKhachHang(nl As tbKhachHang) Handles CtrlDGVKhachHang1.ChonKhachHang
         Dim frm As New frmXemThongTinKhachHang
-        If CtrlDGVKhachHang1.bsKhachHang.Current IsNot Nothing Then
-            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.bsKhachHang.Current
+        If CtrlDGVKhachHang1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim vKhachHang As vwKhachHang = CtrlDGVKhachHang1.gridViewData.GetRow(CtrlDGVKhachHang1.gridViewData.FocusedRowHandle)
             Dim KhachHang = dt.tbKhachHangs.First(Function(s) s.id = vKhachHang.id)
             frm.MaKhachHangBanDau = vKhachHang.MaKhachHang
             frm.KhachHang = KhachHang
