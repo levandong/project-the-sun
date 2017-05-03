@@ -36,6 +36,10 @@
             .TenLoaiSanPham.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         End With
 
+        With CtrlDGVSanPham1
+            .colGiaBinhQuan.Visible = False
+            .colGiaTriHienTai.Visible = False
+        End With
     End Sub
 
 #Region "Loại Sản Phẩm"
@@ -148,8 +152,8 @@
                           Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
         End If
 
-        CtrlDGVSanPham1.rlsKetQua = rlsSanPham
-        CtrlDGVSanPham1.PhanTrangSauKhiTimKiem(True)
+        CtrlDGVSanPham1.gridControl.DataSource = rlsSanPham
+        CtrlDGVSanPham1.gridViewData.RefreshData()
         CtrlDGVSanPham1.ToMauCanhBaoTon()
     End Sub
 
@@ -169,7 +173,6 @@
                        Where itm.Chon = True
                        Select itm.id).ToList
         If LoaiSanPham Is Nothing Then
-            CtrlDGVSanPham1.bsSanPham.DataSource = Nothing
             rls = From itm In dt.vwSanPhams
         Else
             If rlsLoai.Count > 0 Then
@@ -182,8 +185,9 @@
                        Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
             End If
         End If
-            CtrlDGVSanPham1.rlsKetQua = From itm In rls
-        CtrlDGVSanPham1.PhanTrangSauKhiTimKiem(False)
+
+        CtrlDGVSanPham1.gridControl.DataSource = rls
+        CtrlDGVSanPham1.gridViewData.RefreshData()
         CtrlDGVSanPham1.ToMauCanhBaoTon()
     End Sub
 
@@ -214,7 +218,8 @@
                       Where (itm.TenSanPhamString.Contains(key)) Or (itm.MaSanPhamString.Contains(key)) Or itm.MaVachSanPham.Contains(key)
                       Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
 
-        CtrlDGVSanPham1.bsSanPham.DataSource = rlsSanPham
+        CtrlDGVSanPham1.gridControl.DataSource = rlsSanPham
+        CtrlDGVSanPham1.gridViewData.RefreshData()
         CtrlDGVSanPham1.ToMauCanhBaoTon()
     End Sub
 
@@ -226,11 +231,11 @@
     End Sub
 
     Public Sub btnSuaSanPham_Click(sender As Object, e As EventArgs) Handles btnSuaSanPham.Click
-        If CtrlDGVSanPham1.bsSanPham.Current IsNot Nothing Then
+        If CtrlDGVSanPham1.gridViewData.FocusedRowHandle >= 0 Then
             Dim frm As New frmSuaSanPham
-            frm.MaSanPhamBanDau = CType(CtrlDGVSanPham1.bsSanPham.Current, vwSanPham).MaSanPham
-            frm.MaVachSanPhamBanDau = CType(CtrlDGVSanPham1.bsSanPham.Current, vwSanPham).MaVachSanPham
-            Dim vSanPham As vwSanPham = CtrlDGVSanPham1.bsSanPham.Current
+            Dim vSanPham As vwSanPham = CtrlDGVSanPham1.gridViewData.GetRow(CtrlDGVSanPham1.gridViewData.FocusedRowHandle)
+            frm.MaSanPhamBanDau = vSanPham.MaSanPham
+            frm.MaVachSanPhamBanDau = vSanPham.MaVachSanPham
             frm.SanPham = dt.tbSanPhams.First(Function(s) s.id = vSanPham.id)
             AddHandler frm.SuaSanPhamThanhCong, AddressOf CapNhatSanPham
             frm.ShowDialog()
@@ -238,8 +243,8 @@
     End Sub
 
     Public Sub btnXoaSanPham_Click(sender As Object, e As EventArgs) Handles btnXoaSanPham.Click
-        If CtrlDGVSanPham1.bsSanPham.Current IsNot Nothing Then
-            Dim vSanPham As vwSanPham = CtrlDGVSanPham1.bsSanPham.Current
+        If CtrlDGVSanPham1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim vSanPham As vwSanPham = CtrlDGVSanPham1.gridViewData.GetRow(CtrlDGVSanPham1.gridViewData.FocusedRowHandle)
             Dim SanPham = dt.tbSanPhams.First(Function(s) s.id = vSanPham.id)
             If SanPham.tbChiTietHoaDons.Count > 0 Or SanPham.tbChiTietPhieuNhaps.Count > 0 Or SanPham.tbChiTietPhieuXuats.Count > 0 Then
                 ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Không thể xóa sản phẩm đã phát sinh dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -331,26 +336,28 @@
     End Sub
 
     Private Sub CKNhậpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CKNhậpToolStripMenuItem.Click
-        If CtrlDGVSanPham1.bsSanPham.Current Is Nothing Then Exit Sub
-        Dim idLoaiSanPham As Integer = CtrlDGVSanPham1.bsSanPham.Current.idLoaiSanPham
+        If CtrlDGVSanPham1.gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vSanPham As vwSanPham = CtrlDGVSanPham1.gridViewData.GetRow(CtrlDGVSanPham1.gridViewData.FocusedRowHandle)
+        Dim idLoaiSanPham As Integer = vSanPham.idLoaiSanPham
         Dim LoaiSanPham = dt.tbLoaiSanPhams.Single(Function(s) s.id = idLoaiSanPham)
         Dim frm As New frmChinhSuaHangLoatChiecKhau
         frm.LoaiSanPham = LoaiSanPham
         frm.Nhap = True
-        frm.nudChiecKhau.Value = CtrlDGVSanPham1.bsSanPham.Current.PhanTramNhap
+        frm.nudChiecKhau.Value = vSanPham.PhanTramNhap
         If frm.ShowDialog() = DialogResult.OK Then
             CapNhatSanPham()
         End If
     End Sub
 
     Private Sub CKXuấtToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CKXuấtToolStripMenuItem.Click
-        If CtrlDGVSanPham1.bsSanPham.Current Is Nothing Then Exit Sub
-        Dim idLoaiSanPham As Integer = CtrlDGVSanPham1.bsSanPham.Current.idLoaiSanPham
+        If CtrlDGVSanPham1.gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vSanPham As vwSanPham = CtrlDGVSanPham1.gridViewData.GetRow(CtrlDGVSanPham1.gridViewData.FocusedRowHandle)
+        Dim idLoaiSanPham As Integer = vSanPham.idLoaiSanPham
         Dim LoaiSanPham = dt.tbLoaiSanPhams.Single(Function(s) s.id = idLoaiSanPham)
         Dim frm As New frmChinhSuaHangLoatChiecKhau
         frm.LoaiSanPham = LoaiSanPham
         frm.Nhap = False
-        frm.nudChiecKhau.Value = CtrlDGVSanPham1.bsSanPham.Current.PhanTramBan
+        frm.nudChiecKhau.Value = vSanPham.PhanTramBan
         If frm.ShowDialog() = DialogResult.OK Then
             CapNhatSanPham()
         End If

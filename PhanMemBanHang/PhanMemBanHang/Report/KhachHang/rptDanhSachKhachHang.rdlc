@@ -9,24 +9,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Parameters!TenBaoCao.Value</Value>
+                <Value>DANH SÁCH KHÁCH HÀNG</Value>
                 <Style>
                   <FontFamily>times New Roman</FontFamily>
                   <FontSize>18pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Center</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value />
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>

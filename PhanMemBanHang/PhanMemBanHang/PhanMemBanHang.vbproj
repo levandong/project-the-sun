@@ -908,6 +908,12 @@
     <Compile Include="ThemSuaXoa\SanPham\ChucNangTon\ctrlChucNangTonKhoSanPham.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ThemSuaXoa\SanPham\ctrlDGVSanPham_Old.designer.vb">
+      <DependentUpon>ctrlDGVSanPham_Old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThemSuaXoa\SanPham\ctrlDGVSanPham_Old.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ThemSuaXoa\SanPham\ctrlDGVSanPham.designer.vb">
       <DependentUpon>ctrlDGVSanPham.vb</DependentUpon>
     </Compile>
@@ -1612,6 +1618,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemSuaXoa\SanPham\ChucNangTon\ctrlChucNangTonKhoSanPham.resx">
       <DependentUpon>ctrlChucNangTonKhoSanPham.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemSuaXoa\SanPham\ctrlDGVSanPham_Old.resx">
+      <DependentUpon>ctrlDGVSanPham_Old.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemSuaXoa\SanPham\ctrlDGVSanPham.resx">
       <DependentUpon>ctrlDGVSanPham.vb</DependentUpon>

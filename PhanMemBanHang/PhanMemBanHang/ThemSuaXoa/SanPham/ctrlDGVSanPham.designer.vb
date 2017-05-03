@@ -23,240 +23,35 @@ Partial Class ctrlDGVSanPham
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.lblSoLuong = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.btnIn = New System.Windows.Forms.ToolStripButton()
-        Me.btnInKemGia = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
-        Me.btnQuaTraiTatCa = New System.Windows.Forms.ToolStripButton()
-        Me.btnQuaTrai1 = New System.Windows.Forms.ToolStripButton()
-        Me.txtSoTrang = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTongSoTrang = New System.Windows.Forms.ToolStripTextBox()
-        Me.btnQuaPhai1 = New System.Windows.Forms.ToolStripButton()
-        Me.btnQuaPhaiTatCa = New System.Windows.Forms.ToolStripButton()
-        Me.txtSoDongTrenMotTrang = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTongSoTrang2 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTongSoLuong = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.dgvMain = New PhanMemBanHang.CustomDatagridview()
-        Me.bsSanPham = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaVachSanPham = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaSanPham = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenSanPham = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DonVi = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GiaBan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayNiemYet = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoLuong = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GiaBinhQuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GiaTriHienTai = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PhanTramBan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PhanTramNhap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TonMin = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KhoiLuongRieng = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KyHieuKho = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tbLoaiSanPham = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayTao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ThoiGianBaoHanh = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MoTa = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CanhBao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HetBan = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.ToolStrip1.SuspendLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bsSanPham, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuItemPrint = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colGiaNiemYet = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNgayNiemYet = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTonKho = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colGiaBinhQuan = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colGiaTriHienTai = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn14 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTonMin = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSoLuong, Me.ToolStripSeparator1, Me.btnIn, Me.btnInKemGia, Me.ToolStripLabel2, Me.btnQuaTraiTatCa, Me.btnQuaTrai1, Me.txtSoTrang, Me.ToolStripLabel3, Me.lblTongSoTrang, Me.btnQuaPhai1, Me.btnQuaPhaiTatCa, Me.txtSoDongTrenMotTrang, Me.ToolStripSeparator4, Me.ToolStripLabel4, Me.lblTongSoTrang2, Me.ToolStripLabel5, Me.lblTongSoLuong, Me.ToolStripSeparator3})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 522)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.ShowItemToolTips = False
-        Me.ToolStrip1.Size = New System.Drawing.Size(1171, 25)
-        Me.ToolStrip1.TabIndex = 4
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'lblSoLuong
-        '
-        Me.lblSoLuong.Name = "lblSoLuong"
-        Me.lblSoLuong.Size = New System.Drawing.Size(68, 22)
-        Me.lblSoLuong.Text = "0 sản phẩm"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'btnIn
-        '
-        Me.btnIn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnIn.Image = Global.PhanMemBanHang.My.Resources.Resources.Print16
-        Me.btnIn.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnIn.Name = "btnIn"
-        Me.btnIn.Size = New System.Drawing.Size(94, 22)
-        Me.btnIn.Text = "In danh sách"
-        '
-        'btnInKemGia
-        '
-        Me.btnInKemGia.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnInKemGia.CheckOnClick = True
-        Me.btnInKemGia.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.btnInKemGia.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnInKemGia.Name = "btnInKemGia"
-        Me.btnInKemGia.Size = New System.Drawing.Size(66, 22)
-        Me.btnInKemGia.Text = "In kèm giá"
-        Me.btnInKemGia.Visible = False
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(41, 22)
-        Me.ToolStripLabel2.Text = "Trang:"
-        '
-        'btnQuaTraiTatCa
-        '
-        Me.btnQuaTraiTatCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnQuaTraiTatCa.Image = Global.PhanMemBanHang.My.Resources.Resources.Qua_Trai_Tat_Ca_16
-        Me.btnQuaTraiTatCa.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnQuaTraiTatCa.Name = "btnQuaTraiTatCa"
-        Me.btnQuaTraiTatCa.Size = New System.Drawing.Size(23, 22)
-        Me.btnQuaTraiTatCa.Text = "Trang đầu tiên"
-        '
-        'btnQuaTrai1
-        '
-        Me.btnQuaTrai1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnQuaTrai1.Image = Global.PhanMemBanHang.My.Resources.Resources.Qua_Trai_161
-        Me.btnQuaTrai1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnQuaTrai1.Name = "btnQuaTrai1"
-        Me.btnQuaTrai1.Size = New System.Drawing.Size(23, 22)
-        Me.btnQuaTrai1.Text = "Trang trước"
-        '
-        'txtSoTrang
-        '
-        Me.txtSoTrang.Name = "txtSoTrang"
-        Me.txtSoTrang.Size = New System.Drawing.Size(30, 25)
-        Me.txtSoTrang.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ToolStripLabel3
-        '
-        Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(12, 22)
-        Me.ToolStripLabel3.Text = "/"
-        '
-        'lblTongSoTrang
-        '
-        Me.lblTongSoTrang.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.lblTongSoTrang.Name = "lblTongSoTrang"
-        Me.lblTongSoTrang.ReadOnly = True
-        Me.lblTongSoTrang.Size = New System.Drawing.Size(30, 25)
-        Me.lblTongSoTrang.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnQuaPhai1
-        '
-        Me.btnQuaPhai1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnQuaPhai1.Image = Global.PhanMemBanHang.My.Resources.Resources.Qua_Phai_16
-        Me.btnQuaPhai1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnQuaPhai1.Name = "btnQuaPhai1"
-        Me.btnQuaPhai1.Size = New System.Drawing.Size(23, 22)
-        Me.btnQuaPhai1.Text = "Trang sau"
-        '
-        'btnQuaPhaiTatCa
-        '
-        Me.btnQuaPhaiTatCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnQuaPhaiTatCa.Image = Global.PhanMemBanHang.My.Resources.Resources.Qua_Phai_Tat_Ca_16
-        Me.btnQuaPhaiTatCa.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnQuaPhaiTatCa.Name = "btnQuaPhaiTatCa"
-        Me.btnQuaPhaiTatCa.Size = New System.Drawing.Size(23, 22)
-        Me.btnQuaPhaiTatCa.Text = "Trang cuối"
-        '
-        'txtSoDongTrenMotTrang
-        '
-        Me.txtSoDongTrenMotTrang.Name = "txtSoDongTrenMotTrang"
-        Me.txtSoDongTrenMotTrang.Size = New System.Drawing.Size(30, 25)
-        Me.txtSoDongTrenMotTrang.Text = "30"
-        Me.txtSoDongTrenMotTrang.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 25)
-        '
-        'ToolStripLabel4
-        '
-        Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(12, 22)
-        Me.ToolStripLabel4.Text = "x"
-        '
-        'lblTongSoTrang2
-        '
-        Me.lblTongSoTrang2.Name = "lblTongSoTrang2"
-        Me.lblTongSoTrang2.Size = New System.Drawing.Size(13, 22)
-        Me.lblTongSoTrang2.Text = "0"
-        '
-        'ToolStripLabel5
-        '
-        Me.ToolStripLabel5.Name = "ToolStripLabel5"
-        Me.ToolStripLabel5.Size = New System.Drawing.Size(15, 22)
-        Me.ToolStripLabel5.Text = "="
-        '
-        'lblTongSoLuong
-        '
-        Me.lblTongSoLuong.Name = "lblTongSoLuong"
-        Me.lblTongSoLuong.Size = New System.Drawing.Size(13, 22)
-        Me.lblTongSoLuong.Text = "0"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
-        '
-        'dgvMain
-        '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AllowUserToResizeRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.MaVachSanPham, Me.MaSanPham, Me.TenSanPham, Me.DonVi, Me.GiaBan, Me.NgayNiemYet, Me.SoLuong, Me.GiaBinhQuan, Me.GiaTriHienTai, Me.PhanTramBan, Me.PhanTramNhap, Me.TonMin, Me.KhoiLuongRieng, Me.KyHieuKho, Me.tbLoaiSanPham, Me.NgayTao, Me.ThoiGianBaoHanh, Me.MoTa, Me.CanhBao, Me.HetBan})
-        Me.dgvMain.DataSource = Me.bsSanPham
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Editing = False
-        Me.dgvMain.Location = New System.Drawing.Point(0, 0)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 10
-        Me.dgvMain.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvMain.RowsDefaultCellStyle = DataGridViewCellStyle13
-        Me.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvMain.Size = New System.Drawing.Size(1171, 522)
-        Me.dgvMain.TabIndex = 5
-        Me.dgvMain.VirtualMode = True
-        '
-        'bsSanPham
-        '
-        Me.bsSanPham.DataSource = GetType(PhanMemBanHang.vwSanPham)
         '
         'DataGridViewTextBoxColumn1
         '
@@ -272,287 +67,298 @@ Partial Class ctrlDGVSanPham
         Me.DataGridViewTextBoxColumn2.HeaderText = "Loại Sản Phẩm"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'STT
+        'gridControl
         '
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.STT.DefaultCellStyle = DataGridViewCellStyle1
-        Me.STT.HeaderText = "STT"
-        Me.STT.MinimumWidth = 40
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 40
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 0)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(1171, 547)
+        Me.gridControl.TabIndex = 7
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
-        'MaVachSanPham
+        'ContextMenuStrip1
         '
-        Me.MaVachSanPham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.MaVachSanPham.DataPropertyName = "MaVachSanPham"
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red
-        Me.MaVachSanPham.DefaultCellStyle = DataGridViewCellStyle2
-        Me.MaVachSanPham.HeaderText = "Mã vạch"
-        Me.MaVachSanPham.Name = "MaVachSanPham"
-        Me.MaVachSanPham.ReadOnly = True
-        Me.MaVachSanPham.Visible = False
-        Me.MaVachSanPham.Width = 81
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuItemPrint, Me.mnuItemExportExcel})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(142, 48)
         '
-        'MaSanPham
+        'mnuItemPrint
         '
-        Me.MaSanPham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.MaSanPham.DataPropertyName = "MaSanPham"
-        Me.MaSanPham.HeaderText = "Mã "
-        Me.MaSanPham.Name = "MaSanPham"
-        Me.MaSanPham.ReadOnly = True
-        Me.MaSanPham.Width = 53
+        Me.mnuItemPrint.Image = Global.PhanMemBanHang.My.Resources.Resources.Print16
+        Me.mnuItemPrint.Name = "mnuItemPrint"
+        Me.mnuItemPrint.Size = New System.Drawing.Size(141, 22)
+        Me.mnuItemPrint.Text = "In danh sách"
         '
-        'TenSanPham
+        'mnuItemExportExcel
         '
-        Me.TenSanPham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenSanPham.DataPropertyName = "TenSanPham"
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue
-        Me.TenSanPham.DefaultCellStyle = DataGridViewCellStyle3
-        Me.TenSanPham.HeaderText = "Tên sản phẩm"
-        Me.TenSanPham.MinimumWidth = 100
-        Me.TenSanPham.Name = "TenSanPham"
-        Me.TenSanPham.ReadOnly = True
-        Me.TenSanPham.Width = 111
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(141, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
         '
-        'DonVi
+        'gridViewData
         '
-        Me.DonVi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.DonVi.DataPropertyName = "DonVi"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DonVi.DefaultCellStyle = DataGridViewCellStyle4
-        Me.DonVi.HeaderText = "ĐVT"
-        Me.DonVi.MinimumWidth = 40
-        Me.DonVi.Name = "DonVi"
-        Me.DonVi.ReadOnly = True
-        Me.DonVi.Width = 58
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.colGiaNiemYet, Me.colNgayNiemYet, Me.colTonKho, Me.colGiaBinhQuan, Me.colGiaTriHienTai, Me.GridColumn13, Me.GridColumn14, Me.colTonMin, Me.GridColumn6, Me.GridColumn4, Me.GridColumn7, Me.GridColumn9, Me.GridColumn8, Me.GridColumn11, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
         '
-        'GiaBan
+        'GridColumn1
         '
-        Me.GiaBan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.GiaBan.DataPropertyName = "GiaNiemYet"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle5.Format = "N0"
-        Me.GiaBan.DefaultCellStyle = DataGridViewCellStyle5
-        Me.GiaBan.HeaderText = "Giá gốc"
-        Me.GiaBan.MinimumWidth = 60
-        Me.GiaBan.Name = "GiaBan"
-        Me.GiaBan.ReadOnly = True
-        Me.GiaBan.Width = 76
+        Me.GridColumn1.Caption = "Mã"
+        Me.GridColumn1.FieldName = "MaSanPham"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 150
         '
-        'NgayNiemYet
+        'GridColumn2
         '
-        Me.NgayNiemYet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.NgayNiemYet.DataPropertyName = "NgayNiemYet"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.Format = "dd/MM/yy"
-        Me.NgayNiemYet.DefaultCellStyle = DataGridViewCellStyle6
-        Me.NgayNiemYet.HeaderText = "Ngày N.Y"
-        Me.NgayNiemYet.Name = "NgayNiemYet"
-        Me.NgayNiemYet.ReadOnly = True
-        Me.NgayNiemYet.Width = 86
+        Me.GridColumn2.Caption = "Tên sản phẩm"
+        Me.GridColumn2.FieldName = "TenSanPham"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.Width = 250
         '
-        'SoLuong
+        'GridColumn3
         '
-        Me.SoLuong.DataPropertyName = "SoLuong"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle7.Format = "N0"
-        Me.SoLuong.DefaultCellStyle = DataGridViewCellStyle7
-        Me.SoLuong.HeaderText = "Tồn kho"
-        Me.SoLuong.MinimumWidth = 40
-        Me.SoLuong.Name = "SoLuong"
-        Me.SoLuong.ReadOnly = True
-        Me.SoLuong.Width = 60
+        Me.GridColumn3.Caption = "ĐVT"
+        Me.GridColumn3.FieldName = "DonVi"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        Me.GridColumn3.Width = 70
         '
-        'GiaBinhQuan
+        'colGiaNiemYet
         '
-        Me.GiaBinhQuan.DataPropertyName = "GiaBinhQuan"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle8.Format = "N0"
-        Me.GiaBinhQuan.DefaultCellStyle = DataGridViewCellStyle8
-        Me.GiaBinhQuan.HeaderText = "Giá B.Quân"
-        Me.GiaBinhQuan.MinimumWidth = 50
-        Me.GiaBinhQuan.Name = "GiaBinhQuan"
-        Me.GiaBinhQuan.ReadOnly = True
-        Me.GiaBinhQuan.Visible = False
-        Me.GiaBinhQuan.Width = 80
+        Me.colGiaNiemYet.AppearanceCell.ForeColor = System.Drawing.Color.Red
+        Me.colGiaNiemYet.AppearanceCell.Options.UseForeColor = True
+        Me.colGiaNiemYet.Caption = "Giá gốc"
+        Me.colGiaNiemYet.DisplayFormat.FormatString = "###,##0"
+        Me.colGiaNiemYet.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colGiaNiemYet.FieldName = "GiaNiemYet"
+        Me.colGiaNiemYet.MinWidth = 60
+        Me.colGiaNiemYet.Name = "colGiaNiemYet"
+        Me.colGiaNiemYet.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colGiaNiemYet.Visible = True
+        Me.colGiaNiemYet.VisibleIndex = 3
+        Me.colGiaNiemYet.Width = 100
         '
-        'GiaTriHienTai
+        'colNgayNiemYet
         '
-        Me.GiaTriHienTai.DataPropertyName = "GiaTriHienTai"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle9.Format = "N0"
-        Me.GiaTriHienTai.DefaultCellStyle = DataGridViewCellStyle9
-        Me.GiaTriHienTai.HeaderText = "Giá trị hiện tại"
-        Me.GiaTriHienTai.MinimumWidth = 50
-        Me.GiaTriHienTai.Name = "GiaTriHienTai"
-        Me.GiaTriHienTai.ReadOnly = True
-        Me.GiaTriHienTai.Visible = False
-        Me.GiaTriHienTai.Width = 90
+        Me.colNgayNiemYet.Caption = "Ngày N/Y"
+        Me.colNgayNiemYet.DisplayFormat.FormatString = "dd/MM/yyyy"
+        Me.colNgayNiemYet.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.colNgayNiemYet.FieldName = "NgayNiemYet"
+        Me.colNgayNiemYet.MinWidth = 50
+        Me.colNgayNiemYet.Name = "colNgayNiemYet"
+        Me.colNgayNiemYet.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colNgayNiemYet.Visible = True
+        Me.colNgayNiemYet.VisibleIndex = 4
+        Me.colNgayNiemYet.Width = 90
         '
-        'PhanTramBan
+        'colTonKho
         '
-        Me.PhanTramBan.DataPropertyName = "PhanTramBan"
-        Me.PhanTramBan.HeaderText = "CK Bán"
-        Me.PhanTramBan.Name = "PhanTramBan"
-        Me.PhanTramBan.ReadOnly = True
+        Me.colTonKho.Caption = "Tồn kho"
+        Me.colTonKho.DisplayFormat.FormatString = "###,##0.##"
+        Me.colTonKho.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colTonKho.FieldName = "SoLuong"
+        Me.colTonKho.Name = "colTonKho"
+        Me.colTonKho.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colTonKho.Visible = True
+        Me.colTonKho.VisibleIndex = 5
         '
-        'PhanTramNhap
+        'colGiaBinhQuan
         '
-        Me.PhanTramNhap.DataPropertyName = "PhanTramNhap"
-        Me.PhanTramNhap.HeaderText = "CK Nhập"
-        Me.PhanTramNhap.Name = "PhanTramNhap"
-        Me.PhanTramNhap.ReadOnly = True
+        Me.colGiaBinhQuan.Caption = "Giá B.Quân"
+        Me.colGiaBinhQuan.DisplayFormat.FormatString = "###,##0"
+        Me.colGiaBinhQuan.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colGiaBinhQuan.FieldName = "GiaBinhQuan"
+        Me.colGiaBinhQuan.MinWidth = 60
+        Me.colGiaBinhQuan.Name = "colGiaBinhQuan"
+        Me.colGiaBinhQuan.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colGiaBinhQuan.Visible = True
+        Me.colGiaBinhQuan.VisibleIndex = 6
+        Me.colGiaBinhQuan.Width = 90
         '
-        'TonMin
+        'colGiaTriHienTai
         '
-        Me.TonMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TonMin.DataPropertyName = "TonMin"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.TonMin.DefaultCellStyle = DataGridViewCellStyle10
-        Me.TonMin.HeaderText = "Tồn Min"
-        Me.TonMin.Name = "TonMin"
-        Me.TonMin.ReadOnly = True
-        Me.TonMin.Width = 81
+        Me.colGiaTriHienTai.Caption = "Giá trị"
+        Me.colGiaTriHienTai.DisplayFormat.FormatString = "###,##0"
+        Me.colGiaTriHienTai.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colGiaTriHienTai.FieldName = "GiaTriHienTai"
+        Me.colGiaTriHienTai.MinWidth = 60
+        Me.colGiaTriHienTai.Name = "colGiaTriHienTai"
+        Me.colGiaTriHienTai.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colGiaTriHienTai.Visible = True
+        Me.colGiaTriHienTai.VisibleIndex = 7
+        Me.colGiaTriHienTai.Width = 100
         '
-        'KhoiLuongRieng
+        'GridColumn13
         '
-        Me.KhoiLuongRieng.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.KhoiLuongRieng.DataPropertyName = "KhoiLuongRieng"
-        Me.KhoiLuongRieng.HeaderText = "KL Riêng"
-        Me.KhoiLuongRieng.Name = "KhoiLuongRieng"
-        Me.KhoiLuongRieng.ReadOnly = True
-        Me.KhoiLuongRieng.Width = 82
+        Me.GridColumn13.Caption = "% bán"
+        Me.GridColumn13.DisplayFormat.FormatString = "##0.##"
+        Me.GridColumn13.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn13.FieldName = "PhanTramBan"
+        Me.GridColumn13.Name = "GridColumn13"
+        Me.GridColumn13.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn13.Visible = True
+        Me.GridColumn13.VisibleIndex = 8
+        Me.GridColumn13.Width = 70
         '
-        'KyHieuKho
+        'GridColumn14
         '
-        Me.KyHieuKho.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.KyHieuKho.DataPropertyName = "KyHieuKho"
-        Me.KyHieuKho.HeaderText = "K.H Kho"
-        Me.KyHieuKho.Name = "KyHieuKho"
-        Me.KyHieuKho.ReadOnly = True
-        Me.KyHieuKho.Width = 79
+        Me.GridColumn14.Caption = "% nhập"
+        Me.GridColumn14.DisplayFormat.FormatString = "##0.##"
+        Me.GridColumn14.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn14.FieldName = "PhanTramNhap"
+        Me.GridColumn14.Name = "GridColumn14"
+        Me.GridColumn14.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn14.Visible = True
+        Me.GridColumn14.VisibleIndex = 9
+        Me.GridColumn14.Width = 70
         '
-        'tbLoaiSanPham
+        'colTonMin
         '
-        Me.tbLoaiSanPham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.tbLoaiSanPham.DataPropertyName = "TenLoaiSanPham"
-        Me.tbLoaiSanPham.HeaderText = "Loại"
-        Me.tbLoaiSanPham.MinimumWidth = 50
-        Me.tbLoaiSanPham.Name = "tbLoaiSanPham"
-        Me.tbLoaiSanPham.ReadOnly = True
-        Me.tbLoaiSanPham.Width = 58
+        Me.colTonMin.Caption = "Tồn min"
+        Me.colTonMin.DisplayFormat.FormatString = "###,##0.##"
+        Me.colTonMin.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colTonMin.FieldName = "TonMin"
+        Me.colTonMin.Name = "colTonMin"
+        Me.colTonMin.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.colTonMin.Visible = True
+        Me.colTonMin.VisibleIndex = 10
+        Me.colTonMin.Width = 60
         '
-        'NgayTao
+        'GridColumn6
         '
-        Me.NgayTao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.NgayTao.DataPropertyName = "NgayTao"
-        DataGridViewCellStyle11.Format = "dd/MM/yyyy HH:mm"
-        Me.NgayTao.DefaultCellStyle = DataGridViewCellStyle11
-        Me.NgayTao.HeaderText = "Ngày Tạo"
-        Me.NgayTao.Name = "NgayTao"
-        Me.NgayTao.ReadOnly = True
-        Me.NgayTao.Width = 87
+        Me.GridColumn6.Caption = "KL riêng"
+        Me.GridColumn6.FieldName = "KhoiLuongRieng"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 11
+        Me.GridColumn6.Width = 100
         '
-        'ThoiGianBaoHanh
+        'GridColumn4
         '
-        Me.ThoiGianBaoHanh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.ThoiGianBaoHanh.DataPropertyName = "ThoiGianBaoHanh"
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.Format = "0 tháng"
-        Me.ThoiGianBaoHanh.DefaultCellStyle = DataGridViewCellStyle12
-        Me.ThoiGianBaoHanh.HeaderText = "Bảo hành"
-        Me.ThoiGianBaoHanh.Name = "ThoiGianBaoHanh"
-        Me.ThoiGianBaoHanh.ReadOnly = True
-        Me.ThoiGianBaoHanh.Width = 86
+        Me.GridColumn4.Caption = "KH Kho"
+        Me.GridColumn4.FieldName = "KyHieuKho"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 12
+        Me.GridColumn4.Width = 100
         '
-        'MoTa
+        'GridColumn7
         '
-        Me.MoTa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.MoTa.DataPropertyName = "MoTa"
-        Me.MoTa.HeaderText = "Mô Tả"
-        Me.MoTa.MinimumWidth = 200
-        Me.MoTa.Name = "MoTa"
-        Me.MoTa.ReadOnly = True
+        Me.GridColumn7.Caption = "Loại"
+        Me.GridColumn7.FieldName = "TenLoaiSanPham"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 13
+        Me.GridColumn7.Width = 150
         '
-        'CanhBao
+        'GridColumn9
         '
-        Me.CanhBao.DataPropertyName = "CanhBao"
-        Me.CanhBao.HeaderText = "CanhBao"
-        Me.CanhBao.Name = "CanhBao"
-        Me.CanhBao.ReadOnly = True
-        Me.CanhBao.Visible = False
+        Me.GridColumn9.Caption = "Ngày tạo"
+        Me.GridColumn9.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm"
+        Me.GridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn9.FieldName = "NgayTao"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 14
+        Me.GridColumn9.Width = 120
         '
-        'HetBan
+        'GridColumn8
         '
-        Me.HetBan.DataPropertyName = "HetBan"
-        Me.HetBan.HeaderText = "HetBan"
-        Me.HetBan.Name = "HetBan"
-        Me.HetBan.ReadOnly = True
-        Me.HetBan.Visible = False
+        Me.GridColumn8.Caption = "Bảo hành"
+        Me.GridColumn8.DisplayFormat.FormatString = "0 tháng"
+        Me.GridColumn8.FieldName = "ThoiGianBaoHanh"
+        Me.GridColumn8.Name = "GridColumn8"
+        Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn8.Visible = True
+        Me.GridColumn8.VisibleIndex = 15
+        Me.GridColumn8.Width = 100
+        '
+        'GridColumn11
+        '
+        Me.GridColumn11.Caption = "Mô tả"
+        Me.GridColumn11.FieldName = "MoTa"
+        Me.GridColumn11.Name = "GridColumn11"
+        Me.GridColumn11.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn11.Visible = True
+        Me.GridColumn11.VisibleIndex = 16
+        Me.GridColumn11.Width = 300
+        '
+        'GridColumn12
+        '
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'ctrlDGVSanPham
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.dgvMain)
-        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.gridControl)
         Me.Name = "ctrlDGVSanPham"
         Me.Size = New System.Drawing.Size(1171, 547)
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bsSanPham, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents bsSanPham As System.Windows.Forms.BindingSource
-    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents lblSoLuong As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents btnIn As System.Windows.Forms.ToolStripButton
-    Friend WithEvents dgvMain As CustomDatagridview
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents btnInKemGia As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripLabel2 As ToolStripLabel
-    Friend WithEvents btnQuaTraiTatCa As ToolStripButton
-    Friend WithEvents btnQuaTrai1 As ToolStripButton
-    Friend WithEvents txtSoTrang As ToolStripTextBox
-    Friend WithEvents ToolStripLabel3 As ToolStripLabel
-    Friend WithEvents lblTongSoTrang As ToolStripTextBox
-    Friend WithEvents btnQuaPhai1 As ToolStripButton
-    Friend WithEvents btnQuaPhaiTatCa As ToolStripButton
-    Friend WithEvents txtSoDongTrenMotTrang As ToolStripTextBox
-    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
-    Friend WithEvents ToolStripLabel4 As ToolStripLabel
-    Friend WithEvents lblTongSoTrang2 As ToolStripLabel
-    Friend WithEvents ToolStripLabel5 As ToolStripLabel
-    Friend WithEvents lblTongSoLuong As ToolStripLabel
-    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents STT As DataGridViewTextBoxColumn
-    Friend WithEvents MaVachSanPham As DataGridViewTextBoxColumn
-    Friend WithEvents MaSanPham As DataGridViewTextBoxColumn
-    Friend WithEvents TenSanPham As DataGridViewTextBoxColumn
-    Friend WithEvents DonVi As DataGridViewTextBoxColumn
-    Friend WithEvents GiaBan As DataGridViewTextBoxColumn
-    Friend WithEvents NgayNiemYet As DataGridViewTextBoxColumn
-    Friend WithEvents SoLuong As DataGridViewTextBoxColumn
-    Friend WithEvents GiaBinhQuan As DataGridViewTextBoxColumn
-    Friend WithEvents GiaTriHienTai As DataGridViewTextBoxColumn
-    Friend WithEvents PhanTramBan As DataGridViewTextBoxColumn
-    Friend WithEvents PhanTramNhap As DataGridViewTextBoxColumn
-    Friend WithEvents TonMin As DataGridViewTextBoxColumn
-    Friend WithEvents KhoiLuongRieng As DataGridViewTextBoxColumn
-    Friend WithEvents KyHieuKho As DataGridViewTextBoxColumn
-    Friend WithEvents tbLoaiSanPham As DataGridViewTextBoxColumn
-    Friend WithEvents NgayTao As DataGridViewTextBoxColumn
-    Friend WithEvents ThoiGianBaoHanh As DataGridViewTextBoxColumn
-    Friend WithEvents MoTa As DataGridViewTextBoxColumn
-    Friend WithEvents CanhBao As DataGridViewTextBoxColumn
-    Friend WithEvents HetBan As DataGridViewCheckBoxColumn
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents mnuItemPrint As ToolStripMenuItem
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colTonMin As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colGiaNiemYet As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colNgayNiemYet As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colTonKho As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colGiaBinhQuan As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colGiaTriHienTai As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

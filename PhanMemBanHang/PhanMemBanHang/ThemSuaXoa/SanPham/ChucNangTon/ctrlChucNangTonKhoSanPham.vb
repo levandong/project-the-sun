@@ -43,12 +43,13 @@
                   Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham
         End If
 
-        CtrlDGVSanPham1.bsSanPham.DataSource = rls
+        CtrlDGVSanPham1.gridControl.DataSource = rls
+        CtrlDGVSanPham1.gridViewData.RefreshData()
         CtrlDGVSanPham1.ToMauCanhBaoTon()
     End Sub
 
     Private Sub CtrlDGVSanPham1_InDanhSachSanPham(InKemGia As Boolean) Handles CtrlDGVSanPham1.InDanhSachSanPham
-        If CtrlDGVSanPham1.bsSanPham.Count = 0 Then Exit Sub
+        If CtrlDGVSanPham1.gridViewData.DataRowCount = 0 Then Exit Sub
         Dim frm As New frmInDanhSach
         frm.Text = "DANH SÁCH SẢN PHẨM TỒN KHO"
         frm.dsName = "dsDanhSachSanPham"
@@ -57,7 +58,7 @@
         Else
             frm.rptName = ".\Report\SanPham\rptDanhSachSanPhamTon.rdlc"
         End If
-        frm._bs = CtrlDGVSanPham1.bsSanPham
+        frm._bs.DataSource = CtrlDGVSanPham1.gridControl.DataSource
         frm.Show()
     End Sub
 
@@ -69,11 +70,11 @@
 
     Private Sub ctrlChucNangTonKhoSanPham_Load(sender As Object, e As EventArgs) Handles Me.Load
         With CtrlDGVSanPham1
-            .GiaBan.Visible = False
-            .MaVachSanPham.Visible = False
-            .GiaBinhQuan.Visible = True
-            .GiaTriHienTai.Visible = True
-            .btnInKemGia.Visible = True
+            '.GiaBan.Visible = False
+            '.MaVachSanPham.Visible = False
+            '.GiaBinhQuan.Visible = True
+            '.GiaTriHienTai.Visible = True
+            '.btnInKemGia.Visible = True
         End With
 
         With CtrlDGVLoaiSanPham1

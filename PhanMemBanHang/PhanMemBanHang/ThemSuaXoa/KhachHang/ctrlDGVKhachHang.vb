@@ -17,14 +17,15 @@
     Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
         'If gridViewData.IsGroupRow(e.RowHandle) Then
         If (e.Info.IsRowIndicator) Then
-                If e.RowHandle < 0 Then
-                    e.Info.ImageIndex = 0
-                    e.Info.DisplayText = ""
-                Else
-                    e.Info.ImageIndex = 1
-                    e.Info.DisplayText = (e.RowHandle + 1).ToString()
-                End If
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
             End If
+        End If
+
         'Else
         '    e.Info.ImageIndex = -1
         '    'e.Info.DisplayText = String.Format("[{0}]", e.RowHandle * -1)

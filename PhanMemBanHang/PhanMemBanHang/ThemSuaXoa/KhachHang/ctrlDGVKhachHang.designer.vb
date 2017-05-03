@@ -118,6 +118,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn1.Caption = "Mã"
         Me.GridColumn1.FieldName = "MaKhachHang"
         Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
@@ -128,6 +129,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn2.Caption = "Khách hàng/Nhà cung cấp"
         Me.GridColumn2.FieldName = "TenKhachHang"
         Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
         Me.GridColumn2.Width = 250
@@ -137,6 +139,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn3.Caption = "KH/NCC"
         Me.GridColumn3.FieldName = "Loai"
         Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
         Me.GridColumn3.Width = 100
@@ -146,6 +149,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn4.Caption = "Điện thoại"
         Me.GridColumn4.FieldName = "SoDienThoai"
         Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
         Me.GridColumn4.Width = 150
@@ -155,6 +159,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn5.Caption = "Địa chỉ"
         Me.GridColumn5.FieldName = "DiaChi"
         Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 4
         Me.GridColumn5.Width = 250
@@ -164,6 +169,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn6.Caption = "Mã số thuế"
         Me.GridColumn6.FieldName = "MaSoThue"
         Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn6.Visible = True
         Me.GridColumn6.VisibleIndex = 5
         Me.GridColumn6.Width = 100
@@ -173,6 +179,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn7.Caption = "Email"
         Me.GridColumn7.FieldName = "Email"
         Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn7.Visible = True
         Me.GridColumn7.VisibleIndex = 6
         Me.GridColumn7.Width = 100
@@ -182,6 +189,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn8.Caption = "Fax"
         Me.GridColumn8.FieldName = "SoFAX"
         Me.GridColumn8.Name = "GridColumn8"
+        Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn8.Visible = True
         Me.GridColumn8.VisibleIndex = 7
         Me.GridColumn8.Width = 100
@@ -193,6 +201,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.GridColumn9.FieldName = "NgayTao"
         Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn9.Visible = True
         Me.GridColumn9.VisibleIndex = 8
         Me.GridColumn9.Width = 110
@@ -204,6 +213,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn10.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.GridColumn10.FieldName = "CongNoMax"
         Me.GridColumn10.Name = "GridColumn10"
+        Me.GridColumn10.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn10.Visible = True
         Me.GridColumn10.VisibleIndex = 9
         Me.GridColumn10.Width = 100
@@ -213,6 +223,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn11.Caption = "Tên đầy đủ"
         Me.GridColumn11.FieldName = "TenRutGon"
         Me.GridColumn11.Name = "GridColumn11"
+        Me.GridColumn11.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn11.Visible = True
         Me.GridColumn11.VisibleIndex = 10
         Me.GridColumn11.Width = 300
@@ -222,6 +233,7 @@ Partial Class ctrlDGVKhachHang
         Me.GridColumn12.Caption = "id"
         Me.GridColumn12.FieldName = "id"
         Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'ctrlDGVKhachHang
         '

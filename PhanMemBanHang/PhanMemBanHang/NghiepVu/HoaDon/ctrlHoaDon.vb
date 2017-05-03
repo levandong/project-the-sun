@@ -53,7 +53,6 @@
         Me.Controls.Add(ctrl)
         ctrlSanPham.Visible = False
         ctrlSanPham.Location = New Point(txtKhachHang.Location.X, txtKhachHang.Location.Y + txtKhachHang.Size.Height + KryptonHeader1.Size.Height)
-        ctrlSanPham.ToolStrip1.Visible = False
         Me.Controls.Add(ctrlSanPham)
         txtKhachHang.Focus()
         CapNhatSoPhieu()
@@ -481,10 +480,12 @@
             End If
             ctrlSanPham.Visible = True
             dgvMain.Editing = True
-            ctrlSanPham.bsSanPham.DataSource = From itm In lstDanhSachSanPham
-                                               Where itm.MaSanPham.Contains(key) Or itm.TenSanPhamString.Contains(key)
-                                               Take 15
-            If ctrlSanPham.bsSanPham.Count = 0 Then
+            ctrlSanPham.gridControl.DataSource = From itm In lstDanhSachSanPham
+                                                 Where itm.MaSanPham.Contains(key) Or itm.TenSanPhamString.Contains(key)
+                                                 Take 15
+
+            ctrlSanPham.gridViewData.RefreshData()
+            If ctrlSanPham.gridViewData.DataRowCount = 0 Then
                 ctrlSanPham.Visible = False
             End If
             ctrlSanPham.Size = New Size(500, 380)
@@ -528,26 +529,30 @@
             If ctrlSanPham.Visible = False Then
                 Exit Sub
             End If
-            Dim vSanPham As vwSanPham = ctrlSanPham.bsSanPham.Current
-                If vSanPham Is Nothing Then
-                    Exit Sub
-                End If
-                ChonSanPham(vSanPham, ChiTiet)
-                ctrlSanPham.Visible = False
-                dgvMain.Editing = False
-            ElseIf keyData = Keys.Down Then
-                If ctrlSanPham.dgvMain.CurrentCell.RowIndex = ctrlSanPham.dgvMain.RowCount - 1 Then
-                    ctrlSanPham.dgvMain.CurrentCell = ctrlSanPham.dgvMain.Rows(0).Cells(ctrlSanPham.dgvMain.CurrentCell.ColumnIndex)
-                Else
-                    ctrlSanPham.dgvMain.CurrentCell = ctrlSanPham.dgvMain.Rows(ctrlSanPham.dgvMain.CurrentCell.RowIndex + 1).Cells(ctrlSanPham.dgvMain.CurrentCell.ColumnIndex)
-                End If
-            ElseIf keyData = Keys.Up Then
-                If ctrlSanPham.dgvMain.CurrentCell.RowIndex = 0 Then
-                ctrlSanPham.dgvMain.CurrentCell = ctrlSanPham.dgvMain.Rows(ctrlSanPham.dgvMain.RowCount - 1).Cells(ctrlSanPham.dgvMain.CurrentCell.ColumnIndex)
+
+            If ctrl.gridViewData.FocusedRowHandle < 0 Then
+                Exit Sub
+            End If
+
+            Dim vSanPham As vwSanPham = ctrlSanPham.gridViewData.GetRow(ctrl.gridViewData.FocusedRowHandle)
+
+            ChonSanPham(vSanPham, ChiTiet)
+            ctrlSanPham.Visible = False
+            dgvMain.Editing = False
+        ElseIf keyData = Keys.Down Then
+            If ctrlSanPham.gridViewData.FocusedRowHandle = ctrlSanPham.gridViewData.DataRowCount - 1 Then
+                ctrlSanPham.gridViewData.FocusedRowHandle = 0
             Else
-                ctrlSanPham.dgvMain.CurrentCell = ctrlSanPham.dgvMain.Rows(ctrlSanPham.dgvMain.CurrentCell.RowIndex - 1).Cells(ctrlSanPham.dgvMain.CurrentCell.ColumnIndex)
+                ctrlSanPham.gridViewData.FocusedRowHandle += 1
+            End If
+        ElseIf keyData = Keys.Up Then
+            If ctrlSanPham.gridViewData.FocusedRowHandle = 0 Then
+                ctrlSanPham.gridViewData.FocusedRowHandle = ctrlSanPham.gridViewData.DataRowCount - 1
+            Else
+                ctrlSanPham.gridViewData.FocusedRowHandle -= 1
             End If
         End If
+
     End Sub
     Dim reset = False
     Dim rowindex = 0

@@ -1606,3 +1606,4 @@ D:\GITHUB\project-the-sun\PhanMemBanHang\PhanMemBanHang\bin\Debug\pt\Microsoft.S
 D:\GITHUB\project-the-sun\PhanMemBanHang\PhanMemBanHang\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 D:\GITHUB\project-the-sun\PhanMemBanHang\PhanMemBanHang\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 D:\GITHUB\project-the-sun\PhanMemBanHang\PhanMemBanHang\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\GITHUB\project-the-sun\PhanMemBanHang\PhanMemBanHang\obj\Debug\PhanMemBanHang.ctrlDGVSanPham_Old.resources
