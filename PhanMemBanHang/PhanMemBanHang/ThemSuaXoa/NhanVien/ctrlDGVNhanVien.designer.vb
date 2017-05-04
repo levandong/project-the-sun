@@ -29,6 +29,7 @@ Partial Class ctrlDGVNhanVien
         Me.lblSoDong = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.dgvNhanVien = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
+        Me.bsNhanVien = New System.Windows.Forms.BindingSource(Me.components)
         Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenDangNhapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenNhanVienDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,7 +37,7 @@ Partial Class ctrlDGVNhanVien
         Me.SoDienThoai = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.isToanQuyen = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.HopLeDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.bsNhanVien = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.dgvNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bsNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,7 +46,7 @@ Partial Class ctrlDGVNhanVien
         'ToolStrip1
         '
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSoDong, Me.ToolStripSeparator1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 284)
         Me.ToolStrip1.Name = "ToolStrip1"
@@ -57,7 +58,7 @@ Partial Class ctrlDGVNhanVien
         'lblSoDong
         '
         Me.lblSoDong.Name = "lblSoDong"
-        Me.lblSoDong.Size = New System.Drawing.Size(70, 22)
+        Me.lblSoDong.Size = New System.Drawing.Size(71, 22)
         Me.lblSoDong.Text = "0 nhân viên."
         '
         'ToolStripSeparator1
@@ -71,7 +72,7 @@ Partial Class ctrlDGVNhanVien
         Me.dgvNhanVien.AllowUserToDeleteRows = False
         Me.dgvNhanVien.AllowUserToResizeRows = False
         Me.dgvNhanVien.AutoGenerateColumns = False
-        Me.dgvNhanVien.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.TenDangNhapDataGridViewTextBoxColumn, Me.TenNhanVienDataGridViewTextBoxColumn, Me.ChucVuDataGridViewTextBoxColumn, Me.SoDienThoai, Me.isToanQuyen, Me.HopLeDataGridViewCheckBoxColumn})
+        Me.dgvNhanVien.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.TenDangNhapDataGridViewTextBoxColumn, Me.TenNhanVienDataGridViewTextBoxColumn, Me.ChucVuDataGridViewTextBoxColumn, Me.SoDienThoai, Me.isToanQuyen, Me.HopLeDataGridViewCheckBoxColumn, Me.Column1})
         Me.dgvNhanVien.DataSource = Me.bsNhanVien
         Me.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvNhanVien.Location = New System.Drawing.Point(0, 0)
@@ -81,10 +82,13 @@ Partial Class ctrlDGVNhanVien
         Me.dgvNhanVien.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgvNhanVien.RowsDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvNhanVien.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect
         Me.dgvNhanVien.Size = New System.Drawing.Size(663, 284)
         Me.dgvNhanVien.TabIndex = 2
         Me.dgvNhanVien.VirtualMode = True
+        '
+        'bsNhanVien
+        '
+        Me.bsNhanVien.DataSource = GetType(PhanMemBanHang.tbNhanVien)
         '
         'STT
         '
@@ -106,16 +110,17 @@ Partial Class ctrlDGVNhanVien
         Me.TenDangNhapDataGridViewTextBoxColumn.HeaderText = "Tên Đăng Nhập"
         Me.TenDangNhapDataGridViewTextBoxColumn.Name = "TenDangNhapDataGridViewTextBoxColumn"
         Me.TenDangNhapDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TenDangNhapDataGridViewTextBoxColumn.Width = 116
+        Me.TenDangNhapDataGridViewTextBoxColumn.Width = 118
         '
         'TenNhanVienDataGridViewTextBoxColumn
         '
-        Me.TenNhanVienDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.TenNhanVienDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.TenNhanVienDataGridViewTextBoxColumn.DataPropertyName = "TenNhanVien"
         Me.TenNhanVienDataGridViewTextBoxColumn.HeaderText = "Tên Nhân Viên"
         Me.TenNhanVienDataGridViewTextBoxColumn.MinimumWidth = 150
         Me.TenNhanVienDataGridViewTextBoxColumn.Name = "TenNhanVienDataGridViewTextBoxColumn"
         Me.TenNhanVienDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TenNhanVienDataGridViewTextBoxColumn.Width = 150
         '
         'ChucVuDataGridViewTextBoxColumn
         '
@@ -124,7 +129,7 @@ Partial Class ctrlDGVNhanVien
         Me.ChucVuDataGridViewTextBoxColumn.HeaderText = "Chức Vụ"
         Me.ChucVuDataGridViewTextBoxColumn.Name = "ChucVuDataGridViewTextBoxColumn"
         Me.ChucVuDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ChucVuDataGridViewTextBoxColumn.Width = 79
+        Me.ChucVuDataGridViewTextBoxColumn.Width = 81
         '
         'SoDienThoai
         '
@@ -152,9 +157,12 @@ Partial Class ctrlDGVNhanVien
         Me.HopLeDataGridViewCheckBoxColumn.ReadOnly = True
         Me.HopLeDataGridViewCheckBoxColumn.Width = 60
         '
-        'bsNhanVien
+        'Column1
         '
-        Me.bsNhanVien.DataSource = GetType(PhanMemBanHang.tbNhanVien)
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = ""
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         '
         'ctrlDGVNhanVien
         '
@@ -177,12 +185,12 @@ Partial Class ctrlDGVNhanVien
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents dgvNhanVien As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
     Friend WithEvents bsNhanVien As System.Windows.Forms.BindingSource
-    Friend WithEvents STT As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenDangNhapDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenNhanVienDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ChucVuDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SoDienThoai As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents isToanQuyen As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents HopLeDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
-
+    Friend WithEvents STT As DataGridViewTextBoxColumn
+    Friend WithEvents TenDangNhapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TenNhanVienDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ChucVuDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SoDienThoai As DataGridViewTextBoxColumn
+    Friend WithEvents isToanQuyen As DataGridViewCheckBoxColumn
+    Friend WithEvents HopLeDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
 End Class

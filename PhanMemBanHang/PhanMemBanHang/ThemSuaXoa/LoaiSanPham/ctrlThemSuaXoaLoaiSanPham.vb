@@ -26,9 +26,9 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current IsNot Nothing Then
-            Dim LoaiSanPham As tbLoaiSanPham = CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current
-            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xoá loại sản phẩm " + LoaiSanPham.TenLoaiSanPham + "?" + _
+        If CtrlDGVLoaiSanPham1.gridViewData.FocusedRowHandle > 0 Then
+            Dim LoaiSanPham As tbLoaiSanPham = CtrlDGVLoaiSanPham1.gridViewData.GetRow(CtrlDGVLoaiSanPham1.gridViewData.FocusedRowHandle)
+            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xoá loại sản phẩm " + LoaiSanPham.TenLoaiSanPham + "?" +
                                 vbNewLine + "Mọi dữ liệu liên quan sẽ bị xoá theo?", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
                             = DialogResult.Yes Then
                 If LoaiSanPham.tbSanPhams.Count > 0 Then
@@ -69,7 +69,9 @@
                          Order By kh.MaLoaiSanPham
                          Select kh
 
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = rlsLoaiSanPham
+        CtrlDGVLoaiSanPham1.gridControl.DataSource = rlsLoaiSanPham
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
+
     End Sub
 
     Private Sub btnQuayLai_Click(sender As Object, e As EventArgs) Handles btnQuayLai.Click
@@ -87,15 +89,19 @@
     End Sub
 
     Private Sub CapNhat()
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = From nv In dt.tbLoaiSanPhams Select nv
-                                                       Order By nv.MaLoaiSanPham
+        CtrlDGVLoaiSanPham1.gridControl.DataSource = From nv In dt.tbLoaiSanPhams Select nv
+                                                     Order By nv.MaLoaiSanPham
+
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
+
     End Sub
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current IsNot Nothing Then
+        If CtrlDGVLoaiSanPham1.gridViewData.FocusedRowHandle > 0 Then
+            Dim LoaiSanPham As tbLoaiSanPham = CtrlDGVLoaiSanPham1.gridViewData.GetRow(CtrlDGVLoaiSanPham1.gridViewData.FocusedRowHandle)
             Dim frm As New frmSuaLoaiSanPham
-            frm.MaLoaiBanDau = CType(CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current, tbLoaiSanPham).MaLoaiSanPham
-            frm.LoaiSanPham = CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current
+            frm.MaLoaiBanDau = LoaiSanPham.MaLoaiSanPham
+            frm.LoaiSanPham = LoaiSanPham
             AddHandler frm.SuaThanhCongLoaiSanPham, AddressOf CapNhat
             frm.ShowDialog()
         End If

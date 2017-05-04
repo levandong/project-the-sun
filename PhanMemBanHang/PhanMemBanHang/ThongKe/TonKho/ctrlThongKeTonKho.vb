@@ -8,12 +8,10 @@
         dtpTuNgay.Value = New Date(Now.Year, Now.Month, 1)
         dtpDenNgay.Value = Now
         With CtrlDGVLoaiSanPham1
-            .Chon.Visible = True
-            .STT.Visible = False
+            '.Chon.Visible = True
+            .gridViewData.OptionsView.ShowIndicator = False
             .colMaLoaiSanPham.Visible = False
-            .MoTa.Visible = False
-            .TenLoaiSanPham.MinimumWidth = 150
-            .TenLoaiSanPham.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            .colMoTa.Visible = False
         End With
         isLoad = True
         TimKiemLoaiSanPham()
@@ -189,9 +187,9 @@
         For Each itm In lst.ToList
             itm.Chon = ChonTatCa
         Next
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
-        CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
+        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
+        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
+        'CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
 
         If ChonTatCa Then
             btnChonTatCa.Image = My.Resources.unchecked
@@ -202,11 +200,11 @@
         End If
     End Sub
 
-    Private Sub dgvLoaiSanPham_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
-        If CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current IsNot Nothing Then
-            CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Rows(e.RowIndex).Cells("Chon").Value = Not CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Rows(e.RowIndex).Cells("Chon").Value
-        End If
-    End Sub
+    'Private Sub dgvLoaiSanPham_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
+    '    If CtrlDGVLoaiSanPham1.bsLoaiSanPham.Current IsNot Nothing Then
+    '        CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Rows(e.RowIndex).Cells("Chon").Value = Not CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Rows(e.RowIndex).Cells("Chon").Value
+    '    End If
+    'End Sub
 
     Private Sub TimKiemLoaiSanPham()
         Dim key As String = mdlGlobals.BoDauTiengViet(txtTimKiemLoai.Text.Trim).ToLower
@@ -214,7 +212,8 @@
                Where dt.f_nosymbol(itm.TenLoaiSanPham).ToLower.Contains(key)
                Order By itm.TenLoaiSanPham)
 
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = lst
+        CtrlDGVLoaiSanPham1.gridControl.DataSource = lst
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
     End Sub
     Private Sub txtTimKiemLoai_KeyDown(sender As Object, e As KeyEventArgs) Handles txtTimKiemLoai.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -224,8 +223,10 @@
 
     Private Sub txtTimKiemLoai_TextChanged(sender As Object, e As EventArgs) Handles txtTimKiemLoai.TextChanged
         If txtTimKiemLoai.Text.Trim = "" Then
-            CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = From itm In lst
-                                      Order By itm.TenLoaiSanPham
+            CtrlDGVLoaiSanPham1.gridControl.DataSource = From itm In lst
+                                                         Order By itm.TenLoaiSanPham
+
+            CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
         End If
     End Sub
 

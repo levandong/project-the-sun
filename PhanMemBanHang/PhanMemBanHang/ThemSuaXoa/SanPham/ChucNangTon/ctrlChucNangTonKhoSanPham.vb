@@ -78,12 +78,10 @@
         End With
 
         With CtrlDGVLoaiSanPham1
-            .Chon.Visible = True
-            .STT.Visible = False
+            '.Chon.Visible = True
+            .gridViewData.OptionsView.ShowIndicator = False
             .colMaLoaiSanPham.Visible = False
-            .MoTa.Visible = False
-            .TenLoaiSanPham.MinimumWidth = 150
-            .TenLoaiSanPham.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            .colMoTa.Visible = False
         End With
         isLoad = True
         TimKiemLoaiSanPham()
@@ -97,9 +95,9 @@
         For Each itm In lst.ToList
             itm.Chon = ChonTatCa
         Next
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
-        CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
+        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
+        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
+        'CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
 
         If ChonTatCa Then
             btnChonTatCa.Image = My.Resources.unchecked
@@ -117,7 +115,8 @@
                Where dt.f_nosymbol(itm.TenLoaiSanPham).ToLower.Contains(key)
                Order By itm.MaLoaiSanPham)
 
-        CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = lst
+        CtrlDGVLoaiSanPham1.gridControl.DataSource = lst
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
     End Sub
     Private Sub txtTimKiemLoai_KeyDown(sender As Object, e As KeyEventArgs) Handles txtTimKiemLoai.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -127,8 +126,10 @@
 
     Private Sub txtTimKiemLoai_TextChanged(sender As Object, e As EventArgs) Handles txtTimKiemLoai.TextChanged
         If txtTimKiemLoai.Text.Trim = "" Then
-            CtrlDGVLoaiSanPham1.bsLoaiSanPham.DataSource = From itm In lst
-                                                           Order By itm.MaLoaiSanPham
+            CtrlDGVLoaiSanPham1.gridControl.DataSource = From itm In lst
+                                                         Order By itm.MaLoaiSanPham
+
+            CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
         End If
     End Sub
     Private Sub CtrlDGVLoaiSanPham1_ChonLoaiSanPham(LoaiSanPham As tbLoaiSanPham) Handles CtrlDGVLoaiSanPham1.ChonLoaiSanPham

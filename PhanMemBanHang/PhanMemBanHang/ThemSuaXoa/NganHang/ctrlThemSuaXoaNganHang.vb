@@ -2,16 +2,18 @@
 
     Private Sub CapNhat(key As String)
         If key = "" Then
-            TbNganHangBindingSource.DataSource = From itm In dt.tbNganHangs
-                                       Select itm
+            gridControl.DataSource = From itm In dt.tbNganHangs
+                                     Select itm
+            gridViewData.RefreshData()
         Else
             ' code tìm kiếm ở đây
-            TbNganHangBindingSource.DataSource = From itm In dt.tbNganHangs
-                                                 Where dt.f_nosymbol(itm.TenNganHang).ToLower.Contains(key) Or dt.f_nosymbol(itm.SoTaiKhoan).ToLower.Contains(key)
+            gridControl.DataSource = From itm In dt.tbNganHangs
+                                     Where dt.f_nosymbol(itm.TenNganHang).ToLower.Contains(key) Or dt.f_nosymbol(itm.SoTaiKhoan).ToLower.Contains(key)
+
+            gridViewData.RefreshData()
         End If
 
 
-        lblSoLuong.Text = TbNganHangBindingSource.Count.ToString + " Ngân hàng"
     End Sub
     Private Sub ctrlThemSuaXoaNganHang_Load(sender As Object, e As EventArgs) Handles Me.Load
         CapNhat("")
@@ -26,8 +28,8 @@
     End Sub
 
     Public Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If TbNganHangBindingSource.Current IsNot Nothing Then
-            Dim SuaNganHang As tbNganHang = TbNganHangBindingSource.Current
+        If gridViewData.FocusedRowHandle > 0 Then
+            Dim SuaNganHang As tbNganHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             Dim frm As New frmSuaNganHang
             frm.SuaNganHang = SuaNganHang
             frm.SoDuDauKyBanDau = SuaNganHang.SoDuDauKy
@@ -40,8 +42,8 @@
     End Sub
 
     Public Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If TbNganHangBindingSource.Current IsNot Nothing Then
-            Dim XoaNganHang As tbNganHang = TbNganHangBindingSource.Current
+        If gridViewData.FocusedRowHandle > 0 Then
+            Dim XoaNganHang As tbNganHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             If XacNhanYesNo("Bạn muốn xoá Ngân hàng '" + XoaNganHang.ToString() + "'?. Chỉ xoá được khi Ngân hàng không có dữ liệu liên quan.") = MsgBoxResult.Yes Then
                 Try
                     dt.tbNganHangs.DeleteOnSubmit(XoaNganHang)
@@ -72,10 +74,15 @@
         End If
     End Sub
 
-  Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
-  End Sub
-
+    End Sub
 End Class

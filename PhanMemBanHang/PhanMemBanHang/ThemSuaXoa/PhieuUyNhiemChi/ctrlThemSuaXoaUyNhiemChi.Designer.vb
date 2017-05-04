@@ -25,6 +25,7 @@ Partial Class ctrlThemSuaXoaUyNhiemChi
         Me.components = New System.ComponentModel.Container()
         Me.KryptonSplitContainer1 = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.KryptonGroupBox1 = New ComponentFactory.Krypton.Toolkit.KryptonGroupBox()
+        Me.ClsTextbox1 = New PhanMemBanHang.clsTextbox()
         Me.txtTuKhoa = New PhanMemBanHang.clsTextbox()
         Me.dtpDenLuc = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
         Me.KryptonLabel2 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
@@ -47,7 +48,6 @@ Partial Class ctrlThemSuaXoaUyNhiemChi
         Me.TenKhachHangUNC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NoiDungDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.bsUyNhiemChi = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClsTextbox1 = New PhanMemBanHang.clsTextbox()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonSplitContainer1.Panel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonSplitContainer1.Panel1.SuspendLayout()
@@ -115,11 +115,22 @@ Partial Class ctrlThemSuaXoaUyNhiemChi
         Me.KryptonGroupBox1.TabIndex = 9
         Me.KryptonGroupBox1.Values.Heading = "Tìm kiếm"
         '
+        'ClsTextbox1
+        '
+        Me.ClsTextbox1.Location = New System.Drawing.Point(199, 25)
+        Me.ClsTextbox1.Name = "ClsTextbox1"
+        Me.ClsTextbox1.Size = New System.Drawing.Size(100, 27)
+        Me.ClsTextbox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray
+        Me.ClsTextbox1.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic)
+        Me.ClsTextbox1.TabIndex = 12
+        Me.ClsTextbox1.Text = "Nhập nội dung ở đây..."
+        Me.ClsTextbox1.TextGoiY = "Nhập nội dung ở đây..."
+        '
         'txtTuKhoa
         '
         Me.txtTuKhoa.Location = New System.Drawing.Point(165, 18)
         Me.txtTuKhoa.Name = "txtTuKhoa"
-        Me.txtTuKhoa.Size = New System.Drawing.Size(202, 24)
+        Me.txtTuKhoa.Size = New System.Drawing.Size(202, 27)
         Me.txtTuKhoa.StateCommon.Content.Color1 = System.Drawing.Color.Gray
         Me.txtTuKhoa.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic)
         Me.txtTuKhoa.TabIndex = 11
@@ -317,17 +328,6 @@ Partial Class ctrlThemSuaXoaUyNhiemChi
         'bsUyNhiemChi
         '
         Me.bsUyNhiemChi.DataSource = GetType(PhanMemBanHang.tbPhieuUyNhiemChi)
-        '
-        'ClsTextbox1
-        '
-        Me.ClsTextbox1.Location = New System.Drawing.Point(173, 26)
-        Me.ClsTextbox1.Name = "ClsTextbox1"
-        Me.ClsTextbox1.Size = New System.Drawing.Size(100, 24)
-        Me.ClsTextbox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray
-        Me.ClsTextbox1.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic)
-        Me.ClsTextbox1.TabIndex = 12
-        Me.ClsTextbox1.Text = "ClsTextbox1"
-        Me.ClsTextbox1.TextGoiY = "Nhập nội dung ở đây..."
         '
         'ctrlThemSuaXoaUyNhiemChi
         '

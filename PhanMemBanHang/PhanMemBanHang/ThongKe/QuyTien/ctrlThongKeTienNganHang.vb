@@ -128,22 +128,24 @@
                           .DienGiai = "",
                           .ThoiGianString = "",
                           .TongChi = TongChi,
-                                   .TongThu = TongThu,
-                                   .TongTien = TongThu - TongChi - TienPhi + rlsSoDuDauKy.Single(Function(s) s.idNganHang = idNganHang).TongTien,
-                                                       .idNganHang = idNganHang
+                          .TongThu = TongThu,
+                          .TongTien = TongThu - TongChi - TienPhi + rlsSoDuDauKy.Single(Function(s) s.idNganHang = idNganHang).TongTien,
+                          .idNganHang = idNganHang
                           }).ToList
         For Each itm In rlsThongKe
             If rlsListChonTam.Where(Function(s) s.idNganHang = itm.idNganHang).Count > 0 Then
                 itm.Chon = True
             End If
         Next
-        bsThongKe.DataSource = From itm In rlsThongKe
-                               Order By itm.TenNganHang
+
+        gridControl.DataSource = (From itm In rlsThongKe
+                                  Order By itm.TenNganHang).ToList()
+
+        gridViewData.RefreshData()
+
         'CapNhatListChonTam(rlsThongKe)
-        vndTongTien.Text = rlsThongKe.Sum(Function(s) s.TongTien)
-        vndTongTien.ReadOnly = True
-        vndTongTien.Location = New Point(3, rlsThongKe.Count * 22 + KryptonHeader1.Size.Height + 43)
-        dgvTongHop_CellValueChanged(Nothing, Nothing)
+
+        gridViewData_FocusedRowChanged(Nothing, Nothing)
     End Sub
     Dim rlsSoDuDauKy As New List(Of clsChiTietThongKeThuChi)
     Sub TienDauKy()
@@ -154,16 +156,16 @@
                                Where itm.NgayLap.Date < TuNgay
                                Where itm.isPhieuThu = True
                                Select New clsChiTietThongKeThuChi With {
-                          .Thu = 3,
-                          .SoPhieu = itm.SoPhieu,
-                          .ThoiGian = itm.NgayLap,
-                          .DienGiai = "Thu tiền nợ" + " (" + itm.tbKhachHang.TenKhachHang + ")",
-                          .ThoiGianString = String.Format("{0:dd/MM/yyyy}", itm.NgayLap),
-                          .TongThu = itm.SoTien,
+                                   .Thu = 3,
+                                   .SoPhieu = itm.SoPhieu,
+                                   .ThoiGian = itm.NgayLap,
+                                   .DienGiai = "Thu tiền nợ" + " (" + itm.tbKhachHang.TenKhachHang + ")",
+                                   .ThoiGianString = String.Format("{0:dd/MM/yyyy}", itm.NgayLap),
+                                   .TongThu = itm.SoTien,
                                    .TienPhi = itm.MucPhi,
-                          .idNganHang = itm.idNganHang,
-                             .TenKhachHang = ""
-                          }
+                                   .idNganHang = itm.idNganHang,
+                                   .TenKhachHang = ""}
+
         Dim rlsChiUyNhiemChi = From itm In dt.tbPhieuUyNhiemChis
                                Where itm.NgayLap.Date < TuNgay
                                Where itm.isPhieuThu = False
@@ -218,7 +220,7 @@
                           .DienGiai = "Số dư đầu kỳ",
                           .ThoiGianString = "",
                           .TongChi = 0,
-                                   .TongThu = 0,
+                             .TongThu = 0,
                                    .TongTien = dt.tbNganHangs.Single(Function(s) s.id = idNganHang).SoDuDauKy + TongThu - TongChi - TienPhi,
                              .TienPhi = 0,
                           .idNganHang = idNganHang,
@@ -249,11 +251,19 @@
     Function LayNganHangDangChon() As tbNganHang
         Dim idNganHang As Integer
         If rlsListChonTam.Count = 0 Then
-            idNganHang = bsThongKe.Current.idNganhang
+            If gridViewData.FocusedRowHandle >= 0 Then
+                Dim nganhang As clsChiTietThongKeThuChi = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+                idNganHang = nganhang.idNganHang
+            End If
+
         ElseIf rlsListChonTam.Count = 1 Then
             idNganHang = rlsListChonTam(0).idNganHang
         Else
-            idNganHang = bsChiTiet.Current.idNganhang
+            If gridViewDetail.FocusedRowHandle > 0 Then
+                Dim PhieuDangChon As clsChiTietThongKeThuChi = gridViewDetail.GetRow(gridViewDetail.FocusedRowHandle)
+                idNganHang = PhieuDangChon.idNganHang
+            End If
+
         End If
         Return dt.tbNganHangs.Single(Function(s) s.id = idNganHang)
     End Function
@@ -266,20 +276,7 @@
         btnTimKiem_Click(Nothing, Nothing)
     End Sub
 
-    Private Sub bsThongKe_CurrentChanged(sender As Object, e As EventArgs) Handles bsThongKe.CurrentChanged
-        dgvTongHop_CellValueChanged(Nothing, Nothing)
-    End Sub
 
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvChiTiet.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
-        End If
-    End Sub
-    Private Sub dgvTongHop_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvTongHop.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STTcol.Index Then
-            e.Value = e.RowIndex + 1
-        End If
-    End Sub
     Sub CapNhat()
         btnTimKiem_Click(Nothing, Nothing)
     End Sub
@@ -304,14 +301,14 @@
 
     Public Sub btnThemPhieuChiUyNhiemChi_Click(sender As Object, e As EventArgs) Handles btnThemPhieuChiUyNhiemChi.Click
         Dim frm As New frmThemPhieuChiUyNhiemChi
-        frm.NganHang = LayNganHangDangChon()
+        frm.Nganhang = LayNganHangDangChon()
         AddHandler frm.ThemPhieuThanhCong, AddressOf CapNhat
         frm.ShowDialog()
     End Sub
 
     Public Sub btnThemPhieuDieuChuyenTien_Click(sender As Object, e As EventArgs) Handles btnThemPhieuDieuChuyenTien.Click
         Dim frm As New frmThemDieuChuyenUyNhiemChi
-        frm.NganHang = LayNganHangDangChon()
+        frm.Nganhang = LayNganHangDangChon()
         AddHandler frm.ThemPhieuThanhCong, AddressOf CapNhat
         frm.ShowDialog()
     End Sub
@@ -329,32 +326,15 @@
         AddHandler frm.ThemPhieuThanhCong, AddressOf CapNhat
         frm.ShowDialog()
     End Sub
-    Dim ChonTatCa As Boolean = False
-    Private Sub btnChonTatCa_Click(sender As Object, e As EventArgs) Handles btnChonTatCa.Click
-        ChonTatCa = Not ChonTatCa
-        For Each itm In rlsThongKe.ToList
-            itm.Chon = ChonTatCa
-        Next
-        bsThongKe.EndEdit()
-        bsThongKe.ResetBindings(True)
-        dgvTongHop.Refresh()
 
-        If ChonTatCa Then
-            btnChonTatCa.Image = My.Resources.unchecked
-            btnChonTatCa.Text = "Bỏ chọn tất cả"
-        Else
-            btnChonTatCa.Image = My.Resources.Checked
-            btnChonTatCa.Text = "Chọn tất cả"
-        End If
-    End Sub
-    Private Sub dgvLoaiSanPham_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTongHop.CellClick
-        bsThongKe_CurrentChanged(Nothing, Nothing)
+    Private Sub dgvLoaiSanPham_CellClick(sender As Object, e As DataGridViewCellEventArgs)
+        gridViewData_FocusedRowChanged(Nothing, Nothing)
     End Sub
 
-    Private Sub dgvLoaiSanPham_CurrentCellDirtyStateChanged(sender As Object, e As EventArgs) Handles dgvTongHop.CurrentCellDirtyStateChanged
-        If dgvTongHop.IsCurrentCellDirty Then
-            dgvTongHop.CommitEdit(DataGridViewDataErrorContexts.Commit)
-        End If
+    Private Sub dgvLoaiSanPham_CurrentCellDirtyStateChanged(sender As Object, e As EventArgs)
+        'If dgvTongHop.IsCurrentCellDirty Then
+        '    dgvTongHop.CommitEdit(DataGridViewDataErrorContexts.Commit)
+        'End If
     End Sub
 
     Sub CapNhatListChonTam(rls As List(Of clsChiTietThongKeThuChi))
@@ -368,77 +348,13 @@
             rlsListChonTam.Add(temp)
         Next
     End Sub
-    Private Sub dgvTongHop_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTongHop.CellValueChanged
-        rlsListChonTam.Clear()
-        If rlsThongKe Is Nothing Then Exit Sub
-        Dim rlsTemp = (From itm In rlsThongKe
-                       Where itm.Chon = True
-                       Select itm.idNganHang).ToList
-        Dim rlsTam As New List(Of clsChiTietThongKeThuChi)
-        CapNhatListChonTam(rlsThongKe)
-        Dim TenKhachHang As String = ""
-        If chkTheoKhachHang.Checked AndAlso txtKhachHang.Tag Is Nothing Then
-            ThongBao("Vui lòng nhập khách hàng")
-            Exit Sub
-        End If
-        Dim rlsTinhToanNhieu As New List(Of clsChiTietThongKeThuChi)
-        If rlsTemp.Count = 0 Then
-            Dim ThongKeTien As clsChiTietThongKeThuChi = bsThongKe.Current
-            If ThongKeTien Is Nothing Then
-                Exit Sub
-            End If
-            bsChiTiet.DataSource = From itm In rlsTinhToan
-                                   Where itm.idNganHang = ThongKeTien.idNganHang
-                                   Where Not chkTheoNoiDung.Checked Or (BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)) Or BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)))
-                                   Where Not chkTheoKhachHang.Checked Or itm.TenKhachHang.Trim.Contains(txtKhachHang.Text.Trim)
-                                   Order By itm.ThoiGian
-        Else
-            For Each im In (From itm In rlsTinhToan
-                            Where rlsTemp.Contains(itm.idNganHang)
-                            Order By itm.ThoiGian).ToList
-                Dim s = New clsChiTietThongKeThuChi
-                With s
-                    .Thu = im.Thu
-                    .SoPhieu = im.SoPhieu
-                    .ThoiGian = im.ThoiGian
-                    .DienGiai = im.DienGiai
-                    .ThoiGianString = im.ThoiGianString
-                    .TongThu = im.TongThu
-                    .TienPhi = im.TienPhi
-                    .TongChi = im.TongChi
-                    .TongTien = im.TongTien
-                    .TenKhachHang = im.TenKhachHang
-                    .TenKhachHangUNC = im.TenKhachHangUNC
-                    .GhiChu = im.GhiChu
-                    .idNganHang = im.idNganHang
-                    .MaNganHang = im.MaNganHang
-                    .idPhieu = im.idPhieu
-                End With
-                rlsTam.Add(s)
-            Next
-            For i = 0 To rlsTam.Count - 1
-                If rlsTam(i).ThoiGian >= CtrlTimKiemTheoThoiGian1.dtpTuLuc.Value Then
-                    rlsTam(i).TongTien = rlsTam(i - 1).TongTien + rlsTam(i).TongThu - rlsTam(i).TongChi - rlsTam(i).TienPhi
-                    rlsTinhToanNhieu.Add(rlsTam(i))
-                ElseIf i = 0 Then
-                    rlsTam(i).TongTien = rlsTam.Where(Function(s) s.ThoiGian < CtrlTimKiemTheoThoiGian1.dtpTuLuc.Value).Sum(Function(s) s.TongTien)
-                    rlsTinhToanNhieu.Add(rlsTam(i))
-                Else
-                    rlsTam(i).TongTien = rlsTam(i - 1).TongTien
-                End If
-            Next
-            bsChiTiet.DataSource = From itm In rlsTinhToanNhieu
-                                   Where Not chkTheoNoiDung.Checked Or (BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)) Or BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)))
-                                   Where Not chkTheoKhachHang.Checked Or itm.TenKhachHang.Trim.Contains(txtKhachHang.Text.Trim)
-                                   Order By itm.ThoiGian
-        End If
-        rlsTam.Clear()
-        rlsTinhToanNhieu.Clear()
-    End Sub
+
 
     Private Sub XóaPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XóaPhiếuToolStripMenuItem.Click
+        If gridViewDetail.FocusedRowHandle < 0 Then Exit Sub
+        Dim PhieuDangChon As clsChiTietThongKeThuChi = gridViewDetail.GetRow(gridViewDetail.FocusedRowHandle)
+
         If XacNhanYesNo("Bạn có chắc muốn xóa phiếu") = DialogResult.No Then Exit Sub
-        Dim PhieuDangChon As clsChiTietThongKeThuChi = bsChiTiet.Current
         If PhieuDangChon.idPhieu = 0 Then
             ThongBaoError("Bạn không thể xóa phiếu này")
             Exit Sub
@@ -472,20 +388,11 @@
         End Try
 
     End Sub
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvChiTiet.CellMouseDown
-        If e.Button = MouseButtons.Right Then
 
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvChiTiet.ClearSelection()
-                Me.dgvChiTiet.Rows(rowSelected).Selected = True
-                bsChiTiet.Position = e.RowIndex
-            End If
-        End If
-    End Sub
 
     Private Sub SửaPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SửaPhiếuToolStripMenuItem.Click
-        Dim PhieuDangChon As clsChiTietThongKeThuChi = bsChiTiet.Current
+        If gridViewDetail.FocusedRowHandle < 0 Then Exit Sub
+        Dim PhieuDangChon As clsChiTietThongKeThuChi = gridViewDetail.GetRow(gridViewDetail.FocusedRowHandle)
         If PhieuDangChon.idPhieu = 0 Then
             ThongBaoError("Bạn không thể sửa mục này")
             Exit Sub
@@ -575,7 +482,7 @@
         End If
     End Sub
 
-    Private Sub dgvChiTiet_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvChiTiet.CellDoubleClick
+    Private Sub dgvChiTiet_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
         SửaPhiếuToolStripMenuItem_Click(Nothing, Nothing)
     End Sub
 
@@ -587,7 +494,8 @@
     End Sub
 
     Private Sub InPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InPhiếuToolStripMenuItem.Click
-        Dim PhieuDangChon As clsChiTietThongKeThuChi = bsChiTiet.Current
+        If gridViewDetail.FocusedRowHandle < 0 Then Exit Sub
+        Dim PhieuDangChon As clsChiTietThongKeThuChi = gridViewDetail.GetRow(gridViewDetail.FocusedRowHandle)
         If PhieuDangChon.idPhieu = 0 Then
             ThongBaoError("Bạn không thể sửa mục này")
             Exit Sub
@@ -713,5 +621,105 @@
 
     Private Sub chkTheoNoiDung_CheckedChanged(sender As Object, e As EventArgs) Handles chkTheoNoiDung.CheckedChanged
         txtTimKiemNoiDung.Enabled = sender.Checked
+    End Sub
+
+
+    Private Sub gridViewData_FocusedRowChanged(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles gridViewData.FocusedRowChanged
+        rlsListChonTam.Clear()
+        If rlsThongKe Is Nothing Then Exit Sub
+        Dim rlsTemp = (From itm In rlsThongKe
+                       Where itm.Chon = True
+                       Select itm.idNganHang).ToList
+        Dim rlsTam As New List(Of clsChiTietThongKeThuChi)
+        CapNhatListChonTam(rlsThongKe)
+        Dim TenKhachHang As String = ""
+        If chkTheoKhachHang.Checked AndAlso txtKhachHang.Tag Is Nothing Then
+            ThongBao("Vui lòng nhập khách hàng")
+            Exit Sub
+        End If
+        Dim rlsTinhToanNhieu As New List(Of clsChiTietThongKeThuChi)
+        If rlsTemp.Count = 0 Then
+            Dim ThongKeTien As clsChiTietThongKeThuChi = Nothing
+            If gridViewData.FocusedRowHandle >= 0 Then
+                ThongKeTien = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+            End If
+            If ThongKeTien Is Nothing Then
+                Exit Sub
+            End If
+            gridDetailControl.DataSource = (From itm In rlsTinhToan
+                                            Where itm.idNganHang = ThongKeTien.idNganHang
+                                            Where Not chkTheoNoiDung.Checked Or (BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)) Or BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)))
+                                            Where Not chkTheoKhachHang.Checked Or itm.TenKhachHang.Trim.Contains(txtKhachHang.Text.Trim)
+                                            Order By itm.ThoiGian).ToList
+
+            gridViewDetail.RefreshData()
+        Else
+            For Each im In (From itm In rlsTinhToan
+                            Where rlsTemp.Contains(itm.idNganHang)
+                            Order By itm.ThoiGian).ToList
+                Dim s = New clsChiTietThongKeThuChi
+                With s
+                    .Thu = im.Thu
+                    .SoPhieu = im.SoPhieu
+                    .ThoiGian = im.ThoiGian
+                    .DienGiai = im.DienGiai
+                    .ThoiGianString = im.ThoiGianString
+                    .TongThu = im.TongThu
+                    .TienPhi = im.TienPhi
+                    .TongChi = im.TongChi
+                    .TongTien = im.TongTien
+                    .TenKhachHang = im.TenKhachHang
+                    .TenKhachHangUNC = im.TenKhachHangUNC
+                    .GhiChu = im.GhiChu
+                    .idNganHang = im.idNganHang
+                    .MaNganHang = im.MaNganHang
+                    .idPhieu = im.idPhieu
+                End With
+                rlsTam.Add(s)
+            Next
+            For i = 0 To rlsTam.Count - 1
+                If rlsTam(i).ThoiGian >= CtrlTimKiemTheoThoiGian1.dtpTuLuc.Value Then
+                    rlsTam(i).TongTien = rlsTam(i - 1).TongTien + rlsTam(i).TongThu - rlsTam(i).TongChi - rlsTam(i).TienPhi
+                    rlsTinhToanNhieu.Add(rlsTam(i))
+                ElseIf i = 0 Then
+                    rlsTam(i).TongTien = rlsTam.Where(Function(s) s.ThoiGian < CtrlTimKiemTheoThoiGian1.dtpTuLuc.Value).Sum(Function(s) s.TongTien)
+                    rlsTinhToanNhieu.Add(rlsTam(i))
+                Else
+                    rlsTam(i).TongTien = rlsTam(i - 1).TongTien
+                End If
+            Next
+            gridDetailControl.DataSource = (From itm In rlsTinhToanNhieu
+                                            Where Not chkTheoNoiDung.Checked Or (BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)) Or BoDauTiengViet(itm.DienGiai).Trim.ToLower.Contains(BoDauTiengViet(txtTimKiemNoiDung.Text.Trim.ToLower)))
+                                            Where Not chkTheoKhachHang.Checked Or itm.TenKhachHang.Trim.Contains(txtKhachHang.Text.Trim)
+                                            Order By itm.ThoiGian).ToList
+
+            gridViewDetail.RefreshData()
+        End If
+        rlsTam.Clear()
+        rlsTinhToanNhieu.Clear()
+    End Sub
+
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
+        End If
+    End Sub
+
+    Private Sub gridViewDetail_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewDetail.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
+        End If
     End Sub
 End Class
