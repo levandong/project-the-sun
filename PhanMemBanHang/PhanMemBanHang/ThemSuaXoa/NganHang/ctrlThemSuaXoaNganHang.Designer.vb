@@ -134,6 +134,7 @@
         Me.gridViewData.IndicatorWidth = 50
         Me.gridViewData.Name = "gridViewData"
         Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsDetail.EnableMasterViewMode = False
         Me.gridViewData.OptionsView.ColumnAutoWidth = False
         Me.gridViewData.OptionsView.ShowAutoFilterRow = True
         Me.gridViewData.OptionsView.ShowFooter = True
