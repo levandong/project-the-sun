@@ -23,22 +23,18 @@ Partial Class ctrlThemSuaXoaNguoiLam
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.KryptonPanel1 = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
-        Me.dgvMain = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaNguoiLamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNguoiLamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GioiTinhString = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoDienThoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CMNDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgaySinhDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayVaoLamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DiaChiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.bsNguoiLam = New System.Windows.Forms.BindingSource(Me.components)
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.lblSoDong = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -52,17 +48,19 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.btnTimKiem = New System.Windows.Forms.ToolStripButton()
         Me.txtTuKhoa = New System.Windows.Forms.ToolStripTextBox()
+        Me.bsNguoiLam = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KryptonPanel1
         '
-        Me.KryptonPanel1.Controls.Add(Me.dgvMain)
+        Me.KryptonPanel1.Controls.Add(Me.gridControl)
         Me.KryptonPanel1.Controls.Add(Me.ToolStrip2)
         Me.KryptonPanel1.Controls.Add(Me.ToolStrip1)
         Me.KryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -71,115 +69,130 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.KryptonPanel1.Size = New System.Drawing.Size(1112, 565)
         Me.KryptonPanel1.TabIndex = 0
         '
-        'dgvMain
+        'gridControl
         '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AllowUserToResizeRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.MaNguoiLamDataGridViewTextBoxColumn, Me.TenNguoiLamDataGridViewTextBoxColumn, Me.GioiTinhString, Me.SoDienThoaiDataGridViewTextBoxColumn, Me.CMNDDataGridViewTextBoxColumn, Me.NgaySinhDataGridViewTextBoxColumn, Me.NgayVaoLamDataGridViewTextBoxColumn, Me.DiaChiDataGridViewTextBoxColumn})
-        Me.dgvMain.DataSource = Me.bsNguoiLam
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Location = New System.Drawing.Point(0, 25)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 10
-        Me.dgvMain.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgvMain.Size = New System.Drawing.Size(1112, 515)
-        Me.dgvMain.TabIndex = 4
-        Me.dgvMain.VirtualMode = True
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 25)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(1112, 515)
+        Me.gridControl.TabIndex = 9
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
-        'STT
+        'gridViewData
         '
-        Me.STT.HeaderText = "STT"
-        Me.STT.MinimumWidth = 40
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 40
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn5, Me.GridColumn3, Me.GridColumn10, Me.GridColumn4, Me.GridColumn9, Me.GridColumn11, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsDetail.EnableMasterViewMode = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
         '
-        'MaNguoiLamDataGridViewTextBoxColumn
+        'GridColumn1
         '
-        Me.MaNguoiLamDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.MaNguoiLamDataGridViewTextBoxColumn.DataPropertyName = "MaNguoiLam"
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Navy
-        Me.MaNguoiLamDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
-        Me.MaNguoiLamDataGridViewTextBoxColumn.HeaderText = "Mã"
-        Me.MaNguoiLamDataGridViewTextBoxColumn.Name = "MaNguoiLamDataGridViewTextBoxColumn"
-        Me.MaNguoiLamDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaNguoiLamDataGridViewTextBoxColumn.Width = 53
+        Me.GridColumn1.Caption = "Mã"
+        Me.GridColumn1.FieldName = "MaNguoiLam"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 100
         '
-        'TenNguoiLamDataGridViewTextBoxColumn
+        'GridColumn2
         '
-        Me.TenNguoiLamDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenNguoiLamDataGridViewTextBoxColumn.DataPropertyName = "TenNguoiLam"
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Navy
-        Me.TenNguoiLamDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
-        Me.TenNguoiLamDataGridViewTextBoxColumn.HeaderText = "Họ tên"
-        Me.TenNguoiLamDataGridViewTextBoxColumn.Name = "TenNguoiLamDataGridViewTextBoxColumn"
-        Me.TenNguoiLamDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TenNguoiLamDataGridViewTextBoxColumn.Width = 72
+        Me.GridColumn2.Caption = "Họ tên"
+        Me.GridColumn2.FieldName = "TenNguoiLam"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.Width = 200
         '
-        'GioiTinhString
+        'GridColumn5
         '
-        Me.GioiTinhString.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.GioiTinhString.DataPropertyName = "GioiTinhString"
-        Me.GioiTinhString.HeaderText = "Giới tính"
-        Me.GioiTinhString.Name = "GioiTinhString"
-        Me.GioiTinhString.ReadOnly = True
-        Me.GioiTinhString.Width = 81
+        Me.GridColumn5.Caption = "Giới tính"
+        Me.GridColumn5.FieldName = "GioiTinhString"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 2
+        Me.GridColumn5.Width = 80
         '
-        'SoDienThoaiDataGridViewTextBoxColumn
+        'GridColumn3
         '
-        Me.SoDienThoaiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.SoDienThoaiDataGridViewTextBoxColumn.DataPropertyName = "SoDienThoai"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.HeaderText = "Điện thoại"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.Name = "SoDienThoaiDataGridViewTextBoxColumn"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SoDienThoaiDataGridViewTextBoxColumn.Width = 90
+        Me.GridColumn3.Caption = "Điện thoại"
+        Me.GridColumn3.FieldName = "SoDienThoai"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 3
+        Me.GridColumn3.Width = 200
         '
-        'CMNDDataGridViewTextBoxColumn
+        'GridColumn10
         '
-        Me.CMNDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.CMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND"
-        Me.CMNDDataGridViewTextBoxColumn.HeaderText = "CMND"
-        Me.CMNDDataGridViewTextBoxColumn.Name = "CMNDDataGridViewTextBoxColumn"
-        Me.CMNDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.CMNDDataGridViewTextBoxColumn.Width = 72
+        Me.GridColumn10.Caption = "CMND"
+        Me.GridColumn10.FieldName = "CMND"
+        Me.GridColumn10.Name = "GridColumn10"
+        Me.GridColumn10.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn10.Visible = True
+        Me.GridColumn10.VisibleIndex = 4
+        Me.GridColumn10.Width = 120
         '
-        'NgaySinhDataGridViewTextBoxColumn
+        'GridColumn4
         '
-        Me.NgaySinhDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.NgaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh"
-        DataGridViewCellStyle3.Format = "dd/MM/yyyy"
-        Me.NgaySinhDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.NgaySinhDataGridViewTextBoxColumn.HeaderText = "Ngày sinh"
-        Me.NgaySinhDataGridViewTextBoxColumn.Name = "NgaySinhDataGridViewTextBoxColumn"
-        Me.NgaySinhDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NgaySinhDataGridViewTextBoxColumn.Width = 89
+        Me.GridColumn4.Caption = "Ngày sinh"
+        Me.GridColumn4.DisplayFormat.FormatString = "dd/MM/yyyy"
+        Me.GridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn4.FieldName = "NgaySinh"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 5
+        Me.GridColumn4.Width = 140
         '
-        'NgayVaoLamDataGridViewTextBoxColumn
+        'GridColumn9
         '
-        Me.NgayVaoLamDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.NgayVaoLamDataGridViewTextBoxColumn.DataPropertyName = "NgayVaoLam"
-        DataGridViewCellStyle4.Format = "dd/MM/yyyyy"
-        Me.NgayVaoLamDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.NgayVaoLamDataGridViewTextBoxColumn.HeaderText = "Ngày vào làm"
-        Me.NgayVaoLamDataGridViewTextBoxColumn.Name = "NgayVaoLamDataGridViewTextBoxColumn"
-        Me.NgayVaoLamDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NgayVaoLamDataGridViewTextBoxColumn.Width = 109
+        Me.GridColumn9.Caption = "Ngày vào làm"
+        Me.GridColumn9.DisplayFormat.FormatString = "dd/MM/yyyy"
+        Me.GridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn9.FieldName = "NgayVaoLam"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 6
+        Me.GridColumn9.Width = 140
         '
-        'DiaChiDataGridViewTextBoxColumn
+        'GridColumn11
         '
-        Me.DiaChiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DiaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi"
-        Me.DiaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ"
-        Me.DiaChiDataGridViewTextBoxColumn.MinimumWidth = 150
-        Me.DiaChiDataGridViewTextBoxColumn.Name = "DiaChiDataGridViewTextBoxColumn"
-        Me.DiaChiDataGridViewTextBoxColumn.ReadOnly = True
+        Me.GridColumn11.Caption = "Địa chỉ"
+        Me.GridColumn11.FieldName = "DiaChi"
+        Me.GridColumn11.Name = "GridColumn11"
+        Me.GridColumn11.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn11.Visible = True
+        Me.GridColumn11.VisibleIndex = 7
+        Me.GridColumn11.Width = 300
         '
-        'bsNguoiLam
+        'GridColumn12
         '
-        Me.bsNguoiLam.DataSource = GetType(PhanMemBanHang.tbNguoiLam)
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'ToolStrip2
         '
@@ -285,6 +298,10 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.txtTuKhoa.Name = "txtTuKhoa"
         Me.txtTuKhoa.Size = New System.Drawing.Size(130, 25)
         '
+        'bsNguoiLam
+        '
+        Me.bsNguoiLam.DataSource = GetType(PhanMemBanHang.tbNguoiLam)
+        '
         'ctrlThemSuaXoaNguoiLam
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -295,12 +312,13 @@ Partial Class ctrlThemSuaXoaNguoiLam
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonPanel1.ResumeLayout(False)
         Me.KryptonPanel1.PerformLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -319,15 +337,16 @@ Partial Class ctrlThemSuaXoaNguoiLam
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents lblSoDong As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
     Friend WithEvents bsNguoiLam As BindingSource
-    Friend WithEvents STT As DataGridViewTextBoxColumn
-    Friend WithEvents MaNguoiLamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenNguoiLamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GioiTinhString As DataGridViewTextBoxColumn
-    Friend WithEvents SoDienThoaiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CMNDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NgaySinhDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NgayVaoLamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DiaChiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

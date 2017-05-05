@@ -22,12 +22,11 @@
     End Sub
 
     Private Sub CapNhat(key As String)
-        bsNguoiLam.DataSource = From itm In dt.tbNguoiLams
-                                Where (key = "") Or (itm.MaNguoiLamString.Contains(key) Or itm.TenNguoiLamString.Contains(key) _
+        gridControl.DataSource = From itm In dt.tbNguoiLams
+                                 Where (key = "") Or (itm.MaNguoiLamString.Contains(key) Or itm.TenNguoiLamString.Contains(key) _
                                     Or itm.CMND.Contains(key) Or itm.SoDienThoai.Contains(key))
-                                Order By itm.TenNguoiLam Select itm
-
-        lblSoDong.Text = bsNguoiLam.Count.ToString + " nhân viên"
+                                 Order By itm.TenNguoiLam Select itm
+        gridViewData.RefreshData()
     End Sub
 
     Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
@@ -42,9 +41,10 @@
     End Sub
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If bsNguoiLam.Current IsNot Nothing Then
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim NhanVien As tbNguoiLam = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             Dim frm As New frmSuaNguoiLam
-            frm.NguoiLam = bsNguoiLam.Current
+            frm.NguoiLam = NhanVien
             If frm.ShowDialog = DialogResult.OK Then
                 CapNhat("")
             End If
@@ -52,8 +52,8 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If bsNguoiLam.Current IsNot Nothing Then
-            Dim NhanVien As tbNguoiLam = bsNguoiLam.Current
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim NhanVien As tbNguoiLam = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xoá nhân viên " + NhanVien.TenNguoiLam + "?", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
                             = DialogResult.Yes Then
 
@@ -96,9 +96,15 @@
         End If
     End Sub
 
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
 End Class
