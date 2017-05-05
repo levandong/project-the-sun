@@ -34,7 +34,7 @@ Partial Class ctrlThemSuaXoaLoaiPhieuChi
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.btnLoaiTimKiem = New System.Windows.Forms.ToolStripSplitButton()
         Me.txtTimKiem = New System.Windows.Forms.ToolStripTextBox()
-        Me.CtrlDGVLoaiPhieuNhap1 = New PhanMemBanHang.ctrlDGVLoaiPhieuChi()
+        Me.CtrlDGVLoaiPhieuChi1 = New PhanMemBanHang.ctrlDGVLoaiPhieuChi()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -120,19 +120,19 @@ Partial Class ctrlThemSuaXoaLoaiPhieuChi
         Me.txtTimKiem.Name = "txtTimKiem"
         Me.txtTimKiem.Size = New System.Drawing.Size(150, 25)
         '
-        'CtrlDGVLoaiPhieuNhap1
+        'CtrlDGVLoaiPhieuChi1
         '
-        Me.CtrlDGVLoaiPhieuNhap1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CtrlDGVLoaiPhieuNhap1.Location = New System.Drawing.Point(0, 25)
-        Me.CtrlDGVLoaiPhieuNhap1.Name = "CtrlDGVLoaiPhieuNhap1"
-        Me.CtrlDGVLoaiPhieuNhap1.Size = New System.Drawing.Size(936, 404)
-        Me.CtrlDGVLoaiPhieuNhap1.TabIndex = 6
+        Me.CtrlDGVLoaiPhieuChi1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CtrlDGVLoaiPhieuChi1.Location = New System.Drawing.Point(0, 25)
+        Me.CtrlDGVLoaiPhieuChi1.Name = "CtrlDGVLoaiPhieuChi1"
+        Me.CtrlDGVLoaiPhieuChi1.Size = New System.Drawing.Size(936, 404)
+        Me.CtrlDGVLoaiPhieuChi1.TabIndex = 6
         '
         'ctrlThemSuaXoaLoaiPhieuChi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.CtrlDGVLoaiPhieuNhap1)
+        Me.Controls.Add(Me.CtrlDGVLoaiPhieuChi1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "ctrlThemSuaXoaLoaiPhieuChi"
         Me.Size = New System.Drawing.Size(936, 429)
@@ -152,6 +152,6 @@ Partial Class ctrlThemSuaXoaLoaiPhieuChi
     Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents btnLoaiTimKiem As System.Windows.Forms.ToolStripSplitButton
     Friend WithEvents txtTimKiem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents CtrlDGVLoaiPhieuNhap1 As PhanMemBanHang.ctrlDGVLoaiPhieuChi
+    Friend WithEvents CtrlDGVLoaiPhieuChi1 As PhanMemBanHang.ctrlDGVLoaiPhieuChi
 
 End Class

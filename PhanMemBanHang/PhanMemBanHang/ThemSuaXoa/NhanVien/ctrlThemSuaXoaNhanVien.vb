@@ -1,4 +1,6 @@
-﻿Public Class ctrlThemSuaXoaNhanVien
+﻿Imports PhanMemBanHang
+
+Public Class ctrlThemSuaXoaNhanVien
     Public Sub PhanQuyen(QuyenCha As tbQuyen)
         For Each qc1 In dt.tbQuyens.Where(Function(s) s.idQuyenCha = QuyenCha.id)
             Dim TrangThai As Boolean
@@ -28,8 +30,8 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVNhanVien1.bsNhanVien.Current IsNot Nothing Then
-            Dim NhanVien As tbNhanVien = CtrlDGVNhanVien1.bsNhanVien.Current
+        If CtrlDGVNhanVien1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim NhanVien As tbNhanVien = CtrlDGVNhanVien1.gridViewData.GetRow(CtrlDGVNhanVien1.gridViewData.FocusedRowHandle)
             If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xoá tài khoản " + NhanVien.TenDangNhap + "?", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
                             = DialogResult.Yes Then
 
@@ -39,7 +41,7 @@
                     btnTimKiem_ButtonClick(Nothing, Nothing)
                 Catch ex As Exception
                     undoChange()
-                    ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Không thể xoá tài khoản này!" + vbNewLine + _
+                    ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Không thể xoá tài khoản này!" + vbNewLine +
                                                                             "Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End Try
             End If
@@ -63,11 +65,13 @@
         Dim rlsNhanVien
 
         rlsNhanVien = From kh In dt.tbNhanViens
-                Where (dt.f_nosymbol(kh.TenNhanVien).ToLower.Contains(key)) Or (dt.f_nosymbol(kh.TenDangNhap).ToLower.Contains(key))
-                Order By kh.TenNhanVien
-                Select kh
+                      Where (dt.f_nosymbol(kh.TenNhanVien).ToLower.Contains(key)) Or (dt.f_nosymbol(kh.TenDangNhap).ToLower.Contains(key))
+                      Order By kh.TenNhanVien
+                      Select kh
 
-        CtrlDGVNhanVien1.bsNhanVien.DataSource = rlsNhanVien
+        CtrlDGVNhanVien1.gridControl.DataSource = rlsNhanVien
+        CtrlDGVNhanVien1.gridViewData.RefreshData()
+
     End Sub
 
     Private Sub btnQuayLai_Click(sender As Object, e As EventArgs) Handles btnQuayLai.Click
@@ -85,18 +89,27 @@
     End Sub
 
     Private Sub CapNhat()
-        CtrlDGVNhanVien1.bsNhanVien.DataSource = From nv In dt.tbNhanViens Select nv
-                                   Order By nv.TenNhanVien
+        CtrlDGVNhanVien1.gridControl.DataSource = From nv In dt.tbNhanViens Select nv
+                                                  Order By nv.TenNhanVien
+
+        CtrlDGVNhanVien1.gridViewData.RefreshData()
     End Sub
 
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVNhanVien1.bsNhanVien.Current IsNot Nothing Then
+        If CtrlDGVNhanVien1.gridViewData.FocusedRowHandle >= 0 Then
             Dim frm As New frmSuaNhanVien
-            frm.TenDangNhapBanDau = CType(CtrlDGVNhanVien1.bsNhanVien.Current, tbNhanVien).TenDangNhap
-            frm.NhanVien = CtrlDGVNhanVien1.bsNhanVien.Current
+            Dim NhanVien As tbNhanVien = CtrlDGVNhanVien1.gridViewData.GetRow(CtrlDGVNhanVien1.gridViewData.FocusedRowHandle)
+            frm.TenDangNhapBanDau = NhanVien.TenDangNhap
+            frm.NhanVien = NhanVien
             AddHandler frm.SuaThanhCongNhanVien, AddressOf CapNhat
             frm.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub CtrlDGVNhanVien1_ChonNhanVien(nhanVien As tbNhanVien) Handles CtrlDGVNhanVien1.ChonNhanVien
+        If btnSua.Enabled Then
+            btnSua_Click(Nothing, Nothing)
         End If
     End Sub
 End Class

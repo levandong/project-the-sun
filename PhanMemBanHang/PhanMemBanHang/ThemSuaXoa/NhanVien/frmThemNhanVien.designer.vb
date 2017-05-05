@@ -83,7 +83,7 @@ Partial Class frmThemNhanVien
         '
         Me.txtEmail.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtEmail.Location = New System.Drawing.Point(110, 109)
+        Me.txtEmail.Location = New System.Drawing.Point(110, 131)
         Me.txtEmail.MaxLength = 100
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(291, 26)
@@ -92,7 +92,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel9
         '
-        Me.KryptonLabel9.Location = New System.Drawing.Point(3, 111)
+        Me.KryptonLabel9.Location = New System.Drawing.Point(3, 133)
         Me.KryptonLabel9.Name = "KryptonLabel9"
         Me.KryptonLabel9.Size = New System.Drawing.Size(44, 19)
         Me.KryptonLabel9.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -103,7 +103,7 @@ Partial Class frmThemNhanVien
         '
         Me.cmbCapBat.DropDownWidth = 121
         Me.cmbCapBat.Items.AddRange(New Object() {"Cấp 1", "Cấp 2", "Cấp 3 (Chỉ dành chi người toàn quyền)"})
-        Me.cmbCapBat.Location = New System.Drawing.Point(110, 166)
+        Me.cmbCapBat.Location = New System.Drawing.Point(110, 195)
         Me.cmbCapBat.Name = "cmbCapBat"
         Me.cmbCapBat.Size = New System.Drawing.Size(291, 24)
         Me.cmbCapBat.StateCommon.ComboBox.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -112,16 +112,16 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel8
         '
-        Me.KryptonLabel8.Location = New System.Drawing.Point(4, 171)
+        Me.KryptonLabel8.Location = New System.Drawing.Point(3, 200)
         Me.KryptonLabel8.Name = "KryptonLabel8"
-        Me.KryptonLabel8.Size = New System.Drawing.Size(58, 19)
+        Me.KryptonLabel8.Size = New System.Drawing.Size(61, 19)
         Me.KryptonLabel8.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KryptonLabel8.TabIndex = 28
-        Me.KryptonLabel8.Values.Text = "Cấp bật"
+        Me.KryptonLabel8.Values.Text = "Cấp bậc"
         '
         'btnDong
         '
-        Me.btnDong.Location = New System.Drawing.Point(291, 284)
+        Me.btnDong.Location = New System.Drawing.Point(311, 309)
         Me.btnDong.Name = "btnDong"
         Me.btnDong.Size = New System.Drawing.Size(90, 30)
         Me.btnDong.TabIndex = 11
@@ -129,7 +129,7 @@ Partial Class frmThemNhanVien
         '
         'btnThem
         '
-        Me.btnThem.Location = New System.Drawing.Point(197, 284)
+        Me.btnThem.Location = New System.Drawing.Point(217, 309)
         Me.btnThem.Name = "btnThem"
         Me.btnThem.Size = New System.Drawing.Size(90, 30)
         Me.btnThem.TabIndex = 10
@@ -137,7 +137,7 @@ Partial Class frmThemNhanVien
         '
         'chkToanQuyen
         '
-        Me.chkToanQuyen.Location = New System.Drawing.Point(110, 196)
+        Me.chkToanQuyen.Location = New System.Drawing.Point(110, 225)
         Me.chkToanQuyen.Name = "chkToanQuyen"
         Me.chkToanQuyen.Size = New System.Drawing.Size(94, 19)
         Me.chkToanQuyen.StateCommon.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -146,7 +146,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel7
         '
-        Me.KryptonLabel7.Location = New System.Drawing.Point(3, 196)
+        Me.KryptonLabel7.Location = New System.Drawing.Point(3, 225)
         Me.KryptonLabel7.Name = "KryptonLabel7"
         Me.KryptonLabel7.Size = New System.Drawing.Size(84, 19)
         Me.KryptonLabel7.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -155,7 +155,7 @@ Partial Class frmThemNhanVien
         '
         'chkHopLe
         '
-        Me.chkHopLe.Location = New System.Drawing.Point(110, 221)
+        Me.chkHopLe.Location = New System.Drawing.Point(110, 250)
         Me.chkHopLe.Name = "chkHopLe"
         Me.chkHopLe.Size = New System.Drawing.Size(82, 19)
         Me.chkHopLe.StateCommon.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -164,7 +164,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel6
         '
-        Me.KryptonLabel6.Location = New System.Drawing.Point(3, 221)
+        Me.KryptonLabel6.Location = New System.Drawing.Point(3, 250)
         Me.KryptonLabel6.Name = "KryptonLabel6"
         Me.KryptonLabel6.Size = New System.Drawing.Size(109, 19)
         Me.KryptonLabel6.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -175,7 +175,7 @@ Partial Class frmThemNhanVien
         '
         Me.txtChucVu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtChucVu.Location = New System.Drawing.Point(110, 138)
+        Me.txtChucVu.Location = New System.Drawing.Point(110, 163)
         Me.txtChucVu.Name = "txtChucVu"
         Me.txtChucVu.Size = New System.Drawing.Size(291, 26)
         Me.txtChucVu.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
@@ -183,7 +183,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel5
         '
-        Me.KryptonLabel5.Location = New System.Drawing.Point(3, 140)
+        Me.KryptonLabel5.Location = New System.Drawing.Point(3, 165)
         Me.KryptonLabel5.Name = "KryptonLabel5"
         Me.KryptonLabel5.Size = New System.Drawing.Size(62, 19)
         Me.KryptonLabel5.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -194,7 +194,7 @@ Partial Class frmThemNhanVien
         '
         Me.txtSoDienThoai.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtSoDienThoai.Location = New System.Drawing.Point(110, 80)
+        Me.txtSoDienThoai.Location = New System.Drawing.Point(110, 99)
         Me.txtSoDienThoai.MaxLength = 100
         Me.txtSoDienThoai.Name = "txtSoDienThoai"
         Me.txtSoDienThoai.Size = New System.Drawing.Size(291, 26)
@@ -203,7 +203,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel4
         '
-        Me.KryptonLabel4.Location = New System.Drawing.Point(3, 82)
+        Me.KryptonLabel4.Location = New System.Drawing.Point(3, 101)
         Me.KryptonLabel4.Name = "KryptonLabel4"
         Me.KryptonLabel4.Size = New System.Drawing.Size(76, 19)
         Me.KryptonLabel4.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -214,7 +214,7 @@ Partial Class frmThemNhanVien
         '
         Me.txtHoTen.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtHoTen.Location = New System.Drawing.Point(110, 54)
+        Me.txtHoTen.Location = New System.Drawing.Point(110, 67)
         Me.txtHoTen.Name = "txtHoTen"
         Me.txtHoTen.Size = New System.Drawing.Size(291, 26)
         Me.txtHoTen.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
@@ -222,7 +222,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel3
         '
-        Me.KryptonLabel3.Location = New System.Drawing.Point(3, 56)
+        Me.KryptonLabel3.Location = New System.Drawing.Point(3, 69)
         Me.KryptonLabel3.Name = "KryptonLabel3"
         Me.KryptonLabel3.Size = New System.Drawing.Size(63, 19)
         Me.KryptonLabel3.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -234,7 +234,7 @@ Partial Class frmThemNhanVien
         Me.txtMatKhau.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtMatKhau.ButtonSpecs.AddRange(New ComponentFactory.Krypton.Toolkit.ButtonSpecAny() {Me.btnXemMatKhau})
-        Me.txtMatKhau.Location = New System.Drawing.Point(110, 28)
+        Me.txtMatKhau.Location = New System.Drawing.Point(110, 35)
         Me.txtMatKhau.Name = "txtMatKhau"
         Me.txtMatKhau.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtMatKhau.Size = New System.Drawing.Size(291, 26)
@@ -249,7 +249,7 @@ Partial Class frmThemNhanVien
         '
         'KryptonLabel2
         '
-        Me.KryptonLabel2.Location = New System.Drawing.Point(3, 31)
+        Me.KryptonLabel2.Location = New System.Drawing.Point(3, 38)
         Me.KryptonLabel2.Name = "KryptonLabel2"
         Me.KryptonLabel2.Size = New System.Drawing.Size(77, 19)
         Me.KryptonLabel2.StateNormal.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -277,7 +277,7 @@ Partial Class frmThemNhanVien
         '
         'chkCopyNhanVien
         '
-        Me.chkCopyNhanVien.Location = New System.Drawing.Point(110, 246)
+        Me.chkCopyNhanVien.Location = New System.Drawing.Point(110, 275)
         Me.chkCopyNhanVien.Name = "chkCopyNhanVien"
         Me.chkCopyNhanVien.Size = New System.Drawing.Size(177, 19)
         Me.chkCopyNhanVien.StateCommon.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

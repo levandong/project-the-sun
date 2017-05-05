@@ -24,12 +24,15 @@ Partial Class ctrlDGVLoaiSanPham
     Private Sub InitializeComponent()
         Me.gridControl = New DevExpress.XtraGrid.GridControl()
         Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.colChon = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.colMaLoaiSanPham = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.TenLoaiSanPham = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colMoTa = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gridControl
@@ -38,12 +41,15 @@ Partial Class ctrlDGVLoaiSanPham
         Me.gridControl.Location = New System.Drawing.Point(0, 0)
         Me.gridControl.MainView = Me.gridViewData
         Me.gridControl.Name = "gridControl"
+        Me.gridControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
         Me.gridControl.Size = New System.Drawing.Size(883, 628)
         Me.gridControl.TabIndex = 8
         Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
         'gridViewData
         '
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -54,27 +60,41 @@ Partial Class ctrlDGVLoaiSanPham
         Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.Row.Options.UseFont = True
         Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
-        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaLoaiSanPham, Me.TenLoaiSanPham, Me.colMoTa, Me.GridColumn12})
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colChon, Me.colMaLoaiSanPham, Me.TenLoaiSanPham, Me.colMoTa, Me.GridColumn12})
         Me.gridViewData.GridControl = Me.gridControl
         Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.colMaLoaiSanPham, "Cộng: {0:n0}")})
         Me.gridViewData.IndicatorWidth = 35
         Me.gridViewData.Name = "gridViewData"
-        Me.gridViewData.OptionsBehavior.Editable = False
         Me.gridViewData.OptionsDetail.EnableMasterViewMode = False
         Me.gridViewData.OptionsView.ColumnAutoWidth = False
         Me.gridViewData.OptionsView.ShowAutoFilterRow = True
         Me.gridViewData.OptionsView.ShowFooter = True
         Me.gridViewData.OptionsView.ShowGroupPanel = False
         '
+        'colChon
+        '
+        Me.colChon.Caption = "Chọn"
+        Me.colChon.ColumnEdit = Me.RepositoryItemCheckEdit1
+        Me.colChon.FieldName = "Chon"
+        Me.colChon.Name = "colChon"
+        Me.colChon.Visible = True
+        Me.colChon.VisibleIndex = 0
+        Me.colChon.Width = 50
+        '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        '
         'colMaLoaiSanPham
         '
         Me.colMaLoaiSanPham.Caption = "Mã loại"
         Me.colMaLoaiSanPham.FieldName = "MaLoaiSanPham"
         Me.colMaLoaiSanPham.Name = "colMaLoaiSanPham"
+        Me.colMaLoaiSanPham.OptionsColumn.AllowEdit = False
         Me.colMaLoaiSanPham.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
-        Me.colMaLoaiSanPham.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.colMaLoaiSanPham.Visible = True
-        Me.colMaLoaiSanPham.VisibleIndex = 0
+        Me.colMaLoaiSanPham.VisibleIndex = 1
         Me.colMaLoaiSanPham.Width = 80
         '
         'TenLoaiSanPham
@@ -82,9 +102,11 @@ Partial Class ctrlDGVLoaiSanPham
         Me.TenLoaiSanPham.Caption = "Tên loại"
         Me.TenLoaiSanPham.FieldName = "TenLoaiSanPham"
         Me.TenLoaiSanPham.Name = "TenLoaiSanPham"
+        Me.TenLoaiSanPham.OptionsColumn.AllowEdit = False
         Me.TenLoaiSanPham.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.TenLoaiSanPham.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.TenLoaiSanPham.Visible = True
-        Me.TenLoaiSanPham.VisibleIndex = 1
+        Me.TenLoaiSanPham.VisibleIndex = 2
         Me.TenLoaiSanPham.Width = 250
         '
         'colMoTa
@@ -92,9 +114,10 @@ Partial Class ctrlDGVLoaiSanPham
         Me.colMoTa.Caption = "Mô tả"
         Me.colMoTa.FieldName = "MoTa"
         Me.colMoTa.Name = "colMoTa"
+        Me.colMoTa.OptionsColumn.AllowEdit = False
         Me.colMoTa.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.colMoTa.Visible = True
-        Me.colMoTa.VisibleIndex = 2
+        Me.colMoTa.VisibleIndex = 3
         Me.colMoTa.Width = 200
         '
         'GridColumn12
@@ -113,6 +136,7 @@ Partial Class ctrlDGVLoaiSanPham
         Me.Size = New System.Drawing.Size(883, 628)
         CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -122,4 +146,6 @@ Partial Class ctrlDGVLoaiSanPham
     Friend WithEvents TenLoaiSanPham As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colMoTa As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colChon As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

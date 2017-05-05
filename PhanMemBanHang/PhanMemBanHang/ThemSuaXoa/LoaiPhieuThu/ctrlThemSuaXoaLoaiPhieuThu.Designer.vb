@@ -22,32 +22,24 @@ Partial Class ctrlThemSuaXoaLoaiPhieuThu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.txtTuKhoa = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
-        Me.lblSoLuong = New System.Windows.Forms.ToolStripLabel()
-        Me.dgvMain = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
-        Me.TbLoaiPhieuThuBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.btnIn = New System.Windows.Forms.ToolStripButton()
         Me.btnThem = New System.Windows.Forms.ToolStripButton()
         Me.btnSua = New System.Windows.Forms.ToolStripButton()
         Me.btnXoa = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.btnCapNhat = New System.Windows.Forms.ToolStripButton()
         Me.btnTimKiem = New System.Windows.Forms.ToolStripButton()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CotFill = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        ' khởi tạo các cột
-        Me.LoaiThuDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-Me.MoTaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-Me.LoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-
+        Me.txtTuKhoa = New System.Windows.Forms.ToolStripTextBox()
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ToolStrip1.SuspendLayout()
-        Me.ToolStrip2.SuspendLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TbLoaiPhieuThuBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-         Me.SuspendLayout()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'ToolStrip1
         '
@@ -58,66 +50,6 @@ Me.LoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxC
         Me.ToolStrip1.Size = New System.Drawing.Size(676, 25)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'txtTuKhoa
-        '
-        Me.txtTuKhoa.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.txtTuKhoa.Name = "txtTuKhoa"
-        Me.txtTuKhoa.Size = New System.Drawing.Size(100, 25)
-        '
-        'ToolStrip2
-        '
-        Me.ToolStrip2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnIn, Me.lblSoLuong})
-        Me.ToolStrip2.Location = New System.Drawing.Point(0, 407)
-        Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.ShowItemToolTips = False
-        Me.ToolStrip2.Size = New System.Drawing.Size(676, 25)
-        Me.ToolStrip2.TabIndex = 1
-        Me.ToolStrip2.Text = "ToolStrip2"
-        '
-        'lblSoLuong
-        '
-        Me.lblSoLuong.Name = "lblSoLuong"
-        Me.lblSoLuong.Size = New System.Drawing.Size(32, 22)
-        Me.lblSoLuong.Text = "0 Loại Phiếu Thu"
-
-        '
-        'dgvMain
-        '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.LoaiThuDataGridViewTextBoxColumn,Me.MoTaDataGridViewTextBoxColumn,Me.LoaiDataGridViewTextBoxColumn, Me.CotFill})
-        Me.dgvMain.DataSource = Me.TbLoaiPhieuThuBindingSource
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Location = New System.Drawing.Point(0, 25)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 10
-        Me.dgvMain.Size = New System.Drawing.Size(676, 382)
-        Me.dgvMain.TabIndex = 2
-        Me.dgvMain.VirtualMode = True
-        '
-        'TbLoaiPhieuThuBindingSource
-        '
-        Me.TbLoaiPhieuThuBindingSource.DataSource = GetType(PhanMemBanHang.tbLoaiPhieuThu)
-        '
-        'btnIn
-        '
-        Me.btnIn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnIn.Image = Global.PhanMemBanHang.My.Resources.Resources.In_16
-        Me.btnIn.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnIn.Name = "btnIn"
-        Me.btnIn.Visible = False
-        Me.btnIn.Size = New System.Drawing.Size(94, 22)
-        Me.btnIn.Text = "&In danh sách"
         '
         'btnThem
         '
@@ -143,6 +75,11 @@ Me.LoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxC
         Me.btnXoa.Size = New System.Drawing.Size(47, 22)
         Me.btnXoa.Text = "&Xoá"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
         'btnCapNhat
         '
         Me.btnCapNhat.Image = Global.PhanMemBanHang.My.Resources.Resources.Cap_Nhat_16
@@ -160,61 +97,96 @@ Me.LoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxC
         Me.btnTimKiem.Size = New System.Drawing.Size(77, 22)
         Me.btnTimKiem.Text = "Tìm &kiếm"
         '
-        'STT
+        'txtTuKhoa
         '
-        Me.STT.HeaderText = "STT"
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 35
-        'CotFill
+        Me.txtTuKhoa.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.txtTuKhoa.Name = "txtTuKhoa"
+        Me.txtTuKhoa.Size = New System.Drawing.Size(100, 25)
         '
-        Me.CotFill.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.CotFill.HeaderText = ""
-        Me.CotFill.Name = "CotFill"
-        Me.CotFill.ReadOnly = True
+        'gridControl
         '
-        ' gán thuộc tính
-        'LoaiThuDataGridViewTextBoxColumn
-'
-Me.LoaiThuDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-Me.LoaiThuDataGridViewTextBoxColumn.DataPropertyName = "LoaiThu"
-Me.LoaiThuDataGridViewTextBoxColumn.HeaderText = "Tên Loại Thu"
-Me.LoaiThuDataGridViewTextBoxColumn.Name = "LoaiThuDataGridViewTextBoxColumn"
-Me.LoaiThuDataGridViewTextBoxColumn.ReadOnly = True
-Me.LoaiThuDataGridViewTextBoxColumn.Width = 78
-'MoTaDataGridViewTextBoxColumn
-'
-Me.MoTaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-Me.MoTaDataGridViewTextBoxColumn.DataPropertyName = "MoTa"
-Me.MoTaDataGridViewTextBoxColumn.HeaderText = "Mô Tả"
-Me.MoTaDataGridViewTextBoxColumn.Name = "MoTaDataGridViewTextBoxColumn"
-Me.MoTaDataGridViewTextBoxColumn.ReadOnly = True
-Me.MoTaDataGridViewTextBoxColumn.Width = 78
-'LoaiDataGridViewTextBoxColumn
-'
-Me.LoaiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-Me.LoaiDataGridViewTextBoxColumn.DataPropertyName = "Loai"
-Me.LoaiDataGridViewTextBoxColumn.HeaderText = "Loại"
-Me.LoaiDataGridViewTextBoxColumn.Name = "LoaiDataGridViewTextBoxColumn"
-Me.LoaiDataGridViewTextBoxColumn.ReadOnly = True
-Me.LoaiDataGridViewTextBoxColumn.Width = 78
-
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 25)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(676, 407)
+        Me.gridControl.TabIndex = 9
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
+        '
+        'gridViewData
+        '
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn5, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsDetail.EnableMasterViewMode = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
+        '
+        'GridColumn1
+        '
+        Me.GridColumn1.Caption = "Tên loại thu"
+        Me.GridColumn1.FieldName = "LoaiThu"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 200
+        '
+        'GridColumn2
+        '
+        Me.GridColumn2.Caption = "Mô tả"
+        Me.GridColumn2.FieldName = "MoTa"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.Width = 250
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.Caption = "Loại"
+        Me.GridColumn5.FieldName = "Loai"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 2
+        Me.GridColumn5.Width = 100
+        '
+        'GridColumn12
+        '
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'ctrlThemSuaXoaLoaiPhieuThu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.dgvMain)
-        Me.Controls.Add(Me.ToolStrip2)
+        Me.Controls.Add(Me.gridControl)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "ctrlThemSuaXoaLoaiPhieuThu"
         Me.Size = New System.Drawing.Size(676, 432)
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        Me.ToolStrip2.ResumeLayout(False)
-        Me.ToolStrip2.PerformLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TbLoaiPhieuThuBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -227,16 +199,10 @@ Me.LoaiDataGridViewTextBoxColumn.Width = 78
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents txtTuKhoa As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents btnTimKiem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStrip2 As System.Windows.Forms.ToolStrip
-    Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
-    Friend WithEvents TbLoaiPhieuThuBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents btnIn As System.Windows.Forms.ToolStripButton
-    Friend WithEvents lblSoLuong As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents STT As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CotFill As System.Windows.Forms.DataGridViewTextBoxColumn
-    'khai báo các cột
-    Friend WithEvents LoaiThuDataGridViewTextBoxColumn As  System.Windows.Forms.DataGridViewTextBoxColumn
-Friend WithEvents MoTaDataGridViewTextBoxColumn As  System.Windows.Forms.DataGridViewTextBoxColumn
-Friend WithEvents LoaiDataGridViewTextBoxColumn As  System.Windows.Forms.DataGridViewTextBoxColumn
-
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

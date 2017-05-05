@@ -1,28 +1,22 @@
 ﻿Public Class ctrlDGVLoaiPhieuChi
-    Property Bs As BindingSource
-        Get
-            Return dgvMain.DataSource
-        End Get
-        Set(value As BindingSource)
-            dgvMain.AutoGenerateColumns = False
-            dgvMain.DataSource = value
-        End Set
-    End Property
+    Event ChonLoaiPhieuNhap(nl As tbLoaiPhieuChi)
 
-    Private Sub bsLoaiPhieuNhap_ListChanged(sender As Object, e As System.ComponentModel.ListChangedEventArgs) Handles bsLoaiPhieuChi.ListChanged
-        lblSoLuong.Text = bsLoaiPhieuChi.Count.ToString + " loại phiếu chi."
-    End Sub
-
-    Event ChonLoaiPhieuNhap(nl As tbLoaiPhieuNhap)
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        If Bs.Current Is Nothing Then Exit Sub
-        RaiseEvent ChonLoaiPhieuNhap(Bs.Current)
-    End Sub
-
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
 
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim LoaiPhieuChi As tbLoaiPhieuChi = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+            RaiseEvent ChonLoaiPhieuNhap(LoaiPhieuChi)
+        End If
+    End Sub
 End Class

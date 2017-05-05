@@ -144,7 +144,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonSplitContainer2.Panel2.Controls.Add(Me.gridDetailControl)
         Me.KryptonSplitContainer2.Panel2.Controls.Add(Me.KryptonHeader2)
         Me.KryptonSplitContainer2.Size = New System.Drawing.Size(1387, 615)
-        Me.KryptonSplitContainer2.SplitterDistance = 307
+        Me.KryptonSplitContainer2.SplitterDistance = 350
         Me.KryptonSplitContainer2.SplitterWidth = 2
         Me.KryptonSplitContainer2.TabIndex = 0
         '
@@ -155,7 +155,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonPanel2.Location = New System.Drawing.Point(0, 0)
         Me.KryptonPanel2.Name = "KryptonPanel2"
-        Me.KryptonPanel2.Size = New System.Drawing.Size(307, 327)
+        Me.KryptonPanel2.Size = New System.Drawing.Size(350, 327)
         Me.KryptonPanel2.TabIndex = 2
         '
         'gridControl
@@ -165,7 +165,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.gridControl.Location = New System.Drawing.Point(0, 28)
         Me.gridControl.MainView = Me.gridViewData
         Me.gridControl.Name = "gridControl"
-        Me.gridControl.Size = New System.Drawing.Size(307, 299)
+        Me.gridControl.Size = New System.Drawing.Size(350, 299)
         Me.gridControl.TabIndex = 7
         Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
@@ -196,7 +196,9 @@ Partial Class ctrlThongKeTienNganHang
         '
         'gridViewData
         '
-        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
         Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -250,7 +252,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.GridColumn10.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTien", "{0:n0}")})
         Me.GridColumn10.Visible = True
         Me.GridColumn10.VisibleIndex = 2
-        Me.GridColumn10.Width = 120
+        Me.GridColumn10.Width = 140
         '
         'GridColumn12
         '
@@ -266,7 +268,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonHeader1.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Secondary
         Me.KryptonHeader1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeader1.Name = "KryptonHeader1"
-        Me.KryptonHeader1.Size = New System.Drawing.Size(307, 28)
+        Me.KryptonHeader1.Size = New System.Drawing.Size(350, 28)
         Me.KryptonHeader1.TabIndex = 0
         Me.KryptonHeader1.Values.Description = ""
         Me.KryptonHeader1.Values.Heading = "THỐNG KÊ TỔNG HỢP"
@@ -274,8 +276,8 @@ Partial Class ctrlThongKeTienNganHang
         '
         'btnChonTatCa
         '
-        Me.btnChonTatCa.Enabled = ComponentFactory.Krypton.Toolkit.ButtonEnabled.[False]
-        Me.btnChonTatCa.Text = " "
+        Me.btnChonTatCa.Image = Global.PhanMemBanHang.My.Resources.Resources.Checked
+        Me.btnChonTatCa.Text = " Chọn tất cả"
         Me.btnChonTatCa.UniqueName = "5DABAC38FC354ACBA78F59404B660FB3"
         '
         'KryptonPanel3
@@ -289,7 +291,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.KryptonPanel3.Location = New System.Drawing.Point(0, 327)
         Me.KryptonPanel3.Name = "KryptonPanel3"
-        Me.KryptonPanel3.Size = New System.Drawing.Size(307, 288)
+        Me.KryptonPanel3.Size = New System.Drawing.Size(350, 288)
         Me.KryptonPanel3.TabIndex = 2
         '
         'chkTheoNoiDung
@@ -353,12 +355,14 @@ Partial Class ctrlThongKeTienNganHang
         Me.gridDetailControl.Location = New System.Drawing.Point(0, 28)
         Me.gridDetailControl.MainView = Me.gridViewDetail
         Me.gridDetailControl.Name = "gridDetailControl"
-        Me.gridDetailControl.Size = New System.Drawing.Size(1078, 587)
+        Me.gridDetailControl.Size = New System.Drawing.Size(1035, 587)
         Me.gridDetailControl.TabIndex = 8
         Me.gridDetailControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewDetail})
         '
         'gridViewDetail
         '
+        Me.gridViewDetail.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewDetail.Appearance.FooterPanel.Options.UseFont = True
         Me.gridViewDetail.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewDetail.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewDetail.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -372,7 +376,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.gridViewDetail.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn3, Me.GridColumn4, Me.GridColumn7, Me.GridColumn5, Me.GridColumn8, Me.GridColumn9, Me.GridColumn11, Me.GridColumn13, Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn6})
         Me.gridViewDetail.GridControl = Me.gridDetailControl
         Me.gridViewDetail.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn3, "Cộng: {0:n0}")})
-        Me.gridViewDetail.IndicatorWidth = 30
+        Me.gridViewDetail.IndicatorWidth = 50
         Me.gridViewDetail.Name = "gridViewDetail"
         Me.gridViewDetail.OptionsBehavior.Editable = False
         Me.gridViewDetail.OptionsView.ColumnAutoWidth = False
@@ -535,7 +539,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonHeader2.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Secondary
         Me.KryptonHeader2.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeader2.Name = "KryptonHeader2"
-        Me.KryptonHeader2.Size = New System.Drawing.Size(1078, 28)
+        Me.KryptonHeader2.Size = New System.Drawing.Size(1035, 28)
         Me.KryptonHeader2.TabIndex = 1
         Me.KryptonHeader2.Values.Description = ""
         Me.KryptonHeader2.Values.Heading = ""

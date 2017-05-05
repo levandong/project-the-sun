@@ -32,7 +32,8 @@
                            Where kh.Loai > 0
                            Select kh
 
-        CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.DataSource = rlsLoaiPhieuNhap
+        CtrlDGVLoaiPhieuChi1.gridControl.DataSource = rlsLoaiPhieuNhap
+        CtrlDGVLoaiPhieuChi1.gridViewData.RefreshData()
     End Sub
 
     Private Sub btnQuayLai_Click(sender As Object, e As EventArgs) Handles btnQuayLai.Click
@@ -41,12 +42,12 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.Current IsNot Nothing Then
-            Dim LoaiPhieuNhap As tbLoaiPhieuChi = CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.Current
-            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa loại phiếu chi " + LoaiPhieuNhap.LoaiChi + "?",
+        If CtrlDGVLoaiPhieuChi1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim LoaiPhieuChi As tbLoaiPhieuChi = CtrlDGVLoaiPhieuChi1.gridViewData.GetRow(CtrlDGVLoaiPhieuChi1.gridViewData.FocusedRowHandle)
+            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa loại phiếu chi " + LoaiPhieuChi.LoaiChi + "?",
                                                                    "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
                                                                    = MsgBoxResult.Yes Then
-                dt.tbLoaiPhieuChis.DeleteOnSubmit(LoaiPhieuNhap)
+                dt.tbLoaiPhieuChis.DeleteOnSubmit(LoaiPhieuChi)
                 Try
                     dt.SubmitChanges()
                     btnLoaiTimKiem_ButtonClick(Nothing, Nothing)
@@ -67,11 +68,12 @@
     End Sub
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.Current IsNot Nothing Then
+        If CtrlDGVLoaiPhieuChi1.gridViewData.FocusedRowHandle >= 0 Then
             Dim frm As New frmSuaLoaiPhieuChi
-            frm.LoaiPhieuNhaoBanDau = CType(CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.Current, tbLoaiPhieuChi).LoaiChi
-            frm.LoaiPhieuNhap = CtrlDGVLoaiPhieuNhap1.bsLoaiPhieuChi.Current
-            AddHandler frm.SuaLoaiPhieuNhapThanhCong, AddressOf CapNhat
+            Dim LoaiPhieuChi As tbLoaiPhieuChi = CtrlDGVLoaiPhieuChi1.gridViewData.GetRow(CtrlDGVLoaiPhieuChi1.gridViewData.FocusedRowHandle)
+            frm.LoaiPhieuChiBanDau = LoaiPhieuChi.LoaiChi
+            frm.LoaiPhieuChi = LoaiPhieuChi
+            AddHandler frm.SuaLoaiPhieuChiThanhCong, AddressOf CapNhat
             frm.ShowDialog()
         End If
     End Sub

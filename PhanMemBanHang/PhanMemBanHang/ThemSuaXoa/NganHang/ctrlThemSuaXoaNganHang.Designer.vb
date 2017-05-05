@@ -118,6 +118,8 @@
         '
         'gridViewData
         '
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -172,6 +174,8 @@
         '
         'GridColumn10
         '
+        Me.GridColumn10.AppearanceCell.ForeColor = System.Drawing.Color.Red
+        Me.GridColumn10.AppearanceCell.Options.UseForeColor = True
         Me.GridColumn10.Caption = "Dư đầu kỳ"
         Me.GridColumn10.DisplayFormat.FormatString = "###,##0"
         Me.GridColumn10.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
@@ -179,8 +183,8 @@
         Me.GridColumn10.Name = "GridColumn10"
         Me.GridColumn10.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 4
-        Me.GridColumn10.Width = 100
+        Me.GridColumn10.VisibleIndex = 3
+        Me.GridColumn10.Width = 110
         '
         'GridColumn9
         '
@@ -191,8 +195,8 @@
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 3
-        Me.GridColumn9.Width = 110
+        Me.GridColumn9.VisibleIndex = 4
+        Me.GridColumn9.Width = 130
         '
         'GridColumn11
         '

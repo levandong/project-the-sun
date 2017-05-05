@@ -45,6 +45,7 @@
         Dim rlsLoai = From itm In lst.ToList
                       Where itm.Chon = True
                       Select itm.id
+
         Dim rlsTonKho = From ct In dt.TinhTonKhoSanPham(idSanPham, chkTheoThoiGian.Checked, TuNgay, DenNgay)
         If rlsLoai.Count > 0 Then
             bsTonKho.DataSource = From itm In rlsTonKho.ToList
@@ -187,7 +188,9 @@
         For Each itm In lst.ToList
             itm.Chon = ChonTatCa
         Next
-        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
+
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
+
         'CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
         'CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
 
@@ -232,6 +235,8 @@
 
     Private Sub CtrlDGVLoaiSanPham1_ChonLoaiSanPham(LoaiSanPham As tbLoaiSanPham) Handles CtrlDGVLoaiSanPham1.ChonLoaiSanPham
         LoaiSanPham.Chon = Not LoaiSanPham.Chon
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
+
     End Sub
 #End Region
 

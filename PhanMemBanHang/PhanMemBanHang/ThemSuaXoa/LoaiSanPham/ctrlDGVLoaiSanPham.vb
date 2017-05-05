@@ -1,5 +1,8 @@
-﻿Public Class ctrlDGVLoaiSanPham
+﻿
+Public Class ctrlDGVLoaiSanPham
+    Public bolMultiSelect As Boolean
     Event ChonLoaiSanPham(LoaiSanPham As tbLoaiSanPham)
+
 
     Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
         If gridViewData.FocusedRowHandle < 0 Then Exit Sub
@@ -34,13 +37,8 @@
     Private Sub gridViewData_FocusedRowChanged(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles gridViewData.FocusedRowChanged
         If gridViewData.FocusedRowHandle < 0 Then Exit Sub
         Dim LoaiSanPham As tbLoaiSanPham = gridViewData.GetRow(gridViewData.FocusedRowHandle)
-        RaiseEvent ChonLoaiSanPham(LoaiSanPham)
+        RaiseEvent LoaiSanPhamThayDoi()
     End Sub
 
 
-    Private Sub gridViewData_RowClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowClickEventArgs) Handles gridViewData.RowClick
-        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
-        Dim LoaiSanPham As tbLoaiSanPham = gridViewData.GetRow(gridViewData.FocusedRowHandle)
-        RaiseEvent ChonLoaiSanPham(LoaiSanPham)
-    End Sub
 End Class

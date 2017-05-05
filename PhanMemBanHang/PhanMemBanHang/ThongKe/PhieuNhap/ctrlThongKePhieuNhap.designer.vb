@@ -24,14 +24,6 @@ Partial Class ctrlThongKePhieuNhap
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlThongKePhieuNhap))
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.KryptonSplitContainer1 = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.cmbTheoKhachHang = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         Me.btnTimKiemKhachHang = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
@@ -45,51 +37,35 @@ Partial Class ctrlThongKePhieuNhap
         Me.chkTheoLoaiPhieuNhap = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.chkTheoNhanVien = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.CtrlTimKiemTheoThoiGian1 = New TimKiemTheoThoiGian.ctrlTimKiemTheoThoiGian()
-        Me.dgvMain = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaPhieu = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayLap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LoaiPhieuNhap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNhaCungCap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CongTien = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ChietKhau = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VAT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TongTienPhieuNhap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNhanVien = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GhiChuDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.XóaPhiếuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SửaPhiếuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.InPhiếuNhậpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.bsPhieuNhap = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.lblSoPhieuNhap = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTongCongTien = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTienCK = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTienVAT = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
-        Me.lblTongThanhTien = New System.Windows.Forms.ToolStripLabel()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.lblSoPhieuNhap222 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.btnThemPhieuNhap = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.PhiếuXuấtKkhoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnIn = New System.Windows.Forms.ToolStripButton()
         Me.btnXemNhanh = New System.Windows.Forms.ToolStripButton()
         Me.btnSuaPhieu = New System.Windows.Forms.ToolStripButton()
         Me.btnXoaPhieu = New System.Windows.Forms.ToolStripButton()
-        Me.btnIn = New System.Windows.Forms.ToolStripButton()
         Me.btnInPhieu = New System.Windows.Forms.ToolStripDropDownButton()
         Me.NhậpCóKýHiệuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PhiếuNhậpKhoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -102,10 +78,9 @@ Partial Class ctrlThongKePhieuNhap
         CType(Me.cmbTheoKhachHang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbTheoLoaiPhieuNhap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbNhanVien, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.bsPhieuNhap, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip1.SuspendLayout()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -130,8 +105,7 @@ Partial Class ctrlThongKePhieuNhap
         '
         'KryptonSplitContainer1.Panel2
         '
-        Me.KryptonSplitContainer1.Panel2.Controls.Add(Me.dgvMain)
-        Me.KryptonSplitContainer1.Panel2.Controls.Add(Me.ToolStrip1)
+        Me.KryptonSplitContainer1.Panel2.Controls.Add(Me.gridControl)
         Me.KryptonSplitContainer1.SeparatorStyle = ComponentFactory.Krypton.Toolkit.SeparatorStyle.HighProfile
         Me.KryptonSplitContainer1.Size = New System.Drawing.Size(1458, 378)
         Me.KryptonSplitContainer1.SplitterDistance = 255
@@ -256,163 +230,16 @@ Partial Class ctrlThongKePhieuNhap
         Me.CtrlTimKiemTheoThoiGian1.ToiLuc = New Date(2014, 2, 24, 0, 0, 0, 0)
         Me.CtrlTimKiemTheoThoiGian1.TuLuc = New Date(2014, 2, 24, 0, 0, 0, 0)
         '
-        'dgvMain
+        'gridControl
         '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.MaPhieu, Me.NgayLap, Me.LoaiPhieuNhap, Me.TenNhaCungCap, Me.CongTien, Me.ChietKhau, Me.DataGridViewTextBoxColumn1, Me.VAT, Me.DataGridViewTextBoxColumn2, Me.TongTienPhieuNhap, Me.TenNhanVien, Me.GhiChuDataGridViewTextBoxColumn})
-        Me.dgvMain.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.dgvMain.DataSource = Me.bsPhieuNhap
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Location = New System.Drawing.Point(0, 0)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 10
-        Me.dgvMain.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvMain.RowsDefaultCellStyle = DataGridViewCellStyle16
-        Me.dgvMain.Size = New System.Drawing.Size(1198, 353)
-        Me.dgvMain.TabIndex = 0
-        Me.dgvMain.VirtualMode = True
-        '
-        'STT
-        '
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.STT.DefaultCellStyle = DataGridViewCellStyle9
-        Me.STT.HeaderText = "STT"
-        Me.STT.MinimumWidth = 40
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 40
-        '
-        'MaPhieu
-        '
-        Me.MaPhieu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.MaPhieu.DataPropertyName = "MaPhieu"
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.MaPhieu.DefaultCellStyle = DataGridViewCellStyle10
-        Me.MaPhieu.HeaderText = "Mã Phiếu"
-        Me.MaPhieu.Name = "MaPhieu"
-        Me.MaPhieu.ReadOnly = True
-        Me.MaPhieu.Width = 86
-        '
-        'NgayLap
-        '
-        Me.NgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.NgayLap.DataPropertyName = "NgayLap"
-        DataGridViewCellStyle11.Format = "dd/MM/yyyy HH:mm"
-        Me.NgayLap.DefaultCellStyle = DataGridViewCellStyle11
-        Me.NgayLap.HeaderText = "Ngày Lập"
-        Me.NgayLap.Name = "NgayLap"
-        Me.NgayLap.ReadOnly = True
-        Me.NgayLap.Width = 86
-        '
-        'LoaiPhieuNhap
-        '
-        Me.LoaiPhieuNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.LoaiPhieuNhap.DataPropertyName = "LoaiPhieuNhap"
-        Me.LoaiPhieuNhap.HeaderText = "Loại"
-        Me.LoaiPhieuNhap.Name = "LoaiPhieuNhap"
-        Me.LoaiPhieuNhap.ReadOnly = True
-        Me.LoaiPhieuNhap.Width = 58
-        '
-        'TenNhaCungCap
-        '
-        Me.TenNhaCungCap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenNhaCungCap.DataPropertyName = "KhachHangNhaCungCap"
-        Me.TenNhaCungCap.HeaderText = "Khách hàng / NCC"
-        Me.TenNhaCungCap.Name = "TenNhaCungCap"
-        Me.TenNhaCungCap.ReadOnly = True
-        Me.TenNhaCungCap.Width = 135
-        '
-        'CongTien
-        '
-        Me.CongTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.CongTien.DataPropertyName = "CongTien"
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle12.Format = "N0"
-        Me.CongTien.DefaultCellStyle = DataGridViewCellStyle12
-        Me.CongTien.HeaderText = "Cộng Tiền"
-        Me.CongTien.Name = "CongTien"
-        Me.CongTien.ReadOnly = True
-        Me.CongTien.Width = 91
-        '
-        'ChietKhau
-        '
-        Me.ChietKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.ChietKhau.DataPropertyName = "ChietKhau"
-        Me.ChietKhau.HeaderText = "CK"
-        Me.ChietKhau.Name = "ChietKhau"
-        Me.ChietKhau.ReadOnly = True
-        Me.ChietKhau.Width = 51
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "TongTienChietKhau"
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle13.Format = "N0"
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle13
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Tiền CK"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 77
-        '
-        'VAT
-        '
-        Me.VAT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.VAT.DataPropertyName = "VAT"
-        Me.VAT.HeaderText = "VAT"
-        Me.VAT.Name = "VAT"
-        Me.VAT.ReadOnly = True
-        Me.VAT.Width = 58
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "TongTienVAT"
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle14.Format = "N0"
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle14
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Tiền VAT"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 84
-        '
-        'TongTienPhieuNhap
-        '
-        Me.TongTienPhieuNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TongTienPhieuNhap.DataPropertyName = "TongTienPhieuNhap"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle15.Format = "N0"
-        Me.TongTienPhieuNhap.DefaultCellStyle = DataGridViewCellStyle15
-        Me.TongTienPhieuNhap.HeaderText = "Thành Tiền"
-        Me.TongTienPhieuNhap.Name = "TongTienPhieuNhap"
-        Me.TongTienPhieuNhap.ReadOnly = True
-        Me.TongTienPhieuNhap.Width = 96
-        '
-        'TenNhanVien
-        '
-        Me.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenNhanVien.DataPropertyName = "TenNhanVien"
-        Me.TenNhanVien.HeaderText = "Tên NV"
-        Me.TenNhanVien.Name = "TenNhanVien"
-        Me.TenNhanVien.ReadOnly = True
-        Me.TenNhanVien.Width = 75
-        '
-        'GhiChuDataGridViewTextBoxColumn
-        '
-        Me.GhiChuDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.GhiChuDataGridViewTextBoxColumn.DataPropertyName = "GhiChu"
-        Me.GhiChuDataGridViewTextBoxColumn.HeaderText = "Ghi Chú"
-        Me.GhiChuDataGridViewTextBoxColumn.MinimumWidth = 150
-        Me.GhiChuDataGridViewTextBoxColumn.Name = "GhiChuDataGridViewTextBoxColumn"
-        Me.GhiChuDataGridViewTextBoxColumn.ReadOnly = True
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 0)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(1198, 378)
+        Me.gridControl.TabIndex = 7
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
         'ContextMenuStrip1
         '
@@ -447,116 +274,181 @@ Partial Class ctrlThongKePhieuNhap
         Me.InPhiếuNhậpToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.InPhiếuNhậpToolStripMenuItem.Text = "In phiếu nhập"
         '
-        'bsPhieuNhap
+        'gridViewData
         '
-        Me.bsPhieuNhap.DataSource = GetType(PhanMemBanHang.vwPhieuNhap)
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn9, Me.GridColumn3, Me.GridColumn2, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn13, Me.GridColumn8, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
         '
-        'ToolStrip1
+        'GridColumn1
         '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSoPhieuNhap, Me.ToolStripSeparator1, Me.ToolStripLabel1, Me.lblTongCongTien, Me.ToolStripSeparator9, Me.ToolStripLabel5, Me.lblTienCK, Me.ToolStripSeparator8, Me.ToolStripLabel4, Me.lblTienVAT, Me.ToolStripSeparator3, Me.ToolStripSeparator5, Me.ToolStripSeparator6, Me.ToolStripLabel6, Me.lblTongThanhTien})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 353)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.ShowItemToolTips = False
-        Me.ToolStrip1.Size = New System.Drawing.Size(1198, 25)
-        Me.ToolStrip1.TabIndex = 1
-        Me.ToolStrip1.Text = "ToolStrip1"
+        Me.GridColumn1.Caption = "Mã phiếu"
+        Me.GridColumn1.FieldName = "MaPhieu"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 120
         '
-        'lblSoPhieuNhap
+        'GridColumn9
         '
-        Me.lblSoPhieuNhap.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblSoPhieuNhap.Name = "lblSoPhieuNhap"
-        Me.lblSoPhieuNhap.Size = New System.Drawing.Size(51, 22)
-        Me.lblSoPhieuNhap.Text = "0 phiếu."
+        Me.GridColumn9.Caption = "Ngày lập"
+        Me.GridColumn9.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm"
+        Me.GridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn9.FieldName = "NgayLap"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 1
+        Me.GridColumn9.Width = 110
         '
-        'ToolStripSeparator1
+        'GridColumn3
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.GridColumn3.Caption = "Loại"
+        Me.GridColumn3.FieldName = "LoaiPhieuNhap"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        Me.GridColumn3.Width = 150
         '
-        'ToolStripLabel1
+        'GridColumn2
         '
-        Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(62, 22)
-        Me.ToolStripLabel1.Text = "Cộng tiền:"
+        Me.GridColumn2.Caption = "Khách hàng/Nhà cung cấp"
+        Me.GridColumn2.FieldName = "KhachHangNhaCungCap"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 3
+        Me.GridColumn2.Width = 250
         '
-        'lblTongCongTien
+        'GridColumn4
         '
-        Me.lblTongCongTien.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTongCongTien.Name = "lblTongCongTien"
-        Me.lblTongCongTien.Size = New System.Drawing.Size(22, 22)
-        Me.lblTongCongTien.Text = "0đ"
+        Me.GridColumn4.AppearanceCell.ForeColor = System.Drawing.Color.Red
+        Me.GridColumn4.AppearanceCell.Options.UseForeColor = True
+        Me.GridColumn4.Caption = "Cộng tiền"
+        Me.GridColumn4.DisplayFormat.FormatString = "###,##0"
+        Me.GridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn4.FieldName = "CongTien"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn4.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CongTien", "{0:n0}")})
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 4
+        Me.GridColumn4.Width = 120
         '
-        'ToolStripSeparator9
+        'GridColumn5
         '
-        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 25)
+        Me.GridColumn5.Caption = "CK"
+        Me.GridColumn5.DisplayFormat.FormatString = "##0.##"
+        Me.GridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn5.FieldName = "ChietKhau"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 5
+        Me.GridColumn5.Width = 60
         '
-        'ToolStripLabel5
+        'GridColumn6
         '
-        Me.ToolStripLabel5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripLabel5.Name = "ToolStripLabel5"
-        Me.ToolStripLabel5.Size = New System.Drawing.Size(79, 22)
-        Me.ToolStripLabel5.Text = "Tổng tiền CK:"
+        Me.GridColumn6.AppearanceCell.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GridColumn6.AppearanceCell.Options.UseForeColor = True
+        Me.GridColumn6.Caption = "Tiền CK"
+        Me.GridColumn6.DisplayFormat.FormatString = "###,##0"
+        Me.GridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn6.FieldName = "TongTienChietKhau"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn6.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTienChietKhau", "{0:n0}")})
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 6
+        Me.GridColumn6.Width = 100
         '
-        'lblTienCK
+        'GridColumn7
         '
-        Me.lblTienCK.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTienCK.Name = "lblTienCK"
-        Me.lblTienCK.Size = New System.Drawing.Size(22, 22)
-        Me.lblTienCK.Text = "0đ"
+        Me.GridColumn7.Caption = "VAT"
+        Me.GridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn7.FieldName = "VAT"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 7
+        Me.GridColumn7.Width = 60
         '
-        'ToolStripSeparator8
+        'GridColumn13
         '
-        Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 25)
+        Me.GridColumn13.AppearanceCell.ForeColor = System.Drawing.Color.Green
+        Me.GridColumn13.AppearanceCell.Options.UseForeColor = True
+        Me.GridColumn13.Caption = "Tiền Thuế"
+        Me.GridColumn13.DisplayFormat.FormatString = "###,##0"
+        Me.GridColumn13.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn13.FieldName = "TongTienVAT"
+        Me.GridColumn13.Name = "GridColumn13"
+        Me.GridColumn13.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTienVAT", "{0:n0}")})
+        Me.GridColumn13.Visible = True
+        Me.GridColumn13.VisibleIndex = 8
+        Me.GridColumn13.Width = 120
         '
-        'ToolStripLabel4
+        'GridColumn8
         '
-        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(86, 22)
-        Me.ToolStripLabel4.Text = "Tổng tiền VAT:"
+        Me.GridColumn8.AppearanceCell.ForeColor = System.Drawing.Color.Red
+        Me.GridColumn8.AppearanceCell.Options.UseForeColor = True
+        Me.GridColumn8.Caption = "Thành tiền"
+        Me.GridColumn8.DisplayFormat.FormatString = "###,##0"
+        Me.GridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.GridColumn8.FieldName = "TongTienPhieuNhap"
+        Me.GridColumn8.Name = "GridColumn8"
+        Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn8.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTienPhieuNhap", "{0:n0}")})
+        Me.GridColumn8.Visible = True
+        Me.GridColumn8.VisibleIndex = 9
+        Me.GridColumn8.Width = 120
         '
-        'lblTienVAT
+        'GridColumn10
         '
-        Me.lblTienVAT.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTienVAT.Name = "lblTienVAT"
-        Me.lblTienVAT.Size = New System.Drawing.Size(22, 22)
-        Me.lblTienVAT.Text = "0đ"
+        Me.GridColumn10.Caption = "Nhân viên lập"
+        Me.GridColumn10.FieldName = "TenNhanVien"
+        Me.GridColumn10.Name = "GridColumn10"
+        Me.GridColumn10.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn10.Visible = True
+        Me.GridColumn10.VisibleIndex = 10
+        Me.GridColumn10.Width = 100
         '
-        'ToolStripSeparator3
+        'GridColumn11
         '
-        Me.ToolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        Me.GridColumn11.Caption = "Ghi chú"
+        Me.GridColumn11.FieldName = "GhiChu"
+        Me.GridColumn11.Name = "GridColumn11"
+        Me.GridColumn11.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn11.Visible = True
+        Me.GridColumn11.VisibleIndex = 11
+        Me.GridColumn11.Width = 300
         '
-        'ToolStripSeparator5
+        'GridColumn12
         '
-        Me.ToolStripSeparator5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 25)
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 25)
-        '
-        'ToolStripLabel6
-        '
-        Me.ToolStripLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(61, 22)
-        Me.ToolStripLabel6.Text = "Tổng tiền:"
-        '
-        'lblTongThanhTien
-        '
-        Me.lblTongThanhTien.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTongThanhTien.Name = "lblTongThanhTien"
-        Me.lblTongThanhTien.Size = New System.Drawing.Size(22, 22)
-        Me.lblTongThanhTien.Text = "0đ"
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'lblSoPhieuNhap222
         '
@@ -596,6 +488,15 @@ Partial Class ctrlThongKePhieuNhap
         Me.PhiếuXuấtKkhoToolStripMenuItem.Size = New System.Drawing.Size(102, 25)
         Me.PhiếuXuấtKkhoToolStripMenuItem.Text = "Phiếu nhập kho"
         '
+        'btnIn
+        '
+        Me.btnIn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.btnIn.Image = CType(resources.GetObject("btnIn.Image"), System.Drawing.Image)
+        Me.btnIn.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnIn.Name = "btnIn"
+        Me.btnIn.Size = New System.Drawing.Size(37, 22)
+        Me.btnIn.Text = "In"
+        '
         'btnXemNhanh
         '
         Me.btnXemNhanh.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
@@ -622,15 +523,6 @@ Partial Class ctrlThongKePhieuNhap
         Me.btnXoaPhieu.Name = "btnXoaPhieu"
         Me.btnXoaPhieu.Size = New System.Drawing.Size(47, 22)
         Me.btnXoaPhieu.Text = "Xóa"
-        '
-        'btnIn
-        '
-        Me.btnIn.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnIn.Image = CType(resources.GetObject("btnIn.Image"), System.Drawing.Image)
-        Me.btnIn.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnIn.Name = "btnIn"
-        Me.btnIn.Size = New System.Drawing.Size(37, 22)
-        Me.btnIn.Text = "In"
         '
         'btnInPhieu
         '
@@ -666,17 +558,14 @@ Partial Class ctrlThongKePhieuNhap
         Me.KryptonSplitContainer1.Panel1.ResumeLayout(False)
         CType(Me.KryptonSplitContainer1.Panel2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonSplitContainer1.Panel2.ResumeLayout(False)
-        Me.KryptonSplitContainer1.Panel2.PerformLayout()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonSplitContainer1.ResumeLayout(False)
         CType(Me.cmbTheoKhachHang, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbTheoLoaiPhieuNhap, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbNhanVien, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.bsPhieuNhap, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
         Me.ResumeLayout(False)
@@ -686,19 +575,13 @@ Partial Class ctrlThongKePhieuNhap
     Friend WithEvents KryptonSplitContainer1 As ComponentFactory.Krypton.Toolkit.KryptonSplitContainer
     Friend WithEvents CtrlTimKiemTheoThoiGian1 As TimKiemTheoThoiGian.ctrlTimKiemTheoThoiGian
     Friend WithEvents btnTimKiem As ComponentFactory.Krypton.Toolkit.KryptonButton
-    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
-    Friend WithEvents lblTongCongTien As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents lblSoPhieuNhap222 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents bsPhieuNhap As System.Windows.Forms.BindingSource
     Friend WithEvents NgayTaoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TenDangNhapDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents LaPhieuNhap As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents cmbNhanVien As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents btnCapNhatNhanVien As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
     Friend WithEvents chkTheoNhanVien As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
-    Friend WithEvents lblSoPhieuNhap As System.Windows.Forms.ToolStripLabel
     Friend WithEvents cmbTheoLoaiPhieuNhap As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents btnCapNhatLoaiPhieuNhap As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
     Friend WithEvents chkTheoLoaiPhieuNhap As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
@@ -706,32 +589,7 @@ Partial Class ctrlThongKePhieuNhap
     Friend WithEvents cmbTheoKhachHang As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents btnCapNhatKhachHang As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
     Friend WithEvents chkTheoKhachHang As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
-    Friend WithEvents ToolStripLabel1 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel5 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents lblTienCK As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator8 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel4 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents lblTienVAT As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator9 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel6 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents lblTongThanhTien As System.Windows.Forms.ToolStripLabel
     Friend WithEvents btnTimKiemKhachHang As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
-    Friend WithEvents STT As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MaPhieu As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NgayLap As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents LoaiPhieuNhap As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenNhaCungCap As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CongTien As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ChietKhau As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents VAT As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TongTienPhieuNhap As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenNhanVien As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GhiChuDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents btnThemPhieuNhap As ToolStripButton
@@ -748,4 +606,19 @@ Partial Class ctrlThongKePhieuNhap
     Friend WithEvents btnInPhieu As ToolStripDropDownButton
     Friend WithEvents NhậpCóKýHiệuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PhiếuNhậpKhoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

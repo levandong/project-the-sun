@@ -41,7 +41,6 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.ChiTiếtCácPhiếuYêuCầuXuấtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.bsSanPhanCanNhap = New System.Windows.Forms.BindingSource(Me.components)
         Me.grdViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.colSTT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colChon = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colMaSanPham = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colTenSanPham = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -70,8 +69,6 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.TenKhachHang = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenCongTrinh = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fill = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.lblSoLuong = New System.Windows.Forms.ToolStripLabel()
         Me.KryptonHeader1 = New ComponentFactory.Krypton.Toolkit.KryptonHeader()
         Me.btnCapNhatLaiSoThuTu = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.btnTinhToanTonKhoHienTai = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
@@ -86,19 +83,17 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         CType(Me.chkActiveItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.chkSystemItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'KryptonPanel1
         '
         Me.KryptonPanel1.Controls.Add(Me.grdData)
         Me.KryptonPanel1.Controls.Add(Me.dgvMain)
-        Me.KryptonPanel1.Controls.Add(Me.ToolStrip1)
         Me.KryptonPanel1.Controls.Add(Me.KryptonHeader1)
         Me.KryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonPanel1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonPanel1.Name = "KryptonPanel1"
-        Me.KryptonPanel1.Size = New System.Drawing.Size(953, 255)
+        Me.KryptonPanel1.Size = New System.Drawing.Size(1145, 438)
         Me.KryptonPanel1.TabIndex = 0
         '
         'grdData
@@ -112,7 +107,7 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.grdData.MainView = Me.grdViewData
         Me.grdData.Name = "grdData"
         Me.grdData.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.chkIsSelect, Me.chkActiveItem, Me.chkSystemItem})
-        Me.grdData.Size = New System.Drawing.Size(953, 199)
+        Me.grdData.Size = New System.Drawing.Size(1145, 407)
         Me.grdData.TabIndex = 3
         Me.grdData.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.grdViewData})
         '
@@ -163,33 +158,30 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         '
         Me.grdViewData.Appearance.FocusedRow.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grdViewData.Appearance.FocusedRow.Options.UseFont = True
+        Me.grdViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grdViewData.Appearance.FooterPanel.Options.UseFont = True
         Me.grdViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grdViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.grdViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.grdViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.grdViewData.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.grdViewData.Appearance.Preview.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grdViewData.Appearance.Preview.Options.UseFont = True
         Me.grdViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grdViewData.Appearance.Row.Options.UseFont = True
-        Me.grdViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colSTT, Me.colChon, Me.colMaSanPham, Me.colTenSanPham, Me.colTonKho, Me.colTonKhoToiThieu, Me.colSoLuongChuanBiNhap, Me.colSoLuongChuanBiXuat, Me.colSoLuongCan, Me.colSoLuongMua, Me.colTenKhachHang, Me.colTenCongTrinh})
+        Me.grdViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colChon, Me.colMaSanPham, Me.colTenSanPham, Me.colTonKho, Me.colTonKhoToiThieu, Me.colSoLuongChuanBiNhap, Me.colSoLuongChuanBiXuat, Me.colSoLuongCan, Me.colSoLuongMua, Me.colTenKhachHang, Me.colTenCongTrinh})
         Me.grdViewData.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.grdViewData.GridControl = Me.grdData
+        Me.grdViewData.IndicatorWidth = 50
         Me.grdViewData.Name = "grdViewData"
         Me.grdViewData.OptionsFilter.FilterEditorUseMenuForOperandsAndOperators = False
         Me.grdViewData.OptionsFilter.ShowAllTableValuesInCheckedFilterPopup = False
         Me.grdViewData.OptionsNavigation.UseTabKey = False
+        Me.grdViewData.OptionsView.ColumnAutoWidth = False
         Me.grdViewData.OptionsView.ShowAutoFilterRow = True
         Me.grdViewData.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
         Me.grdViewData.OptionsView.ShowFooter = True
         Me.grdViewData.OptionsView.ShowGroupPanel = False
-        '
-        'colSTT
-        '
-        Me.colSTT.Caption = "STT"
-        Me.colSTT.Name = "colSTT"
-        Me.colSTT.OptionsColumn.AllowEdit = False
-        Me.colSTT.OptionsColumn.ReadOnly = True
-        Me.colSTT.Visible = True
-        Me.colSTT.VisibleIndex = 0
-        Me.colSTT.Width = 30
         '
         'colChon
         '
@@ -197,19 +189,22 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colChon.FieldName = "Chon"
         Me.colChon.Name = "colChon"
         Me.colChon.Visible = True
-        Me.colChon.VisibleIndex = 1
-        Me.colChon.Width = 35
+        Me.colChon.VisibleIndex = 0
+        Me.colChon.Width = 40
         '
         'colMaSanPham
         '
-        Me.colMaSanPham.Caption = "Mã sản phâm"
+        Me.colMaSanPham.AppearanceHeader.Options.UseTextOptions = True
+        Me.colMaSanPham.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.colMaSanPham.Caption = "Mã sản phẩm"
         Me.colMaSanPham.FieldName = "MaSanPham"
         Me.colMaSanPham.Name = "colMaSanPham"
         Me.colMaSanPham.OptionsColumn.AllowEdit = False
         Me.colMaSanPham.OptionsColumn.ReadOnly = True
+        Me.colMaSanPham.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.colMaSanPham.Visible = True
-        Me.colMaSanPham.VisibleIndex = 2
-        Me.colMaSanPham.Width = 58
+        Me.colMaSanPham.VisibleIndex = 1
+        Me.colMaSanPham.Width = 120
         '
         'colTenSanPham
         '
@@ -220,8 +215,8 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colTenSanPham.OptionsColumn.ReadOnly = True
         Me.colTenSanPham.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.colTenSanPham.Visible = True
-        Me.colTenSanPham.VisibleIndex = 3
-        Me.colTenSanPham.Width = 150
+        Me.colTenSanPham.VisibleIndex = 2
+        Me.colTenSanPham.Width = 300
         '
         'colTonKho
         '
@@ -230,9 +225,10 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colTonKho.Name = "colTonKho"
         Me.colTonKho.OptionsColumn.AllowEdit = False
         Me.colTonKho.OptionsColumn.ReadOnly = True
+        Me.colTonKho.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TonKho", "{0:n0}")})
         Me.colTonKho.Visible = True
-        Me.colTonKho.VisibleIndex = 4
-        Me.colTonKho.Width = 58
+        Me.colTonKho.VisibleIndex = 3
+        Me.colTonKho.Width = 90
         '
         'colTonKhoToiThieu
         '
@@ -241,9 +237,10 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colTonKhoToiThieu.Name = "colTonKhoToiThieu"
         Me.colTonKhoToiThieu.OptionsColumn.AllowEdit = False
         Me.colTonKhoToiThieu.OptionsColumn.ReadOnly = True
+        Me.colTonKhoToiThieu.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TonKhoToiThieu", "{0:n0}")})
         Me.colTonKhoToiThieu.Visible = True
-        Me.colTonKhoToiThieu.VisibleIndex = 5
-        Me.colTonKhoToiThieu.Width = 58
+        Me.colTonKhoToiThieu.VisibleIndex = 4
+        Me.colTonKhoToiThieu.Width = 90
         '
         'colSoLuongChuanBiNhap
         '
@@ -252,9 +249,10 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colSoLuongChuanBiNhap.Name = "colSoLuongChuanBiNhap"
         Me.colSoLuongChuanBiNhap.OptionsColumn.AllowEdit = False
         Me.colSoLuongChuanBiNhap.OptionsColumn.ReadOnly = True
+        Me.colSoLuongChuanBiNhap.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuongChuanBiNhap", "{0:n0}")})
         Me.colSoLuongChuanBiNhap.Visible = True
-        Me.colSoLuongChuanBiNhap.VisibleIndex = 6
-        Me.colSoLuongChuanBiNhap.Width = 58
+        Me.colSoLuongChuanBiNhap.VisibleIndex = 5
+        Me.colSoLuongChuanBiNhap.Width = 90
         '
         'colSoLuongChuanBiXuat
         '
@@ -263,9 +261,10 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colSoLuongChuanBiXuat.Name = "colSoLuongChuanBiXuat"
         Me.colSoLuongChuanBiXuat.OptionsColumn.AllowEdit = False
         Me.colSoLuongChuanBiXuat.OptionsColumn.ReadOnly = True
+        Me.colSoLuongChuanBiXuat.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuongChuanBiXuat", "{0:n0}")})
         Me.colSoLuongChuanBiXuat.Visible = True
-        Me.colSoLuongChuanBiXuat.VisibleIndex = 7
-        Me.colSoLuongChuanBiXuat.Width = 58
+        Me.colSoLuongChuanBiXuat.VisibleIndex = 6
+        Me.colSoLuongChuanBiXuat.Width = 90
         '
         'colSoLuongCan
         '
@@ -274,18 +273,20 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colSoLuongCan.Name = "colSoLuongCan"
         Me.colSoLuongCan.OptionsColumn.AllowEdit = False
         Me.colSoLuongCan.OptionsColumn.ReadOnly = True
+        Me.colSoLuongCan.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuongCan", "{0:n0}")})
         Me.colSoLuongCan.Visible = True
-        Me.colSoLuongCan.VisibleIndex = 8
-        Me.colSoLuongCan.Width = 58
+        Me.colSoLuongCan.VisibleIndex = 7
+        Me.colSoLuongCan.Width = 90
         '
         'colSoLuongMua
         '
         Me.colSoLuongMua.Caption = "SL Mua"
         Me.colSoLuongMua.FieldName = "SoLuongMua"
         Me.colSoLuongMua.Name = "colSoLuongMua"
+        Me.colSoLuongMua.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuongMua", "{0:n0}")})
         Me.colSoLuongMua.Visible = True
-        Me.colSoLuongMua.VisibleIndex = 9
-        Me.colSoLuongMua.Width = 58
+        Me.colSoLuongMua.VisibleIndex = 8
+        Me.colSoLuongMua.Width = 90
         '
         'colTenKhachHang
         '
@@ -296,8 +297,8 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colTenKhachHang.OptionsColumn.ReadOnly = True
         Me.colTenKhachHang.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.colTenKhachHang.Visible = True
-        Me.colTenKhachHang.VisibleIndex = 10
-        Me.colTenKhachHang.Width = 118
+        Me.colTenKhachHang.VisibleIndex = 9
+        Me.colTenKhachHang.Width = 200
         '
         'colTenCongTrinh
         '
@@ -308,8 +309,8 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.colTenCongTrinh.OptionsColumn.ReadOnly = True
         Me.colTenCongTrinh.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.colTenCongTrinh.Visible = True
-        Me.colTenCongTrinh.VisibleIndex = 11
-        Me.colTenCongTrinh.Width = 196
+        Me.colTenCongTrinh.VisibleIndex = 10
+        Me.colTenCongTrinh.Width = 200
         '
         'chkIsSelect
         '
@@ -342,7 +343,7 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.dgvMain.Location = New System.Drawing.Point(0, 31)
         Me.dgvMain.Name = "dgvMain"
         Me.dgvMain.RowHeadersWidth = 5
-        Me.dgvMain.Size = New System.Drawing.Size(953, 199)
+        Me.dgvMain.Size = New System.Drawing.Size(1145, 407)
         Me.dgvMain.TabIndex = 1
         Me.dgvMain.VirtualMode = True
         '
@@ -466,30 +467,13 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.Fill.HeaderText = " "
         Me.Fill.Name = "Fill"
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSoLuong})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 230)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(953, 25)
-        Me.ToolStrip1.TabIndex = 2
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'lblSoLuong
-        '
-        Me.lblSoLuong.Name = "lblSoLuong"
-        Me.lblSoLuong.Size = New System.Drawing.Size(13, 22)
-        Me.lblSoLuong.Text = "0"
-        '
         'KryptonHeader1
         '
         Me.KryptonHeader1.ButtonSpecs.AddRange(New ComponentFactory.Krypton.Toolkit.ButtonSpecAny() {Me.btnCapNhatLaiSoThuTu, Me.btnTinhToanTonKhoHienTai, Me.btnRefresh})
         Me.KryptonHeader1.Dock = System.Windows.Forms.DockStyle.Top
         Me.KryptonHeader1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeader1.Name = "KryptonHeader1"
-        Me.KryptonHeader1.Size = New System.Drawing.Size(953, 31)
+        Me.KryptonHeader1.Size = New System.Drawing.Size(1145, 31)
         Me.KryptonHeader1.TabIndex = 0
         Me.KryptonHeader1.Values.Description = ""
         Me.KryptonHeader1.Values.Heading = "Chuẩn bị hàng hóa cho phiếu đặt hàng"
@@ -520,7 +504,7 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.KryptonPanel1)
         Me.Name = "ctrlNghiepVuChuanBiHangHoa"
-        Me.Size = New System.Drawing.Size(953, 255)
+        Me.Size = New System.Drawing.Size(1145, 438)
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonPanel1.ResumeLayout(False)
         Me.KryptonPanel1.PerformLayout()
@@ -532,8 +516,6 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
         CType(Me.chkActiveItem, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.chkSystemItem, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -541,8 +523,6 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
     Friend WithEvents btnRefresh As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
     Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
     Friend WithEvents bsSanPhanCanNhap As BindingSource
-    Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents lblSoLuong As ToolStripLabel
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents ChọnTấtCảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents XToolStripMenuItem As ToolStripMenuItem
@@ -570,7 +550,6 @@ Partial Class ctrlNghiepVuChuanBiHangHoa
     Private WithEvents chkIsSelect As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Private WithEvents chkActiveItem As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Private WithEvents chkSystemItem As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
-    Friend WithEvents colSTT As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colChon As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colSoLuongMua As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colTenCongTrinh As DevExpress.XtraGrid.Columns.GridColumn

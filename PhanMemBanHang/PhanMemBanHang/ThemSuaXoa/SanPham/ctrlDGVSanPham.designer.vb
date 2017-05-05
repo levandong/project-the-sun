@@ -101,6 +101,8 @@ Partial Class ctrlDGVSanPham
         '
         'gridViewData
         '
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True

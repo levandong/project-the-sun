@@ -29,10 +29,7 @@
     Private Sub ctrlThemSuaXoaSanPham_Moi_Load(sender As Object, e As EventArgs) Handles Me.Load
         btnCapNhatLoaiSanPham_Click(Nothing, Nothing)
         With CtrlDGVLoaiSanPham1
-            .colMaLoaiSanPham.Visible = True
             .gridViewData.OptionsView.ShowIndicator = False
-            .colMoTa.Visible = False
-            '.Chon.Visible = True
         End With
 
         With CtrlDGVSanPham1
@@ -50,9 +47,8 @@
         For Each itm In lst.ToList
             itm.Chon = ChonTatCa
         Next
-        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
-        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
-        'CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
+        CtrlDGVLoaiSanPham_LoaiSanPhamThayDoi()
 
         If ChonTatCa Then
             btnChonTatCa.Image = My.Resources.unchecked
@@ -145,18 +141,28 @@
         Dim LoaiSanPham As tbLoaiSanPham = CtrlDGVLoaiSanPham1.gridViewData.GetRow(CtrlDGVLoaiSanPham1.gridViewData.FocusedRowHandle)
 
         Dim key As String = mdlGlobals.BoDauTiengViet(txtTimKiemSanPham.Text.Trim.ToLower)
+        Dim lstID As New List(Of Integer)
+
         'Dim lstID = From itm In CtrlDGVLoaiSanPham1.gridControl.DataSource
         '            Where itm.Chon = True
         '            Select itm.id
-        'If lstID.Count = 0 Then
-        '    rlsSanPham = (From itm In dt.vwSanPhams
-        '                  Where LoaiSanPham.id = itm.idLoaiSanPham
-        '                  Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
-        'Else
-        '    rlsSanPham = (From itm In dt.vwSanPhams
-        '                  Where lstID.Contains(itm.idLoaiSanPham)
-        '                  Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
-        'End If
+        For i As Integer = 0 To CtrlDGVLoaiSanPham1.gridViewData.DataRowCount - 1
+            Dim Loai As tbLoaiSanPham = CtrlDGVLoaiSanPham1.gridViewData.GetRow(i)
+            If Loai.Chon = True Then
+                lstID.Add(Loai.id)
+            End If
+        Next
+
+
+        If lstID.Count = 0 Then
+            rlsSanPham = (From itm In dt.vwSanPhams
+                          Where LoaiSanPham.id = itm.idLoaiSanPham
+                          Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
+        Else
+            rlsSanPham = (From itm In dt.vwSanPhams
+                          Where lstID.Contains(itm.idLoaiSanPham)
+                          Select itm Order By itm.TenLoaiSanPham, itm.MaSanPham)
+        End If
 
         CtrlDGVSanPham1.gridControl.DataSource = rlsSanPham
         CtrlDGVSanPham1.gridViewData.RefreshData()

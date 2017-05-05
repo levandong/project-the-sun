@@ -722,4 +722,21 @@
             End If
         End If
     End Sub
+
+    Dim ChonTatCa As Boolean = False
+    Private Sub btnChonTatCa_Click(sender As Object, e As EventArgs) Handles btnChonTatCa.Click
+        ChonTatCa = Not ChonTatCa
+        For Each itm In rlsThongKe.ToList
+            itm.Chon = ChonTatCa
+        Next
+        gridViewData.RefreshData()
+
+        If ChonTatCa Then
+            btnChonTatCa.Image = My.Resources.unchecked
+            btnChonTatCa.Text = "Bỏ chọn tất cả"
+        Else
+            btnChonTatCa.Image = My.Resources.Checked
+            btnChonTatCa.Text = "Chọn tất cả"
+        End If
+    End Sub
 End Class

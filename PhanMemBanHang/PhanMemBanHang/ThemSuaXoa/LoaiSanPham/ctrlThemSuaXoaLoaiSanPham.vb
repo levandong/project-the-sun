@@ -86,6 +86,7 @@
     Private Sub ctrlThemXoaSuaLoaiSanPham_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isLoad = True
         CapNhat()
+        CtrlDGVLoaiSanPham1.colChon.Visible = False
     End Sub
 
     Private Sub CapNhat()

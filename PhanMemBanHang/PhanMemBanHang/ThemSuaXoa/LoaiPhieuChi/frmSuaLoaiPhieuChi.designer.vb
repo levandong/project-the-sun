@@ -27,7 +27,7 @@ Partial Class frmSuaLoaiPhieuChi
         Me.btnThem = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.txtGhiChu = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.KryptonLabel12 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
-        Me.txtLoaiPhieuNhap = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.txtLoaiPhieuChi = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.KryptonLabel2 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
@@ -39,7 +39,7 @@ Partial Class frmSuaLoaiPhieuChi
         Me.KryptonPanel1.Controls.Add(Me.btnThem)
         Me.KryptonPanel1.Controls.Add(Me.txtGhiChu)
         Me.KryptonPanel1.Controls.Add(Me.KryptonLabel12)
-        Me.KryptonPanel1.Controls.Add(Me.txtLoaiPhieuNhap)
+        Me.KryptonPanel1.Controls.Add(Me.txtLoaiPhieuChi)
         Me.KryptonPanel1.Controls.Add(Me.KryptonLabel2)
         Me.KryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonPanel1.Location = New System.Drawing.Point(0, 0)
@@ -82,13 +82,13 @@ Partial Class frmSuaLoaiPhieuChi
         Me.KryptonLabel12.TabIndex = 52
         Me.KryptonLabel12.Values.Text = "Ghi Chú"
         '
-        'txtLoaiPhieuNhap
+        'txtLoaiPhieuChi
         '
-        Me.txtLoaiPhieuNhap.Location = New System.Drawing.Point(117, 4)
-        Me.txtLoaiPhieuNhap.Name = "txtLoaiPhieuNhap"
-        Me.txtLoaiPhieuNhap.Size = New System.Drawing.Size(282, 23)
-        Me.txtLoaiPhieuNhap.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.txtLoaiPhieuNhap.TabIndex = 0
+        Me.txtLoaiPhieuChi.Location = New System.Drawing.Point(117, 4)
+        Me.txtLoaiPhieuChi.Name = "txtLoaiPhieuChi"
+        Me.txtLoaiPhieuChi.Size = New System.Drawing.Size(282, 26)
+        Me.txtLoaiPhieuChi.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.txtLoaiPhieuChi.TabIndex = 0
         '
         'KryptonLabel2
         '
@@ -125,6 +125,6 @@ Partial Class frmSuaLoaiPhieuChi
     Friend WithEvents btnThem As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents txtGhiChu As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Friend WithEvents KryptonLabel12 As ComponentFactory.Krypton.Toolkit.KryptonLabel
-    Friend WithEvents txtLoaiPhieuNhap As ComponentFactory.Krypton.Toolkit.KryptonTextBox
+    Friend WithEvents txtLoaiPhieuChi As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Friend WithEvents KryptonLabel2 As ComponentFactory.Krypton.Toolkit.KryptonLabel
 End Class

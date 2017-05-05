@@ -22,10 +22,10 @@
             ModeTimKiem = 3 ' Tim kiem tat ca
         End If
 
-        
+
         Dim rlsLoai = From itm In lst.ToList
-                  Where itm.Chon = True
-                  Select itm.id
+                      Where itm.Chon = True
+                      Select itm.id
 
         Dim rls
         If rlsLoai.Count > 0 Then
@@ -78,7 +78,7 @@
         End With
 
         With CtrlDGVLoaiSanPham1
-            '.Chon.Visible = True
+            .colChon.Visible = True
             .gridViewData.OptionsView.ShowIndicator = False
             .colMaLoaiSanPham.Visible = False
             .colMoTa.Visible = False
@@ -95,7 +95,7 @@
         For Each itm In lst.ToList
             itm.Chon = ChonTatCa
         Next
-        'CtrlDGVLoaiSanPham1.bsLoaiSanPham.EndEdit()
+        CtrlDGVLoaiSanPham1.gridViewData.RefreshData()
         'CtrlDGVLoaiSanPham1.bsLoaiSanPham.ResetBindings(True)
         'CtrlDGVLoaiSanPham1.dgvLoaiSanPham.Refresh()
 

@@ -66,21 +66,8 @@
                   Where itm.SoPhieu <> 0
                   Order By itm.NgayLap
 
-        bsPhieuNhap.DataSource = rls
-
-        If bsPhieuNhap.Count > 0 Then
-            lblSoPhieuNhap.Text = bsPhieuNhap.Count.ToString + " phiếu."
-            lblTongCongTien.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.CongTien)) + "đ"
-            lblTienCK.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienChietKhau)) + "đ"
-            lblTienVAT.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienVAT)) + "đ"
-            lblTongThanhTien.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienPhieuNhap)) + "đ"
-        Else
-            lblSoPhieuNhap.Text = "0 phiếu."
-            lblTongCongTien.Text = "0đ"
-            lblTienCK.Text = "0đ"
-            lblTienVAT.Text = "0đ"
-            lblTongThanhTien.Text = "0đ"
-        End If
+        gridControl.DataSource = rls
+        gridViewData.RefreshData()
     End Sub
 
     Private Sub ctrlThongKePhieuNhapNguyenLieu_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -91,10 +78,11 @@
         btnTimKiem_Click(Nothing, Nothing)
     End Sub
     Event ThemTabpageMoi(TenHienThi As String, Ten As String, control As Control)
+
 #Region "SỬA - XÓA PHIẾU NHẬP"
     Private Sub btnSuaPhieu_Click(sender As Object, e As EventArgs) Handles btnSuaPhieu.Click
-        If bsPhieuNhap.Current Is Nothing Then Exit Sub
-        Dim vwPhieuNhap As vwPhieuNhap = bsPhieuNhap.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vwPhieuNhap As vwPhieuNhap = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         Dim PhieuNhap = dt.tbPhieuNhaps.First(Function(s) s.id = vwPhieuNhap.id)
         Dim ctrlPhieuNhap As New ctrlSuaPhieuNhap
         ctrlPhieuNhap.SuaPhieuBaoGia(PhieuNhap)
@@ -102,8 +90,8 @@
     End Sub
 
     Private Sub btnXoaPhieu_Click(sender As Object, e As EventArgs) Handles btnXoaPhieu.Click
-        If bsPhieuNhap.Current Is Nothing Then Exit Sub
-        Dim vwPhieuNhap As vwPhieuNhap = bsPhieuNhap.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vwPhieuNhap As vwPhieuNhap = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If frmMessageBox.Show("Bạn muốn xóa phiếu " + vwPhieuNhap.MaPhieu + "?" + vbNewLine + "Và cập nhật số lượng vào kho?", "Xác nhận") = DialogResult.No Then Exit Sub
         Dim PhieuNhap = dt.tbPhieuNhaps.First(Function(s) s.id = vwPhieuNhap.id)
         Dim rls = From itm In dt.tbChiTietPhieuNhaps
@@ -148,11 +136,11 @@
     'End Sub
 
     Private Sub btnIn_Click(sender As Object, e As EventArgs) Handles btnIn.Click
-        If bsPhieuNhap.Count = 0 Then Exit Sub
+        If gridViewData.DataRowCount = 0 Then Exit Sub
         Dim frm As New frmInDanhSach
         frm.rptName = ".\Report\PhieuNhap\rptDanhSachPhieuNhap.rdlc"
         frm.dsName = "dsPhieuNhap"
-        frm._bs = bsPhieuNhap
+        frm._bs.DataSource = gridControl.DataSource
         If TuNgay.Date = DenNgay.Date Then
             frm.ThoiGianTimKiem = "Ngày " + String.Format("{0:dd/MM/yyyy}", TuNgay)
         Else
@@ -187,9 +175,15 @@
 #End Region
 
 #Region "KHÁC"
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
 
@@ -219,8 +213,8 @@
 
 #Region "THANH TOÁN PHIẾU NHẬP"
     Private Sub ThanhToánPhiếuNhậpToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        If bsPhieuNhap.Current IsNot Nothing Then
-            Dim vPhieuNhap As vwPhieuNhap = bsPhieuNhap.Current
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim vPhieuNhap As vwPhieuNhap = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             Dim PhieuNhap = dt.tbPhieuNhaps.Single(Function(s) s.id = vPhieuNhap.id)
             dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, PhieuNhap)
             PhieuNhap.isThanhToan = True
@@ -228,18 +222,8 @@
         End If
     End Sub
 
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsPhieuNhap.Position = e.RowIndex
-            End If
-        End If
-    End Sub
 
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
         btnSuaPhieu_Click(Nothing, Nothing)
     End Sub
 
@@ -258,16 +242,18 @@
 
 
     Private Sub NhậpCóKýHiệuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NhậpCóKýHiệuToolStripMenuItem.Click
-        If bsPhieuNhap.Current Is Nothing Then Exit Sub
-        Dim vPhieuXuat As vwPhieuNhap = bsPhieuNhap.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuNhap = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         TaoPhieuNhapExcel1(Application.StartupPath + "\UyNhiemChi\PhieuNhapKyHieuKho.xlsx", vPhieuXuat, True)
     End Sub
 
     Private Sub PhiếuXuấtKkhoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PhiếuNhậpKhoToolStripMenuItem.Click
-        If bsPhieuNhap.Current Is Nothing Then Exit Sub
-        Dim vPhieuXuat As vwPhieuNhap = bsPhieuNhap.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuNhap = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         TaoPhieuNhapExcel1(Application.StartupPath + "\UyNhiemChi\PhieuNhap1.xlsx", vPhieuXuat, False)
     End Sub
+
+
 
 #End Region
 End Class
