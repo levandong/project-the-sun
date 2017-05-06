@@ -101,48 +101,26 @@
         If (chkTheoHinhThucThanhToan.Checked) Then
             lst = From itm In lstHoaDon.ToList
                   Where itm.HinhThucThanhToan = cmbHinhThucThanhToan.Text.Trim
-            bsHoaDon.DataSource = lst
+            gridControl.DataSource = lst
         Else
-            bsHoaDon.DataSource = lstHoaDon
+            gridControl.DataSource = lstHoaDon
         End If
         'Where (Not chkTheoHinhThucThanhToan.Checked) Or (hd.idHinhThucThanhToan cmbHinhThucThanhToan.Text.Trim)
 
-        If bsHoaDon.Count > 0 Then
-            lblThongBao.Visible = False
+        gridViewData.RefreshData()
 
-            'lblCong.Text = lstHoaDon.Sum(Function(s) s.CongTien).ToString("N0") + "đ"
-            'lblChietKhau.Text = lstHoaDon.Sum(Function(s) s.TongTienChietKhau).ToString("N0") + "đ"
-            'lblVAT.Text = lstHoaDon.Sum(Function(s) s.TongTienVAT).ToString("N0") + "đ"
-            'lblTongTien.Text = lstHoaDon.Sum(Function(s) s.TongTien).ToString("N0") + "đ"
-            lblSoLuong.Text = bsHoaDon.Count.ToString + " hóa đơn"
+        If gridViewData.DataRowCount > 0 Then
             lblThongBao.Visible = False
-            Dim CongTien As Decimal = 0
-            Dim TongTienCK As Decimal = 0
-            Dim TongTienVAT As Decimal = 0
-            For Each itm In bsHoaDon.List
-                CongTien += itm.CongTien
-                TongTienCK += itm.TongTienChietKhau
-                TongTienVAT += itm.TongTienVAT
-            Next
-            lblCong.Text = CongTien.ToString("N0") + "đ"
-            lblChietKhau.Text = TongTienCK.ToString("N0") + "đ"
-            lblVAT.Text = TongTienVAT.ToString("N0") + "đ"
         Else
             lblThongBao.Text = "[Không tìm thấy dữ liệu phù hợp]"
             lblThongBao.Visible = True
-
-            lblCong.Text = "0đ"
-            lblChietKhau.Text = "0đ"
-            lblVAT.Text = "0đ"
-            lblTongTien.Text = "0đ"
-            lblSoLuong.Text = "0 hóa đơn"
         End If
 
     End Sub
 #Region "THANH TOÁN - SỬA - XÓA HÓA ĐƠN"
     Private Sub btnSuaHoaDon_Click(sender As Object, e As EventArgs) Handles btnSuaHoaDon.Click
-        If bsHoaDon.Current Is Nothing Then Exit Sub
-        Dim vwHD As vwHoaDon = bsHoaDon.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vwHD As vwHoaDon = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If vwHD.LoaiHD <> 1 Then
             Dim frm As New frmSuaHoaDonBanHang
             frm.HoaDon = dt.tbHoaDons.First(Function(s) s.id = vwHD.id)
@@ -152,14 +130,14 @@
         Else
             Dim ctrlHoaDon As New ctrlHoaDon
             ctrlHoaDon.SuaHoaDon = vwHD
-            RaiseEvent ThemTabpageMoi("HD/" + bsHoaDon.Current.MaHoaDon.ToString(), bsHoaDon.Current.MaHoaDon.ToString(), ctrlHoaDon)
+            RaiseEvent ThemTabpageMoi("HD/" + vwHD.MaHoaDon, vwHD.MaHoaDon, ctrlHoaDon)
         End If
 
     End Sub
 
-    Private Sub btnXoaHoaDon_Click(sender As Object, e As EventArgs) Handles btnXoaHoaDon.Click
-        If bsHoaDon.Current Is Nothing Then Exit Sub
-        Dim vHoaDon As vwHoaDon = bsHoaDon.Current
+    Private Sub btnXoaHoaDon_Click(sender As Object, e As EventArgs)
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vHoaDon As vwHoaDon = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa hóa đơn " + vHoaDon.MaHoaDon.ToString + "?" +
                                                                    vbNewLine + "Và cập nhật lại số lượng sản phẩm.", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
 
@@ -190,12 +168,12 @@
 
 #Region "IN HOA DON - IN DANH SACH"
     Private Sub btnInDanhSach_Click(sender As Object, e As EventArgs) Handles btnInDanhSach.Click
-        If bsHoaDon.Count = 0 Then Exit Sub
+        If gridViewData.DataRowCount = 0 Then Exit Sub
         Dim frm As New frmInDanhSach
         frm.Text = "THỐNG KÊ HOÁ ĐƠN"
         frm.rptName = ".\Report\HoaDon\rptDanhSachHoaDon.rdlc"
         frm.dsName = "dsDanhSachHoaDon"
-        frm._bs = bsHoaDon
+        frm._bs.DataSource = gridControl.DataSource
         If TuNgay.Date = DenNgay.Date Then
             frm.ThoiGianTimKiem = "Ngày " + String.Format("{0:dd/MM/yyyy}", TuNgay)
         Else
@@ -205,9 +183,9 @@
         frm.Show()
     End Sub
 
-    Private Sub btnXemNhanh_Click(sender As Object, e As EventArgs) Handles btnXemNhanh.Click
-        If bsHoaDon.Current Is Nothing Then Exit Sub
-        Dim vHoaDon As vwHoaDon = bsHoaDon.Current
+    Private Sub btnXemNhanh_Click(sender As Object, e As EventArgs) Handles btnXemPhieu.Click
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vHoaDon As vwHoaDon = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         Dim HoaDon = dt.tbHoaDons.First(Function(s) s.id = vHoaDon.id)
         Dim frm As New frmInHoaDon
         frm.CtrlInHoaDon1.HoaDon = HoaDon
@@ -247,6 +225,18 @@
 #End Region
 
 #Region "KHÁC"
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
+        End If
+    End Sub
+
     Private Sub chkTheoHinhThucThanhToan_CheckedChanged(sender As Object, e As EventArgs) Handles chkTheoHinhThucThanhToan.CheckedChanged
         cmbHinhThucThanhToan.Enabled = chkTheoHinhThucThanhToan.Checked
         cmbHinhThucThanhToan.Focus()
@@ -255,17 +245,6 @@
     Private Sub chkTheoNhanVien_CheckedChanged(sender As Object, e As EventArgs) Handles chkTheoNhanVien.CheckedChanged
         cmbNhanVien.Enabled = chkTheoNhanVien.Checked
         cmbNhanVien.Focus()
-    End Sub
-
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsHoaDon.Position = e.RowIndex
-            End If
-        End If
     End Sub
 
     Public Sub btnCapNhatNhanVien_Click(sender As Object, e As EventArgs) Handles btnCapNhatNhanVien.Click
@@ -279,15 +258,14 @@
         txtTheoMaHoaDon.SelectAll()
     End Sub
 
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT2.Index Then
-            e.Value = e.RowIndex + 1
-        End If
-    End Sub
 
     Public Sub F3_btnThemHoaDonDauVao_Click(sender As Object, e As EventArgs) Handles btnThemHoaDonDauVao.Click
         Dim frm As New frmHoaDonBanHang
         frm.ShowDialog()
+    End Sub
+
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        btnSuaHoaDon_Click(Nothing, Nothing)
     End Sub
 
     Public Sub F4_btnThemHoaDonDauRa_Click(sender As Object, e As EventArgs) Handles btnThemHoaDonDauRa.Click
@@ -295,9 +273,6 @@
         RaiseEvent ThemTabpageMoi("Hóa Đơn", "HoaDon" + Now.ToString("dd/MM/yyyy HH:mm:ss"), HoaDon)
     End Sub
 
-    Private Sub dgvMain_DoubleClick(sender As Object, e As EventArgs) Handles dgvMain.DoubleClick
-        btnSuaHoaDon_Click(Nothing, Nothing)
-    End Sub
 #End Region
 
 

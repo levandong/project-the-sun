@@ -14,7 +14,7 @@ Imports Microsoft.Office.Interop
 
 Module mdlGlobals
 
-    ' LÊ VĂN ĐÔNG - 30/04/2017
+    ' LÊ VĂN ĐÔNG - 30/04/2017 d
     Public mh As New clsMaHoa
 
     Public ChuoiConnectString As String = mh.Decrypt(My.Settings.ThongTinKetNoi, "tmt6364")
