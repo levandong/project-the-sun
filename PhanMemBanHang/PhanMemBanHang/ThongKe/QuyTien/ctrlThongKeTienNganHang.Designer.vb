@@ -70,6 +70,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.btnThemPhieuChiKhac = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.btnThemPhieuThuKhac = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.KryptonHeader3 = New ComponentFactory.Krypton.Toolkit.KryptonHeader()
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
         CType(Me.ssss, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,6 +93,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel3.SuspendLayout()
         CType(Me.gridDetailControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewDetail, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KryptonPanel1
@@ -165,6 +167,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.gridControl.Location = New System.Drawing.Point(0, 28)
         Me.gridControl.MainView = Me.gridViewData
         Me.gridControl.Name = "gridControl"
+        Me.gridControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
         Me.gridControl.Size = New System.Drawing.Size(350, 299)
         Me.gridControl.TabIndex = 7
         Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
@@ -220,6 +223,7 @@ Partial Class ctrlThongKeTienNganHang
         'GridColumn1
         '
         Me.GridColumn1.Caption = "Chọn"
+        Me.GridColumn1.ColumnEdit = Me.RepositoryItemCheckEdit1
         Me.GridColumn1.FieldName = "Chon"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
@@ -605,6 +609,11 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonHeader3.Values.Heading = "BẢNG TỔNG HỢP TIỀN"
         Me.KryptonHeader3.Values.Image = Global.PhanMemBanHang.My.Resources.Resources.Bill16
         '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        '
         'ctrlThongKeTienNganHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -638,6 +647,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel3.PerformLayout()
         CType(Me.gridDetailControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gridViewDetail, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -689,4 +699,5 @@ Partial Class ctrlThongKeTienNganHang
     Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn16 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

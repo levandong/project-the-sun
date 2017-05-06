@@ -625,8 +625,14 @@
 
 
     Private Sub gridViewData_FocusedRowChanged(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles gridViewData.FocusedRowChanged
+        LoadChiTiet()
+    End Sub
+
+    Private Sub LoadChiTiet()
         rlsListChonTam.Clear()
+
         If rlsThongKe Is Nothing Then Exit Sub
+
         Dim rlsTemp = (From itm In rlsThongKe
                        Where itm.Chon = True
                        Select itm.idNganHang).ToList
@@ -738,5 +744,14 @@
             btnChonTatCa.Image = My.Resources.Checked
             btnChonTatCa.Text = "Chọn tất cả"
         End If
+    End Sub
+
+
+
+    Private Sub RepositoryItemCheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles RepositoryItemCheckEdit1.CheckedChanged
+        gridViewData.CloseEditor()
+        gridViewData.UpdateCurrentRow()
+        gridViewData_FocusedRowChanged(Nothing, Nothing)
+        LoadChiTiet()
     End Sub
 End Class

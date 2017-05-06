@@ -119,6 +119,7 @@ Partial Class ctrlDGVKhachHang
         '
         Me.GridColumn1.Caption = "Mã"
         Me.GridColumn1.FieldName = "MaKhachHang"
+        Me.GridColumn1.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
@@ -130,6 +131,7 @@ Partial Class ctrlDGVKhachHang
         '
         Me.GridColumn2.Caption = "Khách hàng/Nhà cung cấp"
         Me.GridColumn2.FieldName = "TenKhachHang"
+        Me.GridColumn2.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn2.Visible = True

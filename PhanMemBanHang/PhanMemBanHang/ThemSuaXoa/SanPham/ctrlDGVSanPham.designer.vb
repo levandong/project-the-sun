@@ -103,6 +103,8 @@ Partial Class ctrlDGVSanPham
         '
         Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -127,19 +129,21 @@ Partial Class ctrlDGVSanPham
         '
         Me.GridColumn1.Caption = "Mã"
         Me.GridColumn1.FieldName = "MaSanPham"
+        Me.GridColumn1.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
-        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
-        Me.GridColumn1.Width = 150
+        Me.GridColumn1.Width = 70
         '
         'GridColumn2
         '
         Me.GridColumn2.Caption = "Tên sản phẩm"
         Me.GridColumn2.FieldName = "TenSanPham"
+        Me.GridColumn2.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
         Me.GridColumn2.Width = 250
@@ -300,7 +304,8 @@ Partial Class ctrlDGVSanPham
         'GridColumn8
         '
         Me.GridColumn8.Caption = "Bảo hành"
-        Me.GridColumn8.DisplayFormat.FormatString = "0 tháng"
+        Me.GridColumn8.DisplayFormat.FormatString = "{0:n0} tháng"
+        Me.GridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.GridColumn8.FieldName = "ThoiGianBaoHanh"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
