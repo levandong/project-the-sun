@@ -17,21 +17,19 @@
             End Select
         Next
     End Sub
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsPhieuXuat.Position = e.RowIndex
+
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
             End If
         End If
     End Sub
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
-        End If
-    End Sub
+
     Dim TuNgay As DateTime
     Dim DenNgay As DateTime
     Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles btnTimKiem.Click
@@ -77,19 +75,8 @@
                   Where itm.SoPhieuXuat <> 0
                   Order By itm.NgayLap
 
-        bsPhieuXuat.DataSource = rls
-
-        If rls.Count > 0 Then
-            lblSoDong.Text = rls.Count.ToString + " phiếu."
-            lblTongTien.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienPhieuXuat)) + "đ"
-            lblTienTruocThue.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienTruocVAT)) + "đ"
-            lblVAT.Text = String.Format("{0:N0}", rls.Sum(Function(s) s.TongTienVAT)) + "đ"
-        Else
-            lblSoDong.Text = "0 phiếu."
-            lblTienTruocThue.Text = "0đ"
-            lblVAT.Text = "0đ"
-            lblTongTien.Text = "0đ"
-        End If
+        gridControl.DataSource = rls
+        gridViewData.RefreshData()
     End Sub
 
 
@@ -122,20 +109,20 @@
     'End Sub
     Event ThemTabpageMoi(TenHienThi As String, Ten As String, control As Control)
     Private Sub btnSuaPhieu_Click(sender As Object, e As EventArgs) Handles btnSuaPhieu.Click
-        If bsPhieuXuat.Current Is Nothing Then Exit Sub
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
         Dim ctrlPhieuXuat As New ctrlPhieuXuat
-        Dim vwPhieuXuat As vwPhieuXuat = bsPhieuXuat.Current
-        Dim PhieuXuat = dt.tbPhieuXuats.First(Function(s) s.id = vwPhieuXuat.id)
+        Dim vPhieuXuat As vwPhieuXuat = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+        Dim PhieuXuat = dt.tbPhieuXuats.First(Function(s) s.id = vPhieuXuat.id)
         ctrlPhieuXuat.CapNhatPhieuXuat(PhieuXuat)
         RaiseEvent ThemTabpageMoi("PX/" + PhieuXuat.MaPhieu, PhieuXuat.MaPhieu, ctrlPhieuXuat)
     End Sub
 
     Private Sub btnXoaPhieu_Click(sender As Object, e As EventArgs) Handles btnXoaPhieu.Click
-        If bsPhieuXuat.Current Is Nothing Then Exit Sub
-        Dim vwPhieuXuat As vwPhieuXuat = bsPhieuXuat.Current
-        If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa phiếu " + vwPhieuXuat.MaPhieu + "?" + vbNewLine +
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuXuat = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+        If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa phiếu " + vPhieuXuat.MaPhieu + "?" + vbNewLine +
                                                                    "Và cập nhật số lượng vào kho?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then Exit Sub
-        Dim PhieuXuat = dt.tbPhieuXuats.First(Function(s) s.id = vwPhieuXuat.id)
+        Dim PhieuXuat = dt.tbPhieuXuats.First(Function(s) s.id = vPhieuXuat.id)
         'For Each itm In dt.tbChiTietSeris.Where(Function(s) s.idPhieuXuat = PhieuXuat.id)
         '    itm.idPhieuXuat = Nothing
         'Next
@@ -168,11 +155,11 @@
     End Sub
 
     Private Sub btnIn_Click(sender As Object, e As EventArgs) Handles btnIn.Click
-        If bsPhieuXuat.Count = 0 Then Exit Sub
+        If gridViewData.DataRowCount = 0 Then Exit Sub
         Dim frm As New frmInDanhSach
         frm.rptName = ".\Report\PhieuXuat\rptDanhSachPhieuXuatKho.rdlc"
         frm.dsName = "dsPhieuXuat"
-        frm._bs = bsPhieuXuat
+        frm._bs.DataSource = gridControl.DataSource
         If TuNgay.Date = DenNgay.Date Then
             frm.ThoiGianTimKiem = "Ngày " + String.Format("{0:dd/MM/yyyy}", TuNgay)
         Else
@@ -222,7 +209,8 @@
     End Sub
     Event XuatHoaDon(PhieuXuat As vwPhieuXuat)
     Private Sub XuấtHóaĐơnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XuấtHóaĐơnToolStripMenuItem.Click
-        Dim vPhieuXuat As vwPhieuXuat = bsPhieuXuat.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuXuat = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If vPhieuXuat.isHoaDon = True Then
 
             If vPhieuXuat.DaXuatHoaDon = 0 Then
@@ -241,24 +229,24 @@
         End If
     End Sub
 
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        btnSuaPhieu_Click(Nothing, Nothing)
-    End Sub
-
 
     Private Sub XóaPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs)
         btnXoaPhieu_Click(Nothing, Nothing)
     End Sub
 
     Private Sub PhiếuXuấtToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PhiếuXuấtToolStripMenuItem.Click
-        If bsPhieuXuat.Current Is Nothing Then Exit Sub
-        Dim vPhieuXuat As vwPhieuXuat = bsPhieuXuat.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuXuat = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         TaoPhieuXuatExcel(Application.StartupPath + "\UyNhiemChi\PhieuXuat.xlsx", vPhieuXuat, False)
     End Sub
 
     Private Sub CóKýHiệuKhoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CóKýHiệuKhoToolStripMenuItem.Click
-        If bsPhieuXuat.Current Is Nothing Then Exit Sub
-        Dim vPhieuXuat As vwPhieuXuat = bsPhieuXuat.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vPhieuXuat As vwPhieuXuat = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         TaoPhieuXuatExcel(Application.StartupPath + "\UyNhiemChi\PhieuXuatKyHieuKho.xlsx", vPhieuXuat, True)
+    End Sub
+
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        btnSuaPhieu_Click(Nothing, Nothing)
     End Sub
 End Class

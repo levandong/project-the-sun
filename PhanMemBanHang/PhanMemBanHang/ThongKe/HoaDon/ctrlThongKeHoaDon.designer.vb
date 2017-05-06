@@ -361,7 +361,7 @@ Partial Class ctrlThongKeHoaDon
         Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn9.Visible = True
         Me.GridColumn9.VisibleIndex = 1
-        Me.GridColumn9.Width = 110
+        Me.GridColumn9.Width = 130
         '
         'GridColumn2
         '
@@ -383,7 +383,7 @@ Partial Class ctrlThongKeHoaDon
         Me.GridColumn4.FieldName = "TienTruocThue"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
-        Me.GridColumn4.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CongTien", "{0:n0}")})
+        Me.GridColumn4.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TienTruocThue", "{0:n0}")})
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
         Me.GridColumn4.Width = 120
@@ -431,6 +431,7 @@ Partial Class ctrlThongKeHoaDon
         Me.GridColumn13.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.GridColumn13.FieldName = "TongTienVAT"
         Me.GridColumn13.Name = "GridColumn13"
+        Me.GridColumn13.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn13.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTienVAT", "{0:n0}")})
         Me.GridColumn13.Visible = True
         Me.GridColumn13.VisibleIndex = 5
@@ -446,7 +447,7 @@ Partial Class ctrlThongKeHoaDon
         Me.GridColumn8.FieldName = "TongTien"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
-        Me.GridColumn8.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTienPhieuNhap", "{0:n0}")})
+        Me.GridColumn8.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TongTien", "{0:n0}")})
         Me.GridColumn8.Visible = True
         Me.GridColumn8.VisibleIndex = 6
         Me.GridColumn8.Width = 120
@@ -469,6 +470,7 @@ Partial Class ctrlThongKeHoaDon
         Me.GridColumn3.Caption = "HTTT"
         Me.GridColumn3.FieldName = "HinhThucThanhToan"
         Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 8
         Me.GridColumn3.Width = 100

@@ -319,7 +319,7 @@ Partial Class ctrlThongKePhieuNhap
         Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn9.Visible = True
         Me.GridColumn9.VisibleIndex = 1
-        Me.GridColumn9.Width = 110
+        Me.GridColumn9.Width = 130
         '
         'GridColumn3
         '
