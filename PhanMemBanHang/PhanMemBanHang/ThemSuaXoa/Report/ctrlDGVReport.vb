@@ -1,25 +1,31 @@
 ﻿Public Class ctrlDGVReport
-    Private Sub bsReport_ListChanged(sender As Object, e As System.ComponentModel.ListChangedEventArgs) Handles bsReport.ListChanged
-        lblSoLuong.Text = bsReport.Count.ToString + " report."
-    End Sub
-
     Event _ReportThayDoi(Report As tbReport)
-    Private Sub bsReport_CurrentChanged(sender As Object, e As EventArgs) Handles bsReport.CurrentChanged
-        If bsReport.Current IsNot Nothing Then
-            RaiseEvent _ReportThayDoi(bsReport.Current)
-        End If
-    End Sub
 
     Event ChonReport(nl As tbReport)
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        If bsReport.Current Is Nothing Then Exit Sub
-        RaiseEvent ChonReport(bsReport.Current)
-    End Sub
 
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.ImageIndex = 0
+                e.Info.DisplayText = ""
+            Else
+                e.Info.ImageIndex = 1
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
 
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim Report As tbReport = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+            RaiseEvent ChonReport(Report)
+        End If
+    End Sub
+
+    Private Sub gridViewData_FocusedRowChanged(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles gridViewData.FocusedRowChanged
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim Report As tbReport = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+            RaiseEvent _ReportThayDoi(Report)
+        End If
+    End Sub
 End Class

@@ -207,15 +207,6 @@
       <Association Name="tbLoaiPhieuNhap_tbPhieuNhap" Member="tbPhieuNhaps" ThisKey="id" OtherKey="idLoaiPhieuNhap" Type="tbPhieuNhap" />
     </Type>
   </Table>
-  <Table Name="dbo.tbLoaiPhieuThu" Member="tbLoaiPhieuThus">
-    <Type Name="tbLoaiPhieuThu">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="LoaiThu" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="MoTa" Type="System.String" DbType="NChar(350)" CanBeNull="true" />
-      <Column Name="Loai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="tbLoaiPhieuThu_tbPhieuThu" Member="tbPhieuThus" ThisKey="id" OtherKey="idLoaiPhieuThu" Type="tbPhieuThu" />
-    </Type>
-  </Table>
   <Table Name="dbo.tbLoaiPhieuXuat" Member="tbLoaiPhieuXuats">
     <Type Name="tbLoaiPhieuXuat">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -356,9 +347,9 @@
       <Column Name="idLoaiPhieuThu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="MucPhi" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Association Name="tbNhanVien_tbPhieuThu" Member="tbNhanVien" ThisKey="idNhanVien" OtherKey="id" Type="tbNhanVien" IsForeignKey="true" />
-      <Association Name="tbLoaiPhieuThu_tbPhieuThu" Member="tbLoaiPhieuThu" ThisKey="idLoaiPhieuThu" OtherKey="id" Type="tbLoaiPhieuThu" IsForeignKey="true" />
       <Association Name="tbPhieuXuat_tbPhieuThu" Member="tbPhieuXuat" ThisKey="idPhieuXuat" OtherKey="id" Type="tbPhieuXuat" IsForeignKey="true" DeleteRule="CASCADE" />
       <Association Name="tbNganHang_tbPhieuThu" Member="tbNganHang" ThisKey="idNganHang" OtherKey="id" Type="tbNganHang" IsForeignKey="true" />
+      <Association Name="tbLoaiPhieuThu_tbPhieuThu" Member="tbLoaiPhieuThu" ThisKey="idLoaiPhieuThu" OtherKey="id" Type="tbLoaiPhieuThu" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.tbPhieuUyNhiemChi" Member="tbPhieuUyNhiemChis">
@@ -1294,6 +1285,15 @@
       <Column Name="DonVi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="isDanhMuc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="isKhongTinhTonKho" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbLoaiPhieuThu" Member="tbLoaiPhieuThus">
+    <Type Name="tbLoaiPhieuThu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoaiThu" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="Loai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbLoaiPhieuThu_tbPhieuThu" Member="tbPhieuThus" ThisKey="id" OtherKey="idLoaiPhieuThu" Type="tbPhieuThu" />
     </Type>
   </Table>
   <Function Name="dbo.LichSuBanHang" Method="LichSuBanHang">

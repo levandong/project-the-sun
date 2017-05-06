@@ -28,10 +28,12 @@
         Dim key As String = mdlGlobals.BoDauTiengViet(txtTimKiem.Text.Trim.ToLower)
 
         rlsLoaiPhieuXuat = From kh In dt.tbLoaiPhieuXuats
-                        Where (dt.f_nosymbol(kh.LoaiPhieuXuat).ToLower.Contains(key))
-                        Select kh
+                           Where (dt.f_nosymbol(kh.LoaiPhieuXuat).ToLower.Contains(key))
+                           Select kh
 
-        CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.DataSource = rlsLoaiPhieuXuat
+
+        CtrlDGVLoaiPhieuXuat1.gridControl.DataSource = rlsLoaiPhieuXuat
+        CtrlDGVLoaiPhieuXuat1.gridViewData.RefreshData()
     End Sub
 
     Private Sub btnQuayLai_Click(sender As Object, e As EventArgs) Handles btnQuayLai.Click
@@ -40,9 +42,9 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.Current IsNot Nothing Then
-            Dim LoaiPhieuXuat As tbLoaiPhieuXuat = CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.Current
-            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa loại phiếu xuất " + LoaiPhieuXuat.LoaiPhieuXuat + "?", _
+        If CtrlDGVLoaiPhieuXuat1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim LoaiPhieuXuat As tbLoaiPhieuXuat = CtrlDGVLoaiPhieuXuat1.gridViewData.GetRow(CtrlDGVLoaiPhieuXuat1.gridViewData.FocusedRowHandle)
+            If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa loại phiếu xuất " + LoaiPhieuXuat.LoaiPhieuXuat + "?",
                                                                    "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) _
                                                                    = MsgBoxResult.Yes Then
                 dt.tbLoaiPhieuXuats.DeleteOnSubmit(LoaiPhieuXuat)
@@ -65,10 +67,11 @@
     End Sub
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.Current IsNot Nothing Then
+        If CtrlDGVLoaiPhieuXuat1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim LoaiPhieuXuat As tbLoaiPhieuXuat = CtrlDGVLoaiPhieuXuat1.gridViewData.GetRow(CtrlDGVLoaiPhieuXuat1.gridViewData.FocusedRowHandle)
             Dim frm As New frmSuaLoaiPhieuXuat
-            frm.LoaiPhieuXuatBanDau = CType(CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.Current, tbLoaiPhieuXuat).LoaiPhieuXuat
-            frm.LoaiPhieuXuat = CtrlDGVLoaiPhieuXuat1.bsLoaiPhieuXuat.Current
+            frm.LoaiPhieuXuatBanDau = LoaiPhieuXuat.LoaiPhieuXuat
+            frm.LoaiPhieuXuat = LoaiPhieuXuat
             AddHandler frm.SuaLoaiPhieuXuatThanhCong, AddressOf CapNhat
             frm.ShowDialog()
         End If

@@ -115,12 +115,6 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbLoaiPhieuNhap(instance As tbLoaiPhieuNhap)
     End Sub
-  Partial Private Sub InserttbLoaiPhieuThu(instance As tbLoaiPhieuThu)
-    End Sub
-  Partial Private Sub UpdatetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
-    End Sub
-  Partial Private Sub DeletetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
-    End Sub
   Partial Private Sub InserttbLoaiPhieuXuat(instance As tbLoaiPhieuXuat)
     End Sub
   Partial Private Sub UpdatetbLoaiPhieuXuat(instance As tbLoaiPhieuXuat)
@@ -289,6 +283,12 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbSanPham(instance As tbSanPham)
     End Sub
+  Partial Private Sub InserttbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+    End Sub
+  Partial Private Sub UpdatetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+    End Sub
+  Partial Private Sub DeletetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+    End Sub
   #End Region
 	
 	Public Sub New()
@@ -397,12 +397,6 @@ Partial Public Class dcQLDataContext
 	Public ReadOnly Property tbLoaiPhieuNhaps() As System.Data.Linq.Table(Of tbLoaiPhieuNhap)
 		Get
 			Return Me.GetTable(Of tbLoaiPhieuNhap)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbLoaiPhieuThus() As System.Data.Linq.Table(Of tbLoaiPhieuThu)
-		Get
-			Return Me.GetTable(Of tbLoaiPhieuThu)
 		End Get
 	End Property
 	
@@ -667,6 +661,12 @@ Partial Public Class dcQLDataContext
 	Public ReadOnly Property vwChiTietBaoGias() As System.Data.Linq.Table(Of vwChiTietBaoGia)
 		Get
 			Return Me.GetTable(Of vwChiTietBaoGia)
+		End Get
+	End Property
+	
+	Public ReadOnly Property tbLoaiPhieuThus() As System.Data.Linq.Table(Of tbLoaiPhieuThu)
+		Get
+			Return Me.GetTable(Of tbLoaiPhieuThu)
 		End Get
 	End Property
 	
@@ -4929,158 +4929,6 @@ Partial Public Class tbLoaiPhieuNhap
 	End Sub
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiPhieuThu")>  _
-Partial Public Class tbLoaiPhieuThu
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _LoaiThu As String
-	
-	Private _MoTa As String
-	
-	Private _Loai As Integer
-	
-	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnLoaiThuChanging(value As String)
-    End Sub
-    Partial Private Sub OnLoaiThuChanged()
-    End Sub
-    Partial Private Sub OnMoTaChanging(value As String)
-    End Sub
-    Partial Private Sub OnMoTaChanged()
-    End Sub
-    Partial Private Sub OnLoaiChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnLoaiChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiThu", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property LoaiThu() As String
-		Get
-			Return Me._LoaiThu
-		End Get
-		Set
-			If (String.Equals(Me._LoaiThu, value) = false) Then
-				Me.OnLoaiThuChanging(value)
-				Me.SendPropertyChanging
-				Me._LoaiThu = value
-				Me.SendPropertyChanged("LoaiThu")
-				Me.OnLoaiThuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NChar(350)")>  _
-	Public Property MoTa() As String
-		Get
-			Return Me._MoTa
-		End Get
-		Set
-			If (String.Equals(Me._MoTa, value) = false) Then
-				Me.OnMoTaChanging(value)
-				Me.SendPropertyChanging
-				Me._MoTa = value
-				Me.SendPropertyChanged("MoTa")
-				Me.OnMoTaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
-	Public Property Loai() As Integer
-		Get
-			Return Me._Loai
-		End Get
-		Set
-			If ((Me._Loai = value)  _
-						= false) Then
-				Me.OnLoaiChanging(value)
-				Me.SendPropertyChanging
-				Me._Loai = value
-				Me.SendPropertyChanged("Loai")
-				Me.OnLoaiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idLoaiPhieuThu")>  _
-	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
-		Get
-			Return Me._tbPhieuThus
-		End Get
-		Set
-			Me._tbPhieuThus.Assign(value)
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbLoaiPhieuThu = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbLoaiPhieuThu = Nothing
-	End Sub
-End Class
-
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiPhieuXuat")>  _
 Partial Public Class tbLoaiPhieuXuat
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -7488,11 +7336,11 @@ Partial Public Class tbPhieuThu
 	
 	Private _tbNhanVien As EntityRef(Of tbNhanVien)
 	
-	Private _tbLoaiPhieuThu As EntityRef(Of tbLoaiPhieuThu)
-	
 	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
 	
 	Private _tbNganHang As EntityRef(Of tbNganHang)
+	
+	Private _tbLoaiPhieuThu As EntityRef(Of tbLoaiPhieuThu)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -7566,9 +7414,9 @@ Partial Public Class tbPhieuThu
 	Public Sub New()
 		MyBase.New
 		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbLoaiPhieuThu = CType(Nothing, EntityRef(Of tbLoaiPhieuThu))
 		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
 		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
+		Me._tbLoaiPhieuThu = CType(Nothing, EntityRef(Of tbLoaiPhieuThu))
 		OnCreated
 	End Sub
 	
@@ -7858,34 +7706,6 @@ Partial Public Class tbPhieuThu
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbLoaiPhieuThu", ThisKey:="idLoaiPhieuThu", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbLoaiPhieuThu() As tbLoaiPhieuThu
-		Get
-			Return Me._tbLoaiPhieuThu.Entity
-		End Get
-		Set
-			Dim previousValue As tbLoaiPhieuThu = Me._tbLoaiPhieuThu.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbLoaiPhieuThu.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbLoaiPhieuThu.Entity = Nothing
-					previousValue.tbPhieuThus.Remove(Me)
-				End If
-				Me._tbLoaiPhieuThu.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuThus.Add(Me)
-					Me._idLoaiPhieuThu = value.id
-				Else
-					Me._idLoaiPhieuThu = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbLoaiPhieuThu")
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbPhieuThu", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
 	Public Property tbPhieuXuat() As tbPhieuXuat
 		Get
@@ -7938,6 +7758,34 @@ Partial Public Class tbPhieuThu
 					Me._idNganHang = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbNganHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbLoaiPhieuThu", ThisKey:="idLoaiPhieuThu", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbLoaiPhieuThu() As tbLoaiPhieuThu
+		Get
+			Return Me._tbLoaiPhieuThu.Entity
+		End Get
+		Set
+			Dim previousValue As tbLoaiPhieuThu = Me._tbLoaiPhieuThu.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbLoaiPhieuThu.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbLoaiPhieuThu.Entity = Nothing
+					previousValue.tbPhieuThus.Remove(Me)
+				End If
+				Me._tbLoaiPhieuThu.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuThus.Add(Me)
+					Me._idLoaiPhieuThu = value.id
+				Else
+					Me._idLoaiPhieuThu = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbLoaiPhieuThu")
 			End If
 		End Set
 	End Property
@@ -23619,6 +23467,158 @@ Partial Public Class vwChiTietBaoGia
 			End If
 		End Set
 	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiPhieuThu")>  _
+Partial Public Class tbLoaiPhieuThu
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _LoaiThu As String
+	
+	Private _MoTa As String
+	
+	Private _Loai As Integer
+	
+	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnLoaiThuChanging(value As String)
+    End Sub
+    Partial Private Sub OnLoaiThuChanged()
+    End Sub
+    Partial Private Sub OnMoTaChanging(value As String)
+    End Sub
+    Partial Private Sub OnMoTaChanged()
+    End Sub
+    Partial Private Sub OnLoaiChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnLoaiChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiThu", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property LoaiThu() As String
+		Get
+			Return Me._LoaiThu
+		End Get
+		Set
+			If (String.Equals(Me._LoaiThu, value) = false) Then
+				Me.OnLoaiThuChanging(value)
+				Me.SendPropertyChanging
+				Me._LoaiThu = value
+				Me.SendPropertyChanged("LoaiThu")
+				Me.OnLoaiThuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NVarChar(350)")>  _
+	Public Property MoTa() As String
+		Get
+			Return Me._MoTa
+		End Get
+		Set
+			If (String.Equals(Me._MoTa, value) = false) Then
+				Me.OnMoTaChanging(value)
+				Me.SendPropertyChanging
+				Me._MoTa = value
+				Me.SendPropertyChanged("MoTa")
+				Me.OnMoTaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
+	Public Property Loai() As Integer
+		Get
+			Return Me._Loai
+		End Get
+		Set
+			If ((Me._Loai = value)  _
+						= false) Then
+				Me.OnLoaiChanging(value)
+				Me.SendPropertyChanging
+				Me._Loai = value
+				Me.SendPropertyChanged("Loai")
+				Me.OnLoaiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idLoaiPhieuThu")>  _
+	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
+		Get
+			Return Me._tbPhieuThus
+		End Get
+		Set
+			Me._tbPhieuThus.Assign(value)
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbLoaiPhieuThu = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbLoaiPhieuThu = Nothing
+	End Sub
 End Class
 
 Partial Public Class LichSuBanHangResult

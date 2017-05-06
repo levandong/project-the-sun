@@ -21,8 +21,7 @@
     End Sub
 
     Private Sub ctrlThemSuaXoaReport_Load(sender As Object, e As EventArgs) Handles Me.Load
-        CtrlDGVReport1.bsReport.DataSource = dt.tbReports
-        CtrlDGVReport1.dgvMain.ReadOnly = True
+        CapNhat()
     End Sub
 
     Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
@@ -33,7 +32,8 @@
 
     Public Sub CapNhat()
         dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, dt.tbReports)
-        CtrlDGVReport1.bsReport.DataSource = From sp In dt.tbReports Select sp
+        CtrlDGVReport1.gridControl.DataSource = From sp In dt.tbReports Select sp
+        CtrlDGVReport1.gridViewData.RefreshData()
     End Sub
 
     Private Sub btnCapNhat_Click() Handles btnCapNhat.Click
@@ -46,8 +46,9 @@
     End Sub
 
     Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        If CtrlDGVReport1.bsReport.Current IsNot Nothing Then
-            Dim BieuMau As tbReport = CtrlDGVReport1.bsReport.Current
+        If CtrlDGVReport1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim BieuMau As tbReport = CtrlDGVReport1.gridViewData.GetRow(CtrlDGVReport1.gridViewData.FocusedRowHandle)
+
             If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa mẫu report " + BieuMau.TenReport + "?", "Xác nhận", MessageBoxButtons.YesNo) _
                                                                    = MsgBoxResult.Yes Then
                 dt.tbReports.DeleteOnSubmit(BieuMau)
@@ -69,9 +70,10 @@
     End Sub
 
     Private Sub btnSua_Click(sender As Object, e As EventArgs) Handles btnSua.Click
-        If CtrlDGVReport1.bsReport.Current IsNot Nothing Then
+        If CtrlDGVReport1.gridViewData.FocusedRowHandle >= 0 Then
+            Dim BieuMau As tbReport = CtrlDGVReport1.gridViewData.GetRow(CtrlDGVReport1.gridViewData.FocusedRowHandle)
             Dim frm As New frmSuaReport
-            frm.Report = CtrlDGVReport1.bsReport.Current
+            frm.Report = BieuMau
             AddHandler frm.SuaReportThanhCong, AddressOf CapNhat
             frm.ShowDialog()
         End If
