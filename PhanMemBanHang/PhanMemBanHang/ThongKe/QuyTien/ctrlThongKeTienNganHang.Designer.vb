@@ -71,6 +71,10 @@ Partial Class ctrlThongKeTienNganHang
         Me.btnThemPhieuChiKhac = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.btnThemPhieuThuKhac = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.KryptonHeader3 = New ComponentFactory.Krypton.Toolkit.KryptonHeader()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
         CType(Me.ssss, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,6 +98,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel3.SuspendLayout()
         CType(Me.gridDetailControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewDetail, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'KryptonPanel1
@@ -162,7 +167,7 @@ Partial Class ctrlThongKeTienNganHang
         '
         'gridControl
         '
-        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip2
         Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gridControl.Location = New System.Drawing.Point(0, 28)
         Me.gridControl.MainView = Me.gridViewData
@@ -175,26 +180,29 @@ Partial Class ctrlThongKeTienNganHang
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SửaPhiếuToolStripMenuItem, Me.XóaPhiếuToolStripMenuItem, Me.InPhiếuToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SửaPhiếuToolStripMenuItem, Me.XóaPhiếuToolStripMenuItem, Me.InPhiếuToolStripMenuItem, Me.ToolStripSeparator1, Me.mnuItemExportExcel})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(128, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(128, 98)
         '
         'SửaPhiếuToolStripMenuItem
         '
+        Me.SửaPhiếuToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Sua_16
         Me.SửaPhiếuToolStripMenuItem.Name = "SửaPhiếuToolStripMenuItem"
-        Me.SửaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.SửaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SửaPhiếuToolStripMenuItem.Text = "Sửa phiếu"
         '
         'XóaPhiếuToolStripMenuItem
         '
+        Me.XóaPhiếuToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Huy16
         Me.XóaPhiếuToolStripMenuItem.Name = "XóaPhiếuToolStripMenuItem"
-        Me.XóaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.XóaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.XóaPhiếuToolStripMenuItem.Text = "Xóa phiếu"
         '
         'InPhiếuToolStripMenuItem
         '
+        Me.InPhiếuToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Print16
         Me.InPhiếuToolStripMenuItem.Name = "InPhiếuToolStripMenuItem"
-        Me.InPhiếuToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.InPhiếuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InPhiếuToolStripMenuItem.Text = "In phiếu"
         '
         'gridViewData
@@ -614,6 +622,32 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonHeader3.Values.Heading = "BẢNG TỔNG HỢP TIỀN"
         Me.KryptonHeader3.Values.Image = Global.PhanMemBanHang.My.Resources.Resources.Bill16
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
+        '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(153, 48)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Text = "Xuất Excel"
+        '
         'ctrlThongKeTienNganHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -648,6 +682,7 @@ Partial Class ctrlThongKeTienNganHang
         Me.KryptonPanel3.PerformLayout()
         CType(Me.gridDetailControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gridViewDetail, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -700,4 +735,8 @@ Partial Class ctrlThongKeTienNganHang
     Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn16 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
+    Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
 End Class

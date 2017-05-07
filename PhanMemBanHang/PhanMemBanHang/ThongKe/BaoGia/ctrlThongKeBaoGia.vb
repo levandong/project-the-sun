@@ -1,4 +1,5 @@
-﻿Public Class ctrlThongKeBaoGia
+﻿
+Public Class ctrlThongKeBaoGia
     Dim _isNhapHang As Boolean = False
     Property isNhapHang As Boolean
         Get
@@ -34,21 +35,26 @@
         'cmbTrangThai.SelectedItem = 1
     End Sub
 
-    Private Sub dgvBaoGia_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STTcol.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.DisplayText = ""
+            Else
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
-    Private Sub bsBaoGia_CurrentChanged(sender As Object, e As EventArgs) Handles bsBaoGia.CurrentChanged
-        Dim BaoGia As vwBaoGia = bsBaoGia.Current
-        If BaoGia Is Nothing Then
-            Exit Sub
-        End If
-        Dim rlsChitietBaoGia = From itm In dt.vwChiTietBaoGias
-                               Where itm.idBaoGia = BaoGia.id
-        bsChiTietDatHang.DataSource = rlsChitietBaoGia
+    Private Sub bsBaoGia_CurrentChanged(sender As Object, e As EventArgs)
+        'Dim BaoGia As vwBaoGia = bsBaoGia.Current
+        'If BaoGia Is Nothing Then
+        '    Exit Sub
+        'End If
+        'Dim rlsChitietBaoGia = From itm In dt.vwChiTietBaoGias
+        '                       Where itm.idBaoGia = BaoGia.id
+        'bsChiTietDatHang.DataSource = rlsChitietBaoGia
     End Sub
 
+    Dim rlsKetQua As IQueryable(Of vwBaoGia)
     Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles btnTimKiem.Click
         Dim idKH As Integer = 0
         Dim idNV As Integer = 0
@@ -105,7 +111,9 @@
                         Where itm.isNhapHang = isNhapHang
                         Select itm Order By itm.NgayLap Descending
         End If
-        PhanTrangSauKhiTimKiem()
+
+        gridControl.DataSource = rlsKetQua
+        gridViewData.RefreshData()
     End Sub
 
     Private Sub chkTheoNhanVien_CheckedChanged(sender As Object, e As EventArgs) Handles chkTheoNhanVien.CheckedChanged, chkTheoMaPhieu.CheckedChanged, chkTheoCongTrinh.CheckedChanged, chkTheoKhachHang.CheckedChanged
@@ -121,30 +129,36 @@
     End Sub
     Event ThemTabpageMoi(TenHienThi As String, Ten As String, control As Control)
     Private Sub SửaPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SửaPhiếuToolStripMenuItem.Click
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+
         Dim ctrlBaoGia As New ctrlSuaBangBaoGia
-        Dim BaoGia As vwBaoGia = bsBaoGia.Current
-        ctrlBaoGia.SuaPhieuBaoGia(dt.tbBaoGias.First(Function(s) s.id = BaoGia.id))
-        ctrlBaoGia.BaoGia = dt.tbBaoGias.First(Function(s) s.id = BaoGia.id)
-        RaiseEvent ThemTabpageMoi("BG/" + bsBaoGia.Current.MaPhieu.ToString(), bsBaoGia.Current.MaPhieu.ToString(), ctrlBaoGia)
+        ctrlBaoGia.SuaPhieuBaoGia(dt.tbBaoGias.First(Function(s) s.id = vBaoGia.id))
+        ctrlBaoGia.BaoGia = dt.tbBaoGias.First(Function(s) s.id = vBaoGia.id)
+        RaiseEvent ThemTabpageMoi("BG/" + vBaoGia.MaPhieu.ToString(), vBaoGia.MaPhieu.ToString(), ctrlBaoGia)
     End Sub
 
     Private Sub ChuyểnSangPhiếuBáoGiáToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Dim BaoGia As vwBaoGia = bsBaoGia.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+
         Dim frm = New frmKhachHangDatHang
-        frm.BaoGia = dt.tbBaoGias.First(Function(s) s.id = BaoGia.id)
-        If BaoGia.DaChuyenPhieuDatHang = 1 Then
+        frm.BaoGia = dt.tbBaoGias.First(Function(s) s.id = vBaoGia.id)
+        If vBaoGia.DaChuyenPhieuDatHang = 1 Then
             If XacNhanYesNo("Mẫu báo giá này đã đc chuyển thành đơn đặt hàng" + vbNewLine + " Bạn vẫn muốn tiếp tục chuyển?") <> MsgBoxResult.Yes Then
                 Exit Sub
             End If
         End If
-        frm.TenKhachHangDatHang = If(BaoGia.isNhapHang, "ĐẶT HÀNG NHÀ CUNG CẤP", "KHÁCH HÀNG ĐẶT HÀNG")
+        frm.TenKhachHangDatHang = If(vBaoGia.isNhapHang, "ĐẶT HÀNG NHÀ CUNG CẤP", "KHÁCH HÀNG ĐẶT HÀNG")
         AddHandler frm.BaoGiaThanhCong, AddressOf BaoGiaThanhCong
         frm.Show()
     End Sub
 
     Sub BaoGiaThanhCong()
-        Dim BaoGia As vwBaoGia = bsBaoGia.Current
-        Dim iBaoGia As tbBaoGia = dt.tbBaoGias.First(Function(s) s.id = BaoGia.id)
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+
+        Dim iBaoGia As tbBaoGia = dt.tbBaoGias.First(Function(s) s.id = vBaoGia.id)
         dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, iBaoGia)
         iBaoGia.CapDo = 2
         Dim TrangThai As tbTrangThai = dt.tbTrangThais.First(Function(s) s.Loai = 2)
@@ -154,8 +168,10 @@
     End Sub
 
     Private Sub ĐangBáoGiáToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Dim idBaoGia As Integer = bsBaoGia.Current.id
-        Dim BaoGia As tbBaoGia = (From s In dt.tbBaoGias Where s.id = idBaoGia).FirstOrDefault
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+
+        Dim BaoGia As tbBaoGia = (From s In dt.tbBaoGias Where s.id = vBaoGia.id).FirstOrDefault
         dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, BaoGia)
         Dim TrangThai As tbTrangThai = dt.tbTrangThais.First(Function(s) s.Loai = 1)
         BaoGia.tbTrangThai = TrangThai
@@ -169,8 +185,8 @@
     End Sub
 
     Private Sub HủyPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HủyPhiếuToolStripMenuItem.Click
-        If bsBaoGia.Current Is Nothing Then Exit Sub
-        Dim vBaoGia As vwBaoGia = bsBaoGia.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa bảng báo giá " + CType(vBaoGia, vwBaoGia).MaPhieu.ToString + "?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
             Dim BaoGia As tbBaoGia = dt.tbBaoGias.First(Function(s) s.id = vBaoGia.id)
             dt.tbBaoGias.DeleteOnSubmit(BaoGia)
@@ -183,119 +199,7 @@
             End Try
         End If
     End Sub
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsBaoGia.Position = e.RowIndex
-            End If
-        End If
-    End Sub
 
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        SửaPhiếuToolStripMenuItem_Click(Nothing, Nothing)
-    End Sub
-    Dim rlsKetQua As IQueryable(Of vwBaoGia)
-
-#Region "Phân Trang"
-    Dim TrangHienTai As Integer = 0
-    Dim SoDongTrenMotTrang As Integer = 30
-    Dim TongSoLuong As Integer
-    Dim SoTrang As Integer
-
-    Private Sub CapNhapTrang()
-        Dim Tu = TrangHienTai * SoDongTrenMotTrang
-        Dim Den = (TrangHienTai + 1) * SoDongTrenMotTrang
-        If Den > TongSoLuong Then
-            Den = TongSoLuong
-        End If
-        lblSoLuong.Text = "[" + (Tu + 1).ToString("n0") + ".." + Den.ToString("n0") + "]"
-        txtSoTrang.Text = (TrangHienTai + 1).ToString()
-    End Sub
-    Private Sub PhanTrangLucLoad()
-        If My.Settings.SoDongKhachHangTrenMotTrang < 1 Then
-            My.Settings.SoDongKhachHangTrenMotTrang = 30
-            My.Settings.Save()
-        End If
-        txtSoDongTrenMotTrang.Text = My.Settings.SoDongKhachHangTrenMotTrang
-        SoDongTrenMotTrang = My.Settings.SoDongKhachHangTrenMotTrang
-        txtSoTrang.Text = 0
-    End Sub
-    Private Sub PhanTrangSauKhiTimKiem()
-        If rlsKetQua IsNot Nothing Then
-            TrangHienTai = 0
-            TongSoLuong = rlsKetQua.Count
-            SoTrang = Math.Ceiling(TongSoLuong / SoDongTrenMotTrang)
-            lblTongSoTrang.Text = SoTrang.ToString("n0")
-            lblTongSoTrang2.Text = SoTrang.ToString("n0")
-            lblTongSoLuong.Text = TongSoLuong.ToString("n0")
-            bsBaoGia.DataSource = rlsKetQua.Skip(0).Take(SoDongTrenMotTrang)
-            For i As Integer = 0 To dgvMain.RowCount - 1
-                If dgvMain.Rows(i).DataBoundItem.isHuy = True Then
-                    dgvMain.Rows(i).DefaultCellStyle.Font = New Font(dgvMain.DefaultCellStyle.Font, FontStyle.Strikeout)
-                End If
-            Next
-            CapNhapTrang()
-        End If
-    End Sub
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STTcol.Index Then
-            e.Value = e.RowIndex + 1 + TrangHienTai * SoDongTrenMotTrang
-        End If
-    End Sub
-    Private Sub btnQuaTrai1_Click(sender As Object, e As EventArgs) Handles btnQuaTrai1.Click
-        If rlsKetQua IsNot Nothing Then
-            If TrangHienTai > 0 Then
-                TrangHienTai -= 1
-                bsBaoGia.DataSource = rlsKetQua.Skip(TrangHienTai * SoDongTrenMotTrang).Take(SoDongTrenMotTrang)
-                CapNhapTrang()
-            End If
-        End If
-    End Sub
-
-    Private Sub btnQuaTraiTatCa_Click(sender As Object, e As EventArgs) Handles btnQuaTraiTatCa.Click
-        If rlsKetQua IsNot Nothing Then
-            TrangHienTai = 0
-            bsBaoGia.DataSource = rlsKetQua.Skip(TrangHienTai * SoDongTrenMotTrang).Take(SoDongTrenMotTrang)
-            CapNhapTrang()
-        End If
-    End Sub
-
-    Private Sub btnQuaPhai1_Click(sender As Object, e As EventArgs) Handles btnQuaPhai1.Click
-        If rlsKetQua IsNot Nothing Then
-            If TrangHienTai < SoTrang - 1 Then
-                TrangHienTai += 1
-                bsBaoGia.DataSource = rlsKetQua.Skip(TrangHienTai * SoDongTrenMotTrang).Take(SoDongTrenMotTrang)
-                CapNhapTrang()
-            End If
-        End If
-    End Sub
-
-    Private Sub txtSoTrang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSoTrang.KeyPress
-        If rlsKetQua IsNot Nothing Then
-            If e.KeyChar = "\r" Then
-                Try
-                    If TrangHienTai < 1 Then
-                        TrangHienTai = 0
-                    End If
-                    bsBaoGia.DataSource = rlsKetQua.Skip(TrangHienTai * SoDongTrenMotTrang).Take(SoDongTrenMotTrang)
-                    txtSoTrang.SelectAll()
-                    CapNhapTrang()
-                Catch ex As Exception
-                    ThongBaoError(ex.Message)
-                End Try
-            ElseIf Asc(e.KeyChar) <> 8 Then
-                If Char.IsNumber(e.KeyChar) = False Then
-                    e.Handled = True
-                End If
-            End If
-        End If
-    End Sub
-
-
-#End Region
     Dim ctrl As New ctrlDGVKhachHang
     Private Sub txtKhachHang_TextChanged(sender As Object, e As EventArgs) Handles txtKhachHang.TextChanged
         Dim key = BoDauTiengViet(txtKhachHang.Text.Trim)
@@ -347,7 +251,9 @@
     End Sub
 
     Private Sub InPhiếuBáoGiáToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InPhiếuBáoGiáToolStripMenuItem.Click
-        Dim vBaoGia As vwBaoGia = bsBaoGia.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vBaoGia As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+
         TaoBaoGiaXuatExcel1(Application.StartupPath + "\UyNhiemChi\BaoGia1.xlsx", vBaoGia, True)
     End Sub
 
@@ -366,8 +272,8 @@
     End Sub
 
     Private Sub btnHuyPhieu_Click(sender As Object, e As EventArgs) Handles btnHuyPhieu.Click
-        If bsBaoGia.Current IsNot Nothing Then
-            Dim BG As vwBaoGia = bsBaoGia.Current
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim BG As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             Dim BaoGia = dt.tbBaoGias.First(Function(s) s.id = BG.id)
             dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, BaoGia)
             If BaoGia.isHuy = True Then
@@ -377,7 +283,7 @@
                 End If
 
                 BaoGia.isHuy = False
-                Else
+            Else
                 ' Hủy hóa don
                 If frmMessageBox.Show("Bạn muốn hủy giá giá số " + BG.MaPhieu + "?", "Xác nhận") = DialogResult.No Then
                     Exit Sub
@@ -399,8 +305,8 @@
     End Sub
 
     Private Sub ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip1.Opening
-        If bsBaoGia.Current IsNot Nothing Then
-            Dim BG As vwBaoGia = bsBaoGia.Current
+        If gridViewData.FocusedRowHandle >= 0 Then
+            Dim BG As vwBaoGia = gridViewData.GetRow(gridViewData.FocusedRowHandle)
             Dim BaoGia = dt.tbBaoGias.First(Function(s) s.id = BG.id)
             dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, BaoGia)
             If BaoGia.isHuy = True Then
@@ -413,6 +319,17 @@
                 btnHuyPhieu.Image = My.Resources.XoaTatCa16
             End If
 
+        End If
+    End Sub
+
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        SửaPhiếuToolStripMenuItem_Click(Nothing, Nothing)
+    End Sub
+
+
+    Private Sub XuấtExcelToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XuấtExcelToolStripMenuItem.Click
+        If gridViewData.DataRowCount > 0 Then
+            ExportExcelFromGridView(gridControl)
         End If
     End Sub
 End Class

@@ -35,10 +35,10 @@ Public Class ctrlDGVSanPham
     Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
         If (e.Info.IsRowIndicator) Then
             If e.RowHandle < 0 Then
-                e.Info.ImageIndex = 0
+                
                 e.Info.DisplayText = ""
             Else
-                e.Info.ImageIndex = 1
+                
                 e.Info.DisplayText = (e.RowHandle + 1).ToString()
             End If
         End If
@@ -46,7 +46,7 @@ Public Class ctrlDGVSanPham
 
     Private Sub mnuItemExportExcel_Click(sender As Object, e As EventArgs) Handles mnuItemExportExcel.Click
         If gridViewData.DataRowCount > 0 Then
-            'HISLib.AppCore.Other.GridDevExportToExcel.ExportToExcel(gridControl, DevExpress.XtraPrinting.TextExportMode.Value, False)
+            ExportExcelFromGridView(gridControl)
         End If
     End Sub
 

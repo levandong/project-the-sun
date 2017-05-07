@@ -1473,7 +1473,25 @@ Module mdlGlobals
         End Try
     End Sub
 
-
+    Public Sub ExportExcelFromGridView(gridControl As DevExpress.XtraGrid.GridControl)
+        Dim filename As String
+        Dim SaveFileDialog As New SaveFileDialog()
+        SaveFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx"
+        SaveFileDialog.FilterIndex = 2
+        SaveFileDialog.RestoreDirectory = True
+        If SaveFileDialog.ShowDialog() = DialogResult.OK Then
+            filename = SaveFileDialog.FileName
+            Dim gridview As DevExpress.XtraGrid.Views.Grid.GridView = gridControl.ViewCollection(0)
+            gridview.OptionsPrint.AutoWidth = False
+            gridControl.ExportToXlsx(filename)
+            If System.IO.File.Exists(filename) Then
+                Dim DialogResult As DialogResult = MessageBox.Show("Đã xuất " & filename & vbNewLine & "Bạn có muốn mở file Excel vừa tạo?", "Export...", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If DialogResult = Windows.Forms.DialogResult.Yes Then
+                    System.Diagnostics.Process.Start(filename)
+                End If
+            End If
+        End If
+    End Sub
 
 #End Region
 End Module

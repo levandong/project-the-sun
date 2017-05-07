@@ -31,17 +31,35 @@ Partial Public Class dcQLDataContext
   #Region "Extensibility Method Definitions"
   Partial Private Sub OnCreated()
   End Sub
+  Partial Private Sub InserttbBaoGia(instance As tbBaoGia)
+    End Sub
+  Partial Private Sub UpdatetbBaoGia(instance As tbBaoGia)
+    End Sub
+  Partial Private Sub DeletetbBaoGia(instance As tbBaoGia)
+    End Sub
   Partial Private Sub InserttbTraNoNhaCungCap(instance As tbTraNoNhaCungCap)
     End Sub
   Partial Private Sub UpdatetbTraNoNhaCungCap(instance As tbTraNoNhaCungCap)
     End Sub
   Partial Private Sub DeletetbTraNoNhaCungCap(instance As tbTraNoNhaCungCap)
     End Sub
+  Partial Private Sub InserttbChiTietBaoGia(instance As tbChiTietBaoGia)
+    End Sub
+  Partial Private Sub UpdatetbChiTietBaoGia(instance As tbChiTietBaoGia)
+    End Sub
+  Partial Private Sub DeletetbChiTietBaoGia(instance As tbChiTietBaoGia)
+    End Sub
   Partial Private Sub InserttbChiTietHoaDon(instance As tbChiTietHoaDon)
     End Sub
   Partial Private Sub UpdatetbChiTietHoaDon(instance As tbChiTietHoaDon)
     End Sub
   Partial Private Sub DeletetbChiTietHoaDon(instance As tbChiTietHoaDon)
+    End Sub
+  Partial Private Sub InserttbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
+    End Sub
+  Partial Private Sub UpdatetbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
+    End Sub
+  Partial Private Sub DeletetbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
     End Sub
   Partial Private Sub InserttbChiTietLienHe(instance As tbChiTietLienHe)
     End Sub
@@ -55,11 +73,11 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbChiTietPhieuNhap(instance As tbChiTietPhieuNhap)
     End Sub
-  Partial Private Sub InserttbChiTietSeri(instance As tbChiTietSeri)
+  Partial Private Sub InserttbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
     End Sub
-  Partial Private Sub UpdatetbChiTietSeri(instance As tbChiTietSeri)
+  Partial Private Sub UpdatetbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
     End Sub
-  Partial Private Sub DeletetbChiTietSeri(instance As tbChiTietSeri)
+  Partial Private Sub DeletetbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
     End Sub
   Partial Private Sub InserttbCuaHang(instance As tbCuaHang)
     End Sub
@@ -73,6 +91,12 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbDonVi(instance As tbDonVi)
     End Sub
+  Partial Private Sub InserttbGiaCongSanPham(instance As tbGiaCongSanPham)
+    End Sub
+  Partial Private Sub UpdatetbGiaCongSanPham(instance As tbGiaCongSanPham)
+    End Sub
+  Partial Private Sub DeletetbGiaCongSanPham(instance As tbGiaCongSanPham)
+    End Sub
   Partial Private Sub InserttbGiaoViec(instance As tbGiaoViec)
     End Sub
   Partial Private Sub UpdatetbGiaoViec(instance As tbGiaoViec)
@@ -85,11 +109,23 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbHinhThucThanhToan(instance As tbHinhThucThanhToan)
     End Sub
+  Partial Private Sub InserttbHoaDon(instance As tbHoaDon)
+    End Sub
+  Partial Private Sub UpdatetbHoaDon(instance As tbHoaDon)
+    End Sub
+  Partial Private Sub DeletetbHoaDon(instance As tbHoaDon)
+    End Sub
   Partial Private Sub InserttbKhachHang(instance As tbKhachHang)
     End Sub
   Partial Private Sub UpdatetbKhachHang(instance As tbKhachHang)
     End Sub
   Partial Private Sub DeletetbKhachHang(instance As tbKhachHang)
+    End Sub
+  Partial Private Sub InserttbKhachHangDatHang(instance As tbKhachHangDatHang)
+    End Sub
+  Partial Private Sub UpdatetbKhachHangDatHang(instance As tbKhachHangDatHang)
+    End Sub
+  Partial Private Sub DeletetbKhachHangDatHang(instance As tbKhachHangDatHang)
     End Sub
   Partial Private Sub InserttbLichSuCongViec(instance As tbLichSuCongViec)
     End Sub
@@ -103,6 +139,12 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbLoaiBaoGia(instance As tbLoaiBaoGia)
     End Sub
+  Partial Private Sub InserttbLoaiNganHang(instance As tbLoaiNganHang)
+    End Sub
+  Partial Private Sub UpdatetbLoaiNganHang(instance As tbLoaiNganHang)
+    End Sub
+  Partial Private Sub DeletetbLoaiNganHang(instance As tbLoaiNganHang)
+    End Sub
   Partial Private Sub InserttbLoaiPhieuChi(instance As tbLoaiPhieuChi)
     End Sub
   Partial Private Sub UpdatetbLoaiPhieuChi(instance As tbLoaiPhieuChi)
@@ -114,6 +156,12 @@ Partial Public Class dcQLDataContext
   Partial Private Sub UpdatetbLoaiPhieuNhap(instance As tbLoaiPhieuNhap)
     End Sub
   Partial Private Sub DeletetbLoaiPhieuNhap(instance As tbLoaiPhieuNhap)
+    End Sub
+  Partial Private Sub InserttbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+    End Sub
+  Partial Private Sub UpdatetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+    End Sub
+  Partial Private Sub DeletetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
     End Sub
   Partial Private Sub InserttbLoaiPhieuXuat(instance As tbLoaiPhieuXuat)
     End Sub
@@ -132,6 +180,12 @@ Partial Public Class dcQLDataContext
   Partial Private Sub UpdatetbLogBackup(instance As tbLogBackup)
     End Sub
   Partial Private Sub DeletetbLogBackup(instance As tbLogBackup)
+    End Sub
+  Partial Private Sub InserttbNganHang(instance As tbNganHang)
+    End Sub
+  Partial Private Sub UpdatetbNganHang(instance As tbNganHang)
+    End Sub
+  Partial Private Sub DeletetbNganHang(instance As tbNganHang)
     End Sub
   Partial Private Sub InserttbNganHangUyNhiemChi(instance As tbNganHangUyNhiemChi)
     End Sub
@@ -169,6 +223,12 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbPhieuChi(instance As tbPhieuChi)
     End Sub
+  Partial Private Sub InserttbPhieuNhap(instance As tbPhieuNhap)
+    End Sub
+  Partial Private Sub UpdatetbPhieuNhap(instance As tbPhieuNhap)
+    End Sub
+  Partial Private Sub DeletetbPhieuNhap(instance As tbPhieuNhap)
+    End Sub
   Partial Private Sub InserttbPhieuThu(instance As tbPhieuThu)
     End Sub
   Partial Private Sub UpdatetbPhieuThu(instance As tbPhieuThu)
@@ -199,6 +259,12 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbReport(instance As tbReport)
     End Sub
+  Partial Private Sub InserttbSanPham(instance As tbSanPham)
+    End Sub
+  Partial Private Sub UpdatetbSanPham(instance As tbSanPham)
+    End Sub
+  Partial Private Sub DeletetbSanPham(instance As tbSanPham)
+    End Sub
   Partial Private Sub InserttbThuNoKhachHang(instance As tbThuNoKhachHang)
     End Sub
   Partial Private Sub UpdatetbThuNoKhachHang(instance As tbThuNoKhachHang)
@@ -211,83 +277,17 @@ Partial Public Class dcQLDataContext
     End Sub
   Partial Private Sub DeletetbTrangThai(instance As tbTrangThai)
     End Sub
-  Partial Private Sub InserttbKhachHangDatHang(instance As tbKhachHangDatHang)
-    End Sub
-  Partial Private Sub UpdatetbKhachHangDatHang(instance As tbKhachHangDatHang)
-    End Sub
-  Partial Private Sub DeletetbKhachHangDatHang(instance As tbKhachHangDatHang)
-    End Sub
-  Partial Private Sub InserttbHoaDon(instance As tbHoaDon)
-    End Sub
-  Partial Private Sub UpdatetbHoaDon(instance As tbHoaDon)
-    End Sub
-  Partial Private Sub DeletetbHoaDon(instance As tbHoaDon)
-    End Sub
-  Partial Private Sub InserttbLoaiNganHang(instance As tbLoaiNganHang)
-    End Sub
-  Partial Private Sub UpdatetbLoaiNganHang(instance As tbLoaiNganHang)
-    End Sub
-  Partial Private Sub DeletetbLoaiNganHang(instance As tbLoaiNganHang)
-    End Sub
-  Partial Private Sub InserttbBaoGia(instance As tbBaoGia)
-    End Sub
-  Partial Private Sub UpdatetbBaoGia(instance As tbBaoGia)
-    End Sub
-  Partial Private Sub DeletetbBaoGia(instance As tbBaoGia)
-    End Sub
-  Partial Private Sub InserttbPhieuNhap(instance As tbPhieuNhap)
-    End Sub
-  Partial Private Sub UpdatetbPhieuNhap(instance As tbPhieuNhap)
-    End Sub
-  Partial Private Sub DeletetbPhieuNhap(instance As tbPhieuNhap)
-    End Sub
-  Partial Private Sub InserttbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
-    End Sub
-  Partial Private Sub UpdatetbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
-    End Sub
-  Partial Private Sub DeletetbChiTietPhieuXuat(instance As tbChiTietPhieuXuat)
-    End Sub
-  Partial Private Sub InserttbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
-    End Sub
-  Partial Private Sub UpdatetbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
-    End Sub
-  Partial Private Sub DeletetbChiTietKhachHangDatHang(instance As tbChiTietKhachHangDatHang)
-    End Sub
-  Partial Private Sub InserttbNganHang(instance As tbNganHang)
-    End Sub
-  Partial Private Sub UpdatetbNganHang(instance As tbNganHang)
-    End Sub
-  Partial Private Sub DeletetbNganHang(instance As tbNganHang)
-    End Sub
-  Partial Private Sub InserttbChiTietBaoGia(instance As tbChiTietBaoGia)
-    End Sub
-  Partial Private Sub UpdatetbChiTietBaoGia(instance As tbChiTietBaoGia)
-    End Sub
-  Partial Private Sub DeletetbChiTietBaoGia(instance As tbChiTietBaoGia)
-    End Sub
-  Partial Private Sub InserttbGiaCongSanPham(instance As tbGiaCongSanPham)
-    End Sub
-  Partial Private Sub UpdatetbGiaCongSanPham(instance As tbGiaCongSanPham)
-    End Sub
-  Partial Private Sub DeletetbGiaCongSanPham(instance As tbGiaCongSanPham)
-    End Sub
   Partial Private Sub InserttbGiaCong(instance As tbGiaCong)
     End Sub
   Partial Private Sub UpdatetbGiaCong(instance As tbGiaCong)
     End Sub
   Partial Private Sub DeletetbGiaCong(instance As tbGiaCong)
     End Sub
-  Partial Private Sub InserttbSanPham(instance As tbSanPham)
+  Partial Private Sub InserttbChiTietSeri(instance As tbChiTietSeri)
     End Sub
-  Partial Private Sub UpdatetbSanPham(instance As tbSanPham)
+  Partial Private Sub UpdatetbChiTietSeri(instance As tbChiTietSeri)
     End Sub
-  Partial Private Sub DeletetbSanPham(instance As tbSanPham)
-    End Sub
-  Partial Private Sub InserttbLoaiPhieuThu(instance As tbLoaiPhieuThu)
-    End Sub
-  Partial Private Sub UpdatetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
-    End Sub
-  Partial Private Sub DeletetbLoaiPhieuThu(instance As tbLoaiPhieuThu)
+  Partial Private Sub DeletetbChiTietSeri(instance As tbChiTietSeri)
     End Sub
   #End Region
 	
@@ -316,15 +316,33 @@ Partial Public Class dcQLDataContext
 		OnCreated
 	End Sub
 	
+	Public ReadOnly Property tbBaoGias() As System.Data.Linq.Table(Of tbBaoGia)
+		Get
+			Return Me.GetTable(Of tbBaoGia)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbTraNoNhaCungCaps() As System.Data.Linq.Table(Of tbTraNoNhaCungCap)
 		Get
 			Return Me.GetTable(Of tbTraNoNhaCungCap)
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbChiTietBaoGias() As System.Data.Linq.Table(Of tbChiTietBaoGia)
+		Get
+			Return Me.GetTable(Of tbChiTietBaoGia)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbChiTietHoaDons() As System.Data.Linq.Table(Of tbChiTietHoaDon)
 		Get
 			Return Me.GetTable(Of tbChiTietHoaDon)
+		End Get
+	End Property
+	
+	Public ReadOnly Property tbChiTietKhachHangDatHangs() As System.Data.Linq.Table(Of tbChiTietKhachHangDatHang)
+		Get
+			Return Me.GetTable(Of tbChiTietKhachHangDatHang)
 		End Get
 	End Property
 	
@@ -340,9 +358,9 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbChiTietSeris() As System.Data.Linq.Table(Of tbChiTietSeri)
+	Public ReadOnly Property tbChiTietPhieuXuats() As System.Data.Linq.Table(Of tbChiTietPhieuXuat)
 		Get
-			Return Me.GetTable(Of tbChiTietSeri)
+			Return Me.GetTable(Of tbChiTietPhieuXuat)
 		End Get
 	End Property
 	
@@ -358,6 +376,12 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbGiaCongSanPhams() As System.Data.Linq.Table(Of tbGiaCongSanPham)
+		Get
+			Return Me.GetTable(Of tbGiaCongSanPham)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbGiaoViecs() As System.Data.Linq.Table(Of tbGiaoViec)
 		Get
 			Return Me.GetTable(Of tbGiaoViec)
@@ -370,9 +394,21 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbHoaDons() As System.Data.Linq.Table(Of tbHoaDon)
+		Get
+			Return Me.GetTable(Of tbHoaDon)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbKhachHangs() As System.Data.Linq.Table(Of tbKhachHang)
 		Get
 			Return Me.GetTable(Of tbKhachHang)
+		End Get
+	End Property
+	
+	Public ReadOnly Property tbKhachHangDatHangs() As System.Data.Linq.Table(Of tbKhachHangDatHang)
+		Get
+			Return Me.GetTable(Of tbKhachHangDatHang)
 		End Get
 	End Property
 	
@@ -388,6 +424,12 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbLoaiNganHangs() As System.Data.Linq.Table(Of tbLoaiNganHang)
+		Get
+			Return Me.GetTable(Of tbLoaiNganHang)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbLoaiPhieuChis() As System.Data.Linq.Table(Of tbLoaiPhieuChi)
 		Get
 			Return Me.GetTable(Of tbLoaiPhieuChi)
@@ -397,6 +439,12 @@ Partial Public Class dcQLDataContext
 	Public ReadOnly Property tbLoaiPhieuNhaps() As System.Data.Linq.Table(Of tbLoaiPhieuNhap)
 		Get
 			Return Me.GetTable(Of tbLoaiPhieuNhap)
+		End Get
+	End Property
+	
+	Public ReadOnly Property tbLoaiPhieuThus() As System.Data.Linq.Table(Of tbLoaiPhieuThu)
+		Get
+			Return Me.GetTable(Of tbLoaiPhieuThu)
 		End Get
 	End Property
 	
@@ -415,6 +463,12 @@ Partial Public Class dcQLDataContext
 	Public ReadOnly Property tbLogBackups() As System.Data.Linq.Table(Of tbLogBackup)
 		Get
 			Return Me.GetTable(Of tbLogBackup)
+		End Get
+	End Property
+	
+	Public ReadOnly Property tbNganHangs() As System.Data.Linq.Table(Of tbNganHang)
+		Get
+			Return Me.GetTable(Of tbNganHang)
 		End Get
 	End Property
 	
@@ -454,6 +508,12 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbPhieuNhaps() As System.Data.Linq.Table(Of tbPhieuNhap)
+		Get
+			Return Me.GetTable(Of tbPhieuNhap)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbPhieuThus() As System.Data.Linq.Table(Of tbPhieuThu)
 		Get
 			Return Me.GetTable(Of tbPhieuThu)
@@ -484,6 +544,12 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property tbSanPhams() As System.Data.Linq.Table(Of tbSanPham)
+		Get
+			Return Me.GetTable(Of tbSanPham)
+		End Get
+	End Property
+	
 	Public ReadOnly Property tbThuNoKhachHangs() As System.Data.Linq.Table(Of tbThuNoKhachHang)
 		Get
 			Return Me.GetTable(Of tbThuNoKhachHang)
@@ -496,117 +562,27 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property vwSanPhams() As System.Data.Linq.Table(Of vwSanPham)
-		Get
-			Return Me.GetTable(Of vwSanPham)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwChiTietHoaDons() As System.Data.Linq.Table(Of vwChiTietHoaDon)
-		Get
-			Return Me.GetTable(Of vwChiTietHoaDon)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwHoaDons() As System.Data.Linq.Table(Of vwHoaDon)
-		Get
-			Return Me.GetTable(Of vwHoaDon)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwKhachHangs() As System.Data.Linq.Table(Of vwKhachHang)
-		Get
-			Return Me.GetTable(Of vwKhachHang)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwPhieuChis() As System.Data.Linq.Table(Of vwPhieuChi)
-		Get
-			Return Me.GetTable(Of vwPhieuChi)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwPhieuThus() As System.Data.Linq.Table(Of vwPhieuThu)
-		Get
-			Return Me.GetTable(Of vwPhieuThu)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwPhanQuyens() As System.Data.Linq.Table(Of vwPhanQuyen)
-		Get
-			Return Me.GetTable(Of vwPhanQuyen)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbKhachHangDatHangs() As System.Data.Linq.Table(Of tbKhachHangDatHang)
-		Get
-			Return Me.GetTable(Of tbKhachHangDatHang)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbHoaDons() As System.Data.Linq.Table(Of tbHoaDon)
-		Get
-			Return Me.GetTable(Of tbHoaDon)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbLoaiNganHangs() As System.Data.Linq.Table(Of tbLoaiNganHang)
-		Get
-			Return Me.GetTable(Of tbLoaiNganHang)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwKhachHangDatHangs() As System.Data.Linq.Table(Of vwKhachHangDatHang)
-		Get
-			Return Me.GetTable(Of vwKhachHangDatHang)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwPhieuXuats() As System.Data.Linq.Table(Of vwPhieuXuat)
-		Get
-			Return Me.GetTable(Of vwPhieuXuat)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbBaoGias() As System.Data.Linq.Table(Of tbBaoGia)
-		Get
-			Return Me.GetTable(Of tbBaoGia)
-		End Get
-	End Property
-	
 	Public ReadOnly Property vwBaoGias() As System.Data.Linq.Table(Of vwBaoGia)
 		Get
 			Return Me.GetTable(Of vwBaoGia)
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbPhieuNhaps() As System.Data.Linq.Table(Of tbPhieuNhap)
+	Public ReadOnly Property vwSanPhams() As System.Data.Linq.Table(Of vwSanPham)
 		Get
-			Return Me.GetTable(Of tbPhieuNhap)
+			Return Me.GetTable(Of vwSanPham)
 		End Get
 	End Property
 	
-	Public ReadOnly Property vwPhieuNhaps() As System.Data.Linq.Table(Of vwPhieuNhap)
+	Public ReadOnly Property vwChiTietBaoGias() As System.Data.Linq.Table(Of vwChiTietBaoGia)
 		Get
-			Return Me.GetTable(Of vwPhieuNhap)
+			Return Me.GetTable(Of vwChiTietBaoGia)
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbChiTietPhieuXuats() As System.Data.Linq.Table(Of tbChiTietPhieuXuat)
+	Public ReadOnly Property vwChiTietHoaDons() As System.Data.Linq.Table(Of vwChiTietHoaDon)
 		Get
-			Return Me.GetTable(Of tbChiTietPhieuXuat)
-		End Get
-	End Property
-	
-	Public ReadOnly Property tbChiTietKhachHangDatHangs() As System.Data.Linq.Table(Of tbChiTietKhachHangDatHang)
-		Get
-			Return Me.GetTable(Of tbChiTietKhachHangDatHang)
-		End Get
-	End Property
-	
-	Public ReadOnly Property vwChiTietKhachHangDatHangs() As System.Data.Linq.Table(Of vwChiTietKhachHangDatHang)
-		Get
-			Return Me.GetTable(Of vwChiTietKhachHangDatHang)
+			Return Me.GetTable(Of vwChiTietHoaDon)
 		End Get
 	End Property
 	
@@ -622,27 +598,57 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbNganHangs() As System.Data.Linq.Table(Of tbNganHang)
+	Public ReadOnly Property vwChiTietSoLuongGiaoHangs() As System.Data.Linq.Table(Of vwChiTietSoLuongGiaoHang)
 		Get
-			Return Me.GetTable(Of tbNganHang)
+			Return Me.GetTable(Of vwChiTietSoLuongGiaoHang)
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbChiTietBaoGias() As System.Data.Linq.Table(Of tbChiTietBaoGia)
+	Public ReadOnly Property vwHoaDons() As System.Data.Linq.Table(Of vwHoaDon)
 		Get
-			Return Me.GetTable(Of tbChiTietBaoGia)
+			Return Me.GetTable(Of vwHoaDon)
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbGiaCongSanPhams() As System.Data.Linq.Table(Of tbGiaCongSanPham)
+	Public ReadOnly Property vwKhachHangs() As System.Data.Linq.Table(Of vwKhachHang)
 		Get
-			Return Me.GetTable(Of tbGiaCongSanPham)
+			Return Me.GetTable(Of vwKhachHang)
 		End Get
 	End Property
 	
-	Public ReadOnly Property vwGiaCongs() As System.Data.Linq.Table(Of vwGiaCong)
+	Public ReadOnly Property vwKhachHangDatHangs() As System.Data.Linq.Table(Of vwKhachHangDatHang)
 		Get
-			Return Me.GetTable(Of vwGiaCong)
+			Return Me.GetTable(Of vwKhachHangDatHang)
+		End Get
+	End Property
+	
+	Public ReadOnly Property vwPhanQuyens() As System.Data.Linq.Table(Of vwPhanQuyen)
+		Get
+			Return Me.GetTable(Of vwPhanQuyen)
+		End Get
+	End Property
+	
+	Public ReadOnly Property vwPhieuChis() As System.Data.Linq.Table(Of vwPhieuChi)
+		Get
+			Return Me.GetTable(Of vwPhieuChi)
+		End Get
+	End Property
+	
+	Public ReadOnly Property vwPhieuNhaps() As System.Data.Linq.Table(Of vwPhieuNhap)
+		Get
+			Return Me.GetTable(Of vwPhieuNhap)
+		End Get
+	End Property
+	
+	Public ReadOnly Property vwPhieuThus() As System.Data.Linq.Table(Of vwPhieuThu)
+		Get
+			Return Me.GetTable(Of vwPhieuThu)
+		End Get
+	End Property
+	
+	Public ReadOnly Property vwPhieuXuats() As System.Data.Linq.Table(Of vwPhieuXuat)
+		Get
+			Return Me.GetTable(Of vwPhieuXuat)
 		End Get
 	End Property
 	
@@ -652,21 +658,21 @@ Partial Public Class dcQLDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbSanPhams() As System.Data.Linq.Table(Of tbSanPham)
+	Public ReadOnly Property vwGiaCongs() As System.Data.Linq.Table(Of vwGiaCong)
 		Get
-			Return Me.GetTable(Of tbSanPham)
+			Return Me.GetTable(Of vwGiaCong)
 		End Get
 	End Property
 	
-	Public ReadOnly Property vwChiTietBaoGias() As System.Data.Linq.Table(Of vwChiTietBaoGia)
+	Public ReadOnly Property vwChiTietKhachHangDatHangs() As System.Data.Linq.Table(Of vwChiTietKhachHangDatHang)
 		Get
-			Return Me.GetTable(Of vwChiTietBaoGia)
+			Return Me.GetTable(Of vwChiTietKhachHangDatHang)
 		End Get
 	End Property
 	
-	Public ReadOnly Property tbLoaiPhieuThus() As System.Data.Linq.Table(Of tbLoaiPhieuThu)
+	Public ReadOnly Property tbChiTietSeris() As System.Data.Linq.Table(Of tbChiTietSeri)
 		Get
-			Return Me.GetTable(Of tbLoaiPhieuThu)
+			Return Me.GetTable(Of tbChiTietSeri)
 		End Get
 	End Property
 	
@@ -770,6 +776,643 @@ Partial Public Class dcQLDataContext
 	End Function
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbBaoGia")>  _
+Partial Public Class tbBaoGia
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _SoPhieu As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _GhiChu As String
+	
+	Private _ModeHienThi As Integer
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _idTrangThai As Integer
+	
+	Private _idLoaiBaoGia As Integer
+	
+	Private _CapDo As System.Nullable(Of Integer)
+	
+	Private _idNhanVienKiemDuyet As System.Nullable(Of Integer)
+	
+	Private _NgayKiemDuyet As System.Nullable(Of Date)
+	
+	Private _idNguoiLienHe As System.Nullable(Of Integer)
+	
+	Private _CongTrinh As String
+	
+	Private _VAT As System.Nullable(Of Double)
+	
+	Private _isHuy As Boolean
+	
+	Private _tbChiTietBaoGias As EntitySet(Of tbChiTietBaoGia)
+	
+	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
+	
+	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
+	
+	Private _tbKhachHang As EntityRef(Of tbKhachHang)
+	
+	Private _tbLoaiBaoGia As EntityRef(Of tbLoaiBaoGia)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
+	
+	Private _tbTrangThai As EntityRef(Of tbTrangThai)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnNgayLapChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayLapChanged()
+    End Sub
+    Partial Private Sub OnSoPhieuChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoPhieuChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidNhanVienChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnModeHienThiChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnModeHienThiChanged()
+    End Sub
+    Partial Private Sub OnisNhapHangChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisNhapHangChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidKhachHangChanged()
+    End Sub
+    Partial Private Sub OnidTrangThaiChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidTrangThaiChanged()
+    End Sub
+    Partial Private Sub OnidLoaiBaoGiaChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidLoaiBaoGiaChanged()
+    End Sub
+    Partial Private Sub OnCapDoChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnCapDoChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienKiemDuyetChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNhanVienKiemDuyetChanged()
+    End Sub
+    Partial Private Sub OnNgayKiemDuyetChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayKiemDuyetChanged()
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanged()
+    End Sub
+    Partial Private Sub OnCongTrinhChanging(value As String)
+    End Sub
+    Partial Private Sub OnCongTrinhChanged()
+    End Sub
+    Partial Private Sub OnVATChanging(value As System.Nullable(Of Double))
+    End Sub
+    Partial Private Sub OnVATChanged()
+    End Sub
+    Partial Private Sub OnisHuyChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnisHuyChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbChiTietBaoGias = New EntitySet(Of tbChiTietBaoGia)(AddressOf Me.attach_tbChiTietBaoGias, AddressOf Me.detach_tbChiTietBaoGias)
+		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
+		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
+		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbLoaiBaoGia = CType(Nothing, EntityRef(Of tbLoaiBaoGia))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		Me._tbTrangThai = CType(Nothing, EntityRef(Of tbTrangThai))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me.OnNgayLapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayLap = value
+				Me.SendPropertyChanged("NgayLap")
+				Me.OnNgayLapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me.OnSoPhieuChanging(value)
+				Me.SendPropertyChanging
+				Me._SoPhieu = value
+				Me.SendPropertyChanged("SoPhieu")
+				Me.OnSoPhieuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVien = value
+				Me.SendPropertyChanged("idNhanVien")
+				Me.OnidNhanVienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(400)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModeHienThi", DbType:="Int NOT NULL")>  _
+	Public Property ModeHienThi() As Integer
+		Get
+			Return Me._ModeHienThi
+		End Get
+		Set
+			If ((Me._ModeHienThi = value)  _
+						= false) Then
+				Me.OnModeHienThiChanging(value)
+				Me.SendPropertyChanging
+				Me._ModeHienThi = value
+				Me.SendPropertyChanged("ModeHienThi")
+				Me.OnModeHienThiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me.OnisNhapHangChanging(value)
+				Me.SendPropertyChanging
+				Me._isNhapHang = value
+				Me.SendPropertyChanged("isNhapHang")
+				Me.OnisNhapHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHang = value
+				Me.SendPropertyChanged("idKhachHang")
+				Me.OnidKhachHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
+	Public Property idTrangThai() As Integer
+		Get
+			Return Me._idTrangThai
+		End Get
+		Set
+			If ((Me._idTrangThai = value)  _
+						= false) Then
+				If Me._tbTrangThai.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidTrangThaiChanging(value)
+				Me.SendPropertyChanging
+				Me._idTrangThai = value
+				Me.SendPropertyChanged("idTrangThai")
+				Me.OnidTrangThaiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiBaoGia() As Integer
+		Get
+			Return Me._idLoaiBaoGia
+		End Get
+		Set
+			If ((Me._idLoaiBaoGia = value)  _
+						= false) Then
+				If Me._tbLoaiBaoGia.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidLoaiBaoGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._idLoaiBaoGia = value
+				Me.SendPropertyChanged("idLoaiBaoGia")
+				Me.OnidLoaiBaoGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
+	Public Property CapDo() As System.Nullable(Of Integer)
+		Get
+			Return Me._CapDo
+		End Get
+		Set
+			If (Me._CapDo.Equals(value) = false) Then
+				Me.OnCapDoChanging(value)
+				Me.SendPropertyChanging
+				Me._CapDo = value
+				Me.SendPropertyChanged("CapDo")
+				Me.OnCapDoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="Int")>  _
+	Public Property idNhanVienKiemDuyet() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhanVienKiemDuyet
+		End Get
+		Set
+			If (Me._idNhanVienKiemDuyet.Equals(value) = false) Then
+				Me.OnidNhanVienKiemDuyetChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVienKiemDuyet = value
+				Me.SendPropertyChanged("idNhanVienKiemDuyet")
+				Me.OnidNhanVienKiemDuyetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
+	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayKiemDuyet
+		End Get
+		Set
+			If (Me._NgayKiemDuyet.Equals(value) = false) Then
+				Me.OnNgayKiemDuyetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayKiemDuyet = value
+				Me.SendPropertyChanged("NgayKiemDuyet")
+				Me.OnNgayKiemDuyetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
+	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNguoiLienHe
+		End Get
+		Set
+			If (Me._idNguoiLienHe.Equals(value) = false) Then
+				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNguoiLienHeChanging(value)
+				Me.SendPropertyChanging
+				Me._idNguoiLienHe = value
+				Me.SendPropertyChanged("idNguoiLienHe")
+				Me.OnidNguoiLienHeChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(400)")>  _
+	Public Property CongTrinh() As String
+		Get
+			Return Me._CongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._CongTrinh, value) = false) Then
+				Me.OnCongTrinhChanging(value)
+				Me.SendPropertyChanging
+				Me._CongTrinh = value
+				Me.SendPropertyChanged("CongTrinh")
+				Me.OnCongTrinhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Float")>  _
+	Public Property VAT() As System.Nullable(Of Double)
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If (Me._VAT.Equals(value) = false) Then
+				Me.OnVATChanging(value)
+				Me.SendPropertyChanging
+				Me._VAT = value
+				Me.SendPropertyChanged("VAT")
+				Me.OnVATChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHuy", DbType:="Bit NOT NULL")>  _
+	Public Property isHuy() As Boolean
+		Get
+			Return Me._isHuy
+		End Get
+		Set
+			If ((Me._isHuy = value)  _
+						= false) Then
+				Me.OnisHuyChanging(value)
+				Me.SendPropertyChanging
+				Me._isHuy = value
+				Me.SendPropertyChanged("isHuy")
+				Me.OnisHuyChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbChiTietBaoGia", Storage:="_tbChiTietBaoGias", ThisKey:="id", OtherKey:="idBaoGia")>  _
+	Public Property tbChiTietBaoGias() As EntitySet(Of tbChiTietBaoGia)
+		Get
+			Return Me._tbChiTietBaoGias
+		End Get
+		Set
+			Me._tbChiTietBaoGias.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idBaoGia")>  _
+	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
+		Get
+			Return Me._tbKhachHangDatHangs
+		End Get
+		Set
+			Me._tbKhachHangDatHangs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbBaoGia", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbChiTietLienHe() As tbChiTietLienHe
+		Get
+			Return Me._tbChiTietLienHe.Entity
+		End Get
+		Set
+			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbChiTietLienHe.Entity = Nothing
+					previousValue.tbBaoGias.Remove(Me)
+				End If
+				Me._tbChiTietLienHe.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbBaoGias.Add(Me)
+					Me._idNguoiLienHe = value.id
+				Else
+					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbChiTietLienHe")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbBaoGia", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHang() As tbKhachHang
+		Get
+			Return Me._tbKhachHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang.Entity = Nothing
+					previousValue.tbBaoGias.Remove(Me)
+				End If
+				Me._tbKhachHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbBaoGias.Add(Me)
+					Me._idKhachHang = value.id
+				Else
+					Me._idKhachHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiBaoGia_tbBaoGia", Storage:="_tbLoaiBaoGia", ThisKey:="idLoaiBaoGia", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbLoaiBaoGia() As tbLoaiBaoGia
+		Get
+			Return Me._tbLoaiBaoGia.Entity
+		End Get
+		Set
+			Dim previousValue As tbLoaiBaoGia = Me._tbLoaiBaoGia.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbLoaiBaoGia.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbLoaiBaoGia.Entity = Nothing
+					previousValue.tbBaoGias.Remove(Me)
+				End If
+				Me._tbLoaiBaoGia.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbBaoGias.Add(Me)
+					Me._idLoaiBaoGia = value.id
+				Else
+					Me._idLoaiBaoGia = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbLoaiBaoGia")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbBaoGia", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbBaoGias.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbBaoGias.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbTrangThai_tbBaoGia", Storage:="_tbTrangThai", ThisKey:="idTrangThai", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbTrangThai() As tbTrangThai
+		Get
+			Return Me._tbTrangThai.Entity
+		End Get
+		Set
+			Dim previousValue As tbTrangThai = Me._tbTrangThai.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbTrangThai.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbTrangThai.Entity = Nothing
+					previousValue.tbBaoGias.Remove(Me)
+				End If
+				Me._tbTrangThai.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbBaoGias.Add(Me)
+					Me._idTrangThai = value.id
+				Else
+					Me._idTrangThai = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbTrangThai")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
+		Me.SendPropertyChanging
+		entity.tbBaoGia = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
+		Me.SendPropertyChanging
+		entity.tbBaoGia = Nothing
+	End Sub
+	
+	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbBaoGia = Me
+	End Sub
+	
+	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbBaoGia = Nothing
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbTraNoNhaCungCap")>  _
 Partial Public Class tbTraNoNhaCungCap
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -800,15 +1443,15 @@ Partial Public Class tbTraNoNhaCungCap
 	
 	Private _tbKhachHang As EntityRef(Of tbKhachHang)
 	
-	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
-	
-	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
-	
 	Private _tbNganHang As EntityRef(Of tbNganHang)
 	
 	Private _tbNganHang1 As EntityRef(Of tbNganHang)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
+	
+	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
+	
+	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -866,11 +1509,11 @@ Partial Public Class tbTraNoNhaCungCap
 	Public Sub New()
 		MyBase.New
 		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
-		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
 		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
 		Me._tbNganHang1 = CType(Nothing, EntityRef(Of tbNganHang))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
+		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
 		OnCreated
 	End Sub
 	
@@ -1099,90 +1742,6 @@ Partial Public Class tbTraNoNhaCungCap
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbTraNoNhaCungCap", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNhanVien() As tbNhanVien
-		Get
-			Return Me._tbNhanVien.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien.Entity = Nothing
-					previousValue.tbTraNoNhaCungCaps.Remove(Me)
-				End If
-				Me._tbNhanVien.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbTraNoNhaCungCaps.Add(Me)
-					Me._idNhanVien = value.id
-				Else
-					Me._idNhanVien = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNhanVien")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbTraNoNhaCungCap", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuXuat() As tbPhieuXuat
-		Get
-			Return Me._tbPhieuXuat.Entity
-		End Get
-		Set
-			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbPhieuXuat.Entity = Nothing
-					previousValue.tbTraNoNhaCungCaps.Remove(Me)
-				End If
-				Me._tbPhieuXuat.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbTraNoNhaCungCaps.Add(Me)
-					Me._idPhieuXuat = value.id
-				Else
-					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbPhieuXuat")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbTraNoNhaCungCap", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuNhap() As tbPhieuNhap
-		Get
-			Return Me._tbPhieuNhap.Entity
-		End Get
-		Set
-			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbPhieuNhap.Entity = Nothing
-					previousValue.tbTraNoNhaCungCaps.Remove(Me)
-				End If
-				Me._tbPhieuNhap.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbTraNoNhaCungCaps.Add(Me)
-					Me._idPhieuNhap = value.id
-				Else
-					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbPhieuNhap")
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbTraNoNhaCungCap", Storage:="_tbNganHang", ThisKey:="idHinhThucThanhToan", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbNganHang() As tbNganHang
 		Get
@@ -1235,6 +1794,424 @@ Partial Public Class tbTraNoNhaCungCap
 					Me._idHinhThucThanhToan = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbNganHang1")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbTraNoNhaCungCap", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbTraNoNhaCungCaps.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbTraNoNhaCungCaps.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbTraNoNhaCungCap", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuNhap() As tbPhieuNhap
+		Get
+			Return Me._tbPhieuNhap.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuNhap.Entity = Nothing
+					previousValue.tbTraNoNhaCungCaps.Remove(Me)
+				End If
+				Me._tbPhieuNhap.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbTraNoNhaCungCaps.Add(Me)
+					Me._idPhieuNhap = value.id
+				Else
+					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbPhieuNhap")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbTraNoNhaCungCap", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuXuat() As tbPhieuXuat
+		Get
+			Return Me._tbPhieuXuat.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuXuat.Entity = Nothing
+					previousValue.tbTraNoNhaCungCaps.Remove(Me)
+				End If
+				Me._tbPhieuXuat.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbTraNoNhaCungCaps.Add(Me)
+					Me._idPhieuXuat = value.id
+				Else
+					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbPhieuXuat")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietBaoGia")>  _
+Partial Public Class tbChiTietBaoGia
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _idSanPham As Integer
+	
+	Private _GiaNiemYet As Double
+	
+	Private _GhiChu As String
+	
+	Private _idBaoGia As Integer
+	
+	Private _SoLuong As Double
+	
+	Private _ChietKhau As System.Nullable(Of Double)
+	
+	Private _NgayNiemYet As System.Nullable(Of Date)
+	
+	Private _DonGia As Double
+	
+	Private _STT As Integer
+	
+	Private _tbBaoGia As EntityRef(Of tbBaoGia)
+	
+	Private _tbSanPham As EntityRef(Of tbSanPham)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnidSanPhamChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidSanPhamChanged()
+    End Sub
+    Partial Private Sub OnGiaNiemYetChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaNiemYetChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnidBaoGiaChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidBaoGiaChanged()
+    End Sub
+    Partial Private Sub OnSoLuongChanging(value As Double)
+    End Sub
+    Partial Private Sub OnSoLuongChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As System.Nullable(Of Double))
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanged()
+    End Sub
+    Partial Private Sub OnDonGiaChanging(value As Double)
+    End Sub
+    Partial Private Sub OnDonGiaChanged()
+    End Sub
+    Partial Private Sub OnSTTChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSTTChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbBaoGia = CType(Nothing, EntityRef(Of tbBaoGia))
+		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				If Me._tbSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._idSanPham = value
+				Me.SendPropertyChanged("idSanPham")
+				Me.OnidSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
+	Public Property GiaNiemYet() As Double
+		Get
+			Return Me._GiaNiemYet
+		End Get
+		Set
+			If ((Me._GiaNiemYet = value)  _
+						= false) Then
+				Me.OnGiaNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaNiemYet = value
+				Me.SendPropertyChanged("GiaNiemYet")
+				Me.OnGiaNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int NOT NULL")>  _
+	Public Property idBaoGia() As Integer
+		Get
+			Return Me._idBaoGia
+		End Get
+		Set
+			If ((Me._idBaoGia = value)  _
+						= false) Then
+				If Me._tbBaoGia.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidBaoGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._idBaoGia = value
+				Me.SendPropertyChanged("idBaoGia")
+				Me.OnidBaoGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me.OnSoLuongChanging(value)
+				Me.SendPropertyChanging
+				Me._SoLuong = value
+				Me.SendPropertyChanged("SoLuong")
+				Me.OnSoLuongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float")>  _
+	Public Property ChietKhau() As System.Nullable(Of Double)
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If (Me._ChietKhau.Equals(value) = false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
+	Public Property NgayNiemYet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If (Me._NgayNiemYet.Equals(value) = false) Then
+				Me.OnNgayNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNiemYet = value
+				Me.SendPropertyChanged("NgayNiemYet")
+				Me.OnNgayNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
+	Public Property DonGia() As Double
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me.OnDonGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._DonGia = value
+				Me.SendPropertyChanged("DonGia")
+				Me.OnDonGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
+	Public Property STT() As Integer
+		Get
+			Return Me._STT
+		End Get
+		Set
+			If ((Me._STT = value)  _
+						= false) Then
+				Me.OnSTTChanging(value)
+				Me.SendPropertyChanging
+				Me._STT = value
+				Me.SendPropertyChanged("STT")
+				Me.OnSTTChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbChiTietBaoGia", Storage:="_tbBaoGia", ThisKey:="idBaoGia", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbBaoGia() As tbBaoGia
+		Get
+			Return Me._tbBaoGia.Entity
+		End Get
+		Set
+			Dim previousValue As tbBaoGia = Me._tbBaoGia.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbBaoGia.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbBaoGia.Entity = Nothing
+					previousValue.tbChiTietBaoGias.Remove(Me)
+				End If
+				Me._tbBaoGia.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietBaoGias.Add(Me)
+					Me._idBaoGia = value.id
+				Else
+					Me._idBaoGia = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbBaoGia")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietBaoGia", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbSanPham() As tbSanPham
+		Get
+			Return Me._tbSanPham.Entity
+		End Get
+		Set
+			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbSanPham.Entity = Nothing
+					previousValue.tbChiTietBaoGias.Remove(Me)
+				End If
+				Me._tbSanPham.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietBaoGias.Add(Me)
+					Me._idSanPham = value.id
+				Else
+					Me._idSanPham = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbSanPham")
 			End If
 		End Set
 	End Property
@@ -1838,6 +2815,410 @@ Partial Public Class tbChiTietHoaDon
 	End Sub
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietKhachHangDatHang")>  _
+Partial Public Class tbChiTietKhachHangDatHang
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _idKhachHangDatHang As Integer
+	
+	Private _SoLuong As Double
+	
+	Private _DonGia As Integer
+	
+	Private _idSanPham As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _GhiChu As String
+	
+	Private _TheoDonVi As Boolean
+	
+	Private _QuyCach As Double
+	
+	Private _DonVi As String
+	
+	Private _GiaBan As Double
+	
+	Private _STT As Integer
+	
+	Private _NgayNiemYet As Date
+	
+	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
+	
+	Private _tbSanPham As EntityRef(Of tbSanPham)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanged()
+    End Sub
+    Partial Private Sub OnSoLuongChanging(value As Double)
+    End Sub
+    Partial Private Sub OnSoLuongChanged()
+    End Sub
+    Partial Private Sub OnDonGiaChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnDonGiaChanged()
+    End Sub
+    Partial Private Sub OnidSanPhamChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidSanPhamChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As Double)
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnTheoDonViChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnTheoDonViChanged()
+    End Sub
+    Partial Private Sub OnQuyCachChanging(value As Double)
+    End Sub
+    Partial Private Sub OnQuyCachChanged()
+    End Sub
+    Partial Private Sub OnDonViChanging(value As String)
+    End Sub
+    Partial Private Sub OnDonViChanged()
+    End Sub
+    Partial Private Sub OnGiaBanChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaBanChanged()
+    End Sub
+    Partial Private Sub OnSTTChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSTTChanged()
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
+		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHangDatHang() As Integer
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If ((Me._idKhachHangDatHang = value)  _
+						= false) Then
+				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangDatHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHangDatHang = value
+				Me.SendPropertyChanged("idKhachHangDatHang")
+				Me.OnidKhachHangDatHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me.OnSoLuongChanging(value)
+				Me.SendPropertyChanging
+				Me._SoLuong = value
+				Me.SendPropertyChanged("SoLuong")
+				Me.OnSoLuongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Int NOT NULL")>  _
+	Public Property DonGia() As Integer
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me.OnDonGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._DonGia = value
+				Me.SendPropertyChanged("DonGia")
+				Me.OnDonGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				If Me._tbSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._idSanPham = value
+				Me.SendPropertyChanged("idSanPham")
+				Me.OnidSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
+	Public Property TheoDonVi() As Boolean
+		Get
+			Return Me._TheoDonVi
+		End Get
+		Set
+			If ((Me._TheoDonVi = value)  _
+						= false) Then
+				Me.OnTheoDonViChanging(value)
+				Me.SendPropertyChanging
+				Me._TheoDonVi = value
+				Me.SendPropertyChanged("TheoDonVi")
+				Me.OnTheoDonViChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
+	Public Property QuyCach() As Double
+		Get
+			Return Me._QuyCach
+		End Get
+		Set
+			If ((Me._QuyCach = value)  _
+						= false) Then
+				Me.OnQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._QuyCach = value
+				Me.SendPropertyChanged("QuyCach")
+				Me.OnQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50)")>  _
+	Public Property DonVi() As String
+		Get
+			Return Me._DonVi
+		End Get
+		Set
+			If (String.Equals(Me._DonVi, value) = false) Then
+				Me.OnDonViChanging(value)
+				Me.SendPropertyChanging
+				Me._DonVi = value
+				Me.SendPropertyChanged("DonVi")
+				Me.OnDonViChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
+	Public Property GiaBan() As Double
+		Get
+			Return Me._GiaBan
+		End Get
+		Set
+			If ((Me._GiaBan = value)  _
+						= false) Then
+				Me.OnGiaBanChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaBan = value
+				Me.SendPropertyChanged("GiaBan")
+				Me.OnGiaBanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
+	Public Property STT() As Integer
+		Get
+			Return Me._STT
+		End Get
+		Set
+			If ((Me._STT = value)  _
+						= false) Then
+				Me.OnSTTChanging(value)
+				Me.SendPropertyChanging
+				Me._STT = value
+				Me.SendPropertyChanged("STT")
+				Me.OnSTTChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date NOT NULL")>  _
+	Public Property NgayNiemYet() As Date
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If ((Me._NgayNiemYet = value)  _
+						= false) Then
+				Me.OnNgayNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNiemYet = value
+				Me.SendPropertyChanged("NgayNiemYet")
+				Me.OnNgayNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbChiTietKhachHangDatHang", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
+		Get
+			Return Me._tbKhachHangDatHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHangDatHang.Entity = Nothing
+					previousValue.tbChiTietKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbKhachHangDatHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietKhachHangDatHangs.Add(Me)
+					Me._idKhachHangDatHang = value.id
+				Else
+					Me._idKhachHangDatHang = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbKhachHangDatHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietKhachHangDatHang", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbSanPham() As tbSanPham
+		Get
+			Return Me._tbSanPham.Entity
+		End Get
+		Set
+			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbSanPham.Entity = Nothing
+					previousValue.tbChiTietKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbSanPham.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietKhachHangDatHangs.Add(Me)
+					Me._idSanPham = value.id
+				Else
+					Me._idSanPham = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbSanPham")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietLienHe")>  _
 Partial Public Class tbChiTietLienHe
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -1854,13 +3235,13 @@ Partial Public Class tbChiTietLienHe
 	
 	Private _Email As String
 	
-	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
+	Private _tbBaoGias As EntitySet(Of tbBaoGia)
 	
 	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
 	
-	Private _tbBaoGias As EntitySet(Of tbBaoGia)
-	
 	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
+	
+	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
 	
 	Private _tbKhachHang As EntityRef(Of tbKhachHang)
 	
@@ -1895,10 +3276,10 @@ Partial Public Class tbChiTietLienHe
 	
 	Public Sub New()
 		MyBase.New
-		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
-		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
 		Me._tbBaoGias = New EntitySet(Of tbBaoGia)(AddressOf Me.attach_tbBaoGias, AddressOf Me.detach_tbBaoGias)
+		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
 		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
+		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
 		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
 		OnCreated
 	End Sub
@@ -1956,7 +3337,7 @@ Partial Public Class tbChiTietLienHe
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NChar(15)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
 	Public Property SoDienThoai() As String
 		Get
 			Return Me._SoDienThoai
@@ -1972,7 +3353,7 @@ Partial Public Class tbChiTietLienHe
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="NChar(50)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="NVarChar(50)")>  _
 	Public Property Email() As String
 		Get
 			Return Me._Email
@@ -1988,13 +3369,13 @@ Partial Public Class tbChiTietLienHe
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbPhieuXuat", Storage:="_tbPhieuXuats", ThisKey:="id", OtherKey:="idNguoiLienHe")>  _
-	Public Property tbPhieuXuats() As EntitySet(Of tbPhieuXuat)
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idNguoiLienHe")>  _
+	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
 		Get
-			Return Me._tbPhieuXuats
+			Return Me._tbBaoGias
 		End Get
 		Set
-			Me._tbPhieuXuats.Assign(value)
+			Me._tbBaoGias.Assign(value)
 		End Set
 	End Property
 	
@@ -2008,16 +3389,6 @@ Partial Public Class tbChiTietLienHe
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idNguoiLienHe")>  _
-	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
-		Get
-			Return Me._tbBaoGias
-		End Get
-		Set
-			Me._tbBaoGias.Assign(value)
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idNguoiLienHe")>  _
 	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
 		Get
@@ -2028,7 +3399,17 @@ Partial Public Class tbChiTietLienHe
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbChiTietLienHe", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbPhieuXuat", Storage:="_tbPhieuXuats", ThisKey:="id", OtherKey:="idNguoiLienHe")>  _
+	Public Property tbPhieuXuats() As EntitySet(Of tbPhieuXuat)
+		Get
+			Return Me._tbPhieuXuats
+		End Get
+		Set
+			Me._tbPhieuXuats.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbChiTietLienHe", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
 	Public Property tbKhachHang() As tbKhachHang
 		Get
 			Return Me._tbKhachHang.Entity
@@ -2074,12 +3455,12 @@ Partial Public Class tbChiTietLienHe
 		End If
 	End Sub
 	
-	Private Sub attach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
+	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
 		Me.SendPropertyChanging
 		entity.tbChiTietLienHe = Me
 	End Sub
 	
-	Private Sub detach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
+	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
 		Me.SendPropertyChanging
 		entity.tbChiTietLienHe = Nothing
 	End Sub
@@ -2094,22 +3475,22 @@ Partial Public Class tbChiTietLienHe
 		entity.tbChiTietLienHe = Nothing
 	End Sub
 	
-	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbChiTietLienHe = Me
-	End Sub
-	
-	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbChiTietLienHe = Nothing
-	End Sub
-	
 	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
 		Me.SendPropertyChanging
 		entity.tbChiTietLienHe = Me
 	End Sub
 	
 	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbChiTietLienHe = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
+		Me.SendPropertyChanging
+		entity.tbChiTietLienHe = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
 		Me.SendPropertyChanging
 		entity.tbChiTietLienHe = Nothing
 	End Sub
@@ -2496,29 +3877,37 @@ Partial Public Class tbChiTietPhieuNhap
 	End Sub
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietSeri")>  _
-Partial Public Class tbChiTietSeri
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietPhieuXuat")>  _
+Partial Public Class tbChiTietPhieuXuat
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 	
 	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
 	
 	Private _id As Integer
 	
-	Private _MaSeri As String
-	
-	Private _idPhieuNhap As Integer
-	
-	Private _idPhieuXuat As System.Nullable(Of Integer)
-	
-	Private _NgayNhap As System.Nullable(Of Date)
+	Private _idPhieuXuat As Integer
 	
 	Private _idSanPham As Integer
 	
-	Private _isDanhSo As System.Nullable(Of Boolean)
+	Private _SoLuong As Double
+	
+	Private _DonGia As Double
+	
+	Private _ChietKhau As Double
+	
+	Private _TheoDonVi As Boolean
+	
+	Private _GhiChu As String
+	
+	Private _QuyCach As Double
+	
+	Private _GiaBan As Double
+	
+	Private _NgayNiemYet As System.Nullable(Of Date)
 	
 	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
 	
-	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
+	Private _tbSanPham As EntityRef(Of tbSanPham)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -2531,36 +3920,52 @@ Partial Public Class tbChiTietSeri
     End Sub
     Partial Private Sub OnidChanged()
     End Sub
-    Partial Private Sub OnMaSeriChanging(value As String)
-    End Sub
-    Partial Private Sub OnMaSeriChanged()
-    End Sub
-    Partial Private Sub OnidPhieuNhapChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidPhieuNhapChanged()
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanging(value As System.Nullable(Of Integer))
+    Partial Private Sub OnidPhieuXuatChanging(value As Integer)
     End Sub
     Partial Private Sub OnidPhieuXuatChanged()
-    End Sub
-    Partial Private Sub OnNgayNhapChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayNhapChanged()
     End Sub
     Partial Private Sub OnidSanPhamChanging(value As Integer)
     End Sub
     Partial Private Sub OnidSanPhamChanged()
     End Sub
-    Partial Private Sub OnisDanhSoChanging(value As System.Nullable(Of Boolean))
+    Partial Private Sub OnSoLuongChanging(value As Double)
     End Sub
-    Partial Private Sub OnisDanhSoChanged()
+    Partial Private Sub OnSoLuongChanged()
+    End Sub
+    Partial Private Sub OnDonGiaChanging(value As Double)
+    End Sub
+    Partial Private Sub OnDonGiaChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As Double)
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnTheoDonViChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnTheoDonViChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnQuyCachChanging(value As Double)
+    End Sub
+    Partial Private Sub OnQuyCachChanged()
+    End Sub
+    Partial Private Sub OnGiaBanChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaBanChanged()
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanged()
     End Sub
     #End Region
 	
 	Public Sub New()
 		MyBase.New
 		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
-		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
+		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
 		OnCreated
 	End Sub
 	
@@ -2581,49 +3986,14 @@ Partial Public Class tbChiTietSeri
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSeri", DbType:="NChar(25) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaSeri() As String
-		Get
-			Return Me._MaSeri
-		End Get
-		Set
-			If (String.Equals(Me._MaSeri, value) = false) Then
-				Me.OnMaSeriChanging(value)
-				Me.SendPropertyChanging
-				Me._MaSeri = value
-				Me.SendPropertyChanged("MaSeri")
-				Me.OnMaSeriChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuNhap() As Integer
-		Get
-			Return Me._idPhieuNhap
-		End Get
-		Set
-			If ((Me._idPhieuNhap = value)  _
-						= false) Then
-				If Me._tbPhieuNhap.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidPhieuNhapChanging(value)
-				Me.SendPropertyChanging
-				Me._idPhieuNhap = value
-				Me.SendPropertyChanged("idPhieuNhap")
-				Me.OnidPhieuNhapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
-	Public Property idPhieuXuat() As System.Nullable(Of Integer)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int NOT NULL")>  _
+	Public Property idPhieuXuat() As Integer
 		Get
 			Return Me._idPhieuXuat
 		End Get
 		Set
-			If (Me._idPhieuXuat.Equals(value) = false) Then
+			If ((Me._idPhieuXuat = value)  _
+						= false) Then
 				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
 					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 				End If
@@ -2636,22 +4006,6 @@ Partial Public Class tbChiTietSeri
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="Date")>  _
-	Public Property NgayNhap() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayNhap
-		End Get
-		Set
-			If (Me._NgayNhap.Equals(value) = false) Then
-				Me.OnNgayNhapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNhap = value
-				Me.SendPropertyChanged("NgayNhap")
-				Me.OnNgayNhapChanged
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
 	Public Property idSanPham() As Integer
 		Get
@@ -2660,6 +4014,9 @@ Partial Public Class tbChiTietSeri
 		Set
 			If ((Me._idSanPham = value)  _
 						= false) Then
+				If Me._tbSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
 				Me.OnidSanPhamChanging(value)
 				Me.SendPropertyChanging
 				Me._idSanPham = value
@@ -2669,23 +4026,141 @@ Partial Public Class tbChiTietSeri
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhSo", DbType:="Bit")>  _
-	Public Property isDanhSo() As System.Nullable(Of Boolean)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
 		Get
-			Return Me._isDanhSo
+			Return Me._SoLuong
 		End Get
 		Set
-			If (Me._isDanhSo.Equals(value) = false) Then
-				Me.OnisDanhSoChanging(value)
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me.OnSoLuongChanging(value)
 				Me.SendPropertyChanging
-				Me._isDanhSo = value
-				Me.SendPropertyChanged("isDanhSo")
-				Me.OnisDanhSoChanged
+				Me._SoLuong = value
+				Me.SendPropertyChanged("SoLuong")
+				Me.OnSoLuongChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietSeri", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true)>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
+	Public Property DonGia() As Double
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me.OnDonGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._DonGia = value
+				Me.SendPropertyChanged("DonGia")
+				Me.OnDonGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
+	Public Property TheoDonVi() As Boolean
+		Get
+			Return Me._TheoDonVi
+		End Get
+		Set
+			If ((Me._TheoDonVi = value)  _
+						= false) Then
+				Me.OnTheoDonViChanging(value)
+				Me.SendPropertyChanging
+				Me._TheoDonVi = value
+				Me.SendPropertyChanged("TheoDonVi")
+				Me.OnTheoDonViChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
+	Public Property QuyCach() As Double
+		Get
+			Return Me._QuyCach
+		End Get
+		Set
+			If ((Me._QuyCach = value)  _
+						= false) Then
+				Me.OnQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._QuyCach = value
+				Me.SendPropertyChanged("QuyCach")
+				Me.OnQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
+	Public Property GiaBan() As Double
+		Get
+			Return Me._GiaBan
+		End Get
+		Set
+			If ((Me._GiaBan = value)  _
+						= false) Then
+				Me.OnGiaBanChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaBan = value
+				Me.SendPropertyChanged("GiaBan")
+				Me.OnGiaBanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
+	Public Property NgayNiemYet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If (Me._NgayNiemYet.Equals(value) = false) Then
+				Me.OnNgayNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNiemYet = value
+				Me.SendPropertyChanged("NgayNiemYet")
+				Me.OnNgayNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietPhieuXuat", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
 	Public Property tbPhieuXuat() As tbPhieuXuat
 		Get
 			Return Me._tbPhieuXuat.Entity
@@ -2698,45 +4173,45 @@ Partial Public Class tbChiTietSeri
 				If ((previousValue Is Nothing)  _
 							= false) Then
 					Me._tbPhieuXuat.Entity = Nothing
-					previousValue.tbChiTietSeris.Remove(Me)
+					previousValue.tbChiTietPhieuXuats.Remove(Me)
 				End If
 				Me._tbPhieuXuat.Entity = value
 				If ((value Is Nothing)  _
 							= false) Then
-					value.tbChiTietSeris.Add(Me)
+					value.tbChiTietPhieuXuats.Add(Me)
 					Me._idPhieuXuat = value.id
 				Else
-					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
+					Me._idPhieuXuat = CType(Nothing, Integer)
 				End If
 				Me.SendPropertyChanged("tbPhieuXuat")
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietSeri", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuNhap() As tbPhieuNhap
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuXuat", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbSanPham() As tbSanPham
 		Get
-			Return Me._tbPhieuNhap.Entity
+			Return Me._tbSanPham.Entity
 		End Get
 		Set
-			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
+			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
 			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
+						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
 				Me.SendPropertyChanging
 				If ((previousValue Is Nothing)  _
 							= false) Then
-					Me._tbPhieuNhap.Entity = Nothing
-					previousValue.tbChiTietSeris.Remove(Me)
+					Me._tbSanPham.Entity = Nothing
+					previousValue.tbChiTietPhieuXuats.Remove(Me)
 				End If
-				Me._tbPhieuNhap.Entity = value
+				Me._tbSanPham.Entity = value
 				If ((value Is Nothing)  _
 							= false) Then
-					value.tbChiTietSeris.Add(Me)
-					Me._idPhieuNhap = value.id
+					value.tbChiTietPhieuXuats.Add(Me)
+					Me._idSanPham = value.id
 				Else
-					Me._idPhieuNhap = CType(Nothing, Integer)
+					Me._idSanPham = CType(Nothing, Integer)
 				End If
-				Me.SendPropertyChanged("tbPhieuNhap")
+				Me.SendPropertyChanged("tbSanPham")
 			End If
 		End Set
 	End Property
@@ -3038,6 +4513,228 @@ Partial Public Class tbDonVi
 				Me._DonVi = value
 				Me.SendPropertyChanged("DonVi")
 				Me.OnDonViChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbGiaCongSanPham")>  _
+Partial Public Class tbGiaCongSanPham
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _idSanPhamGiaCong As Integer
+	
+	Private _SoLuong As Integer
+	
+	Private _idSanPham As Integer
+	
+	Private _DonGia As Double
+	
+	Private _tbSanPham As EntityRef(Of tbSanPham)
+	
+	Private _tbGiaCong As EntityRef(Of tbGiaCong)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnidSanPhamGiaCongChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidSanPhamGiaCongChanged()
+    End Sub
+    Partial Private Sub OnSoLuongChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoLuongChanged()
+    End Sub
+    Partial Private Sub OnidSanPhamChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidSanPhamChanged()
+    End Sub
+    Partial Private Sub OnDonGiaChanging(value As Double)
+    End Sub
+    Partial Private Sub OnDonGiaChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
+		Me._tbGiaCong = CType(Nothing, EntityRef(Of tbGiaCong))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPhamGiaCong", DbType:="Int NOT NULL")>  _
+	Public Property idSanPhamGiaCong() As Integer
+		Get
+			Return Me._idSanPhamGiaCong
+		End Get
+		Set
+			If ((Me._idSanPhamGiaCong = value)  _
+						= false) Then
+				If Me._tbGiaCong.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidSanPhamGiaCongChanging(value)
+				Me.SendPropertyChanging
+				Me._idSanPhamGiaCong = value
+				Me.SendPropertyChanged("idSanPhamGiaCong")
+				Me.OnidSanPhamGiaCongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Int NOT NULL")>  _
+	Public Property SoLuong() As Integer
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me.OnSoLuongChanging(value)
+				Me.SendPropertyChanging
+				Me._SoLuong = value
+				Me.SendPropertyChanged("SoLuong")
+				Me.OnSoLuongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				If Me._tbSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._idSanPham = value
+				Me.SendPropertyChanged("idSanPham")
+				Me.OnidSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
+	Public Property DonGia() As Double
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me.OnDonGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._DonGia = value
+				Me.SendPropertyChanged("DonGia")
+				Me.OnDonGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCongSanPham", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbSanPham() As tbSanPham
+		Get
+			Return Me._tbSanPham.Entity
+		End Get
+		Set
+			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbSanPham.Entity = Nothing
+					previousValue.tbGiaCongSanPhams.Remove(Me)
+				End If
+				Me._tbSanPham.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbGiaCongSanPhams.Add(Me)
+					Me._idSanPham = value.id
+				Else
+					Me._idSanPham = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbSanPham")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbGiaCong_tbGiaCongSanPham", Storage:="_tbGiaCong", ThisKey:="idSanPhamGiaCong", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbGiaCong() As tbGiaCong
+		Get
+			Return Me._tbGiaCong.Entity
+		End Get
+		Set
+			Dim previousValue As tbGiaCong = Me._tbGiaCong.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbGiaCong.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbGiaCong.Entity = Nothing
+					previousValue.tbGiaCongSanPhams.Remove(Me)
+				End If
+				Me._tbGiaCong.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbGiaCongSanPhams.Add(Me)
+					Me._idSanPhamGiaCong = value.id
+				Else
+					Me._idSanPhamGiaCong = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbGiaCong")
 			End If
 		End Set
 	End Property
@@ -3534,6 +5231,842 @@ Partial Public Class tbHinhThucThanhToan
 	End Sub
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbHoaDon")>  _
+Partial Public Class tbHoaDon
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Decimal
+	
+	Private _NgayLap As Date
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoHoaDon As Integer
+	
+	Private _VAT As Integer
+	
+	Private _GhiChu As String
+	
+	Private _SoTienKhachDua As Decimal
+	
+	Private _idKhachHangDatHang As System.Nullable(Of Integer)
+	
+	Private _DiaChiGiaoHang As String
+	
+	Private _SoTienGiam As Decimal
+	
+	Private _GhiChuGiamTien As String
+	
+	Private _NgayInHoaDon As System.Nullable(Of Date)
+	
+	Private _KyHieuHD As String
+	
+	Private _SoHD As System.Nullable(Of Integer)
+	
+	Private _MatHang As String
+	
+	Private _TienTruocThue As System.Nullable(Of Decimal)
+	
+	Private _MucPhi As System.Nullable(Of Integer)
+	
+	Private _idKhachHangHD As System.Nullable(Of Integer)
+	
+	Private _LoaiHD As System.Nullable(Of Boolean)
+	
+	Private _DiaChi As String
+	
+	Private _SoTaiKhoan As String
+	
+	Private _HinhThucThanhToan As String
+	
+	Private _CoVAT As System.Nullable(Of Boolean)
+	
+	Private _idPhieuXuat As System.Nullable(Of Integer)
+	
+	Private _tbChiTietHoaDons As EntitySet(Of tbChiTietHoaDon)
+	
+	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
+	
+	Private _tbKhachHang As EntityRef(Of tbKhachHang)
+	
+	Private _tbKhachHang1 As EntityRef(Of tbKhachHang)
+	
+	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
+	
+	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Decimal)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnNgayLapChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayLapChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidKhachHangChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidNhanVienChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As Double)
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnSoHoaDonChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoHoaDonChanged()
+    End Sub
+    Partial Private Sub OnVATChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnVATChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnSoTienKhachDuaChanging(value As Decimal)
+    End Sub
+    Partial Private Sub OnSoTienKhachDuaChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanged()
+    End Sub
+    Partial Private Sub OnDiaChiGiaoHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnDiaChiGiaoHangChanged()
+    End Sub
+    Partial Private Sub OnSoTienGiamChanging(value As Decimal)
+    End Sub
+    Partial Private Sub OnSoTienGiamChanged()
+    End Sub
+    Partial Private Sub OnGhiChuGiamTienChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuGiamTienChanged()
+    End Sub
+    Partial Private Sub OnNgayInHoaDonChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayInHoaDonChanged()
+    End Sub
+    Partial Private Sub OnKyHieuHDChanging(value As String)
+    End Sub
+    Partial Private Sub OnKyHieuHDChanged()
+    End Sub
+    Partial Private Sub OnSoHDChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnSoHDChanged()
+    End Sub
+    Partial Private Sub OnMatHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnMatHangChanged()
+    End Sub
+    Partial Private Sub OnTienTruocThueChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnTienTruocThueChanged()
+    End Sub
+    Partial Private Sub OnMucPhiChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnMucPhiChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangHDChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidKhachHangHDChanged()
+    End Sub
+    Partial Private Sub OnLoaiHDChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnLoaiHDChanged()
+    End Sub
+    Partial Private Sub OnDiaChiChanging(value As String)
+    End Sub
+    Partial Private Sub OnDiaChiChanged()
+    End Sub
+    Partial Private Sub OnSoTaiKhoanChanging(value As String)
+    End Sub
+    Partial Private Sub OnSoTaiKhoanChanged()
+    End Sub
+    Partial Private Sub OnHinhThucThanhToanChanging(value As String)
+    End Sub
+    Partial Private Sub OnHinhThucThanhToanChanged()
+    End Sub
+    Partial Private Sub OnCoVATChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnCoVATChanged()
+    End Sub
+    Partial Private Sub OnidPhieuXuatChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidPhieuXuatChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbChiTietHoaDons = New EntitySet(Of tbChiTietHoaDon)(AddressOf Me.attach_tbChiTietHoaDons, AddressOf Me.detach_tbChiTietHoaDons)
+		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
+		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbKhachHang1 = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Decimal(18,0) NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Decimal
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me.OnNgayLapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayLap = value
+				Me.SendPropertyChanged("NgayLap")
+				Me.OnNgayLapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If ((Me._idKhachHang = value)  _
+						= false) Then
+				If Me._tbKhachHang1.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHang = value
+				Me.SendPropertyChanged("idKhachHang")
+				Me.OnidKhachHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVien = value
+				Me.SendPropertyChanged("idNhanVien")
+				Me.OnidNhanVienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHoaDon", DbType:="Int NOT NULL")>  _
+	Public Property SoHoaDon() As Integer
+		Get
+			Return Me._SoHoaDon
+		End Get
+		Set
+			If ((Me._SoHoaDon = value)  _
+						= false) Then
+				Me.OnSoHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._SoHoaDon = value
+				Me.SendPropertyChanged("SoHoaDon")
+				Me.OnSoHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me.OnVATChanging(value)
+				Me.SendPropertyChanging
+				Me._VAT = value
+				Me.SendPropertyChanged("VAT")
+				Me.OnVATChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienKhachDua", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTienKhachDua() As Decimal
+		Get
+			Return Me._SoTienKhachDua
+		End Get
+		Set
+			If ((Me._SoTienKhachDua = value)  _
+						= false) Then
+				Me.OnSoTienKhachDuaChanging(value)
+				Me.SendPropertyChanging
+				Me._SoTienKhachDua = value
+				Me.SendPropertyChanged("SoTienKhachDua")
+				Me.OnSoTienKhachDuaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
+	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If (Me._idKhachHangDatHang.Equals(value) = false) Then
+				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangDatHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHangDatHang = value
+				Me.SendPropertyChanged("idKhachHangDatHang")
+				Me.OnidKhachHangDatHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
+	Public Property DiaChiGiaoHang() As String
+		Get
+			Return Me._DiaChiGiaoHang
+		End Get
+		Set
+			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
+				Me.OnDiaChiGiaoHangChanging(value)
+				Me.SendPropertyChanging
+				Me._DiaChiGiaoHang = value
+				Me.SendPropertyChanged("DiaChiGiaoHang")
+				Me.OnDiaChiGiaoHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienGiam", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTienGiam() As Decimal
+		Get
+			Return Me._SoTienGiam
+		End Get
+		Set
+			If ((Me._SoTienGiam = value)  _
+						= false) Then
+				Me.OnSoTienGiamChanging(value)
+				Me.SendPropertyChanging
+				Me._SoTienGiam = value
+				Me.SendPropertyChanged("SoTienGiam")
+				Me.OnSoTienGiamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChuGiamTien", DbType:="NVarChar(350)")>  _
+	Public Property GhiChuGiamTien() As String
+		Get
+			Return Me._GhiChuGiamTien
+		End Get
+		Set
+			If (String.Equals(Me._GhiChuGiamTien, value) = false) Then
+				Me.OnGhiChuGiamTienChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChuGiamTien = value
+				Me.SendPropertyChanged("GhiChuGiamTien")
+				Me.OnGhiChuGiamTienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayInHoaDon", DbType:="DateTime")>  _
+	Public Property NgayInHoaDon() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayInHoaDon
+		End Get
+		Set
+			If (Me._NgayInHoaDon.Equals(value) = false) Then
+				Me.OnNgayInHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayInHoaDon = value
+				Me.SendPropertyChanged("NgayInHoaDon")
+				Me.OnNgayInHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KyHieuHD", DbType:="NChar(10)")>  _
+	Public Property KyHieuHD() As String
+		Get
+			Return Me._KyHieuHD
+		End Get
+		Set
+			If (String.Equals(Me._KyHieuHD, value) = false) Then
+				Me.OnKyHieuHDChanging(value)
+				Me.SendPropertyChanging
+				Me._KyHieuHD = value
+				Me.SendPropertyChanged("KyHieuHD")
+				Me.OnKyHieuHDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHD", DbType:="Int")>  _
+	Public Property SoHD() As System.Nullable(Of Integer)
+		Get
+			Return Me._SoHD
+		End Get
+		Set
+			If (Me._SoHD.Equals(value) = false) Then
+				Me.OnSoHDChanging(value)
+				Me.SendPropertyChanging
+				Me._SoHD = value
+				Me.SendPropertyChanged("SoHD")
+				Me.OnSoHDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MatHang", DbType:="NVarChar(500)")>  _
+	Public Property MatHang() As String
+		Get
+			Return Me._MatHang
+		End Get
+		Set
+			If (String.Equals(Me._MatHang, value) = false) Then
+				Me.OnMatHangChanging(value)
+				Me.SendPropertyChanging
+				Me._MatHang = value
+				Me.SendPropertyChanged("MatHang")
+				Me.OnMatHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienTruocThue", DbType:="Decimal(18,0)")>  _
+	Public Property TienTruocThue() As System.Nullable(Of Decimal)
+		Get
+			Return Me._TienTruocThue
+		End Get
+		Set
+			If (Me._TienTruocThue.Equals(value) = false) Then
+				Me.OnTienTruocThueChanging(value)
+				Me.SendPropertyChanging
+				Me._TienTruocThue = value
+				Me.SendPropertyChanged("TienTruocThue")
+				Me.OnTienTruocThueChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhi", DbType:="Int")>  _
+	Public Property MucPhi() As System.Nullable(Of Integer)
+		Get
+			Return Me._MucPhi
+		End Get
+		Set
+			If (Me._MucPhi.Equals(value) = false) Then
+				Me.OnMucPhiChanging(value)
+				Me.SendPropertyChanging
+				Me._MucPhi = value
+				Me.SendPropertyChanged("MucPhi")
+				Me.OnMucPhiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangHD", DbType:="Int")>  _
+	Public Property idKhachHangHD() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangHD
+		End Get
+		Set
+			If (Me._idKhachHangHD.Equals(value) = false) Then
+				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangHDChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHangHD = value
+				Me.SendPropertyChanged("idKhachHangHD")
+				Me.OnidKhachHangHDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiHD", DbType:="Bit")>  _
+	Public Property LoaiHD() As System.Nullable(Of Boolean)
+		Get
+			Return Me._LoaiHD
+		End Get
+		Set
+			If (Me._LoaiHD.Equals(value) = false) Then
+				Me.OnLoaiHDChanging(value)
+				Me.SendPropertyChanging
+				Me._LoaiHD = value
+				Me.SendPropertyChanged("LoaiHD")
+				Me.OnLoaiHDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me.OnDiaChiChanging(value)
+				Me.SendPropertyChanging
+				Me._DiaChi = value
+				Me.SendPropertyChanged("DiaChi")
+				Me.OnDiaChiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NChar(20)")>  _
+	Public Property SoTaiKhoan() As String
+		Get
+			Return Me._SoTaiKhoan
+		End Get
+		Set
+			If (String.Equals(Me._SoTaiKhoan, value) = false) Then
+				Me.OnSoTaiKhoanChanging(value)
+				Me.SendPropertyChanging
+				Me._SoTaiKhoan = value
+				Me.SendPropertyChanged("SoTaiKhoan")
+				Me.OnSoTaiKhoanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50)")>  _
+	Public Property HinhThucThanhToan() As String
+		Get
+			Return Me._HinhThucThanhToan
+		End Get
+		Set
+			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
+				Me.OnHinhThucThanhToanChanging(value)
+				Me.SendPropertyChanging
+				Me._HinhThucThanhToan = value
+				Me.SendPropertyChanged("HinhThucThanhToan")
+				Me.OnHinhThucThanhToanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CoVAT", DbType:="Bit")>  _
+	Public Property CoVAT() As System.Nullable(Of Boolean)
+		Get
+			Return Me._CoVAT
+		End Get
+		Set
+			If (Me._CoVAT.Equals(value) = false) Then
+				Me.OnCoVATChanging(value)
+				Me.SendPropertyChanging
+				Me._CoVAT = value
+				Me.SendPropertyChanged("CoVAT")
+				Me.OnCoVATChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
+	Public Property idPhieuXuat() As System.Nullable(Of Integer)
+		Get
+			Return Me._idPhieuXuat
+		End Get
+		Set
+			If (Me._idPhieuXuat.Equals(value) = false) Then
+				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidPhieuXuatChanging(value)
+				Me.SendPropertyChanging
+				Me._idPhieuXuat = value
+				Me.SendPropertyChanged("idPhieuXuat")
+				Me.OnidPhieuXuatChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbChiTietHoaDon", Storage:="_tbChiTietHoaDons", ThisKey:="id", OtherKey:="idHoaDon")>  _
+	Public Property tbChiTietHoaDons() As EntitySet(Of tbChiTietHoaDon)
+		Get
+			Return Me._tbChiTietHoaDons
+		End Get
+		Set
+			Me._tbChiTietHoaDons.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idHoaDon")>  _
+	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
+		Get
+			Return Me._tbThuNoKhachHangs
+		End Get
+		Set
+			Me._tbThuNoKhachHangs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon", Storage:="_tbKhachHang", ThisKey:="idKhachHangHD", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHang() As tbKhachHang
+		Get
+			Return Me._tbKhachHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang.Entity = Nothing
+					previousValue.tbHoaDons.Remove(Me)
+				End If
+				Me._tbKhachHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbHoaDons.Add(Me)
+					Me._idKhachHangHD = value.id
+				Else
+					Me._idKhachHangHD = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon1", Storage:="_tbKhachHang1", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbKhachHang1() As tbKhachHang
+		Get
+			Return Me._tbKhachHang1.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang1.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang1.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang1.Entity = Nothing
+					previousValue.tbHoaDons1.Remove(Me)
+				End If
+				Me._tbKhachHang1.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbHoaDons1.Add(Me)
+					Me._idKhachHang = value.id
+				Else
+					Me._idKhachHang = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbKhachHang1")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbHoaDon", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
+		Get
+			Return Me._tbKhachHangDatHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHangDatHang.Entity = Nothing
+					previousValue.tbHoaDons.Remove(Me)
+				End If
+				Me._tbKhachHangDatHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbHoaDons.Add(Me)
+					Me._idKhachHangDatHang = value.id
+				Else
+					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHangDatHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbHoaDon", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbHoaDons.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbHoaDons.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbHoaDon", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbPhieuXuat() As tbPhieuXuat
+		Get
+			Return Me._tbPhieuXuat.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuXuat.Entity = Nothing
+					previousValue.tbHoaDons.Remove(Me)
+				End If
+				Me._tbPhieuXuat.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbHoaDons.Add(Me)
+					Me._idPhieuXuat = value.id
+				Else
+					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbPhieuXuat")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
+		Me.SendPropertyChanging
+		entity.tbHoaDon = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
+		Me.SendPropertyChanging
+		entity.tbHoaDon = Nothing
+	End Sub
+	
+	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbHoaDon = Me
+	End Sub
+	
+	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbHoaDon = Nothing
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbKhachHang")>  _
 Partial Public Class tbKhachHang
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -3574,13 +6107,25 @@ Partial Public Class tbKhachHang
 	
 	Private _NgayTraNo As Integer
 	
+	Private _tbBaoGias As EntitySet(Of tbBaoGia)
+	
 	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
 	
 	Private _tbChiTietLienHes As EntitySet(Of tbChiTietLienHe)
 	
 	Private _tbGiaoViecs As EntitySet(Of tbGiaoViec)
 	
+	Private _tbHoaDons As EntitySet(Of tbHoaDon)
+	
+	Private _tbHoaDons1 As EntitySet(Of tbHoaDon)
+	
+	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
+	
 	Private _tbNganHangUyNhiemChis As EntitySet(Of tbNganHangUyNhiemChi)
+	
+	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
+	
+	Private _tbPhieuNhaps1 As EntitySet(Of tbPhieuNhap)
 	
 	Private _tbPhieuUyNhiemChis As EntitySet(Of tbPhieuUyNhiemChi)
 	
@@ -3589,18 +6134,6 @@ Partial Public Class tbKhachHang
 	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
 	
 	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
-	
-	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
-	
-	Private _tbHoaDons As EntitySet(Of tbHoaDon)
-	
-	Private _tbHoaDons1 As EntitySet(Of tbHoaDon)
-	
-	Private _tbBaoGias As EntitySet(Of tbBaoGia)
-	
-	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
-	
-	Private _tbPhieuNhaps1 As EntitySet(Of tbPhieuNhap)
 	
 	Private _tbNhomKhachHang As EntityRef(Of tbNhomKhachHang)
 	
@@ -3683,20 +6216,20 @@ Partial Public Class tbKhachHang
 	
 	Public Sub New()
 		MyBase.New
+		Me._tbBaoGias = New EntitySet(Of tbBaoGia)(AddressOf Me.attach_tbBaoGias, AddressOf Me.detach_tbBaoGias)
 		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
 		Me._tbChiTietLienHes = New EntitySet(Of tbChiTietLienHe)(AddressOf Me.attach_tbChiTietLienHes, AddressOf Me.detach_tbChiTietLienHes)
 		Me._tbGiaoViecs = New EntitySet(Of tbGiaoViec)(AddressOf Me.attach_tbGiaoViecs, AddressOf Me.detach_tbGiaoViecs)
+		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
+		Me._tbHoaDons1 = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons1, AddressOf Me.detach_tbHoaDons1)
+		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
 		Me._tbNganHangUyNhiemChis = New EntitySet(Of tbNganHangUyNhiemChi)(AddressOf Me.attach_tbNganHangUyNhiemChis, AddressOf Me.detach_tbNganHangUyNhiemChis)
+		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
+		Me._tbPhieuNhaps1 = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps1, AddressOf Me.detach_tbPhieuNhaps1)
 		Me._tbPhieuUyNhiemChis = New EntitySet(Of tbPhieuUyNhiemChi)(AddressOf Me.attach_tbPhieuUyNhiemChis, AddressOf Me.detach_tbPhieuUyNhiemChis)
 		Me._tbPhieuUyNhiemChis1 = New EntitySet(Of tbPhieuUyNhiemChi)(AddressOf Me.attach_tbPhieuUyNhiemChis1, AddressOf Me.detach_tbPhieuUyNhiemChis1)
 		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
 		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
-		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
-		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
-		Me._tbHoaDons1 = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons1, AddressOf Me.detach_tbHoaDons1)
-		Me._tbBaoGias = New EntitySet(Of tbBaoGia)(AddressOf Me.attach_tbBaoGias, AddressOf Me.detach_tbBaoGias)
-		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
-		Me._tbPhieuNhaps1 = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps1, AddressOf Me.detach_tbPhieuNhaps1)
 		Me._tbNhomKhachHang = CType(Nothing, EntityRef(Of tbNhomKhachHang))
 		OnCreated
 	End Sub
@@ -3982,6 +6515,16 @@ Partial Public Class tbKhachHang
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idKhachHang")>  _
+	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
+		Get
+			Return Me._tbBaoGias
+		End Get
+		Set
+			Me._tbBaoGias.Assign(value)
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idKhachHang")>  _
 	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
 		Get
@@ -4012,6 +6555,36 @@ Partial Public Class tbKhachHang
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idKhachHangHD")>  _
+	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
+		Get
+			Return Me._tbHoaDons
+		End Get
+		Set
+			Me._tbHoaDons.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon1", Storage:="_tbHoaDons1", ThisKey:="id", OtherKey:="idKhachHang")>  _
+	Public Property tbHoaDons1() As EntitySet(Of tbHoaDon)
+		Get
+			Return Me._tbHoaDons1
+		End Get
+		Set
+			Me._tbHoaDons1.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idKhachHang")>  _
+	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
+		Get
+			Return Me._tbKhachHangDatHangs
+		End Get
+		Set
+			Me._tbKhachHangDatHangs.Assign(value)
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbNganHangUyNhiemChi", Storage:="_tbNganHangUyNhiemChis", ThisKey:="id", OtherKey:="idKhachHang")>  _
 	Public Property tbNganHangUyNhiemChis() As EntitySet(Of tbNganHangUyNhiemChi)
 		Get
@@ -4019,6 +6592,26 @@ Partial Public Class tbKhachHang
 		End Get
 		Set
 			Me._tbNganHangUyNhiemChis.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idKhachHang")>  _
+	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
+		Get
+			Return Me._tbPhieuNhaps
+		End Get
+		Set
+			Me._tbPhieuNhaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap1", Storage:="_tbPhieuNhaps1", ThisKey:="id", OtherKey:="idNhaCungCap")>  _
+	Public Property tbPhieuNhaps1() As EntitySet(Of tbPhieuNhap)
+		Get
+			Return Me._tbPhieuNhaps1
+		End Get
+		Set
+			Me._tbPhieuNhaps1.Assign(value)
 		End Set
 	End Property
 	
@@ -4059,66 +6652,6 @@ Partial Public Class tbKhachHang
 		End Get
 		Set
 			Me._tbThuNoKhachHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idKhachHang")>  _
-	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
-		Get
-			Return Me._tbKhachHangDatHangs
-		End Get
-		Set
-			Me._tbKhachHangDatHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idKhachHangHD")>  _
-	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
-		Get
-			Return Me._tbHoaDons
-		End Get
-		Set
-			Me._tbHoaDons.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon1", Storage:="_tbHoaDons1", ThisKey:="id", OtherKey:="idKhachHang")>  _
-	Public Property tbHoaDons1() As EntitySet(Of tbHoaDon)
-		Get
-			Return Me._tbHoaDons1
-		End Get
-		Set
-			Me._tbHoaDons1.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idKhachHang")>  _
-	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
-		Get
-			Return Me._tbBaoGias
-		End Get
-		Set
-			Me._tbBaoGias.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idKhachHang")>  _
-	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
-		Get
-			Return Me._tbPhieuNhaps
-		End Get
-		Set
-			Me._tbPhieuNhaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap1", Storage:="_tbPhieuNhaps1", ThisKey:="id", OtherKey:="idNhaCungCap")>  _
-	Public Property tbPhieuNhaps1() As EntitySet(Of tbPhieuNhap)
-		Get
-			Return Me._tbPhieuNhaps1
-		End Get
-		Set
-			Me._tbPhieuNhaps1.Assign(value)
 		End Set
 	End Property
 	
@@ -4168,6 +6701,16 @@ Partial Public Class tbKhachHang
 		End If
 	End Sub
 	
+	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Me
+	End Sub
+	
+	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Nothing
+	End Sub
+	
 	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
 		Me.SendPropertyChanging
 		entity.tbKhachHang = Me
@@ -4198,6 +6741,36 @@ Partial Public Class tbKhachHang
 		entity.tbKhachHang = Nothing
 	End Sub
 	
+	Private Sub attach_tbHoaDons(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Me
+	End Sub
+	
+	Private Sub detach_tbHoaDons(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbHoaDons1(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbKhachHang1 = Me
+	End Sub
+	
+	Private Sub detach_tbHoaDons1(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbKhachHang1 = Nothing
+	End Sub
+	
+	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Me
+	End Sub
+	
+	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Nothing
+	End Sub
+	
 	Private Sub attach_tbNganHangUyNhiemChis(ByVal entity As tbNganHangUyNhiemChi)
 		Me.SendPropertyChanging
 		entity.tbKhachHang = Me
@@ -4206,6 +6779,26 @@ Partial Public Class tbKhachHang
 	Private Sub detach_tbNganHangUyNhiemChis(ByVal entity As tbNganHangUyNhiemChi)
 		Me.SendPropertyChanging
 		entity.tbKhachHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbKhachHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbKhachHang1 = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbKhachHang1 = Nothing
 	End Sub
 	
 	Private Sub attach_tbPhieuUyNhiemChis(ByVal entity As tbPhieuUyNhiemChi)
@@ -4247,65 +6840,698 @@ Partial Public Class tbKhachHang
 		Me.SendPropertyChanging
 		entity.tbKhachHang = Nothing
 	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbKhachHangDatHang")>  _
+Partial Public Class tbKhachHangDatHang
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 	
-	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbKhachHang = Me
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoPhieu As Integer
+	
+	Private _VAT As Integer
+	
+	Private _GhiChu As String
+	
+	Private _DaLapHoaDon As Boolean
+	
+	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
+	
+	Private _DiaChiGiaoHang As String
+	
+	Private _idNhanVienKiemDuyet As String
+	
+	Private _NgayKiemDuyet As System.Nullable(Of Date)
+	
+	Private _CapDo As System.Nullable(Of Integer)
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _CongTrinh As String
+	
+	Private _isHoaDon As System.Nullable(Of Boolean)
+	
+	Private _idNguoiLienHe As System.Nullable(Of Integer)
+	
+	Private _idBaoGia As System.Nullable(Of Integer)
+	
+	Private _tbChiTietKhachHangDatHangs As EntitySet(Of tbChiTietKhachHangDatHang)
+	
+	Private _tbHoaDons As EntitySet(Of tbHoaDon)
+	
+	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
+	
+	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
+	
+	Private _tbBaoGia As EntityRef(Of tbBaoGia)
+	
+	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
+	
+	Private _tbKhachHang As EntityRef(Of tbKhachHang)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnNgayLapChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayLapChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidKhachHangChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidNhanVienChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As Double)
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnSoPhieuChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoPhieuChanged()
+    End Sub
+    Partial Private Sub OnVATChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnVATChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnDaLapHoaDonChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnDaLapHoaDonChanged()
+    End Sub
+    Partial Private Sub OnNgayDuKienGiaoHangChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayDuKienGiaoHangChanged()
+    End Sub
+    Partial Private Sub OnDiaChiGiaoHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnDiaChiGiaoHangChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienKiemDuyetChanging(value As String)
+    End Sub
+    Partial Private Sub OnidNhanVienKiemDuyetChanged()
+    End Sub
+    Partial Private Sub OnNgayKiemDuyetChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayKiemDuyetChanged()
+    End Sub
+    Partial Private Sub OnCapDoChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnCapDoChanged()
+    End Sub
+    Partial Private Sub OnisNhapHangChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisNhapHangChanged()
+    End Sub
+    Partial Private Sub OnCongTrinhChanging(value As String)
+    End Sub
+    Partial Private Sub OnCongTrinhChanged()
+    End Sub
+    Partial Private Sub OnisHoaDonChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisHoaDonChanged()
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanged()
+    End Sub
+    Partial Private Sub OnidBaoGiaChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidBaoGiaChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbChiTietKhachHangDatHangs = New EntitySet(Of tbChiTietKhachHangDatHang)(AddressOf Me.attach_tbChiTietKhachHangDatHangs, AddressOf Me.detach_tbChiTietKhachHangDatHangs)
+		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
+		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
+		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
+		Me._tbBaoGia = CType(Nothing, EntityRef(Of tbBaoGia))
+		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
+		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		OnCreated
 	End Sub
 	
-	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me.OnNgayLapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayLap = value
+				Me.SendPropertyChanged("NgayLap")
+				Me.OnNgayLapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If ((Me._idKhachHang = value)  _
+						= false) Then
+				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHang = value
+				Me.SendPropertyChanged("idKhachHang")
+				Me.OnidKhachHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVien = value
+				Me.SendPropertyChanged("idNhanVien")
+				Me.OnidNhanVienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me.OnSoPhieuChanging(value)
+				Me.SendPropertyChanging
+				Me._SoPhieu = value
+				Me.SendPropertyChanged("SoPhieu")
+				Me.OnSoPhieuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me.OnVATChanging(value)
+				Me.SendPropertyChanging
+				Me._VAT = value
+				Me.SendPropertyChanged("VAT")
+				Me.OnVATChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
+	Public Property DaLapHoaDon() As Boolean
+		Get
+			Return Me._DaLapHoaDon
+		End Get
+		Set
+			If ((Me._DaLapHoaDon = value)  _
+						= false) Then
+				Me.OnDaLapHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._DaLapHoaDon = value
+				Me.SendPropertyChanged("DaLapHoaDon")
+				Me.OnDaLapHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
+	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayDuKienGiaoHang
+		End Get
+		Set
+			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
+				Me.OnNgayDuKienGiaoHangChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayDuKienGiaoHang = value
+				Me.SendPropertyChanged("NgayDuKienGiaoHang")
+				Me.OnNgayDuKienGiaoHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
+	Public Property DiaChiGiaoHang() As String
+		Get
+			Return Me._DiaChiGiaoHang
+		End Get
+		Set
+			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
+				Me.OnDiaChiGiaoHangChanging(value)
+				Me.SendPropertyChanging
+				Me._DiaChiGiaoHang = value
+				Me.SendPropertyChanged("DiaChiGiaoHang")
+				Me.OnDiaChiGiaoHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="NChar(10)")>  _
+	Public Property idNhanVienKiemDuyet() As String
+		Get
+			Return Me._idNhanVienKiemDuyet
+		End Get
+		Set
+			If (String.Equals(Me._idNhanVienKiemDuyet, value) = false) Then
+				Me.OnidNhanVienKiemDuyetChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVienKiemDuyet = value
+				Me.SendPropertyChanged("idNhanVienKiemDuyet")
+				Me.OnidNhanVienKiemDuyetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
+	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayKiemDuyet
+		End Get
+		Set
+			If (Me._NgayKiemDuyet.Equals(value) = false) Then
+				Me.OnNgayKiemDuyetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayKiemDuyet = value
+				Me.SendPropertyChanged("NgayKiemDuyet")
+				Me.OnNgayKiemDuyetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
+	Public Property CapDo() As System.Nullable(Of Integer)
+		Get
+			Return Me._CapDo
+		End Get
+		Set
+			If (Me._CapDo.Equals(value) = false) Then
+				Me.OnCapDoChanging(value)
+				Me.SendPropertyChanging
+				Me._CapDo = value
+				Me.SendPropertyChanged("CapDo")
+				Me.OnCapDoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me.OnisNhapHangChanging(value)
+				Me.SendPropertyChanging
+				Me._isNhapHang = value
+				Me.SendPropertyChanged("isNhapHang")
+				Me.OnisNhapHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
+	Public Property CongTrinh() As String
+		Get
+			Return Me._CongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._CongTrinh, value) = false) Then
+				Me.OnCongTrinhChanging(value)
+				Me.SendPropertyChanging
+				Me._CongTrinh = value
+				Me.SendPropertyChanged("CongTrinh")
+				Me.OnCongTrinhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
+	Public Property isHoaDon() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isHoaDon
+		End Get
+		Set
+			If (Me._isHoaDon.Equals(value) = false) Then
+				Me.OnisHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._isHoaDon = value
+				Me.SendPropertyChanged("isHoaDon")
+				Me.OnisHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
+	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNguoiLienHe
+		End Get
+		Set
+			If (Me._idNguoiLienHe.Equals(value) = false) Then
+				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNguoiLienHeChanging(value)
+				Me.SendPropertyChanging
+				Me._idNguoiLienHe = value
+				Me.SendPropertyChanged("idNguoiLienHe")
+				Me.OnidNguoiLienHeChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int")>  _
+	Public Property idBaoGia() As System.Nullable(Of Integer)
+		Get
+			Return Me._idBaoGia
+		End Get
+		Set
+			If (Me._idBaoGia.Equals(value) = false) Then
+				If Me._tbBaoGia.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidBaoGiaChanging(value)
+				Me.SendPropertyChanging
+				Me._idBaoGia = value
+				Me.SendPropertyChanged("idBaoGia")
+				Me.OnidBaoGiaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbChiTietKhachHangDatHang", Storage:="_tbChiTietKhachHangDatHangs", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
+	Public Property tbChiTietKhachHangDatHangs() As EntitySet(Of tbChiTietKhachHangDatHang)
+		Get
+			Return Me._tbChiTietKhachHangDatHangs
+		End Get
+		Set
+			Me._tbChiTietKhachHangDatHangs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
+	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
+		Get
+			Return Me._tbHoaDons
+		End Get
+		Set
+			Me._tbHoaDons.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
+	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
+		Get
+			Return Me._tbPhieuNhaps
+		End Get
+		Set
+			Me._tbPhieuNhaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuXuat", Storage:="_tbPhieuXuats", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
+	Public Property tbPhieuXuats() As EntitySet(Of tbPhieuXuat)
+		Get
+			Return Me._tbPhieuXuats
+		End Get
+		Set
+			Me._tbPhieuXuats.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbKhachHangDatHang", Storage:="_tbBaoGia", ThisKey:="idBaoGia", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbBaoGia() As tbBaoGia
+		Get
+			Return Me._tbBaoGia.Entity
+		End Get
+		Set
+			Dim previousValue As tbBaoGia = Me._tbBaoGia.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbBaoGia.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbBaoGia.Entity = Nothing
+					previousValue.tbKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbBaoGia.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbKhachHangDatHangs.Add(Me)
+					Me._idBaoGia = value.id
+				Else
+					Me._idBaoGia = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbBaoGia")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbKhachHangDatHang", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbChiTietLienHe() As tbChiTietLienHe
+		Get
+			Return Me._tbChiTietLienHe.Entity
+		End Get
+		Set
+			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbChiTietLienHe.Entity = Nothing
+					previousValue.tbKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbChiTietLienHe.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbKhachHangDatHangs.Add(Me)
+					Me._idNguoiLienHe = value.id
+				Else
+					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbChiTietLienHe")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbKhachHangDatHang", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbKhachHang() As tbKhachHang
+		Get
+			Return Me._tbKhachHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang.Entity = Nothing
+					previousValue.tbKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbKhachHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbKhachHangDatHangs.Add(Me)
+					Me._idKhachHang = value.id
+				Else
+					Me._idKhachHang = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbKhachHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbKhachHangDatHang", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbKhachHangDatHangs.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbKhachHangDatHangs.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
 		Me.SendPropertyChanging
-		entity.tbKhachHang = Nothing
+		entity.tbKhachHangDatHang = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbKhachHangDatHang = Nothing
 	End Sub
 	
 	Private Sub attach_tbHoaDons(ByVal entity As tbHoaDon)
 		Me.SendPropertyChanging
-		entity.tbKhachHang = Me
+		entity.tbKhachHangDatHang = Me
 	End Sub
 	
 	Private Sub detach_tbHoaDons(ByVal entity As tbHoaDon)
 		Me.SendPropertyChanging
-		entity.tbKhachHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbHoaDons1(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbKhachHang1 = Me
-	End Sub
-	
-	Private Sub detach_tbHoaDons1(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbKhachHang1 = Nothing
-	End Sub
-	
-	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbKhachHang = Me
-	End Sub
-	
-	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbKhachHang = Nothing
+		entity.tbKhachHangDatHang = Nothing
 	End Sub
 	
 	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
 		Me.SendPropertyChanging
-		entity.tbKhachHang = Me
+		entity.tbKhachHangDatHang = Me
 	End Sub
 	
 	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
 		Me.SendPropertyChanging
-		entity.tbKhachHang = Nothing
+		entity.tbKhachHangDatHang = Nothing
 	End Sub
 	
-	Private Sub attach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+	Private Sub attach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
 		Me.SendPropertyChanging
-		entity.tbKhachHang1 = Me
+		entity.tbKhachHangDatHang = Me
 	End Sub
 	
-	Private Sub detach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+	Private Sub detach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
 		Me.SendPropertyChanging
-		entity.tbKhachHang1 = Nothing
+		entity.tbKhachHangDatHang = Nothing
 	End Sub
 End Class
 
@@ -4432,7 +7658,7 @@ Partial Public Class tbLichSuCongViec
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NoiDungString", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NoiDungString", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
 	Public Property NoiDungString() As String
 		Get
 			Return Me._NoiDungString
@@ -4622,6 +7848,113 @@ Partial Public Class tbLoaiBaoGia
 	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
 		Me.SendPropertyChanging
 		entity.tbLoaiBaoGia = Nothing
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiNganHang")>  _
+Partial Public Class tbLoaiNganHang
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _TenLoaiNganHang As String
+	
+	Private _Loai As Integer
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnTenLoaiNganHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenLoaiNganHangChanged()
+    End Sub
+    Partial Private Sub OnLoaiChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnLoaiChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiNganHang", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenLoaiNganHang() As String
+		Get
+			Return Me._TenLoaiNganHang
+		End Get
+		Set
+			If (String.Equals(Me._TenLoaiNganHang, value) = false) Then
+				Me.OnTenLoaiNganHangChanging(value)
+				Me.SendPropertyChanging
+				Me._TenLoaiNganHang = value
+				Me.SendPropertyChanged("TenLoaiNganHang")
+				Me.OnTenLoaiNganHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
+	Public Property Loai() As Integer
+		Get
+			Return Me._Loai
+		End Get
+		Set
+			If ((Me._Loai = value)  _
+						= false) Then
+				Me.OnLoaiChanging(value)
+				Me.SendPropertyChanging
+				Me._Loai = value
+				Me.SendPropertyChanged("Loai")
+				Me.OnLoaiChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
 	End Sub
 End Class
 
@@ -4926,6 +8259,158 @@ Partial Public Class tbLoaiPhieuNhap
 	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
 		Me.SendPropertyChanging
 		entity.tbLoaiPhieuNhap = Nothing
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiPhieuThu")>  _
+Partial Public Class tbLoaiPhieuThu
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _LoaiThu As String
+	
+	Private _MoTa As String
+	
+	Private _Loai As Integer
+	
+	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnLoaiThuChanging(value As String)
+    End Sub
+    Partial Private Sub OnLoaiThuChanged()
+    End Sub
+    Partial Private Sub OnMoTaChanging(value As String)
+    End Sub
+    Partial Private Sub OnMoTaChanged()
+    End Sub
+    Partial Private Sub OnLoaiChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnLoaiChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiThu", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property LoaiThu() As String
+		Get
+			Return Me._LoaiThu
+		End Get
+		Set
+			If (String.Equals(Me._LoaiThu, value) = false) Then
+				Me.OnLoaiThuChanging(value)
+				Me.SendPropertyChanging
+				Me._LoaiThu = value
+				Me.SendPropertyChanged("LoaiThu")
+				Me.OnLoaiThuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NVarChar(350)")>  _
+	Public Property MoTa() As String
+		Get
+			Return Me._MoTa
+		End Get
+		Set
+			If (String.Equals(Me._MoTa, value) = false) Then
+				Me.OnMoTaChanging(value)
+				Me.SendPropertyChanging
+				Me._MoTa = value
+				Me.SendPropertyChanged("MoTa")
+				Me.OnMoTaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
+	Public Property Loai() As Integer
+		Get
+			Return Me._Loai
+		End Get
+		Set
+			If ((Me._Loai = value)  _
+						= false) Then
+				Me.OnLoaiChanging(value)
+				Me.SendPropertyChanging
+				Me._Loai = value
+				Me.SendPropertyChanged("Loai")
+				Me.OnLoaiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idLoaiPhieuThu")>  _
+	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
+		Get
+			Return Me._tbPhieuThus
+		End Get
+		Set
+			Me._tbPhieuThus.Assign(value)
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbLoaiPhieuThu = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbLoaiPhieuThu = Nothing
 	End Sub
 End Class
 
@@ -5339,6 +8824,583 @@ Partial Public Class tbLogBackup
 	End Sub
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbNganHang")>  _
+Partial Public Class tbNganHang
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _TenNganHang As String
+	
+	Private _SoTaiKhoan As String
+	
+	Private _ChiNhanh As String
+	
+	Private _GhiChu As String
+	
+	Private _DiaChi As String
+	
+	Private _DienThoai As String
+	
+	Private _MaNganHang As String
+	
+	Private _SoDuDauKy As Double
+	
+	Private _isTienMat As System.Nullable(Of Boolean)
+	
+	Private _DuongDanAnh As String
+	
+	Private _DuongDanFileReport As String
+	
+	Private _ChieuDaiNoiDung As System.Nullable(Of Decimal)
+	
+	Private _ChieuDaiTienChu As System.Nullable(Of Decimal)
+	
+	Private _TenChuTaiKhoan As String
+	
+	Private _LoaiNganHang As Integer
+	
+	Private _TenTaiKhoan As String
+	
+	Private _NgayNhap As Date
+	
+	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
+	
+	Private _tbTraNoNhaCungCaps1 As EntitySet(Of tbTraNoNhaCungCap)
+	
+	Private _tbPhieuChis As EntitySet(Of tbPhieuChi)
+	
+	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
+	
+	Private _tbPhieuUyNhiemChis As EntitySet(Of tbPhieuUyNhiemChi)
+	
+	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnTenNganHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenNganHangChanged()
+    End Sub
+    Partial Private Sub OnSoTaiKhoanChanging(value As String)
+    End Sub
+    Partial Private Sub OnSoTaiKhoanChanged()
+    End Sub
+    Partial Private Sub OnChiNhanhChanging(value As String)
+    End Sub
+    Partial Private Sub OnChiNhanhChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnDiaChiChanging(value As String)
+    End Sub
+    Partial Private Sub OnDiaChiChanged()
+    End Sub
+    Partial Private Sub OnDienThoaiChanging(value As String)
+    End Sub
+    Partial Private Sub OnDienThoaiChanged()
+    End Sub
+    Partial Private Sub OnMaNganHangChanging(value As String)
+    End Sub
+    Partial Private Sub OnMaNganHangChanged()
+    End Sub
+    Partial Private Sub OnSoDuDauKyChanging(value As Double)
+    End Sub
+    Partial Private Sub OnSoDuDauKyChanged()
+    End Sub
+    Partial Private Sub OnisTienMatChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisTienMatChanged()
+    End Sub
+    Partial Private Sub OnDuongDanAnhChanging(value As String)
+    End Sub
+    Partial Private Sub OnDuongDanAnhChanged()
+    End Sub
+    Partial Private Sub OnDuongDanFileReportChanging(value As String)
+    End Sub
+    Partial Private Sub OnDuongDanFileReportChanged()
+    End Sub
+    Partial Private Sub OnChieuDaiNoiDungChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnChieuDaiNoiDungChanged()
+    End Sub
+    Partial Private Sub OnChieuDaiTienChuChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnChieuDaiTienChuChanged()
+    End Sub
+    Partial Private Sub OnTenChuTaiKhoanChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenChuTaiKhoanChanged()
+    End Sub
+    Partial Private Sub OnLoaiNganHangChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnLoaiNganHangChanged()
+    End Sub
+    Partial Private Sub OnTenTaiKhoanChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenTaiKhoanChanged()
+    End Sub
+    Partial Private Sub OnNgayNhapChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayNhapChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
+		Me._tbTraNoNhaCungCaps1 = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps1, AddressOf Me.detach_tbTraNoNhaCungCaps1)
+		Me._tbPhieuChis = New EntitySet(Of tbPhieuChi)(AddressOf Me.attach_tbPhieuChis, AddressOf Me.detach_tbPhieuChis)
+		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
+		Me._tbPhieuUyNhiemChis = New EntitySet(Of tbPhieuUyNhiemChi)(AddressOf Me.attach_tbPhieuUyNhiemChis, AddressOf Me.detach_tbPhieuUyNhiemChis)
+		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNganHang", DbType:="NVarChar(130) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNganHang() As String
+		Get
+			Return Me._TenNganHang
+		End Get
+		Set
+			If (String.Equals(Me._TenNganHang, value) = false) Then
+				Me.OnTenNganHangChanging(value)
+				Me.SendPropertyChanging
+				Me._TenNganHang = value
+				Me.SendPropertyChanged("TenNganHang")
+				Me.OnTenNganHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NVarChar(50)")>  _
+	Public Property SoTaiKhoan() As String
+		Get
+			Return Me._SoTaiKhoan
+		End Get
+		Set
+			If (String.Equals(Me._SoTaiKhoan, value) = false) Then
+				Me.OnSoTaiKhoanChanging(value)
+				Me.SendPropertyChanging
+				Me._SoTaiKhoan = value
+				Me.SendPropertyChanged("SoTaiKhoan")
+				Me.OnSoTaiKhoanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChiNhanh", DbType:="NVarChar(100)")>  _
+	Public Property ChiNhanh() As String
+		Get
+			Return Me._ChiNhanh
+		End Get
+		Set
+			If (String.Equals(Me._ChiNhanh, value) = false) Then
+				Me.OnChiNhanhChanging(value)
+				Me.SendPropertyChanging
+				Me._ChiNhanh = value
+				Me.SendPropertyChanged("ChiNhanh")
+				Me.OnChiNhanhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(80)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me.OnDiaChiChanging(value)
+				Me.SendPropertyChanging
+				Me._DiaChi = value
+				Me.SendPropertyChanged("DiaChi")
+				Me.OnDiaChiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DienThoai", DbType:="NVarChar(50)")>  _
+	Public Property DienThoai() As String
+		Get
+			Return Me._DienThoai
+		End Get
+		Set
+			If (String.Equals(Me._DienThoai, value) = false) Then
+				Me.OnDienThoaiChanging(value)
+				Me.SendPropertyChanging
+				Me._DienThoai = value
+				Me.SendPropertyChanged("DienThoai")
+				Me.OnDienThoaiChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaNganHang", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaNganHang() As String
+		Get
+			Return Me._MaNganHang
+		End Get
+		Set
+			If (String.Equals(Me._MaNganHang, value) = false) Then
+				Me.OnMaNganHangChanging(value)
+				Me.SendPropertyChanging
+				Me._MaNganHang = value
+				Me.SendPropertyChanged("MaNganHang")
+				Me.OnMaNganHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDuDauKy", DbType:="Float NOT NULL")>  _
+	Public Property SoDuDauKy() As Double
+		Get
+			Return Me._SoDuDauKy
+		End Get
+		Set
+			If ((Me._SoDuDauKy = value)  _
+						= false) Then
+				Me.OnSoDuDauKyChanging(value)
+				Me.SendPropertyChanging
+				Me._SoDuDauKy = value
+				Me.SendPropertyChanged("SoDuDauKy")
+				Me.OnSoDuDauKyChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isTienMat", DbType:="Bit")>  _
+	Public Property isTienMat() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isTienMat
+		End Get
+		Set
+			If (Me._isTienMat.Equals(value) = false) Then
+				Me.OnisTienMatChanging(value)
+				Me.SendPropertyChanging
+				Me._isTienMat = value
+				Me.SendPropertyChanged("isTienMat")
+				Me.OnisTienMatChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DuongDanAnh", DbType:="NVarChar(350)")>  _
+	Public Property DuongDanAnh() As String
+		Get
+			Return Me._DuongDanAnh
+		End Get
+		Set
+			If (String.Equals(Me._DuongDanAnh, value) = false) Then
+				Me.OnDuongDanAnhChanging(value)
+				Me.SendPropertyChanging
+				Me._DuongDanAnh = value
+				Me.SendPropertyChanged("DuongDanAnh")
+				Me.OnDuongDanAnhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DuongDanFileReport", DbType:="NVarChar(350)")>  _
+	Public Property DuongDanFileReport() As String
+		Get
+			Return Me._DuongDanFileReport
+		End Get
+		Set
+			If (String.Equals(Me._DuongDanFileReport, value) = false) Then
+				Me.OnDuongDanFileReportChanging(value)
+				Me.SendPropertyChanging
+				Me._DuongDanFileReport = value
+				Me.SendPropertyChanged("DuongDanFileReport")
+				Me.OnDuongDanFileReportChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChieuDaiNoiDung", DbType:="Decimal(18,0)")>  _
+	Public Property ChieuDaiNoiDung() As System.Nullable(Of Decimal)
+		Get
+			Return Me._ChieuDaiNoiDung
+		End Get
+		Set
+			If (Me._ChieuDaiNoiDung.Equals(value) = false) Then
+				Me.OnChieuDaiNoiDungChanging(value)
+				Me.SendPropertyChanging
+				Me._ChieuDaiNoiDung = value
+				Me.SendPropertyChanged("ChieuDaiNoiDung")
+				Me.OnChieuDaiNoiDungChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChieuDaiTienChu", DbType:="Decimal(18,0)")>  _
+	Public Property ChieuDaiTienChu() As System.Nullable(Of Decimal)
+		Get
+			Return Me._ChieuDaiTienChu
+		End Get
+		Set
+			If (Me._ChieuDaiTienChu.Equals(value) = false) Then
+				Me.OnChieuDaiTienChuChanging(value)
+				Me.SendPropertyChanging
+				Me._ChieuDaiTienChu = value
+				Me.SendPropertyChanged("ChieuDaiTienChu")
+				Me.OnChieuDaiTienChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenChuTaiKhoan", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenChuTaiKhoan() As String
+		Get
+			Return Me._TenChuTaiKhoan
+		End Get
+		Set
+			If (String.Equals(Me._TenChuTaiKhoan, value) = false) Then
+				Me.OnTenChuTaiKhoanChanging(value)
+				Me.SendPropertyChanging
+				Me._TenChuTaiKhoan = value
+				Me.SendPropertyChanged("TenChuTaiKhoan")
+				Me.OnTenChuTaiKhoanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiNganHang", DbType:="Int NOT NULL")>  _
+	Public Property LoaiNganHang() As Integer
+		Get
+			Return Me._LoaiNganHang
+		End Get
+		Set
+			If ((Me._LoaiNganHang = value)  _
+						= false) Then
+				Me.OnLoaiNganHangChanging(value)
+				Me.SendPropertyChanging
+				Me._LoaiNganHang = value
+				Me.SendPropertyChanged("LoaiNganHang")
+				Me.OnLoaiNganHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenTaiKhoan", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenTaiKhoan() As String
+		Get
+			Return Me._TenTaiKhoan
+		End Get
+		Set
+			If (String.Equals(Me._TenTaiKhoan, value) = false) Then
+				Me.OnTenTaiKhoanChanging(value)
+				Me.SendPropertyChanging
+				Me._TenTaiKhoan = value
+				Me.SendPropertyChanged("TenTaiKhoan")
+				Me.OnTenTaiKhoanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayNhap() As Date
+		Get
+			Return Me._NgayNhap
+		End Get
+		Set
+			If ((Me._NgayNhap = value)  _
+						= false) Then
+				Me.OnNgayNhapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNhap = value
+				Me.SendPropertyChanged("NgayNhap")
+				Me.OnNgayNhapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
+	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
+		Get
+			Return Me._tbTraNoNhaCungCaps
+		End Get
+		Set
+			Me._tbTraNoNhaCungCaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbTraNoNhaCungCap1", Storage:="_tbTraNoNhaCungCaps1", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
+	Public Property tbTraNoNhaCungCaps1() As EntitySet(Of tbTraNoNhaCungCap)
+		Get
+			Return Me._tbTraNoNhaCungCaps1
+		End Get
+		Set
+			Me._tbTraNoNhaCungCaps1.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuChi", Storage:="_tbPhieuChis", ThisKey:="id", OtherKey:="idNganHang")>  _
+	Public Property tbPhieuChis() As EntitySet(Of tbPhieuChi)
+		Get
+			Return Me._tbPhieuChis
+		End Get
+		Set
+			Me._tbPhieuChis.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idNganHang")>  _
+	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
+		Get
+			Return Me._tbPhieuThus
+		End Get
+		Set
+			Me._tbPhieuThus.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuUyNhiemChi", Storage:="_tbPhieuUyNhiemChis", ThisKey:="id", OtherKey:="idNganHang")>  _
+	Public Property tbPhieuUyNhiemChis() As EntitySet(Of tbPhieuUyNhiemChi)
+		Get
+			Return Me._tbPhieuUyNhiemChis
+		End Get
+		Set
+			Me._tbPhieuUyNhiemChis.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
+	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
+		Get
+			Return Me._tbThuNoKhachHangs
+		End Get
+		Set
+			Me._tbThuNoKhachHangs.Assign(value)
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Me
+	End Sub
+	
+	Private Sub detach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbTraNoNhaCungCaps1(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbNganHang1 = Me
+	End Sub
+	
+	Private Sub detach_tbTraNoNhaCungCaps1(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbNganHang1 = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuChis(ByVal entity As tbPhieuChi)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuChis(ByVal entity As tbPhieuChi)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuUyNhiemChis(ByVal entity As tbPhieuUyNhiemChi)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuUyNhiemChis(ByVal entity As tbPhieuUyNhiemChi)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Nothing
+	End Sub
+	
+	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Me
+	End Sub
+	
+	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbNganHang = Nothing
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbNganHangUyNhiemChi")>  _
 Partial Public Class tbNganHangUyNhiemChi
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -5357,7 +9419,7 @@ Partial Public Class tbNganHangUyNhiemChi
 	
 	Private _Tinh As String
 	
-	Private _idKhachHang As Integer
+	Private _idKhachHang As System.Nullable(Of Integer)
 	
 	Private _tbPhieuUyNhiemChis As EntitySet(Of tbPhieuUyNhiemChi)
 	
@@ -5394,7 +9456,7 @@ Partial Public Class tbNganHangUyNhiemChi
     End Sub
     Partial Private Sub OnTinhChanged()
     End Sub
-    Partial Private Sub OnidKhachHangChanging(value As Integer)
+    Partial Private Sub OnidKhachHangChanging(value As System.Nullable(Of Integer))
     End Sub
     Partial Private Sub OnidKhachHangChanged()
     End Sub
@@ -5424,7 +9486,7 @@ Partial Public Class tbNganHangUyNhiemChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenChuTaiKhoan", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenChuTaiKhoan", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
 	Public Property TenChuTaiKhoan() As String
 		Get
 			Return Me._TenChuTaiKhoan
@@ -5440,7 +9502,7 @@ Partial Public Class tbNganHangUyNhiemChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NChar(20) NOT NULL", CanBeNull:=false)>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NVarChar(20) NOT NULL", CanBeNull:=false)>  _
 	Public Property SoTaiKhoan() As String
 		Get
 			Return Me._SoTaiKhoan
@@ -5456,7 +9518,7 @@ Partial Public Class tbNganHangUyNhiemChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNganHang", DbType:="NChar(10) NOT NULL", CanBeNull:=false)>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNganHang", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false)>  _
 	Public Property TenNganHang() As String
 		Get
 			Return Me._TenNganHang
@@ -5504,14 +9566,13 @@ Partial Public Class tbNganHangUyNhiemChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
 		Get
 			Return Me._idKhachHang
 		End Get
 		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
+			If (Me._idKhachHang.Equals(value) = false) Then
 				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
 					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 				End If
@@ -5555,7 +9616,7 @@ Partial Public Class tbNganHangUyNhiemChi
 					value.tbNganHangUyNhiemChis.Add(Me)
 					Me._idKhachHang = value.id
 				Else
-					Me._idKhachHang = CType(Nothing, Integer)
+					Me._idKhachHang = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbKhachHang")
 			End If
@@ -5901,11 +9962,17 @@ Partial Public Class tbNhanVien
 	
 	Private _Email As String
 	
+	Private _tbBaoGias As EntitySet(Of tbBaoGia)
+	
 	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
 	
 	Private _tbGiaoViecs As EntitySet(Of tbGiaoViec)
 	
 	Private _tbGiaoViecs1 As EntitySet(Of tbGiaoViec)
+	
+	Private _tbHoaDons As EntitySet(Of tbHoaDon)
+	
+	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
 	
 	Private _tbLichSuCongViecs As EntitySet(Of tbLichSuCongViec)
 	
@@ -5913,21 +9980,17 @@ Partial Public Class tbNhanVien
 	
 	Private _tbPhieuChis As EntitySet(Of tbPhieuChi)
 	
+	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
+	
+	Private _tbPhieuNhaps1 As EntitySet(Of tbPhieuNhap)
+	
 	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
 	
 	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
 	
 	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
 	
-	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
-	
-	Private _tbHoaDons As EntitySet(Of tbHoaDon)
-	
-	Private _tbBaoGias As EntitySet(Of tbBaoGia)
-	
-	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
-	
-	Private _tbPhieuNhaps1 As EntitySet(Of tbPhieuNhap)
+	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -5980,20 +10043,21 @@ Partial Public Class tbNhanVien
 	
 	Public Sub New()
 		MyBase.New
+		Me._tbBaoGias = New EntitySet(Of tbBaoGia)(AddressOf Me.attach_tbBaoGias, AddressOf Me.detach_tbBaoGias)
 		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
 		Me._tbGiaoViecs = New EntitySet(Of tbGiaoViec)(AddressOf Me.attach_tbGiaoViecs, AddressOf Me.detach_tbGiaoViecs)
 		Me._tbGiaoViecs1 = New EntitySet(Of tbGiaoViec)(AddressOf Me.attach_tbGiaoViecs1, AddressOf Me.detach_tbGiaoViecs1)
+		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
+		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
 		Me._tbLichSuCongViecs = New EntitySet(Of tbLichSuCongViec)(AddressOf Me.attach_tbLichSuCongViecs, AddressOf Me.detach_tbLichSuCongViecs)
 		Me._tbPhanQuyens = New EntitySet(Of tbPhanQuyen)(AddressOf Me.attach_tbPhanQuyens, AddressOf Me.detach_tbPhanQuyens)
 		Me._tbPhieuChis = New EntitySet(Of tbPhieuChi)(AddressOf Me.attach_tbPhieuChis, AddressOf Me.detach_tbPhieuChis)
+		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
+		Me._tbPhieuNhaps1 = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps1, AddressOf Me.detach_tbPhieuNhaps1)
 		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
 		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
 		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
-		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
-		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
-		Me._tbBaoGias = New EntitySet(Of tbBaoGia)(AddressOf Me.attach_tbBaoGias, AddressOf Me.detach_tbBaoGias)
-		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
-		Me._tbPhieuNhaps1 = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps1, AddressOf Me.detach_tbPhieuNhaps1)
+		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
 		OnCreated
 	End Sub
 	
@@ -6160,6 +10224,16 @@ Partial Public Class tbNhanVien
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idNhanVien")>  _
+	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
+		Get
+			Return Me._tbBaoGias
+		End Get
+		Set
+			Me._tbBaoGias.Assign(value)
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idNhanVien")>  _
 	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
 		Get
@@ -6187,6 +10261,26 @@ Partial Public Class tbNhanVien
 		End Get
 		Set
 			Me._tbGiaoViecs1.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idNhanVien")>  _
+	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
+		Get
+			Return Me._tbHoaDons
+		End Get
+		Set
+			Me._tbHoaDons.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idNhanVien")>  _
+	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
+		Get
+			Return Me._tbKhachHangDatHangs
+		End Get
+		Set
+			Me._tbKhachHangDatHangs.Assign(value)
 		End Set
 	End Property
 	
@@ -6220,6 +10314,26 @@ Partial Public Class tbNhanVien
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idNhanVien")>  _
+	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
+		Get
+			Return Me._tbPhieuNhaps
+		End Get
+		Set
+			Me._tbPhieuNhaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap1", Storage:="_tbPhieuNhaps1", ThisKey:="id", OtherKey:="idNhanVienNhanHang")>  _
+	Public Property tbPhieuNhaps1() As EntitySet(Of tbPhieuNhap)
+		Get
+			Return Me._tbPhieuNhaps1
+		End Get
+		Set
+			Me._tbPhieuNhaps1.Assign(value)
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idNhanVien")>  _
 	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
 		Get
@@ -6250,53 +10364,13 @@ Partial Public Class tbNhanVien
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idNhanVien")>  _
-	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbGiaCong", Storage:="_tbGiaCongs", ThisKey:="id", OtherKey:="idNhanVien")>  _
+	Public Property tbGiaCongs() As EntitySet(Of tbGiaCong)
 		Get
-			Return Me._tbKhachHangDatHangs
+			Return Me._tbGiaCongs
 		End Get
 		Set
-			Me._tbKhachHangDatHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idNhanVien")>  _
-	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
-		Get
-			Return Me._tbHoaDons
-		End Get
-		Set
-			Me._tbHoaDons.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbBaoGia", Storage:="_tbBaoGias", ThisKey:="id", OtherKey:="idNhanVien")>  _
-	Public Property tbBaoGias() As EntitySet(Of tbBaoGia)
-		Get
-			Return Me._tbBaoGias
-		End Get
-		Set
-			Me._tbBaoGias.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idNhanVien")>  _
-	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
-		Get
-			Return Me._tbPhieuNhaps
-		End Get
-		Set
-			Me._tbPhieuNhaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap1", Storage:="_tbPhieuNhaps1", ThisKey:="id", OtherKey:="idNhanVienNhanHang")>  _
-	Public Property tbPhieuNhaps1() As EntitySet(Of tbPhieuNhap)
-		Get
-			Return Me._tbPhieuNhaps1
-		End Get
-		Set
-			Me._tbPhieuNhaps1.Assign(value)
+			Me._tbGiaCongs.Assign(value)
 		End Set
 	End Property
 	
@@ -6316,6 +10390,16 @@ Partial Public Class tbNhanVien
 					= false) Then
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
+	End Sub
+	
+	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Me
+	End Sub
+	
+	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Nothing
 	End Sub
 	
 	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
@@ -6348,6 +10432,26 @@ Partial Public Class tbNhanVien
 		entity.tbNhanVien1 = Nothing
 	End Sub
 	
+	Private Sub attach_tbHoaDons(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Me
+	End Sub
+	
+	Private Sub detach_tbHoaDons(ByVal entity As tbHoaDon)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Nothing
+	End Sub
+	
+	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Me
+	End Sub
+	
+	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Nothing
+	End Sub
+	
 	Private Sub attach_tbLichSuCongViecs(ByVal entity As tbLichSuCongViec)
 		Me.SendPropertyChanging
 		entity.tbNhanVien = Me
@@ -6376,6 +10480,26 @@ Partial Public Class tbNhanVien
 	Private Sub detach_tbPhieuChis(ByVal entity As tbPhieuChi)
 		Me.SendPropertyChanging
 		entity.tbNhanVien = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbNhanVien = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbNhanVien1 = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbNhanVien1 = Nothing
 	End Sub
 	
 	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
@@ -6408,54 +10532,14 @@ Partial Public Class tbNhanVien
 		entity.tbNhanVien = Nothing
 	End Sub
 	
-	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+	Private Sub attach_tbGiaCongs(ByVal entity As tbGiaCong)
 		Me.SendPropertyChanging
 		entity.tbNhanVien = Me
 	End Sub
 	
-	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
+	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
 		Me.SendPropertyChanging
 		entity.tbNhanVien = Nothing
-	End Sub
-	
-	Private Sub attach_tbHoaDons(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Me
-	End Sub
-	
-	Private Sub detach_tbHoaDons(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Nothing
-	End Sub
-	
-	Private Sub attach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Me
-	End Sub
-	
-	Private Sub detach_tbBaoGias(ByVal entity As tbBaoGia)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbNhanVien = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbNhanVien1 = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuNhaps1(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbNhanVien1 = Nothing
 	End Sub
 End Class
 
@@ -6827,9 +10911,9 @@ Partial Public Class tbPhieuChi
 	
 	Private _tbLoaiPhieuChi As EntityRef(Of tbLoaiPhieuChi)
 	
-	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
-	
 	Private _tbNganHang As EntityRef(Of tbNganHang)
+	
+	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -6904,8 +10988,8 @@ Partial Public Class tbPhieuChi
 		MyBase.New
 		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
 		Me._tbLoaiPhieuChi = CType(Nothing, EntityRef(Of tbLoaiPhieuChi))
-		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
 		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
+		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
 		OnCreated
 	End Sub
 	
@@ -7223,34 +11307,6 @@ Partial Public Class tbPhieuChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbPhieuChi", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuNhap() As tbPhieuNhap
-		Get
-			Return Me._tbPhieuNhap.Entity
-		End Get
-		Set
-			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbPhieuNhap.Entity = Nothing
-					previousValue.tbPhieuChis.Remove(Me)
-				End If
-				Me._tbPhieuNhap.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuChis.Add(Me)
-					Me._idPhieuNhap = value.id
-				Else
-					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbPhieuNhap")
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuChi", Storage:="_tbNganHang", ThisKey:="idNganHang", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbNganHang() As tbNganHang
 		Get
@@ -7279,6 +11335,34 @@ Partial Public Class tbPhieuChi
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbPhieuChi", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuNhap() As tbPhieuNhap
+		Get
+			Return Me._tbPhieuNhap.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuNhap.Entity = Nothing
+					previousValue.tbPhieuChis.Remove(Me)
+				End If
+				Me._tbPhieuNhap.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuChis.Add(Me)
+					Me._idPhieuNhap = value.id
+				Else
+					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbPhieuNhap")
+			End If
+		End Set
+	End Property
+	
 	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 	
 	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -7295,6 +11379,825 @@ Partial Public Class tbPhieuChi
 					= false) Then
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbPhieuNhap")>  _
+Partial Public Class tbPhieuNhap
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _idNhanVien As Integer
+	
+	Private _GhiChu As String
+	
+	Private _idLoaiPhieuNhap As Integer
+	
+	Private _VAT As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoPhieu As Integer
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _SoNgayNo As Integer
+	
+	Private _TenCongTrinh As String
+	
+	Private _HanThanhToan As System.Nullable(Of Date)
+	
+	Private _isThanhToan As System.Nullable(Of Boolean)
+	
+	Private _idNhaCungCap As System.Nullable(Of Integer)
+	
+	Private _isHoaDon As System.Nullable(Of Boolean)
+	
+	Private _idKhachHangDatHang As System.Nullable(Of Integer)
+	
+	Private _idNguoiLienHe As System.Nullable(Of Integer)
+	
+	Private _idNhanVienNhanHang As System.Nullable(Of Integer)
+	
+	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
+	
+	Private _tbChiTietPhieuNhaps As EntitySet(Of tbChiTietPhieuNhap)
+	
+	Private _tbPhieuChis As EntitySet(Of tbPhieuChi)
+	
+	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
+	
+	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
+	
+	Private _tbChiTietSeris As EntitySet(Of tbChiTietSeri)
+	
+	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
+	
+	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
+	
+	Private _tbKhachHang As EntityRef(Of tbKhachHang)
+	
+	Private _tbKhachHang1 As EntityRef(Of tbKhachHang)
+	
+	Private _tbLoaiPhieuNhap As EntityRef(Of tbLoaiPhieuNhap)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
+	
+	Private _tbNhanVien1 As EntityRef(Of tbNhanVien)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnNgayLapChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayLapChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidNhanVienChanged()
+    End Sub
+    Partial Private Sub OnGhiChuChanging(value As String)
+    End Sub
+    Partial Private Sub OnGhiChuChanged()
+    End Sub
+    Partial Private Sub OnidLoaiPhieuNhapChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidLoaiPhieuNhapChanged()
+    End Sub
+    Partial Private Sub OnVATChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnVATChanged()
+    End Sub
+    Partial Private Sub OnChietKhauChanging(value As Double)
+    End Sub
+    Partial Private Sub OnChietKhauChanged()
+    End Sub
+    Partial Private Sub OnSoPhieuChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoPhieuChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidKhachHangChanged()
+    End Sub
+    Partial Private Sub OnSoNgayNoChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnSoNgayNoChanged()
+    End Sub
+    Partial Private Sub OnTenCongTrinhChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenCongTrinhChanged()
+    End Sub
+    Partial Private Sub OnHanThanhToanChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnHanThanhToanChanged()
+    End Sub
+    Partial Private Sub OnisThanhToanChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisThanhToanChanged()
+    End Sub
+    Partial Private Sub OnidNhaCungCapChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNhaCungCapChanged()
+    End Sub
+    Partial Private Sub OnisHoaDonChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisHoaDonChanged()
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidKhachHangDatHangChanged()
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNguoiLienHeChanged()
+    End Sub
+    Partial Private Sub OnidNhanVienNhanHangChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidNhanVienNhanHangChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
+		Me._tbChiTietPhieuNhaps = New EntitySet(Of tbChiTietPhieuNhap)(AddressOf Me.attach_tbChiTietPhieuNhaps, AddressOf Me.detach_tbChiTietPhieuNhaps)
+		Me._tbPhieuChis = New EntitySet(Of tbPhieuChi)(AddressOf Me.attach_tbPhieuChis, AddressOf Me.detach_tbPhieuChis)
+		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
+		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
+		Me._tbChiTietSeris = New EntitySet(Of tbChiTietSeri)(AddressOf Me.attach_tbChiTietSeris, AddressOf Me.detach_tbChiTietSeris)
+		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
+		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
+		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbKhachHang1 = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbLoaiPhieuNhap = CType(Nothing, EntityRef(Of tbLoaiPhieuNhap))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		Me._tbNhanVien1 = CType(Nothing, EntityRef(Of tbNhanVien))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me.OnNgayLapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayLap = value
+				Me.SendPropertyChanged("NgayLap")
+				Me.OnNgayLapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVien = value
+				Me.SendPropertyChanged("idNhanVien")
+				Me.OnidNhanVienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me.OnGhiChuChanging(value)
+				Me.SendPropertyChanging
+				Me._GhiChu = value
+				Me.SendPropertyChanged("GhiChu")
+				Me.OnGhiChuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuNhap", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiPhieuNhap() As Integer
+		Get
+			Return Me._idLoaiPhieuNhap
+		End Get
+		Set
+			If ((Me._idLoaiPhieuNhap = value)  _
+						= false) Then
+				If Me._tbLoaiPhieuNhap.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidLoaiPhieuNhapChanging(value)
+				Me.SendPropertyChanging
+				Me._idLoaiPhieuNhap = value
+				Me.SendPropertyChanged("idLoaiPhieuNhap")
+				Me.OnidLoaiPhieuNhapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me.OnVATChanging(value)
+				Me.SendPropertyChanging
+				Me._VAT = value
+				Me.SendPropertyChanged("VAT")
+				Me.OnVATChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me.OnChietKhauChanging(value)
+				Me.SendPropertyChanging
+				Me._ChietKhau = value
+				Me.SendPropertyChanged("ChietKhau")
+				Me.OnChietKhauChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me.OnSoPhieuChanging(value)
+				Me.SendPropertyChanging
+				Me._SoPhieu = value
+				Me.SendPropertyChanged("SoPhieu")
+				Me.OnSoPhieuChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHang = value
+				Me.SendPropertyChanged("idKhachHang")
+				Me.OnidKhachHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoNgayNo", DbType:="Int NOT NULL")>  _
+	Public Property SoNgayNo() As Integer
+		Get
+			Return Me._SoNgayNo
+		End Get
+		Set
+			If ((Me._SoNgayNo = value)  _
+						= false) Then
+				Me.OnSoNgayNoChanging(value)
+				Me.SendPropertyChanging
+				Me._SoNgayNo = value
+				Me.SendPropertyChanged("SoNgayNo")
+				Me.OnSoNgayNoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(250)")>  _
+	Public Property TenCongTrinh() As String
+		Get
+			Return Me._TenCongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._TenCongTrinh, value) = false) Then
+				Me.OnTenCongTrinhChanging(value)
+				Me.SendPropertyChanging
+				Me._TenCongTrinh = value
+				Me.SendPropertyChanged("TenCongTrinh")
+				Me.OnTenCongTrinhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HanThanhToan", DbType:="DateTime")>  _
+	Public Property HanThanhToan() As System.Nullable(Of Date)
+		Get
+			Return Me._HanThanhToan
+		End Get
+		Set
+			If (Me._HanThanhToan.Equals(value) = false) Then
+				Me.OnHanThanhToanChanging(value)
+				Me.SendPropertyChanging
+				Me._HanThanhToan = value
+				Me.SendPropertyChanged("HanThanhToan")
+				Me.OnHanThanhToanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
+	Public Property isThanhToan() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isThanhToan
+		End Get
+		Set
+			If (Me._isThanhToan.Equals(value) = false) Then
+				Me.OnisThanhToanChanging(value)
+				Me.SendPropertyChanging
+				Me._isThanhToan = value
+				Me.SendPropertyChanged("isThanhToan")
+				Me.OnisThanhToanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhaCungCap", DbType:="Int")>  _
+	Public Property idNhaCungCap() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhaCungCap
+		End Get
+		Set
+			If (Me._idNhaCungCap.Equals(value) = false) Then
+				If Me._tbKhachHang1.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhaCungCapChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhaCungCap = value
+				Me.SendPropertyChanged("idNhaCungCap")
+				Me.OnidNhaCungCapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
+	Public Property isHoaDon() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isHoaDon
+		End Get
+		Set
+			If (Me._isHoaDon.Equals(value) = false) Then
+				Me.OnisHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._isHoaDon = value
+				Me.SendPropertyChanged("isHoaDon")
+				Me.OnisHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
+	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If (Me._idKhachHangDatHang.Equals(value) = false) Then
+				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidKhachHangDatHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idKhachHangDatHang = value
+				Me.SendPropertyChanged("idKhachHangDatHang")
+				Me.OnidKhachHangDatHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
+	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNguoiLienHe
+		End Get
+		Set
+			If (Me._idNguoiLienHe.Equals(value) = false) Then
+				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNguoiLienHeChanging(value)
+				Me.SendPropertyChanging
+				Me._idNguoiLienHe = value
+				Me.SendPropertyChanged("idNguoiLienHe")
+				Me.OnidNguoiLienHeChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienNhanHang", DbType:="Int")>  _
+	Public Property idNhanVienNhanHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhanVienNhanHang
+		End Get
+		Set
+			If (Me._idNhanVienNhanHang.Equals(value) = false) Then
+				If Me._tbNhanVien1.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienNhanHangChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVienNhanHang = value
+				Me.SendPropertyChanged("idNhanVienNhanHang")
+				Me.OnidNhanVienNhanHangChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
+		Get
+			Return Me._tbTraNoNhaCungCaps
+		End Get
+		Set
+			Me._tbTraNoNhaCungCaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietPhieuNhap", Storage:="_tbChiTietPhieuNhaps", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbChiTietPhieuNhaps() As EntitySet(Of tbChiTietPhieuNhap)
+		Get
+			Return Me._tbChiTietPhieuNhaps
+		End Get
+		Set
+			Me._tbChiTietPhieuNhaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbPhieuChi", Storage:="_tbPhieuChis", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbPhieuChis() As EntitySet(Of tbPhieuChi)
+		Get
+			Return Me._tbPhieuChis
+		End Get
+		Set
+			Me._tbPhieuChis.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
+		Get
+			Return Me._tbThuNoKhachHangs
+		End Get
+		Set
+			Me._tbThuNoKhachHangs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbGiaCong", Storage:="_tbGiaCongs", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbGiaCongs() As EntitySet(Of tbGiaCong)
+		Get
+			Return Me._tbGiaCongs
+		End Get
+		Set
+			Me._tbGiaCongs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietSeri", Storage:="_tbChiTietSeris", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
+	Public Property tbChiTietSeris() As EntitySet(Of tbChiTietSeri)
+		Get
+			Return Me._tbChiTietSeris
+		End Get
+		Set
+			Me._tbChiTietSeris.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuNhap", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
+		Get
+			Return Me._tbKhachHangDatHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHangDatHang.Entity = Nothing
+					previousValue.tbPhieuNhaps.Remove(Me)
+				End If
+				Me._tbKhachHangDatHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps.Add(Me)
+					Me._idKhachHangDatHang = value.id
+				Else
+					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHangDatHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbPhieuNhap", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbChiTietLienHe() As tbChiTietLienHe
+		Get
+			Return Me._tbChiTietLienHe.Entity
+		End Get
+		Set
+			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbChiTietLienHe.Entity = Nothing
+					previousValue.tbPhieuNhaps.Remove(Me)
+				End If
+				Me._tbChiTietLienHe.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps.Add(Me)
+					Me._idNguoiLienHe = value.id
+				Else
+					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbChiTietLienHe")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHang() As tbKhachHang
+		Get
+			Return Me._tbKhachHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang.Entity = Nothing
+					previousValue.tbPhieuNhaps.Remove(Me)
+				End If
+				Me._tbKhachHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps.Add(Me)
+					Me._idKhachHang = value.id
+				Else
+					Me._idKhachHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap1", Storage:="_tbKhachHang1", ThisKey:="idNhaCungCap", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHang1() As tbKhachHang
+		Get
+			Return Me._tbKhachHang1.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHang = Me._tbKhachHang1.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHang1.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHang1.Entity = Nothing
+					previousValue.tbPhieuNhaps1.Remove(Me)
+				End If
+				Me._tbKhachHang1.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps1.Add(Me)
+					Me._idNhaCungCap = value.id
+				Else
+					Me._idNhaCungCap = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHang1")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuNhap_tbPhieuNhap", Storage:="_tbLoaiPhieuNhap", ThisKey:="idLoaiPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbLoaiPhieuNhap() As tbLoaiPhieuNhap
+		Get
+			Return Me._tbLoaiPhieuNhap.Entity
+		End Get
+		Set
+			Dim previousValue As tbLoaiPhieuNhap = Me._tbLoaiPhieuNhap.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbLoaiPhieuNhap.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbLoaiPhieuNhap.Entity = Nothing
+					previousValue.tbPhieuNhaps.Remove(Me)
+				End If
+				Me._tbLoaiPhieuNhap.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps.Add(Me)
+					Me._idLoaiPhieuNhap = value.id
+				Else
+					Me._idLoaiPhieuNhap = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbLoaiPhieuNhap")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbPhieuNhaps.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap1", Storage:="_tbNhanVien1", ThisKey:="idNhanVienNhanHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNhanVien1() As tbNhanVien
+		Get
+			Return Me._tbNhanVien1.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien1.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien1.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien1.Entity = Nothing
+					previousValue.tbPhieuNhaps1.Remove(Me)
+				End If
+				Me._tbNhanVien1.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuNhaps1.Add(Me)
+					Me._idNhanVienNhanHang = value.id
+				Else
+					Me._idNhanVienNhanHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbNhanVien1")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
+	End Sub
+	
+	Private Sub attach_tbPhieuChis(ByVal entity As tbPhieuChi)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbPhieuChis(ByVal entity As tbPhieuChi)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
+	End Sub
+	
+	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
+	End Sub
+	
+	Private Sub attach_tbGiaCongs(ByVal entity As tbGiaCong)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+		Me.SendPropertyChanging
+		entity.tbPhieuNhap = Nothing
 	End Sub
 End Class
 
@@ -7336,11 +12239,11 @@ Partial Public Class tbPhieuThu
 	
 	Private _tbNhanVien As EntityRef(Of tbNhanVien)
 	
-	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
+	Private _tbLoaiPhieuThu As EntityRef(Of tbLoaiPhieuThu)
 	
 	Private _tbNganHang As EntityRef(Of tbNganHang)
 	
-	Private _tbLoaiPhieuThu As EntityRef(Of tbLoaiPhieuThu)
+	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -7414,9 +12317,9 @@ Partial Public Class tbPhieuThu
 	Public Sub New()
 		MyBase.New
 		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
-		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
 		Me._tbLoaiPhieuThu = CType(Nothing, EntityRef(Of tbLoaiPhieuThu))
+		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
+		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
 		OnCreated
 	End Sub
 	
@@ -7706,30 +12609,30 @@ Partial Public Class tbPhieuThu
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbPhieuThu", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuXuat() As tbPhieuXuat
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbLoaiPhieuThu", ThisKey:="idLoaiPhieuThu", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbLoaiPhieuThu() As tbLoaiPhieuThu
 		Get
-			Return Me._tbPhieuXuat.Entity
+			Return Me._tbLoaiPhieuThu.Entity
 		End Get
 		Set
-			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
+			Dim previousValue As tbLoaiPhieuThu = Me._tbLoaiPhieuThu.Entity
 			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
+						OrElse (Me._tbLoaiPhieuThu.HasLoadedOrAssignedValue = false)) Then
 				Me.SendPropertyChanging
 				If ((previousValue Is Nothing)  _
 							= false) Then
-					Me._tbPhieuXuat.Entity = Nothing
+					Me._tbLoaiPhieuThu.Entity = Nothing
 					previousValue.tbPhieuThus.Remove(Me)
 				End If
-				Me._tbPhieuXuat.Entity = value
+				Me._tbLoaiPhieuThu.Entity = value
 				If ((value Is Nothing)  _
 							= false) Then
 					value.tbPhieuThus.Add(Me)
-					Me._idPhieuXuat = value.id
+					Me._idLoaiPhieuThu = value.id
 				Else
-					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
+					Me._idLoaiPhieuThu = CType(Nothing, Integer)
 				End If
-				Me.SendPropertyChanged("tbPhieuXuat")
+				Me.SendPropertyChanged("tbLoaiPhieuThu")
 			End If
 		End Set
 	End Property
@@ -7762,30 +12665,30 @@ Partial Public Class tbPhieuThu
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbLoaiPhieuThu", ThisKey:="idLoaiPhieuThu", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbLoaiPhieuThu() As tbLoaiPhieuThu
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbPhieuThu", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuXuat() As tbPhieuXuat
 		Get
-			Return Me._tbLoaiPhieuThu.Entity
+			Return Me._tbPhieuXuat.Entity
 		End Get
 		Set
-			Dim previousValue As tbLoaiPhieuThu = Me._tbLoaiPhieuThu.Entity
+			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
 			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbLoaiPhieuThu.HasLoadedOrAssignedValue = false)) Then
+						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
 				Me.SendPropertyChanging
 				If ((previousValue Is Nothing)  _
 							= false) Then
-					Me._tbLoaiPhieuThu.Entity = Nothing
+					Me._tbPhieuXuat.Entity = Nothing
 					previousValue.tbPhieuThus.Remove(Me)
 				End If
-				Me._tbLoaiPhieuThu.Entity = value
+				Me._tbPhieuXuat.Entity = value
 				If ((value Is Nothing)  _
 							= false) Then
 					value.tbPhieuThus.Add(Me)
-					Me._idLoaiPhieuThu = value.id
+					Me._idPhieuXuat = value.id
 				Else
-					Me._idLoaiPhieuThu = CType(Nothing, Integer)
+					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
 				End If
-				Me.SendPropertyChanged("tbLoaiPhieuThu")
+				Me.SendPropertyChanged("tbPhieuXuat")
 			End If
 		End Set
 	End Property
@@ -7845,13 +12748,13 @@ Partial Public Class tbPhieuUyNhiemChi
 	
 	Private _tbKhachHang As EntityRef(Of tbKhachHang)
 	
+	Private _tbNganHang As EntityRef(Of tbNganHang)
+	
 	Private _tbNganHangUyNhiemChi As EntityRef(Of tbNganHangUyNhiemChi)
 	
 	Private _tbKhachHang1 As EntityRef(Of tbKhachHang)
 	
 	Private _tbPhieuUyNhiemChi As EntityRef(Of tbPhieuUyNhiemChi)
-	
-	Private _tbNganHang As EntityRef(Of tbNganHang)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -7918,10 +12821,10 @@ Partial Public Class tbPhieuUyNhiemChi
 		MyBase.New
 		Me._tbPhieuUyNhiemChis = New EntitySet(Of tbPhieuUyNhiemChi)(AddressOf Me.attach_tbPhieuUyNhiemChis, AddressOf Me.detach_tbPhieuUyNhiemChis)
 		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
+		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
 		Me._tbNganHangUyNhiemChi = CType(Nothing, EntityRef(Of tbNganHangUyNhiemChi))
 		Me._tbKhachHang1 = CType(Nothing, EntityRef(Of tbKhachHang))
 		Me._tbPhieuUyNhiemChi = CType(Nothing, EntityRef(Of tbPhieuUyNhiemChi))
-		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
 		OnCreated
 	End Sub
 	
@@ -8193,6 +13096,34 @@ Partial Public Class tbPhieuUyNhiemChi
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuUyNhiemChi", Storage:="_tbNganHang", ThisKey:="idNganHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNganHang() As tbNganHang
+		Get
+			Return Me._tbNganHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbNganHang = Me._tbNganHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNganHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNganHang.Entity = Nothing
+					previousValue.tbPhieuUyNhiemChis.Remove(Me)
+				End If
+				Me._tbNganHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuUyNhiemChis.Add(Me)
+					Me._idNganHang = value.id
+				Else
+					Me._idNganHang = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNganHang")
+			End If
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHangUyNhiemChi_tbPhieuUyNhiemChi", Storage:="_tbNganHangUyNhiemChi", ThisKey:="idNganHangUyNhiemChi", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbNganHangUyNhiemChi() As tbNganHangUyNhiemChi
 		Get
@@ -8277,34 +13208,6 @@ Partial Public Class tbPhieuUyNhiemChi
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuUyNhiemChi", Storage:="_tbNganHang", ThisKey:="idNganHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNganHang() As tbNganHang
-		Get
-			Return Me._tbNganHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbNganHang = Me._tbNganHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNganHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNganHang.Entity = Nothing
-					previousValue.tbPhieuUyNhiemChis.Remove(Me)
-				End If
-				Me._tbNganHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuUyNhiemChis.Add(Me)
-					Me._idNganHang = value.id
-				Else
-					Me._idNganHang = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNganHang")
-			End If
-		End Set
-	End Property
-	
 	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 	
 	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -8372,15 +13275,17 @@ Partial Public Class tbPhieuXuat
 	
 	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
 	
-	Private _tbChiTietSeris As EntitySet(Of tbChiTietSeri)
-	
-	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
+	Private _tbChiTietPhieuXuats As EntitySet(Of tbChiTietPhieuXuat)
 	
 	Private _tbHoaDons As EntitySet(Of tbHoaDon)
 	
-	Private _tbChiTietPhieuXuats As EntitySet(Of tbChiTietPhieuXuat)
+	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
 	
 	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
+	
+	Private _tbChiTietSeris As EntitySet(Of tbChiTietSeri)
+	
+	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
 	
 	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
 	
@@ -8389,8 +13294,6 @@ Partial Public Class tbPhieuXuat
 	Private _tbLoaiPhieuXuat As EntityRef(Of tbLoaiPhieuXuat)
 	
 	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -8464,16 +13367,16 @@ Partial Public Class tbPhieuXuat
 	Public Sub New()
 		MyBase.New
 		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
-		Me._tbChiTietSeris = New EntitySet(Of tbChiTietSeri)(AddressOf Me.attach_tbChiTietSeris, AddressOf Me.detach_tbChiTietSeris)
-		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
-		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
 		Me._tbChiTietPhieuXuats = New EntitySet(Of tbChiTietPhieuXuat)(AddressOf Me.attach_tbChiTietPhieuXuats, AddressOf Me.detach_tbChiTietPhieuXuats)
+		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
+		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
 		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
+		Me._tbChiTietSeris = New EntitySet(Of tbChiTietSeri)(AddressOf Me.attach_tbChiTietSeris, AddressOf Me.detach_tbChiTietSeris)
+		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
 		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
 		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
 		Me._tbLoaiPhieuXuat = CType(Nothing, EntityRef(Of tbLoaiPhieuXuat))
 		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
 		OnCreated
 	End Sub
 	
@@ -8747,23 +13650,13 @@ Partial Public Class tbPhieuXuat
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietSeri", Storage:="_tbChiTietSeris", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
-	Public Property tbChiTietSeris() As EntitySet(Of tbChiTietSeri)
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietPhieuXuat", Storage:="_tbChiTietPhieuXuats", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
+	Public Property tbChiTietPhieuXuats() As EntitySet(Of tbChiTietPhieuXuat)
 		Get
-			Return Me._tbChiTietSeris
+			Return Me._tbChiTietPhieuXuats
 		End Get
 		Set
-			Me._tbChiTietSeris.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
-	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
-		Get
-			Return Me._tbPhieuThus
-		End Get
-		Set
-			Me._tbPhieuThus.Assign(value)
+			Me._tbChiTietPhieuXuats.Assign(value)
 		End Set
 	End Property
 	
@@ -8777,13 +13670,13 @@ Partial Public Class tbPhieuXuat
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietPhieuXuat", Storage:="_tbChiTietPhieuXuats", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
-	Public Property tbChiTietPhieuXuats() As EntitySet(Of tbChiTietPhieuXuat)
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
+	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
 		Get
-			Return Me._tbChiTietPhieuXuats
+			Return Me._tbPhieuThus
 		End Get
 		Set
-			Me._tbChiTietPhieuXuats.Assign(value)
+			Me._tbPhieuThus.Assign(value)
 		End Set
 	End Property
 	
@@ -8794,6 +13687,44 @@ Partial Public Class tbPhieuXuat
 		End Get
 		Set
 			Me._tbGiaCongs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietSeri", Storage:="_tbChiTietSeris", ThisKey:="id", OtherKey:="idPhieuXuat")>  _
+	Public Property tbChiTietSeris() As EntitySet(Of tbChiTietSeri)
+		Get
+			Return Me._tbChiTietSeris
+		End Get
+		Set
+			Me._tbChiTietSeris.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuXuat", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
+		Get
+			Return Me._tbKhachHangDatHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbKhachHangDatHang.Entity = Nothing
+					previousValue.tbPhieuXuats.Remove(Me)
+				End If
+				Me._tbKhachHangDatHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbPhieuXuats.Add(Me)
+					Me._idKhachHangDatHang = value.id
+				Else
+					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbKhachHangDatHang")
+			End If
 		End Set
 	End Property
 	
@@ -8909,34 +13840,6 @@ Partial Public Class tbPhieuXuat
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuXuat", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
-		Get
-			Return Me._tbKhachHangDatHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHangDatHang.Entity = Nothing
-					previousValue.tbPhieuXuats.Remove(Me)
-				End If
-				Me._tbKhachHangDatHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuXuats.Add(Me)
-					Me._idKhachHangDatHang = value.id
-				Else
-					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHangDatHang")
-			End If
-		End Set
-	End Property
-	
 	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 	
 	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -8965,22 +13868,12 @@ Partial Public Class tbPhieuXuat
 		entity.tbPhieuXuat = Nothing
 	End Sub
 	
-	Private Sub attach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+	Private Sub attach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
 		Me.SendPropertyChanging
 		entity.tbPhieuXuat = Me
 	End Sub
 	
-	Private Sub detach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
-		Me.SendPropertyChanging
-		entity.tbPhieuXuat = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbPhieuXuat = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
+	Private Sub detach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
 		Me.SendPropertyChanging
 		entity.tbPhieuXuat = Nothing
 	End Sub
@@ -8995,12 +13888,12 @@ Partial Public Class tbPhieuXuat
 		entity.tbPhieuXuat = Nothing
 	End Sub
 	
-	Private Sub attach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
+	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
 		Me.SendPropertyChanging
 		entity.tbPhieuXuat = Me
 	End Sub
 	
-	Private Sub detach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
+	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
 		Me.SendPropertyChanging
 		entity.tbPhieuXuat = Nothing
 	End Sub
@@ -9011,6 +13904,16 @@ Partial Public Class tbPhieuXuat
 	End Sub
 	
 	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
+		Me.SendPropertyChanging
+		entity.tbPhieuXuat = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+		Me.SendPropertyChanging
+		entity.tbPhieuXuat = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
 		Me.SendPropertyChanging
 		entity.tbPhieuXuat = Nothing
 	End Sub
@@ -9648,6 +14551,959 @@ Partial Public Class tbReport
 	End Sub
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbSanPham")>  _
+Partial Public Class tbSanPham
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _id As Integer
+	
+	Private _MaSanPham As String
+	
+	Private _MaVachSanPham As String
+	
+	Private _TenSanPham As String
+	
+	Private _DonVi As String
+	
+	Private _GiaBinhQuan As Double
+	
+	Private _SoLuong As Double
+	
+	Private _idLoaiSanPham As Integer
+	
+	Private _HetBan As Boolean
+	
+	Private _HinhAnh As System.Data.Linq.Binary
+	
+	Private _MoTa As String
+	
+	Private _NgayTao As Date
+	
+	Private _TonMin As Integer
+	
+	Private _MaSanPhamString As String
+	
+	Private _TenSanPhamString As String
+	
+	Private _GiaQuyCach As Double
+	
+	Private _QuyCach As Double
+	
+	Private _DonViQuyCach As String
+	
+	Private _GiaNhapQuyCach As Double
+	
+	Private _isGiaCong As System.Nullable(Of Boolean)
+	
+	Private _isSeri As System.Nullable(Of Boolean)
+	
+	Private _PhanTramBan As Double
+	
+	Private _PhanTramNhap As Double
+	
+	Private _GiaNiemYet As Double
+	
+	Private _TenTrenHoaDon As String
+	
+	Private _NgayNiemYet As Date
+	
+	Private _KhoiLuongRieng As System.Nullable(Of Double)
+	
+	Private _KyHieuKho As String
+	
+	Private _ThoiGianBaoHanh As System.Nullable(Of Integer)
+	
+	Private _isDanhMuc As System.Nullable(Of Boolean)
+	
+	Private _isKhongTinhTonKho As System.Nullable(Of Boolean)
+	
+	Private _tbChiTietBaoGias As EntitySet(Of tbChiTietBaoGia)
+	
+	Private _tbChiTietHoaDons As EntitySet(Of tbChiTietHoaDon)
+	
+	Private _tbChiTietKhachHangDatHangs As EntitySet(Of tbChiTietKhachHangDatHang)
+	
+	Private _tbChiTietPhieuNhaps As EntitySet(Of tbChiTietPhieuNhap)
+	
+	Private _tbChiTietPhieuXuats As EntitySet(Of tbChiTietPhieuXuat)
+	
+	Private _tbGiaCongSanPhams As EntitySet(Of tbGiaCongSanPham)
+	
+	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
+	
+	Private _tbChiTietSeris As EntitySet(Of tbChiTietSeri)
+	
+	Private _tbLoaiSanPham As EntityRef(Of tbLoaiSanPham)
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidChanged()
+    End Sub
+    Partial Private Sub OnMaSanPhamChanging(value As String)
+    End Sub
+    Partial Private Sub OnMaSanPhamChanged()
+    End Sub
+    Partial Private Sub OnMaVachSanPhamChanging(value As String)
+    End Sub
+    Partial Private Sub OnMaVachSanPhamChanged()
+    End Sub
+    Partial Private Sub OnTenSanPhamChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenSanPhamChanged()
+    End Sub
+    Partial Private Sub OnDonViChanging(value As String)
+    End Sub
+    Partial Private Sub OnDonViChanged()
+    End Sub
+    Partial Private Sub OnGiaBinhQuanChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaBinhQuanChanged()
+    End Sub
+    Partial Private Sub OnSoLuongChanging(value As Double)
+    End Sub
+    Partial Private Sub OnSoLuongChanged()
+    End Sub
+    Partial Private Sub OnidLoaiSanPhamChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidLoaiSanPhamChanged()
+    End Sub
+    Partial Private Sub OnHetBanChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnHetBanChanged()
+    End Sub
+    Partial Private Sub OnHinhAnhChanging(value As System.Data.Linq.Binary)
+    End Sub
+    Partial Private Sub OnHinhAnhChanged()
+    End Sub
+    Partial Private Sub OnMoTaChanging(value As String)
+    End Sub
+    Partial Private Sub OnMoTaChanged()
+    End Sub
+    Partial Private Sub OnNgayTaoChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayTaoChanged()
+    End Sub
+    Partial Private Sub OnTonMinChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnTonMinChanged()
+    End Sub
+    Partial Private Sub OnMaSanPhamStringChanging(value As String)
+    End Sub
+    Partial Private Sub OnMaSanPhamStringChanged()
+    End Sub
+    Partial Private Sub OnTenSanPhamStringChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenSanPhamStringChanged()
+    End Sub
+    Partial Private Sub OnGiaQuyCachChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaQuyCachChanged()
+    End Sub
+    Partial Private Sub OnQuyCachChanging(value As Double)
+    End Sub
+    Partial Private Sub OnQuyCachChanged()
+    End Sub
+    Partial Private Sub OnDonViQuyCachChanging(value As String)
+    End Sub
+    Partial Private Sub OnDonViQuyCachChanged()
+    End Sub
+    Partial Private Sub OnGiaNhapQuyCachChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaNhapQuyCachChanged()
+    End Sub
+    Partial Private Sub OnisGiaCongChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisGiaCongChanged()
+    End Sub
+    Partial Private Sub OnisSeriChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisSeriChanged()
+    End Sub
+    Partial Private Sub OnPhanTramBanChanging(value As Double)
+    End Sub
+    Partial Private Sub OnPhanTramBanChanged()
+    End Sub
+    Partial Private Sub OnPhanTramNhapChanging(value As Double)
+    End Sub
+    Partial Private Sub OnPhanTramNhapChanged()
+    End Sub
+    Partial Private Sub OnGiaNiemYetChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGiaNiemYetChanged()
+    End Sub
+    Partial Private Sub OnTenTrenHoaDonChanging(value As String)
+    End Sub
+    Partial Private Sub OnTenTrenHoaDonChanged()
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanging(value As Date)
+    End Sub
+    Partial Private Sub OnNgayNiemYetChanged()
+    End Sub
+    Partial Private Sub OnKhoiLuongRiengChanging(value As System.Nullable(Of Double))
+    End Sub
+    Partial Private Sub OnKhoiLuongRiengChanged()
+    End Sub
+    Partial Private Sub OnKyHieuKhoChanging(value As String)
+    End Sub
+    Partial Private Sub OnKyHieuKhoChanged()
+    End Sub
+    Partial Private Sub OnThoiGianBaoHanhChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnThoiGianBaoHanhChanged()
+    End Sub
+    Partial Private Sub OnisDanhMucChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisDanhMucChanged()
+    End Sub
+    Partial Private Sub OnisKhongTinhTonKhoChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisKhongTinhTonKhoChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		Me._tbChiTietBaoGias = New EntitySet(Of tbChiTietBaoGia)(AddressOf Me.attach_tbChiTietBaoGias, AddressOf Me.detach_tbChiTietBaoGias)
+		Me._tbChiTietHoaDons = New EntitySet(Of tbChiTietHoaDon)(AddressOf Me.attach_tbChiTietHoaDons, AddressOf Me.detach_tbChiTietHoaDons)
+		Me._tbChiTietKhachHangDatHangs = New EntitySet(Of tbChiTietKhachHangDatHang)(AddressOf Me.attach_tbChiTietKhachHangDatHangs, AddressOf Me.detach_tbChiTietKhachHangDatHangs)
+		Me._tbChiTietPhieuNhaps = New EntitySet(Of tbChiTietPhieuNhap)(AddressOf Me.attach_tbChiTietPhieuNhaps, AddressOf Me.detach_tbChiTietPhieuNhaps)
+		Me._tbChiTietPhieuXuats = New EntitySet(Of tbChiTietPhieuXuat)(AddressOf Me.attach_tbChiTietPhieuXuats, AddressOf Me.detach_tbChiTietPhieuXuats)
+		Me._tbGiaCongSanPhams = New EntitySet(Of tbGiaCongSanPham)(AddressOf Me.attach_tbGiaCongSanPhams, AddressOf Me.detach_tbGiaCongSanPhams)
+		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
+		Me._tbChiTietSeris = New EntitySet(Of tbChiTietSeri)(AddressOf Me.attach_tbChiTietSeris, AddressOf Me.detach_tbChiTietSeris)
+		Me._tbLoaiSanPham = CType(Nothing, EntityRef(Of tbLoaiSanPham))
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me.OnidChanging(value)
+				Me.SendPropertyChanging
+				Me._id = value
+				Me.SendPropertyChanged("id")
+				Me.OnidChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaSanPham() As String
+		Get
+			Return Me._MaSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaSanPham, value) = false) Then
+				Me.OnMaSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._MaSanPham = value
+				Me.SendPropertyChanged("MaSanPham")
+				Me.OnMaSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaVachSanPham", DbType:="NVarChar(50)")>  _
+	Public Property MaVachSanPham() As String
+		Get
+			Return Me._MaVachSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaVachSanPham, value) = false) Then
+				Me.OnMaVachSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._MaVachSanPham = value
+				Me.SendPropertyChanged("MaVachSanPham")
+				Me.OnMaVachSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenSanPham() As String
+		Get
+			Return Me._TenSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenSanPham, value) = false) Then
+				Me.OnTenSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._TenSanPham = value
+				Me.SendPropertyChanged("TenSanPham")
+				Me.OnTenSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property DonVi() As String
+		Get
+			Return Me._DonVi
+		End Get
+		Set
+			If (String.Equals(Me._DonVi, value) = false) Then
+				Me.OnDonViChanging(value)
+				Me.SendPropertyChanging
+				Me._DonVi = value
+				Me.SendPropertyChanged("DonVi")
+				Me.OnDonViChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBinhQuan", DbType:="Float NOT NULL")>  _
+	Public Property GiaBinhQuan() As Double
+		Get
+			Return Me._GiaBinhQuan
+		End Get
+		Set
+			If ((Me._GiaBinhQuan = value)  _
+						= false) Then
+				Me.OnGiaBinhQuanChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaBinhQuan = value
+				Me.SendPropertyChanged("GiaBinhQuan")
+				Me.OnGiaBinhQuanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me.OnSoLuongChanging(value)
+				Me.SendPropertyChanging
+				Me._SoLuong = value
+				Me.SendPropertyChanged("SoLuong")
+				Me.OnSoLuongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiSanPham() As Integer
+		Get
+			Return Me._idLoaiSanPham
+		End Get
+		Set
+			If ((Me._idLoaiSanPham = value)  _
+						= false) Then
+				If Me._tbLoaiSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidLoaiSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._idLoaiSanPham = value
+				Me.SendPropertyChanged("idLoaiSanPham")
+				Me.OnidLoaiSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HetBan", DbType:="Bit NOT NULL")>  _
+	Public Property HetBan() As Boolean
+		Get
+			Return Me._HetBan
+		End Get
+		Set
+			If ((Me._HetBan = value)  _
+						= false) Then
+				Me.OnHetBanChanging(value)
+				Me.SendPropertyChanging
+				Me._HetBan = value
+				Me.SendPropertyChanged("HetBan")
+				Me.OnHetBanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhAnh", DbType:="VarBinary(MAX)", UpdateCheck:=UpdateCheck.Never)>  _
+	Public Property HinhAnh() As System.Data.Linq.Binary
+		Get
+			Return Me._HinhAnh
+		End Get
+		Set
+			If (Object.Equals(Me._HinhAnh, value) = false) Then
+				Me.OnHinhAnhChanging(value)
+				Me.SendPropertyChanging
+				Me._HinhAnh = value
+				Me.SendPropertyChanged("HinhAnh")
+				Me.OnHinhAnhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NVarChar(250)")>  _
+	Public Property MoTa() As String
+		Get
+			Return Me._MoTa
+		End Get
+		Set
+			If (String.Equals(Me._MoTa, value) = false) Then
+				Me.OnMoTaChanging(value)
+				Me.SendPropertyChanging
+				Me._MoTa = value
+				Me.SendPropertyChanged("MoTa")
+				Me.OnMoTaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayTao", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayTao() As Date
+		Get
+			Return Me._NgayTao
+		End Get
+		Set
+			If ((Me._NgayTao = value)  _
+						= false) Then
+				Me.OnNgayTaoChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayTao = value
+				Me.SendPropertyChanged("NgayTao")
+				Me.OnNgayTaoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TonMin", DbType:="Int NOT NULL")>  _
+	Public Property TonMin() As Integer
+		Get
+			Return Me._TonMin
+		End Get
+		Set
+			If ((Me._TonMin = value)  _
+						= false) Then
+				Me.OnTonMinChanging(value)
+				Me.SendPropertyChanging
+				Me._TonMin = value
+				Me.SendPropertyChanged("TonMin")
+				Me.OnTonMinChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPhamString", DbType:="NVarChar(250)")>  _
+	Public Property MaSanPhamString() As String
+		Get
+			Return Me._MaSanPhamString
+		End Get
+		Set
+			If (String.Equals(Me._MaSanPhamString, value) = false) Then
+				Me.OnMaSanPhamStringChanging(value)
+				Me.SendPropertyChanging
+				Me._MaSanPhamString = value
+				Me.SendPropertyChanged("MaSanPhamString")
+				Me.OnMaSanPhamStringChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPhamString", DbType:="NVarChar(350)")>  _
+	Public Property TenSanPhamString() As String
+		Get
+			Return Me._TenSanPhamString
+		End Get
+		Set
+			If (String.Equals(Me._TenSanPhamString, value) = false) Then
+				Me.OnTenSanPhamStringChanging(value)
+				Me.SendPropertyChanging
+				Me._TenSanPhamString = value
+				Me.SendPropertyChanged("TenSanPhamString")
+				Me.OnTenSanPhamStringChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaQuyCach", DbType:="Float NOT NULL")>  _
+	Public Property GiaQuyCach() As Double
+		Get
+			Return Me._GiaQuyCach
+		End Get
+		Set
+			If ((Me._GiaQuyCach = value)  _
+						= false) Then
+				Me.OnGiaQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaQuyCach = value
+				Me.SendPropertyChanged("GiaQuyCach")
+				Me.OnGiaQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
+	Public Property QuyCach() As Double
+		Get
+			Return Me._QuyCach
+		End Get
+		Set
+			If ((Me._QuyCach = value)  _
+						= false) Then
+				Me.OnQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._QuyCach = value
+				Me.SendPropertyChanged("QuyCach")
+				Me.OnQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonViQuyCach", DbType:="NVarChar(50)")>  _
+	Public Property DonViQuyCach() As String
+		Get
+			Return Me._DonViQuyCach
+		End Get
+		Set
+			If (String.Equals(Me._DonViQuyCach, value) = false) Then
+				Me.OnDonViQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._DonViQuyCach = value
+				Me.SendPropertyChanged("DonViQuyCach")
+				Me.OnDonViQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNhapQuyCach", DbType:="Float NOT NULL")>  _
+	Public Property GiaNhapQuyCach() As Double
+		Get
+			Return Me._GiaNhapQuyCach
+		End Get
+		Set
+			If ((Me._GiaNhapQuyCach = value)  _
+						= false) Then
+				Me.OnGiaNhapQuyCachChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaNhapQuyCach = value
+				Me.SendPropertyChanged("GiaNhapQuyCach")
+				Me.OnGiaNhapQuyCachChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaCong", DbType:="Bit")>  _
+	Public Property isGiaCong() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isGiaCong
+		End Get
+		Set
+			If (Me._isGiaCong.Equals(value) = false) Then
+				Me.OnisGiaCongChanging(value)
+				Me.SendPropertyChanging
+				Me._isGiaCong = value
+				Me.SendPropertyChanged("isGiaCong")
+				Me.OnisGiaCongChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isSeri", DbType:="Bit")>  _
+	Public Property isSeri() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isSeri
+		End Get
+		Set
+			If (Me._isSeri.Equals(value) = false) Then
+				Me.OnisSeriChanging(value)
+				Me.SendPropertyChanging
+				Me._isSeri = value
+				Me.SendPropertyChanged("isSeri")
+				Me.OnisSeriChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PhanTramBan", DbType:="Float NOT NULL")>  _
+	Public Property PhanTramBan() As Double
+		Get
+			Return Me._PhanTramBan
+		End Get
+		Set
+			If ((Me._PhanTramBan = value)  _
+						= false) Then
+				Me.OnPhanTramBanChanging(value)
+				Me.SendPropertyChanging
+				Me._PhanTramBan = value
+				Me.SendPropertyChanged("PhanTramBan")
+				Me.OnPhanTramBanChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PhanTramNhap", DbType:="Float NOT NULL")>  _
+	Public Property PhanTramNhap() As Double
+		Get
+			Return Me._PhanTramNhap
+		End Get
+		Set
+			If ((Me._PhanTramNhap = value)  _
+						= false) Then
+				Me.OnPhanTramNhapChanging(value)
+				Me.SendPropertyChanging
+				Me._PhanTramNhap = value
+				Me.SendPropertyChanged("PhanTramNhap")
+				Me.OnPhanTramNhapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
+	Public Property GiaNiemYet() As Double
+		Get
+			Return Me._GiaNiemYet
+		End Get
+		Set
+			If ((Me._GiaNiemYet = value)  _
+						= false) Then
+				Me.OnGiaNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._GiaNiemYet = value
+				Me.SendPropertyChanged("GiaNiemYet")
+				Me.OnGiaNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenTrenHoaDon", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenTrenHoaDon() As String
+		Get
+			Return Me._TenTrenHoaDon
+		End Get
+		Set
+			If (String.Equals(Me._TenTrenHoaDon, value) = false) Then
+				Me.OnTenTrenHoaDonChanging(value)
+				Me.SendPropertyChanging
+				Me._TenTrenHoaDon = value
+				Me.SendPropertyChanged("TenTrenHoaDon")
+				Me.OnTenTrenHoaDonChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayNiemYet() As Date
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If ((Me._NgayNiemYet = value)  _
+						= false) Then
+				Me.OnNgayNiemYetChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNiemYet = value
+				Me.SendPropertyChanged("NgayNiemYet")
+				Me.OnNgayNiemYetChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KhoiLuongRieng", DbType:="Float")>  _
+	Public Property KhoiLuongRieng() As System.Nullable(Of Double)
+		Get
+			Return Me._KhoiLuongRieng
+		End Get
+		Set
+			If (Me._KhoiLuongRieng.Equals(value) = false) Then
+				Me.OnKhoiLuongRiengChanging(value)
+				Me.SendPropertyChanging
+				Me._KhoiLuongRieng = value
+				Me.SendPropertyChanged("KhoiLuongRieng")
+				Me.OnKhoiLuongRiengChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KyHieuKho", DbType:="NChar(20)")>  _
+	Public Property KyHieuKho() As String
+		Get
+			Return Me._KyHieuKho
+		End Get
+		Set
+			If (String.Equals(Me._KyHieuKho, value) = false) Then
+				Me.OnKyHieuKhoChanging(value)
+				Me.SendPropertyChanging
+				Me._KyHieuKho = value
+				Me.SendPropertyChanged("KyHieuKho")
+				Me.OnKyHieuKhoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ThoiGianBaoHanh", DbType:="Int")>  _
+	Public Property ThoiGianBaoHanh() As System.Nullable(Of Integer)
+		Get
+			Return Me._ThoiGianBaoHanh
+		End Get
+		Set
+			If (Me._ThoiGianBaoHanh.Equals(value) = false) Then
+				Me.OnThoiGianBaoHanhChanging(value)
+				Me.SendPropertyChanging
+				Me._ThoiGianBaoHanh = value
+				Me.SendPropertyChanged("ThoiGianBaoHanh")
+				Me.OnThoiGianBaoHanhChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhMuc", DbType:="Bit")>  _
+	Public Property isDanhMuc() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isDanhMuc
+		End Get
+		Set
+			If (Me._isDanhMuc.Equals(value) = false) Then
+				Me.OnisDanhMucChanging(value)
+				Me.SendPropertyChanging
+				Me._isDanhMuc = value
+				Me.SendPropertyChanged("isDanhMuc")
+				Me.OnisDanhMucChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isKhongTinhTonKho", DbType:="Bit")>  _
+	Public Property isKhongTinhTonKho() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isKhongTinhTonKho
+		End Get
+		Set
+			If (Me._isKhongTinhTonKho.Equals(value) = false) Then
+				Me.OnisKhongTinhTonKhoChanging(value)
+				Me.SendPropertyChanging
+				Me._isKhongTinhTonKho = value
+				Me.SendPropertyChanged("isKhongTinhTonKho")
+				Me.OnisKhongTinhTonKhoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietBaoGia", Storage:="_tbChiTietBaoGias", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietBaoGias() As EntitySet(Of tbChiTietBaoGia)
+		Get
+			Return Me._tbChiTietBaoGias
+		End Get
+		Set
+			Me._tbChiTietBaoGias.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietHoaDon", Storage:="_tbChiTietHoaDons", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietHoaDons() As EntitySet(Of tbChiTietHoaDon)
+		Get
+			Return Me._tbChiTietHoaDons
+		End Get
+		Set
+			Me._tbChiTietHoaDons.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietKhachHangDatHang", Storage:="_tbChiTietKhachHangDatHangs", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietKhachHangDatHangs() As EntitySet(Of tbChiTietKhachHangDatHang)
+		Get
+			Return Me._tbChiTietKhachHangDatHangs
+		End Get
+		Set
+			Me._tbChiTietKhachHangDatHangs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuNhap", Storage:="_tbChiTietPhieuNhaps", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietPhieuNhaps() As EntitySet(Of tbChiTietPhieuNhap)
+		Get
+			Return Me._tbChiTietPhieuNhaps
+		End Get
+		Set
+			Me._tbChiTietPhieuNhaps.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuXuat", Storage:="_tbChiTietPhieuXuats", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietPhieuXuats() As EntitySet(Of tbChiTietPhieuXuat)
+		Get
+			Return Me._tbChiTietPhieuXuats
+		End Get
+		Set
+			Me._tbChiTietPhieuXuats.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCongSanPham", Storage:="_tbGiaCongSanPhams", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbGiaCongSanPhams() As EntitySet(Of tbGiaCongSanPham)
+		Get
+			Return Me._tbGiaCongSanPhams
+		End Get
+		Set
+			Me._tbGiaCongSanPhams.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCong", Storage:="_tbGiaCongs", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbGiaCongs() As EntitySet(Of tbGiaCong)
+		Get
+			Return Me._tbGiaCongs
+		End Get
+		Set
+			Me._tbGiaCongs.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietSeri", Storage:="_tbChiTietSeris", ThisKey:="id", OtherKey:="idSanPham")>  _
+	Public Property tbChiTietSeris() As EntitySet(Of tbChiTietSeri)
+		Get
+			Return Me._tbChiTietSeris
+		End Get
+		Set
+			Me._tbChiTietSeris.Assign(value)
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiSanPham_tbSanPham", Storage:="_tbLoaiSanPham", ThisKey:="idLoaiSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbLoaiSanPham() As tbLoaiSanPham
+		Get
+			Return Me._tbLoaiSanPham.Entity
+		End Get
+		Set
+			Dim previousValue As tbLoaiSanPham = Me._tbLoaiSanPham.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbLoaiSanPham.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbLoaiSanPham.Entity = Nothing
+					previousValue.tbSanPhams.Remove(Me)
+				End If
+				Me._tbLoaiSanPham.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbSanPhams.Add(Me)
+					Me._idLoaiSanPham = value.id
+				Else
+					Me._idLoaiSanPham = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbLoaiSanPham")
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+	
+	Private Sub attach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbGiaCongSanPhams(ByVal entity As tbGiaCongSanPham)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbGiaCongSanPhams(ByVal entity As tbGiaCongSanPham)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbGiaCongs(ByVal entity As tbGiaCong)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+	
+	Private Sub attach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Me
+	End Sub
+	
+	Private Sub detach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
+		Me.SendPropertyChanging
+		entity.tbSanPham = Nothing
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbThuNoKhachHang")>  _
 Partial Public Class tbThuNoKhachHang
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -9676,15 +15532,15 @@ Partial Public Class tbThuNoKhachHang
 	
 	Private _ChungTuKemTheo As String
 	
+	Private _tbHoaDon As EntityRef(Of tbHoaDon)
+	
 	Private _tbKhachHang As EntityRef(Of tbKhachHang)
+	
+	Private _tbNganHang As EntityRef(Of tbNganHang)
 	
 	Private _tbNhanVien As EntityRef(Of tbNhanVien)
 	
-	Private _tbHoaDon As EntityRef(Of tbHoaDon)
-	
 	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
-	
-	Private _tbNganHang As EntityRef(Of tbNganHang)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -9741,11 +15597,11 @@ Partial Public Class tbThuNoKhachHang
 	
 	Public Sub New()
 		MyBase.New
-		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
 		Me._tbHoaDon = CType(Nothing, EntityRef(Of tbHoaDon))
-		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
+		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
 		Me._tbNganHang = CType(Nothing, EntityRef(Of tbNganHang))
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
+		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
 		OnCreated
 	End Sub
 	
@@ -9946,6 +15802,34 @@ Partial Public Class tbThuNoKhachHang
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbThuNoKhachHang", Storage:="_tbHoaDon", ThisKey:="idHoaDon", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbHoaDon() As tbHoaDon
+		Get
+			Return Me._tbHoaDon.Entity
+		End Get
+		Set
+			Dim previousValue As tbHoaDon = Me._tbHoaDon.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbHoaDon.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbHoaDon.Entity = Nothing
+					previousValue.tbThuNoKhachHangs.Remove(Me)
+				End If
+				Me._tbHoaDon.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbThuNoKhachHangs.Add(Me)
+					Me._idHoaDon = value.id
+				Else
+					Me._idHoaDon = CType(Nothing, Nullable(Of Decimal))
+				End If
+				Me.SendPropertyChanged("tbHoaDon")
+			End If
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbThuNoKhachHang", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbKhachHang() As tbKhachHang
 		Get
@@ -9970,6 +15854,34 @@ Partial Public Class tbThuNoKhachHang
 					Me._idKhachHang = CType(Nothing, Integer)
 				End If
 				Me.SendPropertyChanged("tbKhachHang")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbThuNoKhachHang", Storage:="_tbNganHang", ThisKey:="idHinhThucThanhToan", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNganHang() As tbNganHang
+		Get
+			Return Me._tbNganHang.Entity
+		End Get
+		Set
+			Dim previousValue As tbNganHang = Me._tbNganHang.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNganHang.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNganHang.Entity = Nothing
+					previousValue.tbThuNoKhachHangs.Remove(Me)
+				End If
+				Me._tbNganHang.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbThuNoKhachHangs.Add(Me)
+					Me._idHinhThucThanhToan = value.id
+				Else
+					Me._idHinhThucThanhToan = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbNganHang")
 			End If
 		End Set
 	End Property
@@ -10002,34 +15914,6 @@ Partial Public Class tbThuNoKhachHang
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbThuNoKhachHang", Storage:="_tbHoaDon", ThisKey:="idHoaDon", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbHoaDon() As tbHoaDon
-		Get
-			Return Me._tbHoaDon.Entity
-		End Get
-		Set
-			Dim previousValue As tbHoaDon = Me._tbHoaDon.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbHoaDon.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbHoaDon.Entity = Nothing
-					previousValue.tbThuNoKhachHangs.Remove(Me)
-				End If
-				Me._tbHoaDon.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbThuNoKhachHangs.Add(Me)
-					Me._idHoaDon = value.id
-				Else
-					Me._idHoaDon = CType(Nothing, Nullable(Of Decimal))
-				End If
-				Me.SendPropertyChanged("tbHoaDon")
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbThuNoKhachHang", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbPhieuNhap() As tbPhieuNhap
 		Get
@@ -10054,34 +15938,6 @@ Partial Public Class tbThuNoKhachHang
 					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbPhieuNhap")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbThuNoKhachHang", Storage:="_tbNganHang", ThisKey:="idHinhThucThanhToan", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNganHang() As tbNganHang
-		Get
-			Return Me._tbNganHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbNganHang = Me._tbNganHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNganHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNganHang.Entity = Nothing
-					previousValue.tbThuNoKhachHangs.Remove(Me)
-				End If
-				Me._tbNganHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbThuNoKhachHangs.Add(Me)
-					Me._idHinhThucThanhToan = value.id
-				Else
-					Me._idHinhThucThanhToan = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbNganHang")
 			End If
 		End Set
 	End Property
@@ -10233,6 +16089,348 @@ Partial Public Class tbTrangThai
 		Me.SendPropertyChanging
 		entity.tbTrangThai = Nothing
 	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwBaoGia")>  _
+Partial Public Class vwBaoGia
+	
+	Private _ModeHienThi As Integer
+	
+	Private _GhiChu As String
+	
+	Private _idNhanVien As Integer
+	
+	Private _SoPhieu As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _id As Integer
+	
+	Private _TenDangNhap As String
+	
+	Private _TenNhanVien As String
+	
+	Private _idNguoiLienHe As System.Nullable(Of Integer)
+	
+	Private _NgayKiemDuyet As System.Nullable(Of Date)
+	
+	Private _idNhanVienKiemDuyet As System.Nullable(Of Integer)
+	
+	Private _CapDo As System.Nullable(Of Integer)
+	
+	Private _idLoaiBaoGia As Integer
+	
+	Private _idTrangThai As Integer
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _DaChuyenPhieuDatHang As Integer
+	
+	Private _TongTienTruocVAT As Double
+	
+	Private _TongTienVAT As Double
+	
+	Private _TongTien As Double
+	
+	Private _VAT As System.Nullable(Of Double)
+	
+	Private _isHuy As Boolean
+	
+	Private _CongTrinh As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModeHienThi", DbType:="Int NOT NULL")>  _
+	Public Property ModeHienThi() As Integer
+		Get
+			Return Me._ModeHienThi
+		End Get
+		Set
+			If ((Me._ModeHienThi = value)  _
+						= false) Then
+				Me._ModeHienThi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(400)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
+	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNguoiLienHe
+		End Get
+		Set
+			If (Me._idNguoiLienHe.Equals(value) = false) Then
+				Me._idNguoiLienHe = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
+	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayKiemDuyet
+		End Get
+		Set
+			If (Me._NgayKiemDuyet.Equals(value) = false) Then
+				Me._NgayKiemDuyet = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="Int")>  _
+	Public Property idNhanVienKiemDuyet() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhanVienKiemDuyet
+		End Get
+		Set
+			If (Me._idNhanVienKiemDuyet.Equals(value) = false) Then
+				Me._idNhanVienKiemDuyet = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
+	Public Property CapDo() As System.Nullable(Of Integer)
+		Get
+			Return Me._CapDo
+		End Get
+		Set
+			If (Me._CapDo.Equals(value) = false) Then
+				Me._CapDo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiBaoGia() As Integer
+		Get
+			Return Me._idLoaiBaoGia
+		End Get
+		Set
+			If ((Me._idLoaiBaoGia = value)  _
+						= false) Then
+				Me._idLoaiBaoGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
+	Public Property idTrangThai() As Integer
+		Get
+			Return Me._idTrangThai
+		End Get
+		Set
+			If ((Me._idTrangThai = value)  _
+						= false) Then
+				Me._idTrangThai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me._isNhapHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaChuyenPhieuDatHang", DbType:="Int NOT NULL")>  _
+	Public Property DaChuyenPhieuDatHang() As Integer
+		Get
+			Return Me._DaChuyenPhieuDatHang
+		End Get
+		Set
+			If ((Me._DaChuyenPhieuDatHang = value)  _
+						= false) Then
+				Me._DaChuyenPhieuDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienTruocVAT() As Double
+		Get
+			Return Me._TongTienTruocVAT
+		End Get
+		Set
+			If ((Me._TongTienTruocVAT = value)  _
+						= false) Then
+				Me._TongTienTruocVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienVAT() As Double
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
+	Public Property TongTien() As Double
+		Get
+			Return Me._TongTien
+		End Get
+		Set
+			If ((Me._TongTien = value)  _
+						= false) Then
+				Me._TongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Float")>  _
+	Public Property VAT() As System.Nullable(Of Double)
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If (Me._VAT.Equals(value) = false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHuy", DbType:="Bit NOT NULL")>  _
+	Public Property isHuy() As Boolean
+		Get
+			Return Me._isHuy
+		End Get
+		Set
+			If ((Me._isHuy = value)  _
+						= false) Then
+				Me._isHuy = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(400)")>  _
+	Public Property CongTrinh() As String
+		Get
+			Return Me._CongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._CongTrinh, value) = false) Then
+				Me._CongTrinh = value
+			End If
+		End Set
+	End Property
 End Class
 
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwSanPham")>  _
@@ -10686,6 +16884,376 @@ Partial Public Class vwSanPham
 		Set
 			If (Me._ThoiGianBaoHanh.Equals(value) = false) Then
 				Me._ThoiGianBaoHanh = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwChiTietBaoGia")>  _
+Partial Public Class vwChiTietBaoGia
+	
+	Private _id As Integer
+	
+	Private _idSanPham As Integer
+	
+	Private _GiaNiemYet As Double
+	
+	Private _idBaoGia As Integer
+	
+	Private _GhiChu As String
+	
+	Private _SoLuong As Double
+	
+	Private _ChietKhau As System.Nullable(Of Double)
+	
+	Private _NgayNiemYet As System.Nullable(Of Date)
+	
+	Private _TenLoaiBaoGia As String
+	
+	Private _Loai As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _SoPhieu As Integer
+	
+	Private _TenNhanVien As String
+	
+	Private _idNhanVien As Integer
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _idTrangThai As Integer
+	
+	Private _idLoaiBaoGia As Integer
+	
+	Private _TenCongTrinh As String
+	
+	Private _DonGia As Double
+	
+	Private _MaSanPham As String
+	
+	Private _TenSanPham As String
+	
+	Private _DonVi As String
+	
+	Private _isDanhMuc As System.Nullable(Of Boolean)
+	
+	Private _isKhongTinhTonKho As System.Nullable(Of Boolean)
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				Me._idSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
+	Public Property GiaNiemYet() As Double
+		Get
+			Return Me._GiaNiemYet
+		End Get
+		Set
+			If ((Me._GiaNiemYet = value)  _
+						= false) Then
+				Me._GiaNiemYet = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int NOT NULL")>  _
+	Public Property idBaoGia() As Integer
+		Get
+			Return Me._idBaoGia
+		End Get
+		Set
+			If ((Me._idBaoGia = value)  _
+						= false) Then
+				Me._idBaoGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float")>  _
+	Public Property ChietKhau() As System.Nullable(Of Double)
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If (Me._ChietKhau.Equals(value) = false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
+	Public Property NgayNiemYet() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If (Me._NgayNiemYet.Equals(value) = false) Then
+				Me._NgayNiemYet = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiBaoGia", DbType:="NVarChar(120) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenLoaiBaoGia() As String
+		Get
+			Return Me._TenLoaiBaoGia
+		End Get
+		Set
+			If (String.Equals(Me._TenLoaiBaoGia, value) = false) Then
+				Me._TenLoaiBaoGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
+	Public Property Loai() As Integer
+		Get
+			Return Me._Loai
+		End Get
+		Set
+			If ((Me._Loai = value)  _
+						= false) Then
+				Me._Loai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me._isNhapHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
+	Public Property idTrangThai() As Integer
+		Get
+			Return Me._idTrangThai
+		End Get
+		Set
+			If ((Me._idTrangThai = value)  _
+						= false) Then
+				Me._idTrangThai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiBaoGia() As Integer
+		Get
+			Return Me._idLoaiBaoGia
+		End Get
+		Set
+			If ((Me._idLoaiBaoGia = value)  _
+						= false) Then
+				Me._idLoaiBaoGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(400)")>  _
+	Public Property TenCongTrinh() As String
+		Get
+			Return Me._TenCongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._TenCongTrinh, value) = false) Then
+				Me._TenCongTrinh = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
+	Public Property DonGia() As Double
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me._DonGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaSanPham() As String
+		Get
+			Return Me._MaSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaSanPham, value) = false) Then
+				Me._MaSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenSanPham() As String
+		Get
+			Return Me._TenSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenSanPham, value) = false) Then
+				Me._TenSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property DonVi() As String
+		Get
+			Return Me._DonVi
+		End Get
+		Set
+			If (String.Equals(Me._DonVi, value) = false) Then
+				Me._DonVi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhMuc", DbType:="Bit")>  _
+	Public Property isDanhMuc() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isDanhMuc
+		End Get
+		Set
+			If (Me._isDanhMuc.Equals(value) = false) Then
+				Me._isDanhMuc = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isKhongTinhTonKho", DbType:="Bit")>  _
+	Public Property isKhongTinhTonKho() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isKhongTinhTonKho
+		End Get
+		Set
+			If (Me._isKhongTinhTonKho.Equals(value) = false) Then
+				Me._isKhongTinhTonKho = value
 			End If
 		End Set
 	End Property
@@ -11483,7635 +18051,6 @@ Partial Public Class vwChiTietHoaDon
 			If ((Me._HinhThucThanhToan = value)  _
 						= false) Then
 				Me._HinhThucThanhToan = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwHoaDon")>  _
-Partial Public Class vwHoaDon
-	
-	Private _id As Decimal
-	
-	Private _NgayLap As Date
-	
-	Private _idKhachHang As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoHoaDon As Integer
-	
-	Private _VAT As Integer
-	
-	Private _GhiChu As String
-	
-	Private _SoTienKhachDua As Decimal
-	
-	Private _TenDangNhap As String
-	
-	Private _TenNhanVien As String
-	
-	Private _MaKhachHang As String
-	
-	Private _TenKhachHang As String
-	
-	Private _DiaChi As String
-	
-	Private _SoDienThoai As String
-	
-	Private _MaSoThue As String
-	
-	Private _SoFAX As String
-	
-	Private _CongNoMax As Decimal
-	
-	Private _idNhomKhachHang As Integer
-	
-	Private _TenNhomKhachHang As String
-	
-	Private _idKhachHangDatHang As System.Nullable(Of Integer)
-	
-	Private _DiaChiGiaoHang As String
-	
-	Private _MucPhi As System.Nullable(Of Integer)
-	
-	Private _SoTienGiam As Decimal
-	
-	Private _GhiChuGiamTien As String
-	
-	Private _TienTruocThue As System.Nullable(Of Decimal)
-	
-	Private _idKhachHangHD As System.Nullable(Of Integer)
-	
-	Private _TenKhachHangHD As String
-	
-	Private _LoaiHD As Integer
-	
-	Private _TongVon As Double
-	
-	Private _CongTien As Double
-	
-	Private _TongTienChietKhau As Double
-	
-	Private _TongTienVAT As Decimal
-	
-	Private _TongTien As Double
-	
-	Private _TongTienDaThanhToan As Decimal
-	
-	Private _idHinhThucThanhToan As System.Nullable(Of Integer)
-	
-	Private _idNhanVienThuTien As System.Nullable(Of Integer)
-	
-	Private _MucPhiHoaDon As System.Nullable(Of Double)
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property id() As Decimal
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me._ChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHoaDon", DbType:="Int NOT NULL")>  _
-	Public Property SoHoaDon() As Integer
-		Get
-			Return Me._SoHoaDon
-		End Get
-		Set
-			If ((Me._SoHoaDon = value)  _
-						= false) Then
-				Me._SoHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me._VAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienKhachDua", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTienKhachDua() As Decimal
-		Get
-			Return Me._SoTienKhachDua
-		End Get
-		Set
-			If ((Me._SoTienKhachDua = value)  _
-						= false) Then
-				Me._SoTienKhachDua = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaKhachHang() As String
-		Get
-			Return Me._MaKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._MaKhachHang, value) = false) Then
-				Me._MaKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenKhachHang() As String
-		Get
-			Return Me._TenKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHang, value) = false) Then
-				Me._TenKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
-	Public Property MaSoThue() As String
-		Get
-			Return Me._MaSoThue
-		End Get
-		Set
-			If (String.Equals(Me._MaSoThue, value) = false) Then
-				Me._MaSoThue = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
-	Public Property SoFAX() As String
-		Get
-			Return Me._SoFAX
-		End Get
-		Set
-			If (String.Equals(Me._SoFAX, value) = false) Then
-				Me._SoFAX = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoMax", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property CongNoMax() As Decimal
-		Get
-			Return Me._CongNoMax
-		End Get
-		Set
-			If ((Me._CongNoMax = value)  _
-						= false) Then
-				Me._CongNoMax = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idNhomKhachHang() As Integer
-		Get
-			Return Me._idNhomKhachHang
-		End Get
-		Set
-			If ((Me._idNhomKhachHang = value)  _
-						= false) Then
-				Me._idNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhomKhachHang() As String
-		Get
-			Return Me._TenNhomKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
-				Me._TenNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
-	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If (Me._idKhachHangDatHang.Equals(value) = false) Then
-				Me._idKhachHangDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
-	Public Property DiaChiGiaoHang() As String
-		Get
-			Return Me._DiaChiGiaoHang
-		End Get
-		Set
-			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
-				Me._DiaChiGiaoHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhi", DbType:="Int")>  _
-	Public Property MucPhi() As System.Nullable(Of Integer)
-		Get
-			Return Me._MucPhi
-		End Get
-		Set
-			If (Me._MucPhi.Equals(value) = false) Then
-				Me._MucPhi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienGiam", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTienGiam() As Decimal
-		Get
-			Return Me._SoTienGiam
-		End Get
-		Set
-			If ((Me._SoTienGiam = value)  _
-						= false) Then
-				Me._SoTienGiam = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChuGiamTien", DbType:="NVarChar(350)")>  _
-	Public Property GhiChuGiamTien() As String
-		Get
-			Return Me._GhiChuGiamTien
-		End Get
-		Set
-			If (String.Equals(Me._GhiChuGiamTien, value) = false) Then
-				Me._GhiChuGiamTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienTruocThue", DbType:="Decimal(18,0)")>  _
-	Public Property TienTruocThue() As System.Nullable(Of Decimal)
-		Get
-			Return Me._TienTruocThue
-		End Get
-		Set
-			If (Me._TienTruocThue.Equals(value) = false) Then
-				Me._TienTruocThue = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangHD", DbType:="Int")>  _
-	Public Property idKhachHangHD() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangHD
-		End Get
-		Set
-			If (Me._idKhachHangHD.Equals(value) = false) Then
-				Me._idKhachHangHD = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHangHD", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenKhachHangHD() As String
-		Get
-			Return Me._TenKhachHangHD
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHangHD, value) = false) Then
-				Me._TenKhachHangHD = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiHD", DbType:="Int NOT NULL")>  _
-	Public Property LoaiHD() As Integer
-		Get
-			Return Me._LoaiHD
-		End Get
-		Set
-			If ((Me._LoaiHD = value)  _
-						= false) Then
-				Me._LoaiHD = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
-	Public Property TongVon() As Double
-		Get
-			Return Me._TongVon
-		End Get
-		Set
-			If ((Me._TongVon = value)  _
-						= false) Then
-				Me._TongVon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
-	Public Property CongTien() As Double
-		Get
-			Return Me._CongTien
-		End Get
-		Set
-			If ((Me._CongTien = value)  _
-						= false) Then
-				Me._CongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property TongTienChietKhau() As Double
-		Get
-			Return Me._TongTienChietKhau
-		End Get
-		Set
-			If ((Me._TongTienChietKhau = value)  _
-						= false) Then
-				Me._TongTienChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Decimal(35,6) NOT NULL")>  _
-	Public Property TongTienVAT() As Decimal
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
-	Public Property TongTien() As Double
-		Get
-			Return Me._TongTien
-		End Get
-		Set
-			If ((Me._TongTien = value)  _
-						= false) Then
-				Me._TongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienDaThanhToan", DbType:="Decimal(38,0) NOT NULL")>  _
-	Public Property TongTienDaThanhToan() As Decimal
-		Get
-			Return Me._TongTienDaThanhToan
-		End Get
-		Set
-			If ((Me._TongTienDaThanhToan = value)  _
-						= false) Then
-				Me._TongTienDaThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idHinhThucThanhToan", DbType:="Int")>  _
-	Public Property idHinhThucThanhToan() As System.Nullable(Of Integer)
-		Get
-			Return Me._idHinhThucThanhToan
-		End Get
-		Set
-			If (Me._idHinhThucThanhToan.Equals(value) = false) Then
-				Me._idHinhThucThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienThuTien", DbType:="Int")>  _
-	Public Property idNhanVienThuTien() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhanVienThuTien
-		End Get
-		Set
-			If (Me._idNhanVienThuTien.Equals(value) = false) Then
-				Me._idNhanVienThuTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhiHoaDon", DbType:="Float")>  _
-	Public Property MucPhiHoaDon() As System.Nullable(Of Double)
-		Get
-			Return Me._MucPhiHoaDon
-		End Get
-		Set
-			If (Me._MucPhiHoaDon.Equals(value) = false) Then
-				Me._MucPhiHoaDon = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwKhachHang")>  _
-Partial Public Class vwKhachHang
-	
-	Private _id As Integer
-	
-	Private _MaKhachHang As String
-	
-	Private _TenKhachHang As String
-	
-	Private _DiaChi As String
-	
-	Private _SoDienThoai As String
-	
-	Private _Email As String
-	
-	Private _CongNoDauKy As Decimal
-	
-	Private _SoFAX As String
-	
-	Private _MaSoThue As String
-	
-	Private _NgayNhap As Date
-	
-	Private _CongNoMax As Decimal
-	
-	Private _NgayTraNo As Integer
-	
-	Private _TenKhachHangString As String
-	
-	Private _idNhomKhachHang As Integer
-	
-	Private _DiaChiGiaoHang As String
-	
-	Private _TenNhomKhachHang As String
-	
-	Private _TongTienHoaDon As Double
-	
-	Private _TongTienPhieuNhap As Double
-	
-	Private _TongTienPhieuXuat As Double
-	
-	Private _TongTienDaTra As Decimal
-	
-	Private _isNhaCungCap As System.Nullable(Of Boolean)
-	
-	Private _TenRutGon As String
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaKhachHang() As String
-		Get
-			Return Me._MaKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._MaKhachHang, value) = false) Then
-				Me._MaKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenKhachHang() As String
-		Get
-			Return Me._TenKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHang, value) = false) Then
-				Me._TenKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="NVarChar(150)")>  _
-	Public Property Email() As String
-		Get
-			Return Me._Email
-		End Get
-		Set
-			If (String.Equals(Me._Email, value) = false) Then
-				Me._Email = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoDauKy", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property CongNoDauKy() As Decimal
-		Get
-			Return Me._CongNoDauKy
-		End Get
-		Set
-			If ((Me._CongNoDauKy = value)  _
-						= false) Then
-				Me._CongNoDauKy = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
-	Public Property SoFAX() As String
-		Get
-			Return Me._SoFAX
-		End Get
-		Set
-			If (String.Equals(Me._SoFAX, value) = false) Then
-				Me._SoFAX = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
-	Public Property MaSoThue() As String
-		Get
-			Return Me._MaSoThue
-		End Get
-		Set
-			If (String.Equals(Me._MaSoThue, value) = false) Then
-				Me._MaSoThue = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayNhap() As Date
-		Get
-			Return Me._NgayNhap
-		End Get
-		Set
-			If ((Me._NgayNhap = value)  _
-						= false) Then
-				Me._NgayNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoMax", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property CongNoMax() As Decimal
-		Get
-			Return Me._CongNoMax
-		End Get
-		Set
-			If ((Me._CongNoMax = value)  _
-						= false) Then
-				Me._CongNoMax = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayTraNo", DbType:="Int NOT NULL")>  _
-	Public Property NgayTraNo() As Integer
-		Get
-			Return Me._NgayTraNo
-		End Get
-		Set
-			If ((Me._NgayTraNo = value)  _
-						= false) Then
-				Me._NgayTraNo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHangString", DbType:="NVarChar(500)")>  _
-	Public Property TenKhachHangString() As String
-		Get
-			Return Me._TenKhachHangString
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHangString, value) = false) Then
-				Me._TenKhachHangString = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idNhomKhachHang() As Integer
-		Get
-			Return Me._idNhomKhachHang
-		End Get
-		Set
-			If ((Me._idNhomKhachHang = value)  _
-						= false) Then
-				Me._idNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
-	Public Property DiaChiGiaoHang() As String
-		Get
-			Return Me._DiaChiGiaoHang
-		End Get
-		Set
-			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
-				Me._DiaChiGiaoHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhomKhachHang() As String
-		Get
-			Return Me._TenNhomKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
-				Me._TenNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienHoaDon", DbType:="Float NOT NULL")>  _
-	Public Property TongTienHoaDon() As Double
-		Get
-			Return Me._TongTienHoaDon
-		End Get
-		Set
-			If ((Me._TongTienHoaDon = value)  _
-						= false) Then
-				Me._TongTienHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuNhap", DbType:="Float NOT NULL")>  _
-	Public Property TongTienPhieuNhap() As Double
-		Get
-			Return Me._TongTienPhieuNhap
-		End Get
-		Set
-			If ((Me._TongTienPhieuNhap = value)  _
-						= false) Then
-				Me._TongTienPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuXuat", DbType:="Float NOT NULL")>  _
-	Public Property TongTienPhieuXuat() As Double
-		Get
-			Return Me._TongTienPhieuXuat
-		End Get
-		Set
-			If ((Me._TongTienPhieuXuat = value)  _
-						= false) Then
-				Me._TongTienPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienDaTra", DbType:="Decimal(38,0) NOT NULL")>  _
-	Public Property TongTienDaTra() As Decimal
-		Get
-			Return Me._TongTienDaTra
-		End Get
-		Set
-			If ((Me._TongTienDaTra = value)  _
-						= false) Then
-				Me._TongTienDaTra = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhaCungCap", DbType:="Bit")>  _
-	Public Property isNhaCungCap() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhaCungCap
-		End Get
-		Set
-			If (Me._isNhaCungCap.Equals(value) = false) Then
-				Me._isNhaCungCap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenRutGon", DbType:="NVarChar(130)")>  _
-	Public Property TenRutGon() As String
-		Get
-			Return Me._TenRutGon
-		End Get
-		Set
-			If (String.Equals(Me._TenRutGon, value) = false) Then
-				Me._TenRutGon = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuChi")>  _
-Partial Public Class vwPhieuChi
-	
-	Private _id As Integer
-	
-	Private _SoPhieu As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _TenNguoiNhan As String
-	
-	Private _DiaChi As String
-	
-	Private _LyDo As String
-	
-	Private _HinhThucThanhToan As String
-	
-	Private _SoTien As Decimal
-	
-	Private _ChungTuKemTheo As String
-	
-	Private _idNhanVien As Integer
-	
-	Private _TenDangNhap As String
-	
-	Private _TenNhanVien As String
-	
-	Private _idPhieuNhap As System.Nullable(Of Integer)
-	
-	Private _NguoiChiTien As String
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNguoiNhan", DbType:="NVarChar(350)")>  _
-	Public Property TenNguoiNhan() As String
-		Get
-			Return Me._TenNguoiNhan
-		End Get
-		Set
-			If (String.Equals(Me._TenNguoiNhan, value) = false) Then
-				Me._TenNguoiNhan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(350)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LyDo", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property LyDo() As String
-		Get
-			Return Me._LyDo
-		End Get
-		Set
-			If (String.Equals(Me._LyDo, value) = false) Then
-				Me._LyDo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-	Public Property HinhThucThanhToan() As String
-		Get
-			Return Me._HinhThucThanhToan
-		End Get
-		Set
-			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
-				Me._HinhThucThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTien", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTien() As Decimal
-		Get
-			Return Me._SoTien
-		End Get
-		Set
-			If ((Me._SoTien = value)  _
-						= false) Then
-				Me._SoTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChungTuKemTheo", DbType:="NVarChar(50)")>  _
-	Public Property ChungTuKemTheo() As String
-		Get
-			Return Me._ChungTuKemTheo
-		End Get
-		Set
-			If (String.Equals(Me._ChungTuKemTheo, value) = false) Then
-				Me._ChungTuKemTheo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int")>  _
-	Public Property idPhieuNhap() As System.Nullable(Of Integer)
-		Get
-			Return Me._idPhieuNhap
-		End Get
-		Set
-			If (Me._idPhieuNhap.Equals(value) = false) Then
-				Me._idPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NguoiChiTien", DbType:="NVarChar(250)")>  _
-	Public Property NguoiChiTien() As String
-		Get
-			Return Me._NguoiChiTien
-		End Get
-		Set
-			If (String.Equals(Me._NguoiChiTien, value) = false) Then
-				Me._NguoiChiTien = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuThu")>  _
-Partial Public Class vwPhieuThu
-	
-	Private _id As Integer
-	
-	Private _SoPhieu As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _TenNguoiNop As String
-	
-	Private _DiaChi As String
-	
-	Private _LyDo As String
-	
-	Private _HinhThucThanhToan As String
-	
-	Private _SoTien As Decimal
-	
-	Private _ChungTuKemTheo As String
-	
-	Private _idNhanVien As Integer
-	
-	Private _TenDangNhap As String
-	
-	Private _TenNhanVien As String
-	
-	Private _idPhieuXuat As System.Nullable(Of Integer)
-	
-	Private _NguoiNhanTien As String
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNguoiNop", DbType:="NVarChar(350)")>  _
-	Public Property TenNguoiNop() As String
-		Get
-			Return Me._TenNguoiNop
-		End Get
-		Set
-			If (String.Equals(Me._TenNguoiNop, value) = false) Then
-				Me._TenNguoiNop = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(350)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LyDo", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property LyDo() As String
-		Get
-			Return Me._LyDo
-		End Get
-		Set
-			If (String.Equals(Me._LyDo, value) = false) Then
-				Me._LyDo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-	Public Property HinhThucThanhToan() As String
-		Get
-			Return Me._HinhThucThanhToan
-		End Get
-		Set
-			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
-				Me._HinhThucThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTien", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTien() As Decimal
-		Get
-			Return Me._SoTien
-		End Get
-		Set
-			If ((Me._SoTien = value)  _
-						= false) Then
-				Me._SoTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChungTuKemTheo", DbType:="NVarChar(50)")>  _
-	Public Property ChungTuKemTheo() As String
-		Get
-			Return Me._ChungTuKemTheo
-		End Get
-		Set
-			If (String.Equals(Me._ChungTuKemTheo, value) = false) Then
-				Me._ChungTuKemTheo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
-	Public Property idPhieuXuat() As System.Nullable(Of Integer)
-		Get
-			Return Me._idPhieuXuat
-		End Get
-		Set
-			If (Me._idPhieuXuat.Equals(value) = false) Then
-				Me._idPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NguoiNhanTien", DbType:="NVarChar(250)")>  _
-	Public Property NguoiNhanTien() As String
-		Get
-			Return Me._NguoiNhanTien
-		End Get
-		Set
-			If (String.Equals(Me._NguoiNhanTien, value) = false) Then
-				Me._NguoiNhanTien = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhanQuyen")>  _
-Partial Public Class vwPhanQuyen
-	
-	Private _idNhanVien As Integer
-	
-	Private _idQuyen As Integer
-	
-	Private _TenControl As String
-	
-	Private _TrangThai As Boolean
-	
-	Private _id As Integer
-	
-	Private _HinhThuc As Integer
-	
-	Private _TheLoai As Integer
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idQuyen", DbType:="Int NOT NULL")>  _
-	Public Property idQuyen() As Integer
-		Get
-			Return Me._idQuyen
-		End Get
-		Set
-			If ((Me._idQuyen = value)  _
-						= false) Then
-				Me._idQuyen = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenControl", DbType:="NVarChar(250)")>  _
-	Public Property TenControl() As String
-		Get
-			Return Me._TenControl
-		End Get
-		Set
-			If (String.Equals(Me._TenControl, value) = false) Then
-				Me._TenControl = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TrangThai", DbType:="Bit NOT NULL")>  _
-	Public Property TrangThai() As Boolean
-		Get
-			Return Me._TrangThai
-		End Get
-		Set
-			If ((Me._TrangThai = value)  _
-						= false) Then
-				Me._TrangThai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThuc", DbType:="Int NOT NULL")>  _
-	Public Property HinhThuc() As Integer
-		Get
-			Return Me._HinhThuc
-		End Get
-		Set
-			If ((Me._HinhThuc = value)  _
-						= false) Then
-				Me._HinhThuc = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheLoai", DbType:="Int NOT NULL")>  _
-	Public Property TheLoai() As Integer
-		Get
-			Return Me._TheLoai
-		End Get
-		Set
-			If ((Me._TheLoai = value)  _
-						= false) Then
-				Me._TheLoai = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbKhachHangDatHang")>  _
-Partial Public Class tbKhachHangDatHang
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _idKhachHang As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoPhieu As Integer
-	
-	Private _VAT As Integer
-	
-	Private _GhiChu As String
-	
-	Private _DaLapHoaDon As Boolean
-	
-	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
-	
-	Private _DiaChiGiaoHang As String
-	
-	Private _idNhanVienKiemDuyet As String
-	
-	Private _NgayKiemDuyet As System.Nullable(Of Date)
-	
-	Private _CapDo As System.Nullable(Of Integer)
-	
-	Private _isNhapHang As System.Nullable(Of Boolean)
-	
-	Private _CongTrinh As String
-	
-	Private _isHoaDon As System.Nullable(Of Boolean)
-	
-	Private _idNguoiLienHe As System.Nullable(Of Integer)
-	
-	Private _idBaoGia As System.Nullable(Of Integer)
-	
-	Private _tbPhieuXuats As EntitySet(Of tbPhieuXuat)
-	
-	Private _tbHoaDons As EntitySet(Of tbHoaDon)
-	
-	Private _tbPhieuNhaps As EntitySet(Of tbPhieuNhap)
-	
-	Private _tbChiTietKhachHangDatHangs As EntitySet(Of tbChiTietKhachHangDatHang)
-	
-	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
-	
-	Private _tbKhachHang As EntityRef(Of tbKhachHang)
-	
-	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbBaoGia As EntityRef(Of tbBaoGia)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnNgayLapChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayLapChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidKhachHangChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidNhanVienChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As Double)
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnSoPhieuChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoPhieuChanged()
-    End Sub
-    Partial Private Sub OnVATChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnVATChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnDaLapHoaDonChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnDaLapHoaDonChanged()
-    End Sub
-    Partial Private Sub OnNgayDuKienGiaoHangChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayDuKienGiaoHangChanged()
-    End Sub
-    Partial Private Sub OnDiaChiGiaoHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnDiaChiGiaoHangChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienKiemDuyetChanging(value As String)
-    End Sub
-    Partial Private Sub OnidNhanVienKiemDuyetChanged()
-    End Sub
-    Partial Private Sub OnNgayKiemDuyetChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayKiemDuyetChanged()
-    End Sub
-    Partial Private Sub OnCapDoChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCapDoChanged()
-    End Sub
-    Partial Private Sub OnisNhapHangChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisNhapHangChanged()
-    End Sub
-    Partial Private Sub OnCongTrinhChanging(value As String)
-    End Sub
-    Partial Private Sub OnCongTrinhChanged()
-    End Sub
-    Partial Private Sub OnisHoaDonChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisHoaDonChanged()
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanged()
-    End Sub
-    Partial Private Sub OnidBaoGiaChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidBaoGiaChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbPhieuXuats = New EntitySet(Of tbPhieuXuat)(AddressOf Me.attach_tbPhieuXuats, AddressOf Me.detach_tbPhieuXuats)
-		Me._tbHoaDons = New EntitySet(Of tbHoaDon)(AddressOf Me.attach_tbHoaDons, AddressOf Me.detach_tbHoaDons)
-		Me._tbPhieuNhaps = New EntitySet(Of tbPhieuNhap)(AddressOf Me.attach_tbPhieuNhaps, AddressOf Me.detach_tbPhieuNhaps)
-		Me._tbChiTietKhachHangDatHangs = New EntitySet(Of tbChiTietKhachHangDatHang)(AddressOf Me.attach_tbChiTietKhachHangDatHangs, AddressOf Me.detach_tbChiTietKhachHangDatHangs)
-		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
-		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbBaoGia = CType(Nothing, EntityRef(Of tbBaoGia))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me.OnNgayLapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayLap = value
-				Me.SendPropertyChanged("NgayLap")
-				Me.OnNgayLapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
-				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHang = value
-				Me.SendPropertyChanged("idKhachHang")
-				Me.OnidKhachHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhanVienChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVien = value
-				Me.SendPropertyChanged("idNhanVien")
-				Me.OnidNhanVienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me.OnSoPhieuChanging(value)
-				Me.SendPropertyChanging
-				Me._SoPhieu = value
-				Me.SendPropertyChanged("SoPhieu")
-				Me.OnSoPhieuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me.OnVATChanging(value)
-				Me.SendPropertyChanging
-				Me._VAT = value
-				Me.SendPropertyChanged("VAT")
-				Me.OnVATChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
-	Public Property DaLapHoaDon() As Boolean
-		Get
-			Return Me._DaLapHoaDon
-		End Get
-		Set
-			If ((Me._DaLapHoaDon = value)  _
-						= false) Then
-				Me.OnDaLapHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._DaLapHoaDon = value
-				Me.SendPropertyChanged("DaLapHoaDon")
-				Me.OnDaLapHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
-	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayDuKienGiaoHang
-		End Get
-		Set
-			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
-				Me.OnNgayDuKienGiaoHangChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayDuKienGiaoHang = value
-				Me.SendPropertyChanged("NgayDuKienGiaoHang")
-				Me.OnNgayDuKienGiaoHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
-	Public Property DiaChiGiaoHang() As String
-		Get
-			Return Me._DiaChiGiaoHang
-		End Get
-		Set
-			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
-				Me.OnDiaChiGiaoHangChanging(value)
-				Me.SendPropertyChanging
-				Me._DiaChiGiaoHang = value
-				Me.SendPropertyChanged("DiaChiGiaoHang")
-				Me.OnDiaChiGiaoHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="NChar(10)")>  _
-	Public Property idNhanVienKiemDuyet() As String
-		Get
-			Return Me._idNhanVienKiemDuyet
-		End Get
-		Set
-			If (String.Equals(Me._idNhanVienKiemDuyet, value) = false) Then
-				Me.OnidNhanVienKiemDuyetChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVienKiemDuyet = value
-				Me.SendPropertyChanged("idNhanVienKiemDuyet")
-				Me.OnidNhanVienKiemDuyetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
-	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayKiemDuyet
-		End Get
-		Set
-			If (Me._NgayKiemDuyet.Equals(value) = false) Then
-				Me.OnNgayKiemDuyetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayKiemDuyet = value
-				Me.SendPropertyChanged("NgayKiemDuyet")
-				Me.OnNgayKiemDuyetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
-	Public Property CapDo() As System.Nullable(Of Integer)
-		Get
-			Return Me._CapDo
-		End Get
-		Set
-			If (Me._CapDo.Equals(value) = false) Then
-				Me.OnCapDoChanging(value)
-				Me.SendPropertyChanging
-				Me._CapDo = value
-				Me.SendPropertyChanged("CapDo")
-				Me.OnCapDoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhapHang
-		End Get
-		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me.OnisNhapHangChanging(value)
-				Me.SendPropertyChanging
-				Me._isNhapHang = value
-				Me.SendPropertyChanged("isNhapHang")
-				Me.OnisNhapHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
-	Public Property CongTrinh() As String
-		Get
-			Return Me._CongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._CongTrinh, value) = false) Then
-				Me.OnCongTrinhChanging(value)
-				Me.SendPropertyChanging
-				Me._CongTrinh = value
-				Me.SendPropertyChanged("CongTrinh")
-				Me.OnCongTrinhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
-	Public Property isHoaDon() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isHoaDon
-		End Get
-		Set
-			If (Me._isHoaDon.Equals(value) = false) Then
-				Me.OnisHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._isHoaDon = value
-				Me.SendPropertyChanged("isHoaDon")
-				Me.OnisHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
-	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNguoiLienHe
-		End Get
-		Set
-			If (Me._idNguoiLienHe.Equals(value) = false) Then
-				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNguoiLienHeChanging(value)
-				Me.SendPropertyChanging
-				Me._idNguoiLienHe = value
-				Me.SendPropertyChanged("idNguoiLienHe")
-				Me.OnidNguoiLienHeChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int")>  _
-	Public Property idBaoGia() As System.Nullable(Of Integer)
-		Get
-			Return Me._idBaoGia
-		End Get
-		Set
-			If (Me._idBaoGia.Equals(value) = false) Then
-				If Me._tbBaoGia.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidBaoGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._idBaoGia = value
-				Me.SendPropertyChanged("idBaoGia")
-				Me.OnidBaoGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuXuat", Storage:="_tbPhieuXuats", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
-	Public Property tbPhieuXuats() As EntitySet(Of tbPhieuXuat)
-		Get
-			Return Me._tbPhieuXuats
-		End Get
-		Set
-			Me._tbPhieuXuats.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbHoaDon", Storage:="_tbHoaDons", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
-	Public Property tbHoaDons() As EntitySet(Of tbHoaDon)
-		Get
-			Return Me._tbHoaDons
-		End Get
-		Set
-			Me._tbHoaDons.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuNhap", Storage:="_tbPhieuNhaps", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
-	Public Property tbPhieuNhaps() As EntitySet(Of tbPhieuNhap)
-		Get
-			Return Me._tbPhieuNhaps
-		End Get
-		Set
-			Me._tbPhieuNhaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbChiTietKhachHangDatHang", Storage:="_tbChiTietKhachHangDatHangs", ThisKey:="id", OtherKey:="idKhachHangDatHang")>  _
-	Public Property tbChiTietKhachHangDatHangs() As EntitySet(Of tbChiTietKhachHangDatHang)
-		Get
-			Return Me._tbChiTietKhachHangDatHangs
-		End Get
-		Set
-			Me._tbChiTietKhachHangDatHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbKhachHangDatHang", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbChiTietLienHe() As tbChiTietLienHe
-		Get
-			Return Me._tbChiTietLienHe.Entity
-		End Get
-		Set
-			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbChiTietLienHe.Entity = Nothing
-					previousValue.tbKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbChiTietLienHe.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbKhachHangDatHangs.Add(Me)
-					Me._idNguoiLienHe = value.id
-				Else
-					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbChiTietLienHe")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbKhachHangDatHang", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbKhachHang() As tbKhachHang
-		Get
-			Return Me._tbKhachHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang.Entity = Nothing
-					previousValue.tbKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbKhachHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbKhachHangDatHangs.Add(Me)
-					Me._idKhachHang = value.id
-				Else
-					Me._idKhachHang = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbKhachHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbKhachHangDatHang", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbNhanVien() As tbNhanVien
-		Get
-			Return Me._tbNhanVien.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien.Entity = Nothing
-					previousValue.tbKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbNhanVien.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbKhachHangDatHangs.Add(Me)
-					Me._idNhanVien = value.id
-				Else
-					Me._idNhanVien = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNhanVien")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbKhachHangDatHang", Storage:="_tbBaoGia", ThisKey:="idBaoGia", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbBaoGia() As tbBaoGia
-		Get
-			Return Me._tbBaoGia.Entity
-		End Get
-		Set
-			Dim previousValue As tbBaoGia = Me._tbBaoGia.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbBaoGia.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbBaoGia.Entity = Nothing
-					previousValue.tbKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbBaoGia.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbKhachHangDatHangs.Add(Me)
-					Me._idBaoGia = value.id
-				Else
-					Me._idBaoGia = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbBaoGia")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuXuats(ByVal entity As tbPhieuXuat)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbHoaDons(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Me
-	End Sub
-	
-	Private Sub detach_tbHoaDons(ByVal entity As tbHoaDon)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuNhaps(ByVal entity As tbPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbKhachHangDatHang = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbHoaDon")>  _
-Partial Public Class tbHoaDon
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Decimal
-	
-	Private _NgayLap As Date
-	
-	Private _idKhachHang As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoHoaDon As Integer
-	
-	Private _VAT As Integer
-	
-	Private _GhiChu As String
-	
-	Private _SoTienKhachDua As Decimal
-	
-	Private _idKhachHangDatHang As System.Nullable(Of Integer)
-	
-	Private _DiaChiGiaoHang As String
-	
-	Private _SoTienGiam As Decimal
-	
-	Private _GhiChuGiamTien As String
-	
-	Private _NgayInHoaDon As System.Nullable(Of Date)
-	
-	Private _KyHieuHD As String
-	
-	Private _SoHD As System.Nullable(Of Integer)
-	
-	Private _MatHang As String
-	
-	Private _TienTruocThue As System.Nullable(Of Decimal)
-	
-	Private _MucPhi As System.Nullable(Of Integer)
-	
-	Private _idKhachHangHD As System.Nullable(Of Integer)
-	
-	Private _LoaiHD As System.Nullable(Of Boolean)
-	
-	Private _DiaChi As String
-	
-	Private _SoTaiKhoan As String
-	
-	Private _HinhThucThanhToan As String
-	
-	Private _CoVAT As System.Nullable(Of Boolean)
-	
-	Private _idPhieuXuat As System.Nullable(Of Integer)
-	
-	Private _tbChiTietHoaDons As EntitySet(Of tbChiTietHoaDon)
-	
-	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
-	
-	Private _tbKhachHang As EntityRef(Of tbKhachHang)
-	
-	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
-	
-	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
-	
-	Private _tbKhachHang1 As EntityRef(Of tbKhachHang)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Decimal)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnNgayLapChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayLapChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidKhachHangChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidNhanVienChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As Double)
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnSoHoaDonChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoHoaDonChanged()
-    End Sub
-    Partial Private Sub OnVATChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnVATChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnSoTienKhachDuaChanging(value As Decimal)
-    End Sub
-    Partial Private Sub OnSoTienKhachDuaChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanged()
-    End Sub
-    Partial Private Sub OnDiaChiGiaoHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnDiaChiGiaoHangChanged()
-    End Sub
-    Partial Private Sub OnSoTienGiamChanging(value As Decimal)
-    End Sub
-    Partial Private Sub OnSoTienGiamChanged()
-    End Sub
-    Partial Private Sub OnGhiChuGiamTienChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuGiamTienChanged()
-    End Sub
-    Partial Private Sub OnNgayInHoaDonChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayInHoaDonChanged()
-    End Sub
-    Partial Private Sub OnKyHieuHDChanging(value As String)
-    End Sub
-    Partial Private Sub OnKyHieuHDChanged()
-    End Sub
-    Partial Private Sub OnSoHDChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnSoHDChanged()
-    End Sub
-    Partial Private Sub OnMatHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnMatHangChanged()
-    End Sub
-    Partial Private Sub OnTienTruocThueChanging(value As System.Nullable(Of Decimal))
-    End Sub
-    Partial Private Sub OnTienTruocThueChanged()
-    End Sub
-    Partial Private Sub OnMucPhiChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnMucPhiChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangHDChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidKhachHangHDChanged()
-    End Sub
-    Partial Private Sub OnLoaiHDChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnLoaiHDChanged()
-    End Sub
-    Partial Private Sub OnDiaChiChanging(value As String)
-    End Sub
-    Partial Private Sub OnDiaChiChanged()
-    End Sub
-    Partial Private Sub OnSoTaiKhoanChanging(value As String)
-    End Sub
-    Partial Private Sub OnSoTaiKhoanChanged()
-    End Sub
-    Partial Private Sub OnHinhThucThanhToanChanging(value As String)
-    End Sub
-    Partial Private Sub OnHinhThucThanhToanChanged()
-    End Sub
-    Partial Private Sub OnCoVATChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnCoVATChanged()
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbChiTietHoaDons = New EntitySet(Of tbChiTietHoaDon)(AddressOf Me.attach_tbChiTietHoaDons, AddressOf Me.detach_tbChiTietHoaDons)
-		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
-		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
-		Me._tbKhachHang1 = CType(Nothing, EntityRef(Of tbKhachHang))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Decimal(18,0) NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Decimal
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me.OnNgayLapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayLap = value
-				Me.SendPropertyChanged("NgayLap")
-				Me.OnNgayLapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
-				If Me._tbKhachHang1.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHang = value
-				Me.SendPropertyChanged("idKhachHang")
-				Me.OnidKhachHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhanVienChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVien = value
-				Me.SendPropertyChanged("idNhanVien")
-				Me.OnidNhanVienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHoaDon", DbType:="Int NOT NULL")>  _
-	Public Property SoHoaDon() As Integer
-		Get
-			Return Me._SoHoaDon
-		End Get
-		Set
-			If ((Me._SoHoaDon = value)  _
-						= false) Then
-				Me.OnSoHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._SoHoaDon = value
-				Me.SendPropertyChanged("SoHoaDon")
-				Me.OnSoHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me.OnVATChanging(value)
-				Me.SendPropertyChanging
-				Me._VAT = value
-				Me.SendPropertyChanged("VAT")
-				Me.OnVATChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienKhachDua", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTienKhachDua() As Decimal
-		Get
-			Return Me._SoTienKhachDua
-		End Get
-		Set
-			If ((Me._SoTienKhachDua = value)  _
-						= false) Then
-				Me.OnSoTienKhachDuaChanging(value)
-				Me.SendPropertyChanging
-				Me._SoTienKhachDua = value
-				Me.SendPropertyChanged("SoTienKhachDua")
-				Me.OnSoTienKhachDuaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
-	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If (Me._idKhachHangDatHang.Equals(value) = false) Then
-				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangDatHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHangDatHang = value
-				Me.SendPropertyChanged("idKhachHangDatHang")
-				Me.OnidKhachHangDatHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
-	Public Property DiaChiGiaoHang() As String
-		Get
-			Return Me._DiaChiGiaoHang
-		End Get
-		Set
-			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
-				Me.OnDiaChiGiaoHangChanging(value)
-				Me.SendPropertyChanging
-				Me._DiaChiGiaoHang = value
-				Me.SendPropertyChanged("DiaChiGiaoHang")
-				Me.OnDiaChiGiaoHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienGiam", DbType:="Decimal(18,0) NOT NULL")>  _
-	Public Property SoTienGiam() As Decimal
-		Get
-			Return Me._SoTienGiam
-		End Get
-		Set
-			If ((Me._SoTienGiam = value)  _
-						= false) Then
-				Me.OnSoTienGiamChanging(value)
-				Me.SendPropertyChanging
-				Me._SoTienGiam = value
-				Me.SendPropertyChanged("SoTienGiam")
-				Me.OnSoTienGiamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChuGiamTien", DbType:="NVarChar(350)")>  _
-	Public Property GhiChuGiamTien() As String
-		Get
-			Return Me._GhiChuGiamTien
-		End Get
-		Set
-			If (String.Equals(Me._GhiChuGiamTien, value) = false) Then
-				Me.OnGhiChuGiamTienChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChuGiamTien = value
-				Me.SendPropertyChanged("GhiChuGiamTien")
-				Me.OnGhiChuGiamTienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayInHoaDon", DbType:="DateTime")>  _
-	Public Property NgayInHoaDon() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayInHoaDon
-		End Get
-		Set
-			If (Me._NgayInHoaDon.Equals(value) = false) Then
-				Me.OnNgayInHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayInHoaDon = value
-				Me.SendPropertyChanged("NgayInHoaDon")
-				Me.OnNgayInHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KyHieuHD", DbType:="NChar(10)")>  _
-	Public Property KyHieuHD() As String
-		Get
-			Return Me._KyHieuHD
-		End Get
-		Set
-			If (String.Equals(Me._KyHieuHD, value) = false) Then
-				Me.OnKyHieuHDChanging(value)
-				Me.SendPropertyChanging
-				Me._KyHieuHD = value
-				Me.SendPropertyChanged("KyHieuHD")
-				Me.OnKyHieuHDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHD", DbType:="Int")>  _
-	Public Property SoHD() As System.Nullable(Of Integer)
-		Get
-			Return Me._SoHD
-		End Get
-		Set
-			If (Me._SoHD.Equals(value) = false) Then
-				Me.OnSoHDChanging(value)
-				Me.SendPropertyChanging
-				Me._SoHD = value
-				Me.SendPropertyChanged("SoHD")
-				Me.OnSoHDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MatHang", DbType:="NVarChar(500)")>  _
-	Public Property MatHang() As String
-		Get
-			Return Me._MatHang
-		End Get
-		Set
-			If (String.Equals(Me._MatHang, value) = false) Then
-				Me.OnMatHangChanging(value)
-				Me.SendPropertyChanging
-				Me._MatHang = value
-				Me.SendPropertyChanged("MatHang")
-				Me.OnMatHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienTruocThue", DbType:="Decimal(18,0)")>  _
-	Public Property TienTruocThue() As System.Nullable(Of Decimal)
-		Get
-			Return Me._TienTruocThue
-		End Get
-		Set
-			If (Me._TienTruocThue.Equals(value) = false) Then
-				Me.OnTienTruocThueChanging(value)
-				Me.SendPropertyChanging
-				Me._TienTruocThue = value
-				Me.SendPropertyChanged("TienTruocThue")
-				Me.OnTienTruocThueChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhi", DbType:="Int")>  _
-	Public Property MucPhi() As System.Nullable(Of Integer)
-		Get
-			Return Me._MucPhi
-		End Get
-		Set
-			If (Me._MucPhi.Equals(value) = false) Then
-				Me.OnMucPhiChanging(value)
-				Me.SendPropertyChanging
-				Me._MucPhi = value
-				Me.SendPropertyChanged("MucPhi")
-				Me.OnMucPhiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangHD", DbType:="Int")>  _
-	Public Property idKhachHangHD() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangHD
-		End Get
-		Set
-			If (Me._idKhachHangHD.Equals(value) = false) Then
-				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangHDChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHangHD = value
-				Me.SendPropertyChanged("idKhachHangHD")
-				Me.OnidKhachHangHDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiHD", DbType:="Bit")>  _
-	Public Property LoaiHD() As System.Nullable(Of Boolean)
-		Get
-			Return Me._LoaiHD
-		End Get
-		Set
-			If (Me._LoaiHD.Equals(value) = false) Then
-				Me.OnLoaiHDChanging(value)
-				Me.SendPropertyChanging
-				Me._LoaiHD = value
-				Me.SendPropertyChanged("LoaiHD")
-				Me.OnLoaiHDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me.OnDiaChiChanging(value)
-				Me.SendPropertyChanging
-				Me._DiaChi = value
-				Me.SendPropertyChanged("DiaChi")
-				Me.OnDiaChiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NChar(20)")>  _
-	Public Property SoTaiKhoan() As String
-		Get
-			Return Me._SoTaiKhoan
-		End Get
-		Set
-			If (String.Equals(Me._SoTaiKhoan, value) = false) Then
-				Me.OnSoTaiKhoanChanging(value)
-				Me.SendPropertyChanging
-				Me._SoTaiKhoan = value
-				Me.SendPropertyChanged("SoTaiKhoan")
-				Me.OnSoTaiKhoanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50)")>  _
-	Public Property HinhThucThanhToan() As String
-		Get
-			Return Me._HinhThucThanhToan
-		End Get
-		Set
-			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
-				Me.OnHinhThucThanhToanChanging(value)
-				Me.SendPropertyChanging
-				Me._HinhThucThanhToan = value
-				Me.SendPropertyChanged("HinhThucThanhToan")
-				Me.OnHinhThucThanhToanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CoVAT", DbType:="Bit")>  _
-	Public Property CoVAT() As System.Nullable(Of Boolean)
-		Get
-			Return Me._CoVAT
-		End Get
-		Set
-			If (Me._CoVAT.Equals(value) = false) Then
-				Me.OnCoVATChanging(value)
-				Me.SendPropertyChanging
-				Me._CoVAT = value
-				Me.SendPropertyChanged("CoVAT")
-				Me.OnCoVATChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
-	Public Property idPhieuXuat() As System.Nullable(Of Integer)
-		Get
-			Return Me._idPhieuXuat
-		End Get
-		Set
-			If (Me._idPhieuXuat.Equals(value) = false) Then
-				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidPhieuXuatChanging(value)
-				Me.SendPropertyChanging
-				Me._idPhieuXuat = value
-				Me.SendPropertyChanged("idPhieuXuat")
-				Me.OnidPhieuXuatChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbChiTietHoaDon", Storage:="_tbChiTietHoaDons", ThisKey:="id", OtherKey:="idHoaDon")>  _
-	Public Property tbChiTietHoaDons() As EntitySet(Of tbChiTietHoaDon)
-		Get
-			Return Me._tbChiTietHoaDons
-		End Get
-		Set
-			Me._tbChiTietHoaDons.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbHoaDon_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idHoaDon")>  _
-	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
-		Get
-			Return Me._tbThuNoKhachHangs
-		End Get
-		Set
-			Me._tbThuNoKhachHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon", Storage:="_tbKhachHang", ThisKey:="idKhachHangHD", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHang() As tbKhachHang
-		Get
-			Return Me._tbKhachHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang.Entity = Nothing
-					previousValue.tbHoaDons.Remove(Me)
-				End If
-				Me._tbKhachHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbHoaDons.Add(Me)
-					Me._idKhachHangHD = value.id
-				Else
-					Me._idKhachHangHD = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbHoaDon", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
-		Get
-			Return Me._tbKhachHangDatHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHangDatHang.Entity = Nothing
-					previousValue.tbHoaDons.Remove(Me)
-				End If
-				Me._tbKhachHangDatHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbHoaDons.Add(Me)
-					Me._idKhachHangDatHang = value.id
-				Else
-					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHangDatHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbHoaDon", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNhanVien() As tbNhanVien
-		Get
-			Return Me._tbNhanVien.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien.Entity = Nothing
-					previousValue.tbHoaDons.Remove(Me)
-				End If
-				Me._tbNhanVien.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbHoaDons.Add(Me)
-					Me._idNhanVien = value.id
-				Else
-					Me._idNhanVien = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNhanVien")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbHoaDon", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbPhieuXuat() As tbPhieuXuat
-		Get
-			Return Me._tbPhieuXuat.Entity
-		End Get
-		Set
-			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbPhieuXuat.Entity = Nothing
-					previousValue.tbHoaDons.Remove(Me)
-				End If
-				Me._tbPhieuXuat.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbHoaDons.Add(Me)
-					Me._idPhieuXuat = value.id
-				Else
-					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbPhieuXuat")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbHoaDon1", Storage:="_tbKhachHang1", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbKhachHang1() As tbKhachHang
-		Get
-			Return Me._tbKhachHang1.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang1.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang1.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang1.Entity = Nothing
-					previousValue.tbHoaDons1.Remove(Me)
-				End If
-				Me._tbKhachHang1.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbHoaDons1.Add(Me)
-					Me._idKhachHang = value.id
-				Else
-					Me._idKhachHang = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbKhachHang1")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
-		Me.SendPropertyChanging
-		entity.tbHoaDon = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
-		Me.SendPropertyChanging
-		entity.tbHoaDon = Nothing
-	End Sub
-	
-	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbHoaDon = Me
-	End Sub
-	
-	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbHoaDon = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiNganHang")>  _
-Partial Public Class tbLoaiNganHang
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _TenLoaiNganHang As String
-	
-	Private _Loai As Integer
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnTenLoaiNganHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenLoaiNganHangChanged()
-    End Sub
-    Partial Private Sub OnLoaiChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnLoaiChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiNganHang", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenLoaiNganHang() As String
-		Get
-			Return Me._TenLoaiNganHang
-		End Get
-		Set
-			If (String.Equals(Me._TenLoaiNganHang, value) = false) Then
-				Me.OnTenLoaiNganHangChanging(value)
-				Me.SendPropertyChanging
-				Me._TenLoaiNganHang = value
-				Me.SendPropertyChanged("TenLoaiNganHang")
-				Me.OnTenLoaiNganHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
-	Public Property Loai() As Integer
-		Get
-			Return Me._Loai
-		End Get
-		Set
-			If ((Me._Loai = value)  _
-						= false) Then
-				Me.OnLoaiChanging(value)
-				Me.SendPropertyChanging
-				Me._Loai = value
-				Me.SendPropertyChanged("Loai")
-				Me.OnLoaiChanged
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwKhachHangDatHang")>  _
-Partial Public Class vwKhachHangDatHang
-	
-	Private _id As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
-	
-	Private _DiaChiGiaoHang As String
-	
-	Private _idKhachHang As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoPhieu As Integer
-	
-	Private _VAT As Integer
-	
-	Private _GhiChu As String
-	
-	Private _TenNhanVien As String
-	
-	Private _MaKhachHang As String
-	
-	Private _TenKhachHang As String
-	
-	Private _DiaChi As String
-	
-	Private _SoDienThoai As String
-	
-	Private _MaSoThue As String
-	
-	Private _SoFAX As String
-	
-	Private _CongTrinh As String
-	
-	Private _isNhapHang As System.Nullable(Of Boolean)
-	
-	Private _idBaoGia As System.Nullable(Of Integer)
-	
-	Private _isGiaoHangXong As Integer
-	
-	Private _TongVon As Double
-	
-	Private _CongTien As Double
-	
-	Private _TongTienChietKhau As Double
-	
-	Private _TongTienVAT As Double
-	
-	Private _TongTien As Double
-	
-	Private _DaLapHoaDon As Boolean
-	
-	Private _SoLanDaGiao As System.Nullable(Of Integer)
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
-	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayDuKienGiaoHang
-		End Get
-		Set
-			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
-				Me._NgayDuKienGiaoHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
-	Public Property DiaChiGiaoHang() As String
-		Get
-			Return Me._DiaChiGiaoHang
-		End Get
-		Set
-			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
-				Me._DiaChiGiaoHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me._ChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me._VAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaKhachHang() As String
-		Get
-			Return Me._MaKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._MaKhachHang, value) = false) Then
-				Me._MaKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenKhachHang() As String
-		Get
-			Return Me._TenKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHang, value) = false) Then
-				Me._TenKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
-	Public Property MaSoThue() As String
-		Get
-			Return Me._MaSoThue
-		End Get
-		Set
-			If (String.Equals(Me._MaSoThue, value) = false) Then
-				Me._MaSoThue = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
-	Public Property SoFAX() As String
-		Get
-			Return Me._SoFAX
-		End Get
-		Set
-			If (String.Equals(Me._SoFAX, value) = false) Then
-				Me._SoFAX = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
-	Public Property CongTrinh() As String
-		Get
-			Return Me._CongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._CongTrinh, value) = false) Then
-				Me._CongTrinh = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhapHang
-		End Get
-		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me._isNhapHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int")>  _
-	Public Property idBaoGia() As System.Nullable(Of Integer)
-		Get
-			Return Me._idBaoGia
-		End Get
-		Set
-			If (Me._idBaoGia.Equals(value) = false) Then
-				Me._idBaoGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaoHangXong", DbType:="Int NOT NULL")>  _
-	Public Property isGiaoHangXong() As Integer
-		Get
-			Return Me._isGiaoHangXong
-		End Get
-		Set
-			If ((Me._isGiaoHangXong = value)  _
-						= false) Then
-				Me._isGiaoHangXong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
-	Public Property TongVon() As Double
-		Get
-			Return Me._TongVon
-		End Get
-		Set
-			If ((Me._TongVon = value)  _
-						= false) Then
-				Me._TongVon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
-	Public Property CongTien() As Double
-		Get
-			Return Me._CongTien
-		End Get
-		Set
-			If ((Me._CongTien = value)  _
-						= false) Then
-				Me._CongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property TongTienChietKhau() As Double
-		Get
-			Return Me._TongTienChietKhau
-		End Get
-		Set
-			If ((Me._TongTienChietKhau = value)  _
-						= false) Then
-				Me._TongTienChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienVAT() As Double
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
-	Public Property TongTien() As Double
-		Get
-			Return Me._TongTien
-		End Get
-		Set
-			If ((Me._TongTien = value)  _
-						= false) Then
-				Me._TongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
-	Public Property DaLapHoaDon() As Boolean
-		Get
-			Return Me._DaLapHoaDon
-		End Get
-		Set
-			If ((Me._DaLapHoaDon = value)  _
-						= false) Then
-				Me._DaLapHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLanDaGiao", DbType:="Int")>  _
-	Public Property SoLanDaGiao() As System.Nullable(Of Integer)
-		Get
-			Return Me._SoLanDaGiao
-		End Get
-		Set
-			If (Me._SoLanDaGiao.Equals(value) = false) Then
-				Me._SoLanDaGiao = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuXuat")>  _
-Partial Public Class vwPhieuXuat
-	
-	Private _id As Integer
-	
-	Private _SoPhieuXuat As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _idNhanVien As Integer
-	
-	Private _idLoaiPhieuXuat As Integer
-	
-	Private _GhiChu As String
-	
-	Private _idKhachHang As System.Nullable(Of Integer)
-	
-	Private _TenDangNhap As String
-	
-	Private _TenNhanVien As String
-	
-	Private _LoaiPhieuXuat As String
-	
-	Private _TenCongTrinh As String
-	
-	Private _HanThanhToan As System.Nullable(Of Date)
-	
-	Private _isThanhToan As System.Nullable(Of Boolean)
-	
-	Private _isHoaDon As System.Nullable(Of Boolean)
-	
-	Private _idKhachHangDatHang As System.Nullable(Of Integer)
-	
-	Private _TongTienTruocVAT As Double
-	
-	Private _TongTienVAT As Double
-	
-	Private _TongTienPhieuXuat As Double
-	
-	Private _TenNhaCungCap As String
-	
-	Private _SoDienThoai As String
-	
-	Private _DiaChi As String
-	
-	Private _SoLuong As Double
-	
-	Private _DaThuTienMat As System.Nullable(Of Integer)
-	
-	Private _DaXuatHoaDon As System.Nullable(Of Integer)
-	
-	Private _GiaoLanThu As System.Nullable(Of Integer)
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieuXuat", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieuXuat() As Integer
-		Get
-			Return Me._SoPhieuXuat
-		End Get
-		Set
-			If ((Me._SoPhieuXuat = value)  _
-						= false) Then
-				Me._SoPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuXuat", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiPhieuXuat() As Integer
-		Get
-			Return Me._idLoaiPhieuXuat
-		End Get
-		Set
-			If ((Me._idLoaiPhieuXuat = value)  _
-						= false) Then
-				Me._idLoaiPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiPhieuXuat", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property LoaiPhieuXuat() As String
-		Get
-			Return Me._LoaiPhieuXuat
-		End Get
-		Set
-			If (String.Equals(Me._LoaiPhieuXuat, value) = false) Then
-				Me._LoaiPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(200)")>  _
-	Public Property TenCongTrinh() As String
-		Get
-			Return Me._TenCongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._TenCongTrinh, value) = false) Then
-				Me._TenCongTrinh = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HanThanhToan", DbType:="DateTime")>  _
-	Public Property HanThanhToan() As System.Nullable(Of Date)
-		Get
-			Return Me._HanThanhToan
-		End Get
-		Set
-			If (Me._HanThanhToan.Equals(value) = false) Then
-				Me._HanThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
-	Public Property isThanhToan() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isThanhToan
-		End Get
-		Set
-			If (Me._isThanhToan.Equals(value) = false) Then
-				Me._isThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
-	Public Property isHoaDon() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isHoaDon
-		End Get
-		Set
-			If (Me._isHoaDon.Equals(value) = false) Then
-				Me._isHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
-	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If (Me._idKhachHangDatHang.Equals(value) = false) Then
-				Me._idKhachHangDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienTruocVAT() As Double
-		Get
-			Return Me._TongTienTruocVAT
-		End Get
-		Set
-			If ((Me._TongTienTruocVAT = value)  _
-						= false) Then
-				Me._TongTienTruocVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienVAT() As Double
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuXuat", DbType:="Float NOT NULL")>  _
-	Public Property TongTienPhieuXuat() As Double
-		Get
-			Return Me._TongTienPhieuXuat
-		End Get
-		Set
-			If ((Me._TongTienPhieuXuat = value)  _
-						= false) Then
-				Me._TongTienPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhaCungCap", DbType:="NVarChar(500)")>  _
-	Public Property TenNhaCungCap() As String
-		Get
-			Return Me._TenNhaCungCap
-		End Get
-		Set
-			If (String.Equals(Me._TenNhaCungCap, value) = false) Then
-				Me._TenNhaCungCap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me._SoLuong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaThuTienMat", DbType:="Int")>  _
-	Public Property DaThuTienMat() As System.Nullable(Of Integer)
-		Get
-			Return Me._DaThuTienMat
-		End Get
-		Set
-			If (Me._DaThuTienMat.Equals(value) = false) Then
-				Me._DaThuTienMat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaXuatHoaDon", DbType:="Int")>  _
-	Public Property DaXuatHoaDon() As System.Nullable(Of Integer)
-		Get
-			Return Me._DaXuatHoaDon
-		End Get
-		Set
-			If (Me._DaXuatHoaDon.Equals(value) = false) Then
-				Me._DaXuatHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaoLanThu", DbType:="Int")>  _
-	Public Property GiaoLanThu() As System.Nullable(Of Integer)
-		Get
-			Return Me._GiaoLanThu
-		End Get
-		Set
-			If (Me._GiaoLanThu.Equals(value) = false) Then
-				Me._GiaoLanThu = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbBaoGia")>  _
-Partial Public Class tbBaoGia
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _SoPhieu As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _GhiChu As String
-	
-	Private _ModeHienThi As Integer
-	
-	Private _isNhapHang As System.Nullable(Of Boolean)
-	
-	Private _idKhachHang As System.Nullable(Of Integer)
-	
-	Private _idTrangThai As Integer
-	
-	Private _idLoaiBaoGia As Integer
-	
-	Private _CapDo As System.Nullable(Of Integer)
-	
-	Private _idNhanVienKiemDuyet As System.Nullable(Of Integer)
-	
-	Private _NgayKiemDuyet As System.Nullable(Of Date)
-	
-	Private _idNguoiLienHe As System.Nullable(Of Integer)
-	
-	Private _CongTrinh As String
-	
-	Private _VAT As System.Nullable(Of Double)
-	
-	Private _isHuy As Boolean
-	
-	Private _tbKhachHangDatHangs As EntitySet(Of tbKhachHangDatHang)
-	
-	Private _tbChiTietBaoGias As EntitySet(Of tbChiTietBaoGia)
-	
-	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
-	
-	Private _tbKhachHang As EntityRef(Of tbKhachHang)
-	
-	Private _tbLoaiBaoGia As EntityRef(Of tbLoaiBaoGia)
-	
-	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbTrangThai As EntityRef(Of tbTrangThai)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnNgayLapChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayLapChanged()
-    End Sub
-    Partial Private Sub OnSoPhieuChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoPhieuChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidNhanVienChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnModeHienThiChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnModeHienThiChanged()
-    End Sub
-    Partial Private Sub OnisNhapHangChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisNhapHangChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidKhachHangChanged()
-    End Sub
-    Partial Private Sub OnidTrangThaiChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidTrangThaiChanged()
-    End Sub
-    Partial Private Sub OnidLoaiBaoGiaChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidLoaiBaoGiaChanged()
-    End Sub
-    Partial Private Sub OnCapDoChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCapDoChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienKiemDuyetChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNhanVienKiemDuyetChanged()
-    End Sub
-    Partial Private Sub OnNgayKiemDuyetChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayKiemDuyetChanged()
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanged()
-    End Sub
-    Partial Private Sub OnCongTrinhChanging(value As String)
-    End Sub
-    Partial Private Sub OnCongTrinhChanged()
-    End Sub
-    Partial Private Sub OnVATChanging(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnVATChanged()
-    End Sub
-    Partial Private Sub OnisHuyChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnisHuyChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbKhachHangDatHangs = New EntitySet(Of tbKhachHangDatHang)(AddressOf Me.attach_tbKhachHangDatHangs, AddressOf Me.detach_tbKhachHangDatHangs)
-		Me._tbChiTietBaoGias = New EntitySet(Of tbChiTietBaoGia)(AddressOf Me.attach_tbChiTietBaoGias, AddressOf Me.detach_tbChiTietBaoGias)
-		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
-		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbLoaiBaoGia = CType(Nothing, EntityRef(Of tbLoaiBaoGia))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbTrangThai = CType(Nothing, EntityRef(Of tbTrangThai))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me.OnNgayLapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayLap = value
-				Me.SendPropertyChanged("NgayLap")
-				Me.OnNgayLapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me.OnSoPhieuChanging(value)
-				Me.SendPropertyChanging
-				Me._SoPhieu = value
-				Me.SendPropertyChanged("SoPhieu")
-				Me.OnSoPhieuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhanVienChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVien = value
-				Me.SendPropertyChanged("idNhanVien")
-				Me.OnidNhanVienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(400)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModeHienThi", DbType:="Int NOT NULL")>  _
-	Public Property ModeHienThi() As Integer
-		Get
-			Return Me._ModeHienThi
-		End Get
-		Set
-			If ((Me._ModeHienThi = value)  _
-						= false) Then
-				Me.OnModeHienThiChanging(value)
-				Me.SendPropertyChanging
-				Me._ModeHienThi = value
-				Me.SendPropertyChanged("ModeHienThi")
-				Me.OnModeHienThiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhapHang
-		End Get
-		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me.OnisNhapHangChanging(value)
-				Me.SendPropertyChanging
-				Me._isNhapHang = value
-				Me.SendPropertyChanged("isNhapHang")
-				Me.OnisNhapHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHang = value
-				Me.SendPropertyChanged("idKhachHang")
-				Me.OnidKhachHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
-	Public Property idTrangThai() As Integer
-		Get
-			Return Me._idTrangThai
-		End Get
-		Set
-			If ((Me._idTrangThai = value)  _
-						= false) Then
-				If Me._tbTrangThai.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidTrangThaiChanging(value)
-				Me.SendPropertyChanging
-				Me._idTrangThai = value
-				Me.SendPropertyChanged("idTrangThai")
-				Me.OnidTrangThaiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiBaoGia() As Integer
-		Get
-			Return Me._idLoaiBaoGia
-		End Get
-		Set
-			If ((Me._idLoaiBaoGia = value)  _
-						= false) Then
-				If Me._tbLoaiBaoGia.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidLoaiBaoGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._idLoaiBaoGia = value
-				Me.SendPropertyChanged("idLoaiBaoGia")
-				Me.OnidLoaiBaoGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
-	Public Property CapDo() As System.Nullable(Of Integer)
-		Get
-			Return Me._CapDo
-		End Get
-		Set
-			If (Me._CapDo.Equals(value) = false) Then
-				Me.OnCapDoChanging(value)
-				Me.SendPropertyChanging
-				Me._CapDo = value
-				Me.SendPropertyChanged("CapDo")
-				Me.OnCapDoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="Int")>  _
-	Public Property idNhanVienKiemDuyet() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhanVienKiemDuyet
-		End Get
-		Set
-			If (Me._idNhanVienKiemDuyet.Equals(value) = false) Then
-				Me.OnidNhanVienKiemDuyetChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVienKiemDuyet = value
-				Me.SendPropertyChanged("idNhanVienKiemDuyet")
-				Me.OnidNhanVienKiemDuyetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
-	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayKiemDuyet
-		End Get
-		Set
-			If (Me._NgayKiemDuyet.Equals(value) = false) Then
-				Me.OnNgayKiemDuyetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayKiemDuyet = value
-				Me.SendPropertyChanged("NgayKiemDuyet")
-				Me.OnNgayKiemDuyetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
-	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNguoiLienHe
-		End Get
-		Set
-			If (Me._idNguoiLienHe.Equals(value) = false) Then
-				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNguoiLienHeChanging(value)
-				Me.SendPropertyChanging
-				Me._idNguoiLienHe = value
-				Me.SendPropertyChanged("idNguoiLienHe")
-				Me.OnidNguoiLienHeChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(400)")>  _
-	Public Property CongTrinh() As String
-		Get
-			Return Me._CongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._CongTrinh, value) = false) Then
-				Me.OnCongTrinhChanging(value)
-				Me.SendPropertyChanging
-				Me._CongTrinh = value
-				Me.SendPropertyChanged("CongTrinh")
-				Me.OnCongTrinhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Float")>  _
-	Public Property VAT() As System.Nullable(Of Double)
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If (Me._VAT.Equals(value) = false) Then
-				Me.OnVATChanging(value)
-				Me.SendPropertyChanging
-				Me._VAT = value
-				Me.SendPropertyChanged("VAT")
-				Me.OnVATChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHuy", DbType:="Bit NOT NULL")>  _
-	Public Property isHuy() As Boolean
-		Get
-			Return Me._isHuy
-		End Get
-		Set
-			If ((Me._isHuy = value)  _
-						= false) Then
-				Me.OnisHuyChanging(value)
-				Me.SendPropertyChanging
-				Me._isHuy = value
-				Me.SendPropertyChanged("isHuy")
-				Me.OnisHuyChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbKhachHangDatHang", Storage:="_tbKhachHangDatHangs", ThisKey:="id", OtherKey:="idBaoGia")>  _
-	Public Property tbKhachHangDatHangs() As EntitySet(Of tbKhachHangDatHang)
-		Get
-			Return Me._tbKhachHangDatHangs
-		End Get
-		Set
-			Me._tbKhachHangDatHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbChiTietBaoGia", Storage:="_tbChiTietBaoGias", ThisKey:="id", OtherKey:="idBaoGia")>  _
-	Public Property tbChiTietBaoGias() As EntitySet(Of tbChiTietBaoGia)
-		Get
-			Return Me._tbChiTietBaoGias
-		End Get
-		Set
-			Me._tbChiTietBaoGias.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbBaoGia", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbChiTietLienHe() As tbChiTietLienHe
-		Get
-			Return Me._tbChiTietLienHe.Entity
-		End Get
-		Set
-			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbChiTietLienHe.Entity = Nothing
-					previousValue.tbBaoGias.Remove(Me)
-				End If
-				Me._tbChiTietLienHe.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbBaoGias.Add(Me)
-					Me._idNguoiLienHe = value.id
-				Else
-					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbChiTietLienHe")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbBaoGia", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHang() As tbKhachHang
-		Get
-			Return Me._tbKhachHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang.Entity = Nothing
-					previousValue.tbBaoGias.Remove(Me)
-				End If
-				Me._tbKhachHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbBaoGias.Add(Me)
-					Me._idKhachHang = value.id
-				Else
-					Me._idKhachHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiBaoGia_tbBaoGia", Storage:="_tbLoaiBaoGia", ThisKey:="idLoaiBaoGia", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbLoaiBaoGia() As tbLoaiBaoGia
-		Get
-			Return Me._tbLoaiBaoGia.Entity
-		End Get
-		Set
-			Dim previousValue As tbLoaiBaoGia = Me._tbLoaiBaoGia.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbLoaiBaoGia.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbLoaiBaoGia.Entity = Nothing
-					previousValue.tbBaoGias.Remove(Me)
-				End If
-				Me._tbLoaiBaoGia.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbBaoGias.Add(Me)
-					Me._idLoaiBaoGia = value.id
-				Else
-					Me._idLoaiBaoGia = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbLoaiBaoGia")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbBaoGia", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbNhanVien() As tbNhanVien
-		Get
-			Return Me._tbNhanVien.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien.Entity = Nothing
-					previousValue.tbBaoGias.Remove(Me)
-				End If
-				Me._tbNhanVien.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbBaoGias.Add(Me)
-					Me._idNhanVien = value.id
-				Else
-					Me._idNhanVien = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNhanVien")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbTrangThai_tbBaoGia", Storage:="_tbTrangThai", ThisKey:="idTrangThai", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbTrangThai() As tbTrangThai
-		Get
-			Return Me._tbTrangThai.Entity
-		End Get
-		Set
-			Dim previousValue As tbTrangThai = Me._tbTrangThai.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbTrangThai.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbTrangThai.Entity = Nothing
-					previousValue.tbBaoGias.Remove(Me)
-				End If
-				Me._tbTrangThai.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbBaoGias.Add(Me)
-					Me._idTrangThai = value.id
-				Else
-					Me._idTrangThai = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbTrangThai")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbBaoGia = Me
-	End Sub
-	
-	Private Sub detach_tbKhachHangDatHangs(ByVal entity As tbKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbBaoGia = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
-		Me.SendPropertyChanging
-		entity.tbBaoGia = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
-		Me.SendPropertyChanging
-		entity.tbBaoGia = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwBaoGia")>  _
-Partial Public Class vwBaoGia
-	
-	Private _ModeHienThi As Integer
-	
-	Private _GhiChu As String
-	
-	Private _idNhanVien As Integer
-	
-	Private _SoPhieu As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _id As Integer
-	
-	Private _TenDangNhap As String
-	
-	Private _TenNhanVien As String
-	
-	Private _idNguoiLienHe As System.Nullable(Of Integer)
-	
-	Private _NgayKiemDuyet As System.Nullable(Of Date)
-	
-	Private _idNhanVienKiemDuyet As System.Nullable(Of Integer)
-	
-	Private _CapDo As System.Nullable(Of Integer)
-	
-	Private _idLoaiBaoGia As Integer
-	
-	Private _idTrangThai As Integer
-	
-	Private _idKhachHang As System.Nullable(Of Integer)
-	
-	Private _isNhapHang As System.Nullable(Of Boolean)
-	
-	Private _DaChuyenPhieuDatHang As Integer
-	
-	Private _TongTienTruocVAT As Double
-	
-	Private _TongTienVAT As Double
-	
-	Private _TongTien As Double
-	
-	Private _VAT As System.Nullable(Of Double)
-	
-	Private _isHuy As Boolean
-	
-	Private _CongTrinh As String
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModeHienThi", DbType:="Int NOT NULL")>  _
-	Public Property ModeHienThi() As Integer
-		Get
-			Return Me._ModeHienThi
-		End Get
-		Set
-			If ((Me._ModeHienThi = value)  _
-						= false) Then
-				Me._ModeHienThi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(400)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
-	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNguoiLienHe
-		End Get
-		Set
-			If (Me._idNguoiLienHe.Equals(value) = false) Then
-				Me._idNguoiLienHe = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayKiemDuyet", DbType:="DateTime")>  _
-	Public Property NgayKiemDuyet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayKiemDuyet
-		End Get
-		Set
-			If (Me._NgayKiemDuyet.Equals(value) = false) Then
-				Me._NgayKiemDuyet = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienKiemDuyet", DbType:="Int")>  _
-	Public Property idNhanVienKiemDuyet() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhanVienKiemDuyet
-		End Get
-		Set
-			If (Me._idNhanVienKiemDuyet.Equals(value) = false) Then
-				Me._idNhanVienKiemDuyet = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CapDo", DbType:="Int")>  _
-	Public Property CapDo() As System.Nullable(Of Integer)
-		Get
-			Return Me._CapDo
-		End Get
-		Set
-			If (Me._CapDo.Equals(value) = false) Then
-				Me._CapDo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiBaoGia() As Integer
-		Get
-			Return Me._idLoaiBaoGia
-		End Get
-		Set
-			If ((Me._idLoaiBaoGia = value)  _
-						= false) Then
-				Me._idLoaiBaoGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
-	Public Property idTrangThai() As Integer
-		Get
-			Return Me._idTrangThai
-		End Get
-		Set
-			If ((Me._idTrangThai = value)  _
-						= false) Then
-				Me._idTrangThai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhapHang
-		End Get
-		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me._isNhapHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaChuyenPhieuDatHang", DbType:="Int NOT NULL")>  _
-	Public Property DaChuyenPhieuDatHang() As Integer
-		Get
-			Return Me._DaChuyenPhieuDatHang
-		End Get
-		Set
-			If ((Me._DaChuyenPhieuDatHang = value)  _
-						= false) Then
-				Me._DaChuyenPhieuDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienTruocVAT() As Double
-		Get
-			Return Me._TongTienTruocVAT
-		End Get
-		Set
-			If ((Me._TongTienTruocVAT = value)  _
-						= false) Then
-				Me._TongTienTruocVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienVAT() As Double
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
-	Public Property TongTien() As Double
-		Get
-			Return Me._TongTien
-		End Get
-		Set
-			If ((Me._TongTien = value)  _
-						= false) Then
-				Me._TongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Float")>  _
-	Public Property VAT() As System.Nullable(Of Double)
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If (Me._VAT.Equals(value) = false) Then
-				Me._VAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHuy", DbType:="Bit NOT NULL")>  _
-	Public Property isHuy() As Boolean
-		Get
-			Return Me._isHuy
-		End Get
-		Set
-			If ((Me._isHuy = value)  _
-						= false) Then
-				Me._isHuy = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(400)")>  _
-	Public Property CongTrinh() As String
-		Get
-			Return Me._CongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._CongTrinh, value) = false) Then
-				Me._CongTrinh = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbPhieuNhap")>  _
-Partial Public Class tbPhieuNhap
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _idNhanVien As Integer
-	
-	Private _GhiChu As String
-	
-	Private _idLoaiPhieuNhap As Integer
-	
-	Private _VAT As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoPhieu As Integer
-	
-	Private _idKhachHang As System.Nullable(Of Integer)
-	
-	Private _SoNgayNo As Integer
-	
-	Private _TenCongTrinh As String
-	
-	Private _HanThanhToan As System.Nullable(Of Date)
-	
-	Private _isThanhToan As System.Nullable(Of Boolean)
-	
-	Private _idNhaCungCap As System.Nullable(Of Integer)
-	
-	Private _isHoaDon As System.Nullable(Of Boolean)
-	
-	Private _idKhachHangDatHang As System.Nullable(Of Integer)
-	
-	Private _idNguoiLienHe As System.Nullable(Of Integer)
-	
-	Private _idNhanVienNhanHang As System.Nullable(Of Integer)
-	
-	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
-	
-	Private _tbChiTietPhieuNhaps As EntitySet(Of tbChiTietPhieuNhap)
-	
-	Private _tbChiTietSeris As EntitySet(Of tbChiTietSeri)
-	
-	Private _tbPhieuChis As EntitySet(Of tbPhieuChi)
-	
-	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
-	
-	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
-	
-	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
-	
-	Private _tbChiTietLienHe As EntityRef(Of tbChiTietLienHe)
-	
-	Private _tbKhachHang As EntityRef(Of tbKhachHang)
-	
-	Private _tbKhachHang1 As EntityRef(Of tbKhachHang)
-	
-	Private _tbLoaiPhieuNhap As EntityRef(Of tbLoaiPhieuNhap)
-	
-	Private _tbNhanVien As EntityRef(Of tbNhanVien)
-	
-	Private _tbNhanVien1 As EntityRef(Of tbNhanVien)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnNgayLapChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayLapChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidNhanVienChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnidLoaiPhieuNhapChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidLoaiPhieuNhapChanged()
-    End Sub
-    Partial Private Sub OnVATChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnVATChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As Double)
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnSoPhieuChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoPhieuChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidKhachHangChanged()
-    End Sub
-    Partial Private Sub OnSoNgayNoChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoNgayNoChanged()
-    End Sub
-    Partial Private Sub OnTenCongTrinhChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenCongTrinhChanged()
-    End Sub
-    Partial Private Sub OnHanThanhToanChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnHanThanhToanChanged()
-    End Sub
-    Partial Private Sub OnisThanhToanChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisThanhToanChanged()
-    End Sub
-    Partial Private Sub OnidNhaCungCapChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNhaCungCapChanged()
-    End Sub
-    Partial Private Sub OnisHoaDonChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisHoaDonChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanged()
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNguoiLienHeChanged()
-    End Sub
-    Partial Private Sub OnidNhanVienNhanHangChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnidNhanVienNhanHangChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
-		Me._tbChiTietPhieuNhaps = New EntitySet(Of tbChiTietPhieuNhap)(AddressOf Me.attach_tbChiTietPhieuNhaps, AddressOf Me.detach_tbChiTietPhieuNhaps)
-		Me._tbChiTietSeris = New EntitySet(Of tbChiTietSeri)(AddressOf Me.attach_tbChiTietSeris, AddressOf Me.detach_tbChiTietSeris)
-		Me._tbPhieuChis = New EntitySet(Of tbPhieuChi)(AddressOf Me.attach_tbPhieuChis, AddressOf Me.detach_tbPhieuChis)
-		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
-		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
-		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
-		Me._tbChiTietLienHe = CType(Nothing, EntityRef(Of tbChiTietLienHe))
-		Me._tbKhachHang = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbKhachHang1 = CType(Nothing, EntityRef(Of tbKhachHang))
-		Me._tbLoaiPhieuNhap = CType(Nothing, EntityRef(Of tbLoaiPhieuNhap))
-		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
-		Me._tbNhanVien1 = CType(Nothing, EntityRef(Of tbNhanVien))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me.OnNgayLapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayLap = value
-				Me.SendPropertyChanged("NgayLap")
-				Me.OnNgayLapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhanVienChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVien = value
-				Me.SendPropertyChanged("idNhanVien")
-				Me.OnidNhanVienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuNhap", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiPhieuNhap() As Integer
-		Get
-			Return Me._idLoaiPhieuNhap
-		End Get
-		Set
-			If ((Me._idLoaiPhieuNhap = value)  _
-						= false) Then
-				If Me._tbLoaiPhieuNhap.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidLoaiPhieuNhapChanging(value)
-				Me.SendPropertyChanging
-				Me._idLoaiPhieuNhap = value
-				Me.SendPropertyChanged("idLoaiPhieuNhap")
-				Me.OnidLoaiPhieuNhapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me.OnVATChanging(value)
-				Me.SendPropertyChanging
-				Me._VAT = value
-				Me.SendPropertyChanged("VAT")
-				Me.OnVATChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me.OnSoPhieuChanging(value)
-				Me.SendPropertyChanging
-				Me._SoPhieu = value
-				Me.SendPropertyChanged("SoPhieu")
-				Me.OnSoPhieuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				If Me._tbKhachHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHang = value
-				Me.SendPropertyChanged("idKhachHang")
-				Me.OnidKhachHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoNgayNo", DbType:="Int NOT NULL")>  _
-	Public Property SoNgayNo() As Integer
-		Get
-			Return Me._SoNgayNo
-		End Get
-		Set
-			If ((Me._SoNgayNo = value)  _
-						= false) Then
-				Me.OnSoNgayNoChanging(value)
-				Me.SendPropertyChanging
-				Me._SoNgayNo = value
-				Me.SendPropertyChanged("SoNgayNo")
-				Me.OnSoNgayNoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(250)")>  _
-	Public Property TenCongTrinh() As String
-		Get
-			Return Me._TenCongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._TenCongTrinh, value) = false) Then
-				Me.OnTenCongTrinhChanging(value)
-				Me.SendPropertyChanging
-				Me._TenCongTrinh = value
-				Me.SendPropertyChanged("TenCongTrinh")
-				Me.OnTenCongTrinhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HanThanhToan", DbType:="DateTime")>  _
-	Public Property HanThanhToan() As System.Nullable(Of Date)
-		Get
-			Return Me._HanThanhToan
-		End Get
-		Set
-			If (Me._HanThanhToan.Equals(value) = false) Then
-				Me.OnHanThanhToanChanging(value)
-				Me.SendPropertyChanging
-				Me._HanThanhToan = value
-				Me.SendPropertyChanged("HanThanhToan")
-				Me.OnHanThanhToanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
-	Public Property isThanhToan() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isThanhToan
-		End Get
-		Set
-			If (Me._isThanhToan.Equals(value) = false) Then
-				Me.OnisThanhToanChanging(value)
-				Me.SendPropertyChanging
-				Me._isThanhToan = value
-				Me.SendPropertyChanged("isThanhToan")
-				Me.OnisThanhToanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhaCungCap", DbType:="Int")>  _
-	Public Property idNhaCungCap() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhaCungCap
-		End Get
-		Set
-			If (Me._idNhaCungCap.Equals(value) = false) Then
-				If Me._tbKhachHang1.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhaCungCapChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhaCungCap = value
-				Me.SendPropertyChanged("idNhaCungCap")
-				Me.OnidNhaCungCapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
-	Public Property isHoaDon() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isHoaDon
-		End Get
-		Set
-			If (Me._isHoaDon.Equals(value) = false) Then
-				Me.OnisHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._isHoaDon = value
-				Me.SendPropertyChanged("isHoaDon")
-				Me.OnisHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
-	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If (Me._idKhachHangDatHang.Equals(value) = false) Then
-				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangDatHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHangDatHang = value
-				Me.SendPropertyChanged("idKhachHangDatHang")
-				Me.OnidKhachHangDatHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
-	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNguoiLienHe
-		End Get
-		Set
-			If (Me._idNguoiLienHe.Equals(value) = false) Then
-				If Me._tbChiTietLienHe.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNguoiLienHeChanging(value)
-				Me.SendPropertyChanging
-				Me._idNguoiLienHe = value
-				Me.SendPropertyChanged("idNguoiLienHe")
-				Me.OnidNguoiLienHeChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienNhanHang", DbType:="Int")>  _
-	Public Property idNhanVienNhanHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhanVienNhanHang
-		End Get
-		Set
-			If (Me._idNhanVienNhanHang.Equals(value) = false) Then
-				If Me._tbNhanVien1.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidNhanVienNhanHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVienNhanHang = value
-				Me.SendPropertyChanged("idNhanVienNhanHang")
-				Me.OnidNhanVienNhanHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
-		Get
-			Return Me._tbTraNoNhaCungCaps
-		End Get
-		Set
-			Me._tbTraNoNhaCungCaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietPhieuNhap", Storage:="_tbChiTietPhieuNhaps", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbChiTietPhieuNhaps() As EntitySet(Of tbChiTietPhieuNhap)
-		Get
-			Return Me._tbChiTietPhieuNhaps
-		End Get
-		Set
-			Me._tbChiTietPhieuNhaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietSeri", Storage:="_tbChiTietSeris", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbChiTietSeris() As EntitySet(Of tbChiTietSeri)
-		Get
-			Return Me._tbChiTietSeris
-		End Get
-		Set
-			Me._tbChiTietSeris.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbPhieuChi", Storage:="_tbPhieuChis", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbPhieuChis() As EntitySet(Of tbPhieuChi)
-		Get
-			Return Me._tbPhieuChis
-		End Get
-		Set
-			Me._tbPhieuChis.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
-		Get
-			Return Me._tbThuNoKhachHangs
-		End Get
-		Set
-			Me._tbThuNoKhachHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbGiaCong", Storage:="_tbGiaCongs", ThisKey:="id", OtherKey:="idPhieuNhap")>  _
-	Public Property tbGiaCongs() As EntitySet(Of tbGiaCong)
-		Get
-			Return Me._tbGiaCongs
-		End Get
-		Set
-			Me._tbGiaCongs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbPhieuNhap", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
-		Get
-			Return Me._tbKhachHangDatHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHangDatHang.Entity = Nothing
-					previousValue.tbPhieuNhaps.Remove(Me)
-				End If
-				Me._tbKhachHangDatHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps.Add(Me)
-					Me._idKhachHangDatHang = value.id
-				Else
-					Me._idKhachHangDatHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHangDatHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbChiTietLienHe_tbPhieuNhap", Storage:="_tbChiTietLienHe", ThisKey:="idNguoiLienHe", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbChiTietLienHe() As tbChiTietLienHe
-		Get
-			Return Me._tbChiTietLienHe.Entity
-		End Get
-		Set
-			Dim previousValue As tbChiTietLienHe = Me._tbChiTietLienHe.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbChiTietLienHe.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbChiTietLienHe.Entity = Nothing
-					previousValue.tbPhieuNhaps.Remove(Me)
-				End If
-				Me._tbChiTietLienHe.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps.Add(Me)
-					Me._idNguoiLienHe = value.id
-				Else
-					Me._idNguoiLienHe = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbChiTietLienHe")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap", Storage:="_tbKhachHang", ThisKey:="idKhachHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHang() As tbKhachHang
-		Get
-			Return Me._tbKhachHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang.Entity = Nothing
-					previousValue.tbPhieuNhaps.Remove(Me)
-				End If
-				Me._tbKhachHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps.Add(Me)
-					Me._idKhachHang = value.id
-				Else
-					Me._idKhachHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHang_tbPhieuNhap1", Storage:="_tbKhachHang1", ThisKey:="idNhaCungCap", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbKhachHang1() As tbKhachHang
-		Get
-			Return Me._tbKhachHang1.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHang = Me._tbKhachHang1.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHang1.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHang1.Entity = Nothing
-					previousValue.tbPhieuNhaps1.Remove(Me)
-				End If
-				Me._tbKhachHang1.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps1.Add(Me)
-					Me._idNhaCungCap = value.id
-				Else
-					Me._idNhaCungCap = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbKhachHang1")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuNhap_tbPhieuNhap", Storage:="_tbLoaiPhieuNhap", ThisKey:="idLoaiPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbLoaiPhieuNhap() As tbLoaiPhieuNhap
-		Get
-			Return Me._tbLoaiPhieuNhap.Entity
-		End Get
-		Set
-			Dim previousValue As tbLoaiPhieuNhap = Me._tbLoaiPhieuNhap.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbLoaiPhieuNhap.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbLoaiPhieuNhap.Entity = Nothing
-					previousValue.tbPhieuNhaps.Remove(Me)
-				End If
-				Me._tbLoaiPhieuNhap.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps.Add(Me)
-					Me._idLoaiPhieuNhap = value.id
-				Else
-					Me._idLoaiPhieuNhap = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbLoaiPhieuNhap")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNhanVien() As tbNhanVien
-		Get
-			Return Me._tbNhanVien.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien.Entity = Nothing
-					previousValue.tbPhieuNhaps.Remove(Me)
-				End If
-				Me._tbNhanVien.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps.Add(Me)
-					Me._idNhanVien = value.id
-				Else
-					Me._idNhanVien = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbNhanVien")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbPhieuNhap1", Storage:="_tbNhanVien1", ThisKey:="idNhanVienNhanHang", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbNhanVien1() As tbNhanVien
-		Get
-			Return Me._tbNhanVien1.Entity
-		End Get
-		Set
-			Dim previousValue As tbNhanVien = Me._tbNhanVien1.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbNhanVien1.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbNhanVien1.Entity = Nothing
-					previousValue.tbPhieuNhaps1.Remove(Me)
-				End If
-				Me._tbNhanVien1.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbPhieuNhaps1.Add(Me)
-					Me._idNhanVienNhanHang = value.id
-				Else
-					Me._idNhanVienNhanHang = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("tbNhanVien1")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietSeris(ByVal entity As tbChiTietSeri)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuChis(ByVal entity As tbPhieuChi)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuChis(ByVal entity As tbPhieuChi)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-	
-	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-	
-	Private Sub attach_tbGiaCongs(ByVal entity As tbGiaCong)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Me
-	End Sub
-	
-	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
-		Me.SendPropertyChanging
-		entity.tbPhieuNhap = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuNhap")>  _
-Partial Public Class vwPhieuNhap
-	
-	Private _id As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _idNhanVien As Integer
-	
-	Private _GhiChu As String
-	
-	Private _idLoaiPhieuNhap As Integer
-	
-	Private _isHoaDon As System.Nullable(Of Boolean)
-	
-	Private _idNhaCungCap As System.Nullable(Of Integer)
-	
-	Private _VAT As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _SoPhieu As Integer
-	
-	Private _idKhachHang As System.Nullable(Of Integer)
-	
-	Private _SoNgayNo As Integer
-	
-	Private _LoaiPhieuNhap As String
-	
-	Private _Loai As Integer
-	
-	Private _TenNhanVien As String
-	
-	Private _TenDangNhap As String
-	
-	Private _MaKhachHang As String
-	
-	Private _TenKhachHang As String
-	
-	Private _idNhomKhachHang As System.Nullable(Of Integer)
-	
-	Private _TenNhomKhachHang As String
-	
-	Private _idNguoiLienHe As System.Nullable(Of Integer)
-	
-	Private _isThanhToan As System.Nullable(Of Boolean)
-	
-	Private _idKhachHangDatHang As System.Nullable(Of Integer)
-	
-	Private _TongVon As Double
-	
-	Private _SoLuong As Double
-	
-	Private _CongTien As Double
-	
-	Private _TongTienChietKhau As Double
-	
-	Private _TongTienTruocVAT As Double
-	
-	Private _TongTienVAT As Double
-	
-	Private _TongTienPhieuNhap As Double
-	
-	Private _SoTienThanhToan As Decimal
-	
-	Private _TenNhaCungCap As String
-	
-	Private _SoDienThoai As String
-	
-	Private _DiaChi As String
-	
-	Private _DaChiTienMat As System.Nullable(Of Integer)
-	
-	Private _GiaVonTraHang As Double
-	
-	Private _TongTienBanHang As Double
-	
-	Private _GiaoLanThu As System.Nullable(Of Integer)
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuNhap", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiPhieuNhap() As Integer
-		Get
-			Return Me._idLoaiPhieuNhap
-		End Get
-		Set
-			If ((Me._idLoaiPhieuNhap = value)  _
-						= false) Then
-				Me._idLoaiPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
-	Public Property isHoaDon() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isHoaDon
-		End Get
-		Set
-			If (Me._isHoaDon.Equals(value) = false) Then
-				Me._isHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhaCungCap", DbType:="Int")>  _
-	Public Property idNhaCungCap() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhaCungCap
-		End Get
-		Set
-			If (Me._idNhaCungCap.Equals(value) = false) Then
-				Me._idNhaCungCap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me._VAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me._ChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoNgayNo", DbType:="Int NOT NULL")>  _
-	Public Property SoNgayNo() As Integer
-		Get
-			Return Me._SoNgayNo
-		End Get
-		Set
-			If ((Me._SoNgayNo = value)  _
-						= false) Then
-				Me._SoNgayNo = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiPhieuNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property LoaiPhieuNhap() As String
-		Get
-			Return Me._LoaiPhieuNhap
-		End Get
-		Set
-			If (String.Equals(Me._LoaiPhieuNhap, value) = false) Then
-				Me._LoaiPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
-	Public Property Loai() As Integer
-		Get
-			Return Me._Loai
-		End Get
-		Set
-			If ((Me._Loai = value)  _
-						= false) Then
-				Me._Loai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenDangNhap() As String
-		Get
-			Return Me._TenDangNhap
-		End Get
-		Set
-			If (String.Equals(Me._TenDangNhap, value) = false) Then
-				Me._TenDangNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150)")>  _
-	Public Property MaKhachHang() As String
-		Get
-			Return Me._MaKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._MaKhachHang, value) = false) Then
-				Me._MaKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500)")>  _
-	Public Property TenKhachHang() As String
-		Get
-			Return Me._TenKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHang, value) = false) Then
-				Me._TenKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int")>  _
-	Public Property idNhomKhachHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNhomKhachHang
-		End Get
-		Set
-			If (Me._idNhomKhachHang.Equals(value) = false) Then
-				Me._idNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250)")>  _
-	Public Property TenNhomKhachHang() As String
-		Get
-			Return Me._TenNhomKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
-				Me._TenNhomKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
-	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
-		Get
-			Return Me._idNguoiLienHe
-		End Get
-		Set
-			If (Me._idNguoiLienHe.Equals(value) = false) Then
-				Me._idNguoiLienHe = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
-	Public Property isThanhToan() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isThanhToan
-		End Get
-		Set
-			If (Me._isThanhToan.Equals(value) = false) Then
-				Me._isThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
-	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If (Me._idKhachHangDatHang.Equals(value) = false) Then
-				Me._idKhachHangDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
-	Public Property TongVon() As Double
-		Get
-			Return Me._TongVon
-		End Get
-		Set
-			If ((Me._TongVon = value)  _
-						= false) Then
-				Me._TongVon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me._SoLuong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
-	Public Property CongTien() As Double
-		Get
-			Return Me._CongTien
-		End Get
-		Set
-			If ((Me._CongTien = value)  _
-						= false) Then
-				Me._CongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property TongTienChietKhau() As Double
-		Get
-			Return Me._TongTienChietKhau
-		End Get
-		Set
-			If ((Me._TongTienChietKhau = value)  _
-						= false) Then
-				Me._TongTienChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienTruocVAT() As Double
-		Get
-			Return Me._TongTienTruocVAT
-		End Get
-		Set
-			If ((Me._TongTienTruocVAT = value)  _
-						= false) Then
-				Me._TongTienTruocVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienVAT() As Double
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuNhap", DbType:="Float NOT NULL")>  _
-	Public Property TongTienPhieuNhap() As Double
-		Get
-			Return Me._TongTienPhieuNhap
-		End Get
-		Set
-			If ((Me._TongTienPhieuNhap = value)  _
-						= false) Then
-				Me._TongTienPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienThanhToan", DbType:="Decimal(38,0) NOT NULL")>  _
-	Public Property SoTienThanhToan() As Decimal
-		Get
-			Return Me._SoTienThanhToan
-		End Get
-		Set
-			If ((Me._SoTienThanhToan = value)  _
-						= false) Then
-				Me._SoTienThanhToan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhaCungCap", DbType:="NVarChar(500)")>  _
-	Public Property TenNhaCungCap() As String
-		Get
-			Return Me._TenNhaCungCap
-		End Get
-		Set
-			If (String.Equals(Me._TenNhaCungCap, value) = false) Then
-				Me._TenNhaCungCap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaChiTienMat", DbType:="Int")>  _
-	Public Property DaChiTienMat() As System.Nullable(Of Integer)
-		Get
-			Return Me._DaChiTienMat
-		End Get
-		Set
-			If (Me._DaChiTienMat.Equals(value) = false) Then
-				Me._DaChiTienMat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaVonTraHang", DbType:="Float NOT NULL")>  _
-	Public Property GiaVonTraHang() As Double
-		Get
-			Return Me._GiaVonTraHang
-		End Get
-		Set
-			If ((Me._GiaVonTraHang = value)  _
-						= false) Then
-				Me._GiaVonTraHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienBanHang", DbType:="Float NOT NULL")>  _
-	Public Property TongTienBanHang() As Double
-		Get
-			Return Me._TongTienBanHang
-		End Get
-		Set
-			If ((Me._TongTienBanHang = value)  _
-						= false) Then
-				Me._TongTienBanHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaoLanThu", DbType:="Int")>  _
-	Public Property GiaoLanThu() As System.Nullable(Of Integer)
-		Get
-			Return Me._GiaoLanThu
-		End Get
-		Set
-			If (Me._GiaoLanThu.Equals(value) = false) Then
-				Me._GiaoLanThu = value
-			End If
-		End Set
-	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietPhieuXuat")>  _
-Partial Public Class tbChiTietPhieuXuat
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _idPhieuXuat As Integer
-	
-	Private _idSanPham As Integer
-	
-	Private _SoLuong As Double
-	
-	Private _DonGia As Double
-	
-	Private _ChietKhau As Double
-	
-	Private _TheoDonVi As Boolean
-	
-	Private _GhiChu As String
-	
-	Private _QuyCach As Double
-	
-	Private _GiaBan As Double
-	
-	Private _NgayNiemYet As System.Nullable(Of Date)
-	
-	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
-	
-	Private _tbSanPham As EntityRef(Of tbSanPham)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanged()
-    End Sub
-    Partial Private Sub OnidSanPhamChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidSanPhamChanged()
-    End Sub
-    Partial Private Sub OnSoLuongChanging(value As Double)
-    End Sub
-    Partial Private Sub OnSoLuongChanged()
-    End Sub
-    Partial Private Sub OnDonGiaChanging(value As Double)
-    End Sub
-    Partial Private Sub OnDonGiaChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As Double)
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnTheoDonViChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnTheoDonViChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnQuyCachChanging(value As Double)
-    End Sub
-    Partial Private Sub OnQuyCachChanged()
-    End Sub
-    Partial Private Sub OnGiaBanChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaBanChanged()
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
-		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuXuat() As Integer
-		Get
-			Return Me._idPhieuXuat
-		End Get
-		Set
-			If ((Me._idPhieuXuat = value)  _
-						= false) Then
-				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidPhieuXuatChanging(value)
-				Me.SendPropertyChanging
-				Me._idPhieuXuat = value
-				Me.SendPropertyChanged("idPhieuXuat")
-				Me.OnidPhieuXuatChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idSanPham() As Integer
-		Get
-			Return Me._idSanPham
-		End Get
-		Set
-			If ((Me._idSanPham = value)  _
-						= false) Then
-				If Me._tbSanPham.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._idSanPham = value
-				Me.SendPropertyChanged("idSanPham")
-				Me.OnidSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me.OnSoLuongChanging(value)
-				Me.SendPropertyChanging
-				Me._SoLuong = value
-				Me.SendPropertyChanged("SoLuong")
-				Me.OnSoLuongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
-	Public Property DonGia() As Double
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me.OnDonGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._DonGia = value
-				Me.SendPropertyChanged("DonGia")
-				Me.OnDonGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
-	Public Property TheoDonVi() As Boolean
-		Get
-			Return Me._TheoDonVi
-		End Get
-		Set
-			If ((Me._TheoDonVi = value)  _
-						= false) Then
-				Me.OnTheoDonViChanging(value)
-				Me.SendPropertyChanging
-				Me._TheoDonVi = value
-				Me.SendPropertyChanged("TheoDonVi")
-				Me.OnTheoDonViChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
-	Public Property QuyCach() As Double
-		Get
-			Return Me._QuyCach
-		End Get
-		Set
-			If ((Me._QuyCach = value)  _
-						= false) Then
-				Me.OnQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._QuyCach = value
-				Me.SendPropertyChanged("QuyCach")
-				Me.OnQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
-	Public Property GiaBan() As Double
-		Get
-			Return Me._GiaBan
-		End Get
-		Set
-			If ((Me._GiaBan = value)  _
-						= false) Then
-				Me.OnGiaBanChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaBan = value
-				Me.SendPropertyChanged("GiaBan")
-				Me.OnGiaBanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
-	Public Property NgayNiemYet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If (Me._NgayNiemYet.Equals(value) = false) Then
-				Me.OnNgayNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNiemYet = value
-				Me.SendPropertyChanged("NgayNiemYet")
-				Me.OnNgayNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietPhieuXuat", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbPhieuXuat() As tbPhieuXuat
-		Get
-			Return Me._tbPhieuXuat.Entity
-		End Get
-		Set
-			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbPhieuXuat.Entity = Nothing
-					previousValue.tbChiTietPhieuXuats.Remove(Me)
-				End If
-				Me._tbPhieuXuat.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietPhieuXuats.Add(Me)
-					Me._idPhieuXuat = value.id
-				Else
-					Me._idPhieuXuat = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbPhieuXuat")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuXuat", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbSanPham() As tbSanPham
-		Get
-			Return Me._tbSanPham.Entity
-		End Get
-		Set
-			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbSanPham.Entity = Nothing
-					previousValue.tbChiTietPhieuXuats.Remove(Me)
-				End If
-				Me._tbSanPham.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietPhieuXuats.Add(Me)
-					Me._idSanPham = value.id
-				Else
-					Me._idSanPham = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbSanPham")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietKhachHangDatHang")>  _
-Partial Public Class tbChiTietKhachHangDatHang
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _idKhachHangDatHang As Integer
-	
-	Private _SoLuong As Double
-	
-	Private _DonGia As Integer
-	
-	Private _idSanPham As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _GhiChu As String
-	
-	Private _TheoDonVi As Boolean
-	
-	Private _QuyCach As Double
-	
-	Private _DonVi As String
-	
-	Private _GiaBan As Double
-	
-	Private _STT As Integer
-	
-	Private _NgayNiemYet As Date
-	
-	Private _tbKhachHangDatHang As EntityRef(Of tbKhachHangDatHang)
-	
-	Private _tbSanPham As EntityRef(Of tbSanPham)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidKhachHangDatHangChanged()
-    End Sub
-    Partial Private Sub OnSoLuongChanging(value As Double)
-    End Sub
-    Partial Private Sub OnSoLuongChanged()
-    End Sub
-    Partial Private Sub OnDonGiaChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnDonGiaChanged()
-    End Sub
-    Partial Private Sub OnidSanPhamChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidSanPhamChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As Double)
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnTheoDonViChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnTheoDonViChanged()
-    End Sub
-    Partial Private Sub OnQuyCachChanging(value As Double)
-    End Sub
-    Partial Private Sub OnQuyCachChanged()
-    End Sub
-    Partial Private Sub OnDonViChanging(value As String)
-    End Sub
-    Partial Private Sub OnDonViChanged()
-    End Sub
-    Partial Private Sub OnGiaBanChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaBanChanged()
-    End Sub
-    Partial Private Sub OnSTTChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSTTChanged()
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbKhachHangDatHang = CType(Nothing, EntityRef(Of tbKhachHangDatHang))
-		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHangDatHang() As Integer
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If ((Me._idKhachHangDatHang = value)  _
-						= false) Then
-				If Me._tbKhachHangDatHang.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidKhachHangDatHangChanging(value)
-				Me.SendPropertyChanging
-				Me._idKhachHangDatHang = value
-				Me.SendPropertyChanged("idKhachHangDatHang")
-				Me.OnidKhachHangDatHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me.OnSoLuongChanging(value)
-				Me.SendPropertyChanging
-				Me._SoLuong = value
-				Me.SendPropertyChanged("SoLuong")
-				Me.OnSoLuongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Int NOT NULL")>  _
-	Public Property DonGia() As Integer
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me.OnDonGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._DonGia = value
-				Me.SendPropertyChanged("DonGia")
-				Me.OnDonGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idSanPham() As Integer
-		Get
-			Return Me._idSanPham
-		End Get
-		Set
-			If ((Me._idSanPham = value)  _
-						= false) Then
-				If Me._tbSanPham.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._idSanPham = value
-				Me.SendPropertyChanged("idSanPham")
-				Me.OnidSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
-	Public Property TheoDonVi() As Boolean
-		Get
-			Return Me._TheoDonVi
-		End Get
-		Set
-			If ((Me._TheoDonVi = value)  _
-						= false) Then
-				Me.OnTheoDonViChanging(value)
-				Me.SendPropertyChanging
-				Me._TheoDonVi = value
-				Me.SendPropertyChanged("TheoDonVi")
-				Me.OnTheoDonViChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
-	Public Property QuyCach() As Double
-		Get
-			Return Me._QuyCach
-		End Get
-		Set
-			If ((Me._QuyCach = value)  _
-						= false) Then
-				Me.OnQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._QuyCach = value
-				Me.SendPropertyChanged("QuyCach")
-				Me.OnQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50)")>  _
-	Public Property DonVi() As String
-		Get
-			Return Me._DonVi
-		End Get
-		Set
-			If (String.Equals(Me._DonVi, value) = false) Then
-				Me.OnDonViChanging(value)
-				Me.SendPropertyChanging
-				Me._DonVi = value
-				Me.SendPropertyChanged("DonVi")
-				Me.OnDonViChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
-	Public Property GiaBan() As Double
-		Get
-			Return Me._GiaBan
-		End Get
-		Set
-			If ((Me._GiaBan = value)  _
-						= false) Then
-				Me.OnGiaBanChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaBan = value
-				Me.SendPropertyChanged("GiaBan")
-				Me.OnGiaBanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
-	Public Property STT() As Integer
-		Get
-			Return Me._STT
-		End Get
-		Set
-			If ((Me._STT = value)  _
-						= false) Then
-				Me.OnSTTChanging(value)
-				Me.SendPropertyChanging
-				Me._STT = value
-				Me.SendPropertyChanged("STT")
-				Me.OnSTTChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date NOT NULL")>  _
-	Public Property NgayNiemYet() As Date
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If ((Me._NgayNiemYet = value)  _
-						= false) Then
-				Me.OnNgayNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNiemYet = value
-				Me.SendPropertyChanged("NgayNiemYet")
-				Me.OnNgayNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbKhachHangDatHang_tbChiTietKhachHangDatHang", Storage:="_tbKhachHangDatHang", ThisKey:="idKhachHangDatHang", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbKhachHangDatHang() As tbKhachHangDatHang
-		Get
-			Return Me._tbKhachHangDatHang.Entity
-		End Get
-		Set
-			Dim previousValue As tbKhachHangDatHang = Me._tbKhachHangDatHang.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbKhachHangDatHang.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbKhachHangDatHang.Entity = Nothing
-					previousValue.tbChiTietKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbKhachHangDatHang.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietKhachHangDatHangs.Add(Me)
-					Me._idKhachHangDatHang = value.id
-				Else
-					Me._idKhachHangDatHang = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbKhachHangDatHang")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietKhachHangDatHang", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbSanPham() As tbSanPham
-		Get
-			Return Me._tbSanPham.Entity
-		End Get
-		Set
-			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbSanPham.Entity = Nothing
-					previousValue.tbChiTietKhachHangDatHangs.Remove(Me)
-				End If
-				Me._tbSanPham.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietKhachHangDatHangs.Add(Me)
-					Me._idSanPham = value.id
-				Else
-					Me._idSanPham = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbSanPham")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwChiTietKhachHangDatHang")>  _
-Partial Public Class vwChiTietKhachHangDatHang
-	
-	Private _id As Integer
-	
-	Private _idKhachHangDatHang As Integer
-	
-	Private _SoLuong As Double
-	
-	Private _NgayNiemYet As Date
-	
-	Private _DonGia As Integer
-	
-	Private _idSanPham As Integer
-	
-	Private _ChietKhau As Double
-	
-	Private _GhiChu As String
-	
-	Private _QuyCach As Double
-	
-	Private _ThanhTien As System.Nullable(Of Double)
-	
-	Private _NgayLap As Date
-	
-	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
-	
-	Private _idKhachHang As Integer
-	
-	Private _idNhanVien As Integer
-	
-	Private _ChietKhauKhachHangDatHang As Double
-	
-	Private _SoPhieu As Integer
-	
-	Private _VAT As Integer
-	
-	Private _TenNhanVien As String
-	
-	Private _MaKhachHang As String
-	
-	Private _TenKhachHang As String
-	
-	Private _DiaChi As String
-	
-	Private _MaSoThue As String
-	
-	Private _SoFAX As String
-	
-	Private _SoDienThoai As String
-	
-	Private _TongVon As Double
-	
-	Private _CongTien As Double
-	
-	Private _TongTienChietKhau As Double
-	
-	Private _TongTienVAT As Double
-	
-	Private _TongTien As Double
-	
-	Private _DaLapHoaDon As Boolean
-	
-	Private _MaSanPham As String
-	
-	Private _MaVachSanPham As String
-	
-	Private _TenSanPham As String
-	
-	Private _DonVi As String
-	
-	Private _idLoaiSanPham As Integer
-	
-	Private _TenLoaiSanPham As String
-	
-	Private _MaLoaiSanPham As String
-	
-	Private _TheoDonVi As Boolean
-	
-	Private _isNhapHang As System.Nullable(Of Boolean)
-	
-	Private _CongTrinh As String
-	
-	Private _STT As Integer
-	
-	Private _isGiaoHangXong As Integer
-	
-	Private _Expr1 As String
-	
-	Private _GiaBan As Double
-	
-	Private _SoLuongConLai As Double
-	
-	Private _SoLuongDaGiao As Double
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me._id = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHangDatHang() As Integer
-		Get
-			Return Me._idKhachHangDatHang
-		End Get
-		Set
-			If ((Me._idKhachHangDatHang = value)  _
-						= false) Then
-				Me._idKhachHangDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me._SoLuong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date NOT NULL")>  _
-	Public Property NgayNiemYet() As Date
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If ((Me._NgayNiemYet = value)  _
-						= false) Then
-				Me._NgayNiemYet = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Int NOT NULL")>  _
-	Public Property DonGia() As Integer
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me._DonGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idSanPham() As Integer
-		Get
-			Return Me._idSanPham
-		End Get
-		Set
-			If ((Me._idSanPham = value)  _
-						= false) Then
-				Me._idSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhau() As Double
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If ((Me._ChietKhau = value)  _
-						= false) Then
-				Me._ChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
-	Public Property QuyCach() As Double
-		Get
-			Return Me._QuyCach
-		End Get
-		Set
-			If ((Me._QuyCach = value)  _
-						= false) Then
-				Me._QuyCach = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ThanhTien", DbType:="Float")>  _
-	Public Property ThanhTien() As System.Nullable(Of Double)
-		Get
-			Return Me._ThanhTien
-		End Get
-		Set
-			If (Me._ThanhTien.Equals(value) = false) Then
-				Me._ThanhTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayLap() As Date
-		Get
-			Return Me._NgayLap
-		End Get
-		Set
-			If ((Me._NgayLap = value)  _
-						= false) Then
-				Me._NgayLap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
-	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayDuKienGiaoHang
-		End Get
-		Set
-			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
-				Me._NgayDuKienGiaoHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
-	Public Property idKhachHang() As Integer
-		Get
-			Return Me._idKhachHang
-		End Get
-		Set
-			If ((Me._idKhachHang = value)  _
-						= false) Then
-				Me._idKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me._idNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhauKhachHangDatHang", DbType:="Float NOT NULL")>  _
-	Public Property ChietKhauKhachHangDatHang() As Double
-		Get
-			Return Me._ChietKhauKhachHangDatHang
-		End Get
-		Set
-			If ((Me._ChietKhauKhachHangDatHang = value)  _
-						= false) Then
-				Me._ChietKhauKhachHangDatHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
-		Get
-			Return Me._SoPhieu
-		End Get
-		Set
-			If ((Me._SoPhieu = value)  _
-						= false) Then
-				Me._SoPhieu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
-	Public Property VAT() As Integer
-		Get
-			Return Me._VAT
-		End Get
-		Set
-			If ((Me._VAT = value)  _
-						= false) Then
-				Me._VAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
-		Get
-			Return Me._TenNhanVien
-		End Get
-		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaKhachHang() As String
-		Get
-			Return Me._MaKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._MaKhachHang, value) = false) Then
-				Me._MaKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenKhachHang() As String
-		Get
-			Return Me._TenKhachHang
-		End Get
-		Set
-			If (String.Equals(Me._TenKhachHang, value) = false) Then
-				Me._TenKhachHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me._DiaChi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
-	Public Property MaSoThue() As String
-		Get
-			Return Me._MaSoThue
-		End Get
-		Set
-			If (String.Equals(Me._MaSoThue, value) = false) Then
-				Me._MaSoThue = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
-	Public Property SoFAX() As String
-		Get
-			Return Me._SoFAX
-		End Get
-		Set
-			If (String.Equals(Me._SoFAX, value) = false) Then
-				Me._SoFAX = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
-	Public Property SoDienThoai() As String
-		Get
-			Return Me._SoDienThoai
-		End Get
-		Set
-			If (String.Equals(Me._SoDienThoai, value) = false) Then
-				Me._SoDienThoai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
-	Public Property TongVon() As Double
-		Get
-			Return Me._TongVon
-		End Get
-		Set
-			If ((Me._TongVon = value)  _
-						= false) Then
-				Me._TongVon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
-	Public Property CongTien() As Double
-		Get
-			Return Me._CongTien
-		End Get
-		Set
-			If ((Me._CongTien = value)  _
-						= false) Then
-				Me._CongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
-	Public Property TongTienChietKhau() As Double
-		Get
-			Return Me._TongTienChietKhau
-		End Get
-		Set
-			If ((Me._TongTienChietKhau = value)  _
-						= false) Then
-				Me._TongTienChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
-	Public Property TongTienVAT() As Double
-		Get
-			Return Me._TongTienVAT
-		End Get
-		Set
-			If ((Me._TongTienVAT = value)  _
-						= false) Then
-				Me._TongTienVAT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
-	Public Property TongTien() As Double
-		Get
-			Return Me._TongTien
-		End Get
-		Set
-			If ((Me._TongTien = value)  _
-						= false) Then
-				Me._TongTien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
-	Public Property DaLapHoaDon() As Boolean
-		Get
-			Return Me._DaLapHoaDon
-		End Get
-		Set
-			If ((Me._DaLapHoaDon = value)  _
-						= false) Then
-				Me._DaLapHoaDon = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaSanPham() As String
-		Get
-			Return Me._MaSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaSanPham, value) = false) Then
-				Me._MaSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaVachSanPham", DbType:="NVarChar(50)")>  _
-	Public Property MaVachSanPham() As String
-		Get
-			Return Me._MaVachSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaVachSanPham, value) = false) Then
-				Me._MaVachSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenSanPham() As String
-		Get
-			Return Me._TenSanPham
-		End Get
-		Set
-			If (String.Equals(Me._TenSanPham, value) = false) Then
-				Me._TenSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50)")>  _
-	Public Property DonVi() As String
-		Get
-			Return Me._DonVi
-		End Get
-		Set
-			If (String.Equals(Me._DonVi, value) = false) Then
-				Me._DonVi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiSanPham() As Integer
-		Get
-			Return Me._idLoaiSanPham
-		End Get
-		Set
-			If ((Me._idLoaiSanPham = value)  _
-						= false) Then
-				Me._idLoaiSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenLoaiSanPham() As String
-		Get
-			Return Me._TenLoaiSanPham
-		End Get
-		Set
-			If (String.Equals(Me._TenLoaiSanPham, value) = false) Then
-				Me._TenLoaiSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaLoaiSanPham() As String
-		Get
-			Return Me._MaLoaiSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaLoaiSanPham, value) = false) Then
-				Me._MaLoaiSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
-	Public Property TheoDonVi() As Boolean
-		Get
-			Return Me._TheoDonVi
-		End Get
-		Set
-			If ((Me._TheoDonVi = value)  _
-						= false) Then
-				Me._TheoDonVi = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isNhapHang
-		End Get
-		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me._isNhapHang = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
-	Public Property CongTrinh() As String
-		Get
-			Return Me._CongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._CongTrinh, value) = false) Then
-				Me._CongTrinh = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
-	Public Property STT() As Integer
-		Get
-			Return Me._STT
-		End Get
-		Set
-			If ((Me._STT = value)  _
-						= false) Then
-				Me._STT = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaoHangXong", DbType:="Int NOT NULL")>  _
-	Public Property isGiaoHangXong() As Integer
-		Get
-			Return Me._isGiaoHangXong
-		End Get
-		Set
-			If ((Me._isGiaoHangXong = value)  _
-						= false) Then
-				Me._isGiaoHangXong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Expr1", DbType:="NVarChar(50)")>  _
-	Public Property Expr1() As String
-		Get
-			Return Me._Expr1
-		End Get
-		Set
-			If (String.Equals(Me._Expr1, value) = false) Then
-				Me._Expr1 = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
-	Public Property GiaBan() As Double
-		Get
-			Return Me._GiaBan
-		End Get
-		Set
-			If ((Me._GiaBan = value)  _
-						= false) Then
-				Me._GiaBan = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongConLai", DbType:="Float NOT NULL")>  _
-	Public Property SoLuongConLai() As Double
-		Get
-			Return Me._SoLuongConLai
-		End Get
-		Set
-			If ((Me._SoLuongConLai = value)  _
-						= false) Then
-				Me._SoLuongConLai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongDaGiao", DbType:="Float NOT NULL")>  _
-	Public Property SoLuongDaGiao() As Double
-		Get
-			Return Me._SoLuongDaGiao
-		End Get
-		Set
-			If ((Me._SoLuongDaGiao = value)  _
-						= false) Then
-				Me._SoLuongDaGiao = value
 			End If
 		End Set
 	End Property
@@ -20428,1197 +19367,72 @@ Partial Public Class vwChiTietPhieuXuat
 	End Property
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbNganHang")>  _
-Partial Public Class tbNganHang
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwChiTietSoLuongGiaoHang")>  _
+Partial Public Class vwChiTietSoLuongGiaoHang
 	
 	Private _id As Integer
 	
-	Private _TenNganHang As String
-	
-	Private _SoTaiKhoan As String
-	
-	Private _ChiNhanh As String
-	
-	Private _GhiChu As String
-	
-	Private _DiaChi As String
-	
-	Private _DienThoai As String
-	
-	Private _MaNganHang As String
-	
-	Private _SoDuDauKy As Double
-	
-	Private _isTienMat As System.Nullable(Of Boolean)
-	
-	Private _DuongDanAnh As String
-	
-	Private _DuongDanFileReport As String
-	
-	Private _ChieuDaiNoiDung As System.Nullable(Of Decimal)
-	
-	Private _ChieuDaiTienChu As System.Nullable(Of Decimal)
-	
-	Private _TenChuTaiKhoan As String
-	
-	Private _LoaiNganHang As Integer
-	
-	Private _TenTaiKhoan As String
-	
-	Private _NgayNhap As Date
-	
-	Private _tbTraNoNhaCungCaps As EntitySet(Of tbTraNoNhaCungCap)
-	
-	Private _tbTraNoNhaCungCaps1 As EntitySet(Of tbTraNoNhaCungCap)
-	
-	Private _tbPhieuChis As EntitySet(Of tbPhieuChi)
-	
-	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
-	
-	Private _tbPhieuUyNhiemChis As EntitySet(Of tbPhieuUyNhiemChi)
-	
-	Private _tbThuNoKhachHangs As EntitySet(Of tbThuNoKhachHang)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnTenNganHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenNganHangChanged()
-    End Sub
-    Partial Private Sub OnSoTaiKhoanChanging(value As String)
-    End Sub
-    Partial Private Sub OnSoTaiKhoanChanged()
-    End Sub
-    Partial Private Sub OnChiNhanhChanging(value As String)
-    End Sub
-    Partial Private Sub OnChiNhanhChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnDiaChiChanging(value As String)
-    End Sub
-    Partial Private Sub OnDiaChiChanged()
-    End Sub
-    Partial Private Sub OnDienThoaiChanging(value As String)
-    End Sub
-    Partial Private Sub OnDienThoaiChanged()
-    End Sub
-    Partial Private Sub OnMaNganHangChanging(value As String)
-    End Sub
-    Partial Private Sub OnMaNganHangChanged()
-    End Sub
-    Partial Private Sub OnSoDuDauKyChanging(value As Double)
-    End Sub
-    Partial Private Sub OnSoDuDauKyChanged()
-    End Sub
-    Partial Private Sub OnisTienMatChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisTienMatChanged()
-    End Sub
-    Partial Private Sub OnDuongDanAnhChanging(value As String)
-    End Sub
-    Partial Private Sub OnDuongDanAnhChanged()
-    End Sub
-    Partial Private Sub OnDuongDanFileReportChanging(value As String)
-    End Sub
-    Partial Private Sub OnDuongDanFileReportChanged()
-    End Sub
-    Partial Private Sub OnChieuDaiNoiDungChanging(value As System.Nullable(Of Decimal))
-    End Sub
-    Partial Private Sub OnChieuDaiNoiDungChanged()
-    End Sub
-    Partial Private Sub OnChieuDaiTienChuChanging(value As System.Nullable(Of Decimal))
-    End Sub
-    Partial Private Sub OnChieuDaiTienChuChanged()
-    End Sub
-    Partial Private Sub OnTenChuTaiKhoanChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenChuTaiKhoanChanged()
-    End Sub
-    Partial Private Sub OnLoaiNganHangChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnLoaiNganHangChanged()
-    End Sub
-    Partial Private Sub OnTenTaiKhoanChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenTaiKhoanChanged()
-    End Sub
-    Partial Private Sub OnNgayNhapChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayNhapChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbTraNoNhaCungCaps = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps, AddressOf Me.detach_tbTraNoNhaCungCaps)
-		Me._tbTraNoNhaCungCaps1 = New EntitySet(Of tbTraNoNhaCungCap)(AddressOf Me.attach_tbTraNoNhaCungCaps1, AddressOf Me.detach_tbTraNoNhaCungCaps1)
-		Me._tbPhieuChis = New EntitySet(Of tbPhieuChi)(AddressOf Me.attach_tbPhieuChis, AddressOf Me.detach_tbPhieuChis)
-		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
-		Me._tbPhieuUyNhiemChis = New EntitySet(Of tbPhieuUyNhiemChi)(AddressOf Me.attach_tbPhieuUyNhiemChis, AddressOf Me.detach_tbPhieuUyNhiemChis)
-		Me._tbThuNoKhachHangs = New EntitySet(Of tbThuNoKhachHang)(AddressOf Me.attach_tbThuNoKhachHangs, AddressOf Me.detach_tbThuNoKhachHangs)
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNganHang", DbType:="NVarChar(130) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNganHang() As String
-		Get
-			Return Me._TenNganHang
-		End Get
-		Set
-			If (String.Equals(Me._TenNganHang, value) = false) Then
-				Me.OnTenNganHangChanging(value)
-				Me.SendPropertyChanging
-				Me._TenNganHang = value
-				Me.SendPropertyChanged("TenNganHang")
-				Me.OnTenNganHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTaiKhoan", DbType:="NVarChar(50)")>  _
-	Public Property SoTaiKhoan() As String
-		Get
-			Return Me._SoTaiKhoan
-		End Get
-		Set
-			If (String.Equals(Me._SoTaiKhoan, value) = false) Then
-				Me.OnSoTaiKhoanChanging(value)
-				Me.SendPropertyChanging
-				Me._SoTaiKhoan = value
-				Me.SendPropertyChanged("SoTaiKhoan")
-				Me.OnSoTaiKhoanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChiNhanh", DbType:="NVarChar(100)")>  _
-	Public Property ChiNhanh() As String
-		Get
-			Return Me._ChiNhanh
-		End Get
-		Set
-			If (String.Equals(Me._ChiNhanh, value) = false) Then
-				Me.OnChiNhanhChanging(value)
-				Me.SendPropertyChanging
-				Me._ChiNhanh = value
-				Me.SendPropertyChanged("ChiNhanh")
-				Me.OnChiNhanhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(80)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
-	Public Property DiaChi() As String
-		Get
-			Return Me._DiaChi
-		End Get
-		Set
-			If (String.Equals(Me._DiaChi, value) = false) Then
-				Me.OnDiaChiChanging(value)
-				Me.SendPropertyChanging
-				Me._DiaChi = value
-				Me.SendPropertyChanged("DiaChi")
-				Me.OnDiaChiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DienThoai", DbType:="NVarChar(50)")>  _
-	Public Property DienThoai() As String
-		Get
-			Return Me._DienThoai
-		End Get
-		Set
-			If (String.Equals(Me._DienThoai, value) = false) Then
-				Me.OnDienThoaiChanging(value)
-				Me.SendPropertyChanging
-				Me._DienThoai = value
-				Me.SendPropertyChanged("DienThoai")
-				Me.OnDienThoaiChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaNganHang", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaNganHang() As String
-		Get
-			Return Me._MaNganHang
-		End Get
-		Set
-			If (String.Equals(Me._MaNganHang, value) = false) Then
-				Me.OnMaNganHangChanging(value)
-				Me.SendPropertyChanging
-				Me._MaNganHang = value
-				Me.SendPropertyChanged("MaNganHang")
-				Me.OnMaNganHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDuDauKy", DbType:="Float NOT NULL")>  _
-	Public Property SoDuDauKy() As Double
-		Get
-			Return Me._SoDuDauKy
-		End Get
-		Set
-			If ((Me._SoDuDauKy = value)  _
-						= false) Then
-				Me.OnSoDuDauKyChanging(value)
-				Me.SendPropertyChanging
-				Me._SoDuDauKy = value
-				Me.SendPropertyChanged("SoDuDauKy")
-				Me.OnSoDuDauKyChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isTienMat", DbType:="Bit")>  _
-	Public Property isTienMat() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isTienMat
-		End Get
-		Set
-			If (Me._isTienMat.Equals(value) = false) Then
-				Me.OnisTienMatChanging(value)
-				Me.SendPropertyChanging
-				Me._isTienMat = value
-				Me.SendPropertyChanged("isTienMat")
-				Me.OnisTienMatChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DuongDanAnh", DbType:="NVarChar(350)")>  _
-	Public Property DuongDanAnh() As String
-		Get
-			Return Me._DuongDanAnh
-		End Get
-		Set
-			If (String.Equals(Me._DuongDanAnh, value) = false) Then
-				Me.OnDuongDanAnhChanging(value)
-				Me.SendPropertyChanging
-				Me._DuongDanAnh = value
-				Me.SendPropertyChanged("DuongDanAnh")
-				Me.OnDuongDanAnhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DuongDanFileReport", DbType:="NVarChar(350)")>  _
-	Public Property DuongDanFileReport() As String
-		Get
-			Return Me._DuongDanFileReport
-		End Get
-		Set
-			If (String.Equals(Me._DuongDanFileReport, value) = false) Then
-				Me.OnDuongDanFileReportChanging(value)
-				Me.SendPropertyChanging
-				Me._DuongDanFileReport = value
-				Me.SendPropertyChanged("DuongDanFileReport")
-				Me.OnDuongDanFileReportChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChieuDaiNoiDung", DbType:="Decimal(18,0)")>  _
-	Public Property ChieuDaiNoiDung() As System.Nullable(Of Decimal)
-		Get
-			Return Me._ChieuDaiNoiDung
-		End Get
-		Set
-			If (Me._ChieuDaiNoiDung.Equals(value) = false) Then
-				Me.OnChieuDaiNoiDungChanging(value)
-				Me.SendPropertyChanging
-				Me._ChieuDaiNoiDung = value
-				Me.SendPropertyChanged("ChieuDaiNoiDung")
-				Me.OnChieuDaiNoiDungChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChieuDaiTienChu", DbType:="Decimal(18,0)")>  _
-	Public Property ChieuDaiTienChu() As System.Nullable(Of Decimal)
-		Get
-			Return Me._ChieuDaiTienChu
-		End Get
-		Set
-			If (Me._ChieuDaiTienChu.Equals(value) = false) Then
-				Me.OnChieuDaiTienChuChanging(value)
-				Me.SendPropertyChanging
-				Me._ChieuDaiTienChu = value
-				Me.SendPropertyChanged("ChieuDaiTienChu")
-				Me.OnChieuDaiTienChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenChuTaiKhoan", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenChuTaiKhoan() As String
-		Get
-			Return Me._TenChuTaiKhoan
-		End Get
-		Set
-			If (String.Equals(Me._TenChuTaiKhoan, value) = false) Then
-				Me.OnTenChuTaiKhoanChanging(value)
-				Me.SendPropertyChanging
-				Me._TenChuTaiKhoan = value
-				Me.SendPropertyChanged("TenChuTaiKhoan")
-				Me.OnTenChuTaiKhoanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiNganHang", DbType:="Int NOT NULL")>  _
-	Public Property LoaiNganHang() As Integer
-		Get
-			Return Me._LoaiNganHang
-		End Get
-		Set
-			If ((Me._LoaiNganHang = value)  _
-						= false) Then
-				Me.OnLoaiNganHangChanging(value)
-				Me.SendPropertyChanging
-				Me._LoaiNganHang = value
-				Me.SendPropertyChanged("LoaiNganHang")
-				Me.OnLoaiNganHangChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenTaiKhoan", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenTaiKhoan() As String
-		Get
-			Return Me._TenTaiKhoan
-		End Get
-		Set
-			If (String.Equals(Me._TenTaiKhoan, value) = false) Then
-				Me.OnTenTaiKhoanChanging(value)
-				Me.SendPropertyChanging
-				Me._TenTaiKhoan = value
-				Me.SendPropertyChanged("TenTaiKhoan")
-				Me.OnTenTaiKhoanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayNhap() As Date
-		Get
-			Return Me._NgayNhap
-		End Get
-		Set
-			If ((Me._NgayNhap = value)  _
-						= false) Then
-				Me.OnNgayNhapChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNhap = value
-				Me.SendPropertyChanged("NgayNhap")
-				Me.OnNgayNhapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbTraNoNhaCungCap", Storage:="_tbTraNoNhaCungCaps", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
-	Public Property tbTraNoNhaCungCaps() As EntitySet(Of tbTraNoNhaCungCap)
-		Get
-			Return Me._tbTraNoNhaCungCaps
-		End Get
-		Set
-			Me._tbTraNoNhaCungCaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbTraNoNhaCungCap1", Storage:="_tbTraNoNhaCungCaps1", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
-	Public Property tbTraNoNhaCungCaps1() As EntitySet(Of tbTraNoNhaCungCap)
-		Get
-			Return Me._tbTraNoNhaCungCaps1
-		End Get
-		Set
-			Me._tbTraNoNhaCungCaps1.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuChi", Storage:="_tbPhieuChis", ThisKey:="id", OtherKey:="idNganHang")>  _
-	Public Property tbPhieuChis() As EntitySet(Of tbPhieuChi)
-		Get
-			Return Me._tbPhieuChis
-		End Get
-		Set
-			Me._tbPhieuChis.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idNganHang")>  _
-	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
-		Get
-			Return Me._tbPhieuThus
-		End Get
-		Set
-			Me._tbPhieuThus.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbPhieuUyNhiemChi", Storage:="_tbPhieuUyNhiemChis", ThisKey:="id", OtherKey:="idNganHang")>  _
-	Public Property tbPhieuUyNhiemChis() As EntitySet(Of tbPhieuUyNhiemChi)
-		Get
-			Return Me._tbPhieuUyNhiemChis
-		End Get
-		Set
-			Me._tbPhieuUyNhiemChis.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNganHang_tbThuNoKhachHang", Storage:="_tbThuNoKhachHangs", ThisKey:="id", OtherKey:="idHinhThucThanhToan")>  _
-	Public Property tbThuNoKhachHangs() As EntitySet(Of tbThuNoKhachHang)
-		Get
-			Return Me._tbThuNoKhachHangs
-		End Get
-		Set
-			Me._tbThuNoKhachHangs.Assign(value)
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Me
-	End Sub
-	
-	Private Sub detach_tbTraNoNhaCungCaps(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbTraNoNhaCungCaps1(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbNganHang1 = Me
-	End Sub
-	
-	Private Sub detach_tbTraNoNhaCungCaps1(ByVal entity As tbTraNoNhaCungCap)
-		Me.SendPropertyChanging
-		entity.tbNganHang1 = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuChis(ByVal entity As tbPhieuChi)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuChis(ByVal entity As tbPhieuChi)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbPhieuUyNhiemChis(ByVal entity As tbPhieuUyNhiemChi)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuUyNhiemChis(ByVal entity As tbPhieuUyNhiemChi)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Nothing
-	End Sub
-	
-	Private Sub attach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Me
-	End Sub
-	
-	Private Sub detach_tbThuNoKhachHangs(ByVal entity As tbThuNoKhachHang)
-		Me.SendPropertyChanging
-		entity.tbNganHang = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietBaoGia")>  _
-Partial Public Class tbChiTietBaoGia
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _idSanPham As Integer
-	
-	Private _GiaNiemYet As Double
-	
-	Private _GhiChu As String
-	
-	Private _idBaoGia As Integer
+	Private _idKhachHangDatHang As Integer
 	
 	Private _SoLuong As Double
 	
-	Private _ChietKhau As System.Nullable(Of Double)
-	
-	Private _NgayNiemYet As System.Nullable(Of Date)
-	
-	Private _DonGia As Double
-	
-	Private _STT As Integer
-	
-	Private _tbBaoGia As EntityRef(Of tbBaoGia)
-	
-	Private _tbSanPham As EntityRef(Of tbSanPham)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnidSanPhamChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidSanPhamChanged()
-    End Sub
-    Partial Private Sub OnGiaNiemYetChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaNiemYetChanged()
-    End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
-    End Sub
-    Partial Private Sub OnGhiChuChanged()
-    End Sub
-    Partial Private Sub OnidBaoGiaChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidBaoGiaChanged()
-    End Sub
-    Partial Private Sub OnSoLuongChanging(value As Double)
-    End Sub
-    Partial Private Sub OnSoLuongChanged()
-    End Sub
-    Partial Private Sub OnChietKhauChanging(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnChietKhauChanged()
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanged()
-    End Sub
-    Partial Private Sub OnDonGiaChanging(value As Double)
-    End Sub
-    Partial Private Sub OnDonGiaChanged()
-    End Sub
-    Partial Private Sub OnSTTChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSTTChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbBaoGia = CType(Nothing, EntityRef(Of tbBaoGia))
-		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idSanPham() As Integer
-		Get
-			Return Me._idSanPham
-		End Get
-		Set
-			If ((Me._idSanPham = value)  _
-						= false) Then
-				If Me._tbSanPham.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._idSanPham = value
-				Me.SendPropertyChanged("idSanPham")
-				Me.OnidSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
-	Public Property GiaNiemYet() As Double
-		Get
-			Return Me._GiaNiemYet
-		End Get
-		Set
-			If ((Me._GiaNiemYet = value)  _
-						= false) Then
-				Me.OnGiaNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaNiemYet = value
-				Me.SendPropertyChanged("GiaNiemYet")
-				Me.OnGiaNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int NOT NULL")>  _
-	Public Property idBaoGia() As Integer
-		Get
-			Return Me._idBaoGia
-		End Get
-		Set
-			If ((Me._idBaoGia = value)  _
-						= false) Then
-				If Me._tbBaoGia.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidBaoGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._idBaoGia = value
-				Me.SendPropertyChanged("idBaoGia")
-				Me.OnidBaoGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me.OnSoLuongChanging(value)
-				Me.SendPropertyChanging
-				Me._SoLuong = value
-				Me.SendPropertyChanged("SoLuong")
-				Me.OnSoLuongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float")>  _
-	Public Property ChietKhau() As System.Nullable(Of Double)
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If (Me._ChietKhau.Equals(value) = false) Then
-				Me.OnChietKhauChanging(value)
-				Me.SendPropertyChanging
-				Me._ChietKhau = value
-				Me.SendPropertyChanged("ChietKhau")
-				Me.OnChietKhauChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
-	Public Property NgayNiemYet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If (Me._NgayNiemYet.Equals(value) = false) Then
-				Me.OnNgayNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNiemYet = value
-				Me.SendPropertyChanged("NgayNiemYet")
-				Me.OnNgayNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
-	Public Property DonGia() As Double
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me.OnDonGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._DonGia = value
-				Me.SendPropertyChanged("DonGia")
-				Me.OnDonGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
-	Public Property STT() As Integer
-		Get
-			Return Me._STT
-		End Get
-		Set
-			If ((Me._STT = value)  _
-						= false) Then
-				Me.OnSTTChanging(value)
-				Me.SendPropertyChanging
-				Me._STT = value
-				Me.SendPropertyChanged("STT")
-				Me.OnSTTChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbBaoGia_tbChiTietBaoGia", Storage:="_tbBaoGia", ThisKey:="idBaoGia", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbBaoGia() As tbBaoGia
-		Get
-			Return Me._tbBaoGia.Entity
-		End Get
-		Set
-			Dim previousValue As tbBaoGia = Me._tbBaoGia.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbBaoGia.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbBaoGia.Entity = Nothing
-					previousValue.tbChiTietBaoGias.Remove(Me)
-				End If
-				Me._tbBaoGia.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietBaoGias.Add(Me)
-					Me._idBaoGia = value.id
-				Else
-					Me._idBaoGia = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbBaoGia")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietBaoGia", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbSanPham() As tbSanPham
-		Get
-			Return Me._tbSanPham.Entity
-		End Get
-		Set
-			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbSanPham.Entity = Nothing
-					previousValue.tbChiTietBaoGias.Remove(Me)
-				End If
-				Me._tbSanPham.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbChiTietBaoGias.Add(Me)
-					Me._idSanPham = value.id
-				Else
-					Me._idSanPham = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbSanPham")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbGiaCongSanPham")>  _
-Partial Public Class tbGiaCongSanPham
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _idSanPhamGiaCong As Integer
-	
-	Private _SoLuong As Integer
+	Private _DonGia As Integer
 	
 	Private _idSanPham As Integer
 	
-	Private _DonGia As Double
-	
-	Private _tbGiaCong As EntityRef(Of tbGiaCong)
-	
-	Private _tbSanPham As EntityRef(Of tbSanPham)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnidSanPhamGiaCongChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidSanPhamGiaCongChanged()
-    End Sub
-    Partial Private Sub OnSoLuongChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnSoLuongChanged()
-    End Sub
-    Partial Private Sub OnidSanPhamChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidSanPhamChanged()
-    End Sub
-    Partial Private Sub OnDonGiaChanging(value As Double)
-    End Sub
-    Partial Private Sub OnDonGiaChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbGiaCong = CType(Nothing, EntityRef(Of tbGiaCong))
-		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPhamGiaCong", DbType:="Int NOT NULL")>  _
-	Public Property idSanPhamGiaCong() As Integer
-		Get
-			Return Me._idSanPhamGiaCong
-		End Get
-		Set
-			If ((Me._idSanPhamGiaCong = value)  _
-						= false) Then
-				If Me._tbGiaCong.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidSanPhamGiaCongChanging(value)
-				Me.SendPropertyChanging
-				Me._idSanPhamGiaCong = value
-				Me.SendPropertyChanged("idSanPhamGiaCong")
-				Me.OnidSanPhamGiaCongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Int NOT NULL")>  _
-	Public Property SoLuong() As Integer
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me.OnSoLuongChanging(value)
-				Me.SendPropertyChanging
-				Me._SoLuong = value
-				Me.SendPropertyChanged("SoLuong")
-				Me.OnSoLuongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idSanPham() As Integer
-		Get
-			Return Me._idSanPham
-		End Get
-		Set
-			If ((Me._idSanPham = value)  _
-						= false) Then
-				If Me._tbSanPham.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._idSanPham = value
-				Me.SendPropertyChanged("idSanPham")
-				Me.OnidSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
-	Public Property DonGia() As Double
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me.OnDonGiaChanging(value)
-				Me.SendPropertyChanging
-				Me._DonGia = value
-				Me.SendPropertyChanged("DonGia")
-				Me.OnDonGiaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbGiaCong_tbGiaCongSanPham", Storage:="_tbGiaCong", ThisKey:="idSanPhamGiaCong", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbGiaCong() As tbGiaCong
-		Get
-			Return Me._tbGiaCong.Entity
-		End Get
-		Set
-			Dim previousValue As tbGiaCong = Me._tbGiaCong.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbGiaCong.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbGiaCong.Entity = Nothing
-					previousValue.tbGiaCongSanPhams.Remove(Me)
-				End If
-				Me._tbGiaCong.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbGiaCongSanPhams.Add(Me)
-					Me._idSanPhamGiaCong = value.id
-				Else
-					Me._idSanPhamGiaCong = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbGiaCong")
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCongSanPham", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true)>  _
-	Public Property tbSanPham() As tbSanPham
-		Get
-			Return Me._tbSanPham.Entity
-		End Get
-		Set
-			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbSanPham.Entity = Nothing
-					previousValue.tbGiaCongSanPhams.Remove(Me)
-				End If
-				Me._tbSanPham.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbGiaCongSanPhams.Add(Me)
-					Me._idSanPham = value.id
-				Else
-					Me._idSanPham = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbSanPham")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwGiaCong")>  _
-Partial Public Class vwGiaCong
-	
-	Private _TenSanPham As String
-	
-	Private _MaSanPham As String
-	
-	Private _id As Integer
-	
-	Private _idSanPham As Integer
-	
-	Private _NgayLap As Date
-	
-	Private _ChiPhiKhac As Double
-	
-	Private _SoLuong As Integer
-	
-	Private _idPhieuNhap As Integer
-	
-	Private _idPhieuXuat As Integer
-	
-	Private _TienLinhKien As Double
-	
-	Private _TienThanhPham As Double
-	
-	Private _idNhanVien As Integer
+	Private _ChietKhau As Double
 	
 	Private _GhiChu As String
 	
+	Private _QuyCach As Double
+	
+	Private _ThanhTien As System.Nullable(Of Double)
+	
+	Private _NgayLap As Date
+	
+	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhauKhachHangDatHang As Double
+	
 	Private _SoPhieu As Integer
+	
+	Private _VAT As Integer
+	
+	Private _DaLapHoaDon As Boolean
+	
+	Private _MaSanPham As String
+	
+	Private _MaVachSanPham As String
+	
+	Private _TenSanPham As String
+	
+	Private _DonVi As String
+	
+	Private _idLoaiSanPham As Integer
+	
+	Private _TenLoaiSanPham As String
+	
+	Private _MaLoaiSanPham As String
+	
+	Private _TheoDonVi As Boolean
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _Expr1 As String
+	
+	Private _GiaBan As Double
+	
+	Private _SoLuongConLai As Double
+	
+	Private _SoLuongDaGiao As Double
 	
 	Public Sub New()
 		MyBase.New
 	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenSanPham() As String
-		Get
-			Return Me._TenSanPham
-		End Get
-		Set
-			If (String.Equals(Me._TenSanPham, value) = false) Then
-				Me._TenSanPham = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaSanPham() As String
-		Get
-			Return Me._MaSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaSanPham, value) = false) Then
-				Me._MaSanPham = value
-			End If
-		End Set
-	End Property
 	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
 	Public Property id() As Integer
@@ -21633,6 +19447,45 @@ Partial Public Class vwGiaCong
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHangDatHang() As Integer
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If ((Me._idKhachHangDatHang = value)  _
+						= false) Then
+				Me._idKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Int NOT NULL")>  _
+	Public Property DonGia() As Integer
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me._DonGia = value
+			End If
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
 	Public Property idSanPham() As Integer
 		Get
@@ -21646,7 +19499,57 @@ Partial Public Class vwGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="Date NOT NULL")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
+	Public Property QuyCach() As Double
+		Get
+			Return Me._QuyCach
+		End Get
+		Set
+			If ((Me._QuyCach = value)  _
+						= false) Then
+				Me._QuyCach = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ThanhTien", DbType:="Float")>  _
+	Public Property ThanhTien() As System.Nullable(Of Double)
+		Get
+			Return Me._ThanhTien
+		End Get
+		Set
+			If (Me._ThanhTien.Equals(value) = false) Then
+				Me._ThanhTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
 	Public Property NgayLap() As Date
 		Get
 			Return Me._NgayLap
@@ -21659,80 +19562,27 @@ Partial Public Class vwGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChiPhiKhac", DbType:="Float NOT NULL")>  _
-	Public Property ChiPhiKhac() As Double
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
+	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
 		Get
-			Return Me._ChiPhiKhac
+			Return Me._NgayDuKienGiaoHang
 		End Get
 		Set
-			If ((Me._ChiPhiKhac = value)  _
-						= false) Then
-				Me._ChiPhiKhac = value
+			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
+				Me._NgayDuKienGiaoHang = value
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Int NOT NULL")>  _
-	Public Property SoLuong() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
 		Get
-			Return Me._SoLuong
+			Return Me._idKhachHang
 		End Get
 		Set
-			If ((Me._SoLuong = value)  _
+			If ((Me._idKhachHang = value)  _
 						= false) Then
-				Me._SoLuong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuNhap() As Integer
-		Get
-			Return Me._idPhieuNhap
-		End Get
-		Set
-			If ((Me._idPhieuNhap = value)  _
-						= false) Then
-				Me._idPhieuNhap = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuXuat() As Integer
-		Get
-			Return Me._idPhieuXuat
-		End Get
-		Set
-			If ((Me._idPhieuXuat = value)  _
-						= false) Then
-				Me._idPhieuXuat = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienLinhKien", DbType:="Float NOT NULL")>  _
-	Public Property TienLinhKien() As Double
-		Get
-			Return Me._TienLinhKien
-		End Get
-		Set
-			If ((Me._TienLinhKien = value)  _
-						= false) Then
-				Me._TienLinhKien = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienThanhPham", DbType:="Float NOT NULL")>  _
-	Public Property TienThanhPham() As Double
-		Get
-			Return Me._TienThanhPham
-		End Get
-		Set
-			If ((Me._TienThanhPham = value)  _
-						= false) Then
-				Me._TienThanhPham = value
+				Me._idKhachHang = value
 			End If
 		End Set
 	End Property
@@ -21750,14 +19600,15 @@ Partial Public Class vwGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(500)")>  _
-	Public Property GhiChu() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhauKhachHangDatHang", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhauKhachHangDatHang() As Double
 		Get
-			Return Me._GhiChu
+			Return Me._ChietKhauKhachHangDatHang
 		End Get
 		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
+			If ((Me._ChietKhauKhachHangDatHang = value)  _
+						= false) Then
+				Me._ChietKhauKhachHangDatHang = value
 			End If
 		End Set
 	End Property
@@ -21771,6 +19622,2947 @@ Partial Public Class vwGiaCong
 			If ((Me._SoPhieu = value)  _
 						= false) Then
 				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
+	Public Property DaLapHoaDon() As Boolean
+		Get
+			Return Me._DaLapHoaDon
+		End Get
+		Set
+			If ((Me._DaLapHoaDon = value)  _
+						= false) Then
+				Me._DaLapHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaSanPham() As String
+		Get
+			Return Me._MaSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaSanPham, value) = false) Then
+				Me._MaSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaVachSanPham", DbType:="NVarChar(50)")>  _
+	Public Property MaVachSanPham() As String
+		Get
+			Return Me._MaVachSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaVachSanPham, value) = false) Then
+				Me._MaVachSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenSanPham() As String
+		Get
+			Return Me._TenSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenSanPham, value) = false) Then
+				Me._TenSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50)")>  _
+	Public Property DonVi() As String
+		Get
+			Return Me._DonVi
+		End Get
+		Set
+			If (String.Equals(Me._DonVi, value) = false) Then
+				Me._DonVi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiSanPham() As Integer
+		Get
+			Return Me._idLoaiSanPham
+		End Get
+		Set
+			If ((Me._idLoaiSanPham = value)  _
+						= false) Then
+				Me._idLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenLoaiSanPham() As String
+		Get
+			Return Me._TenLoaiSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenLoaiSanPham, value) = false) Then
+				Me._TenLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaLoaiSanPham() As String
+		Get
+			Return Me._MaLoaiSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaLoaiSanPham, value) = false) Then
+				Me._MaLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
+	Public Property TheoDonVi() As Boolean
+		Get
+			Return Me._TheoDonVi
+		End Get
+		Set
+			If ((Me._TheoDonVi = value)  _
+						= false) Then
+				Me._TheoDonVi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me._isNhapHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Expr1", DbType:="NVarChar(50)")>  _
+	Public Property Expr1() As String
+		Get
+			Return Me._Expr1
+		End Get
+		Set
+			If (String.Equals(Me._Expr1, value) = false) Then
+				Me._Expr1 = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
+	Public Property GiaBan() As Double
+		Get
+			Return Me._GiaBan
+		End Get
+		Set
+			If ((Me._GiaBan = value)  _
+						= false) Then
+				Me._GiaBan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongConLai", DbType:="Float NOT NULL")>  _
+	Public Property SoLuongConLai() As Double
+		Get
+			Return Me._SoLuongConLai
+		End Get
+		Set
+			If ((Me._SoLuongConLai = value)  _
+						= false) Then
+				Me._SoLuongConLai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongDaGiao", DbType:="Float NOT NULL")>  _
+	Public Property SoLuongDaGiao() As Double
+		Get
+			Return Me._SoLuongDaGiao
+		End Get
+		Set
+			If ((Me._SoLuongDaGiao = value)  _
+						= false) Then
+				Me._SoLuongDaGiao = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwHoaDon")>  _
+Partial Public Class vwHoaDon
+	
+	Private _id As Decimal
+	
+	Private _NgayLap As Date
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoHoaDon As Integer
+	
+	Private _VAT As Integer
+	
+	Private _GhiChu As String
+	
+	Private _SoTienKhachDua As Decimal
+	
+	Private _TenDangNhap As String
+	
+	Private _TenNhanVien As String
+	
+	Private _MaKhachHang As String
+	
+	Private _TenKhachHang As String
+	
+	Private _DiaChi As String
+	
+	Private _SoDienThoai As String
+	
+	Private _MaSoThue As String
+	
+	Private _SoFAX As String
+	
+	Private _CongNoMax As Decimal
+	
+	Private _idNhomKhachHang As Integer
+	
+	Private _TenNhomKhachHang As String
+	
+	Private _idKhachHangDatHang As System.Nullable(Of Integer)
+	
+	Private _DiaChiGiaoHang As String
+	
+	Private _MucPhi As System.Nullable(Of Integer)
+	
+	Private _SoTienGiam As Decimal
+	
+	Private _GhiChuGiamTien As String
+	
+	Private _TienTruocThue As System.Nullable(Of Decimal)
+	
+	Private _idKhachHangHD As System.Nullable(Of Integer)
+	
+	Private _TenKhachHangHD As String
+	
+	Private _LoaiHD As Integer
+	
+	Private _TongVon As Double
+	
+	Private _CongTien As Double
+	
+	Private _TongTienChietKhau As Double
+	
+	Private _TongTienVAT As Decimal
+	
+	Private _TongTien As Double
+	
+	Private _TongTienDaThanhToan As Decimal
+	
+	Private _idHinhThucThanhToan As System.Nullable(Of Integer)
+	
+	Private _idNhanVienThuTien As System.Nullable(Of Integer)
+	
+	Private _MucPhiHoaDon As System.Nullable(Of Double)
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property id() As Decimal
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If ((Me._idKhachHang = value)  _
+						= false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoHoaDon", DbType:="Int NOT NULL")>  _
+	Public Property SoHoaDon() As Integer
+		Get
+			Return Me._SoHoaDon
+		End Get
+		Set
+			If ((Me._SoHoaDon = value)  _
+						= false) Then
+				Me._SoHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienKhachDua", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTienKhachDua() As Decimal
+		Get
+			Return Me._SoTienKhachDua
+		End Get
+		Set
+			If ((Me._SoTienKhachDua = value)  _
+						= false) Then
+				Me._SoTienKhachDua = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaKhachHang() As String
+		Get
+			Return Me._MaKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._MaKhachHang, value) = false) Then
+				Me._MaKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenKhachHang() As String
+		Get
+			Return Me._TenKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHang, value) = false) Then
+				Me._TenKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
+	Public Property MaSoThue() As String
+		Get
+			Return Me._MaSoThue
+		End Get
+		Set
+			If (String.Equals(Me._MaSoThue, value) = false) Then
+				Me._MaSoThue = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
+	Public Property SoFAX() As String
+		Get
+			Return Me._SoFAX
+		End Get
+		Set
+			If (String.Equals(Me._SoFAX, value) = false) Then
+				Me._SoFAX = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoMax", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property CongNoMax() As Decimal
+		Get
+			Return Me._CongNoMax
+		End Get
+		Set
+			If ((Me._CongNoMax = value)  _
+						= false) Then
+				Me._CongNoMax = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idNhomKhachHang() As Integer
+		Get
+			Return Me._idNhomKhachHang
+		End Get
+		Set
+			If ((Me._idNhomKhachHang = value)  _
+						= false) Then
+				Me._idNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhomKhachHang() As String
+		Get
+			Return Me._TenNhomKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
+				Me._TenNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
+	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If (Me._idKhachHangDatHang.Equals(value) = false) Then
+				Me._idKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
+	Public Property DiaChiGiaoHang() As String
+		Get
+			Return Me._DiaChiGiaoHang
+		End Get
+		Set
+			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
+				Me._DiaChiGiaoHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhi", DbType:="Int")>  _
+	Public Property MucPhi() As System.Nullable(Of Integer)
+		Get
+			Return Me._MucPhi
+		End Get
+		Set
+			If (Me._MucPhi.Equals(value) = false) Then
+				Me._MucPhi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienGiam", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTienGiam() As Decimal
+		Get
+			Return Me._SoTienGiam
+		End Get
+		Set
+			If ((Me._SoTienGiam = value)  _
+						= false) Then
+				Me._SoTienGiam = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChuGiamTien", DbType:="NVarChar(350)")>  _
+	Public Property GhiChuGiamTien() As String
+		Get
+			Return Me._GhiChuGiamTien
+		End Get
+		Set
+			If (String.Equals(Me._GhiChuGiamTien, value) = false) Then
+				Me._GhiChuGiamTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienTruocThue", DbType:="Decimal(18,0)")>  _
+	Public Property TienTruocThue() As System.Nullable(Of Decimal)
+		Get
+			Return Me._TienTruocThue
+		End Get
+		Set
+			If (Me._TienTruocThue.Equals(value) = false) Then
+				Me._TienTruocThue = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangHD", DbType:="Int")>  _
+	Public Property idKhachHangHD() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangHD
+		End Get
+		Set
+			If (Me._idKhachHangHD.Equals(value) = false) Then
+				Me._idKhachHangHD = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHangHD", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenKhachHangHD() As String
+		Get
+			Return Me._TenKhachHangHD
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHangHD, value) = false) Then
+				Me._TenKhachHangHD = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiHD", DbType:="Int NOT NULL")>  _
+	Public Property LoaiHD() As Integer
+		Get
+			Return Me._LoaiHD
+		End Get
+		Set
+			If ((Me._LoaiHD = value)  _
+						= false) Then
+				Me._LoaiHD = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
+	Public Property TongVon() As Double
+		Get
+			Return Me._TongVon
+		End Get
+		Set
+			If ((Me._TongVon = value)  _
+						= false) Then
+				Me._TongVon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
+	Public Property CongTien() As Double
+		Get
+			Return Me._CongTien
+		End Get
+		Set
+			If ((Me._CongTien = value)  _
+						= false) Then
+				Me._CongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property TongTienChietKhau() As Double
+		Get
+			Return Me._TongTienChietKhau
+		End Get
+		Set
+			If ((Me._TongTienChietKhau = value)  _
+						= false) Then
+				Me._TongTienChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Decimal(35,6) NOT NULL")>  _
+	Public Property TongTienVAT() As Decimal
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
+	Public Property TongTien() As Double
+		Get
+			Return Me._TongTien
+		End Get
+		Set
+			If ((Me._TongTien = value)  _
+						= false) Then
+				Me._TongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienDaThanhToan", DbType:="Decimal(38,0) NOT NULL")>  _
+	Public Property TongTienDaThanhToan() As Decimal
+		Get
+			Return Me._TongTienDaThanhToan
+		End Get
+		Set
+			If ((Me._TongTienDaThanhToan = value)  _
+						= false) Then
+				Me._TongTienDaThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idHinhThucThanhToan", DbType:="Int")>  _
+	Public Property idHinhThucThanhToan() As System.Nullable(Of Integer)
+		Get
+			Return Me._idHinhThucThanhToan
+		End Get
+		Set
+			If (Me._idHinhThucThanhToan.Equals(value) = false) Then
+				Me._idHinhThucThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVienThuTien", DbType:="Int")>  _
+	Public Property idNhanVienThuTien() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhanVienThuTien
+		End Get
+		Set
+			If (Me._idNhanVienThuTien.Equals(value) = false) Then
+				Me._idNhanVienThuTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MucPhiHoaDon", DbType:="Float")>  _
+	Public Property MucPhiHoaDon() As System.Nullable(Of Double)
+		Get
+			Return Me._MucPhiHoaDon
+		End Get
+		Set
+			If (Me._MucPhiHoaDon.Equals(value) = false) Then
+				Me._MucPhiHoaDon = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwKhachHang")>  _
+Partial Public Class vwKhachHang
+	
+	Private _id As Integer
+	
+	Private _MaKhachHang As String
+	
+	Private _TenKhachHang As String
+	
+	Private _DiaChi As String
+	
+	Private _SoDienThoai As String
+	
+	Private _Email As String
+	
+	Private _CongNoDauKy As Decimal
+	
+	Private _SoFAX As String
+	
+	Private _MaSoThue As String
+	
+	Private _NgayNhap As Date
+	
+	Private _CongNoMax As Decimal
+	
+	Private _NgayTraNo As Integer
+	
+	Private _TenKhachHangString As String
+	
+	Private _idNhomKhachHang As Integer
+	
+	Private _DiaChiGiaoHang As String
+	
+	Private _TenNhomKhachHang As String
+	
+	Private _TongTienHoaDon As Double
+	
+	Private _TongTienPhieuNhap As Double
+	
+	Private _TongTienPhieuXuat As Double
+	
+	Private _TongTienDaTra As Decimal
+	
+	Private _isNhaCungCap As System.Nullable(Of Boolean)
+	
+	Private _TenRutGon As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaKhachHang() As String
+		Get
+			Return Me._MaKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._MaKhachHang, value) = false) Then
+				Me._MaKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenKhachHang() As String
+		Get
+			Return Me._TenKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHang, value) = false) Then
+				Me._TenKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="NVarChar(150)")>  _
+	Public Property Email() As String
+		Get
+			Return Me._Email
+		End Get
+		Set
+			If (String.Equals(Me._Email, value) = false) Then
+				Me._Email = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoDauKy", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property CongNoDauKy() As Decimal
+		Get
+			Return Me._CongNoDauKy
+		End Get
+		Set
+			If ((Me._CongNoDauKy = value)  _
+						= false) Then
+				Me._CongNoDauKy = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
+	Public Property SoFAX() As String
+		Get
+			Return Me._SoFAX
+		End Get
+		Set
+			If (String.Equals(Me._SoFAX, value) = false) Then
+				Me._SoFAX = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
+	Public Property MaSoThue() As String
+		Get
+			Return Me._MaSoThue
+		End Get
+		Set
+			If (String.Equals(Me._MaSoThue, value) = false) Then
+				Me._MaSoThue = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayNhap() As Date
+		Get
+			Return Me._NgayNhap
+		End Get
+		Set
+			If ((Me._NgayNhap = value)  _
+						= false) Then
+				Me._NgayNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongNoMax", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property CongNoMax() As Decimal
+		Get
+			Return Me._CongNoMax
+		End Get
+		Set
+			If ((Me._CongNoMax = value)  _
+						= false) Then
+				Me._CongNoMax = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayTraNo", DbType:="Int NOT NULL")>  _
+	Public Property NgayTraNo() As Integer
+		Get
+			Return Me._NgayTraNo
+		End Get
+		Set
+			If ((Me._NgayTraNo = value)  _
+						= false) Then
+				Me._NgayTraNo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHangString", DbType:="NVarChar(500)")>  _
+	Public Property TenKhachHangString() As String
+		Get
+			Return Me._TenKhachHangString
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHangString, value) = false) Then
+				Me._TenKhachHangString = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idNhomKhachHang() As Integer
+		Get
+			Return Me._idNhomKhachHang
+		End Get
+		Set
+			If ((Me._idNhomKhachHang = value)  _
+						= false) Then
+				Me._idNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
+	Public Property DiaChiGiaoHang() As String
+		Get
+			Return Me._DiaChiGiaoHang
+		End Get
+		Set
+			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
+				Me._DiaChiGiaoHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhomKhachHang() As String
+		Get
+			Return Me._TenNhomKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
+				Me._TenNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienHoaDon", DbType:="Float NOT NULL")>  _
+	Public Property TongTienHoaDon() As Double
+		Get
+			Return Me._TongTienHoaDon
+		End Get
+		Set
+			If ((Me._TongTienHoaDon = value)  _
+						= false) Then
+				Me._TongTienHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuNhap", DbType:="Float NOT NULL")>  _
+	Public Property TongTienPhieuNhap() As Double
+		Get
+			Return Me._TongTienPhieuNhap
+		End Get
+		Set
+			If ((Me._TongTienPhieuNhap = value)  _
+						= false) Then
+				Me._TongTienPhieuNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuXuat", DbType:="Float NOT NULL")>  _
+	Public Property TongTienPhieuXuat() As Double
+		Get
+			Return Me._TongTienPhieuXuat
+		End Get
+		Set
+			If ((Me._TongTienPhieuXuat = value)  _
+						= false) Then
+				Me._TongTienPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienDaTra", DbType:="Decimal(38,0) NOT NULL")>  _
+	Public Property TongTienDaTra() As Decimal
+		Get
+			Return Me._TongTienDaTra
+		End Get
+		Set
+			If ((Me._TongTienDaTra = value)  _
+						= false) Then
+				Me._TongTienDaTra = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhaCungCap", DbType:="Bit")>  _
+	Public Property isNhaCungCap() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhaCungCap
+		End Get
+		Set
+			If (Me._isNhaCungCap.Equals(value) = false) Then
+				Me._isNhaCungCap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenRutGon", DbType:="NVarChar(130)")>  _
+	Public Property TenRutGon() As String
+		Get
+			Return Me._TenRutGon
+		End Get
+		Set
+			If (String.Equals(Me._TenRutGon, value) = false) Then
+				Me._TenRutGon = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwKhachHangDatHang")>  _
+Partial Public Class vwKhachHangDatHang
+	
+	Private _id As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
+	
+	Private _DiaChiGiaoHang As String
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoPhieu As Integer
+	
+	Private _VAT As Integer
+	
+	Private _GhiChu As String
+	
+	Private _TenNhanVien As String
+	
+	Private _MaKhachHang As String
+	
+	Private _TenKhachHang As String
+	
+	Private _DiaChi As String
+	
+	Private _SoDienThoai As String
+	
+	Private _MaSoThue As String
+	
+	Private _SoFAX As String
+	
+	Private _CongTrinh As String
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _idBaoGia As System.Nullable(Of Integer)
+	
+	Private _isGiaoHangXong As Integer
+	
+	Private _TongVon As Double
+	
+	Private _CongTien As Double
+	
+	Private _TongTienChietKhau As Double
+	
+	Private _TongTienVAT As Double
+	
+	Private _TongTien As Double
+	
+	Private _DaLapHoaDon As Boolean
+	
+	Private _SoLanDaGiao As System.Nullable(Of Integer)
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
+	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayDuKienGiaoHang
+		End Get
+		Set
+			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
+				Me._NgayDuKienGiaoHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChiGiaoHang", DbType:="NVarChar(500)")>  _
+	Public Property DiaChiGiaoHang() As String
+		Get
+			Return Me._DiaChiGiaoHang
+		End Get
+		Set
+			If (String.Equals(Me._DiaChiGiaoHang, value) = false) Then
+				Me._DiaChiGiaoHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If ((Me._idKhachHang = value)  _
+						= false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaKhachHang() As String
+		Get
+			Return Me._MaKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._MaKhachHang, value) = false) Then
+				Me._MaKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenKhachHang() As String
+		Get
+			Return Me._TenKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHang, value) = false) Then
+				Me._TenKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
+	Public Property MaSoThue() As String
+		Get
+			Return Me._MaSoThue
+		End Get
+		Set
+			If (String.Equals(Me._MaSoThue, value) = false) Then
+				Me._MaSoThue = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
+	Public Property SoFAX() As String
+		Get
+			Return Me._SoFAX
+		End Get
+		Set
+			If (String.Equals(Me._SoFAX, value) = false) Then
+				Me._SoFAX = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
+	Public Property CongTrinh() As String
+		Get
+			Return Me._CongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._CongTrinh, value) = false) Then
+				Me._CongTrinh = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me._isNhapHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int")>  _
+	Public Property idBaoGia() As System.Nullable(Of Integer)
+		Get
+			Return Me._idBaoGia
+		End Get
+		Set
+			If (Me._idBaoGia.Equals(value) = false) Then
+				Me._idBaoGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaoHangXong", DbType:="Int NOT NULL")>  _
+	Public Property isGiaoHangXong() As Integer
+		Get
+			Return Me._isGiaoHangXong
+		End Get
+		Set
+			If ((Me._isGiaoHangXong = value)  _
+						= false) Then
+				Me._isGiaoHangXong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
+	Public Property TongVon() As Double
+		Get
+			Return Me._TongVon
+		End Get
+		Set
+			If ((Me._TongVon = value)  _
+						= false) Then
+				Me._TongVon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
+	Public Property CongTien() As Double
+		Get
+			Return Me._CongTien
+		End Get
+		Set
+			If ((Me._CongTien = value)  _
+						= false) Then
+				Me._CongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property TongTienChietKhau() As Double
+		Get
+			Return Me._TongTienChietKhau
+		End Get
+		Set
+			If ((Me._TongTienChietKhau = value)  _
+						= false) Then
+				Me._TongTienChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienVAT() As Double
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
+	Public Property TongTien() As Double
+		Get
+			Return Me._TongTien
+		End Get
+		Set
+			If ((Me._TongTien = value)  _
+						= false) Then
+				Me._TongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
+	Public Property DaLapHoaDon() As Boolean
+		Get
+			Return Me._DaLapHoaDon
+		End Get
+		Set
+			If ((Me._DaLapHoaDon = value)  _
+						= false) Then
+				Me._DaLapHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLanDaGiao", DbType:="Int")>  _
+	Public Property SoLanDaGiao() As System.Nullable(Of Integer)
+		Get
+			Return Me._SoLanDaGiao
+		End Get
+		Set
+			If (Me._SoLanDaGiao.Equals(value) = false) Then
+				Me._SoLanDaGiao = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhanQuyen")>  _
+Partial Public Class vwPhanQuyen
+	
+	Private _idNhanVien As Integer
+	
+	Private _idQuyen As Integer
+	
+	Private _TenControl As String
+	
+	Private _TrangThai As Boolean
+	
+	Private _id As Integer
+	
+	Private _HinhThuc As Integer
+	
+	Private _TheLoai As Integer
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idQuyen", DbType:="Int NOT NULL")>  _
+	Public Property idQuyen() As Integer
+		Get
+			Return Me._idQuyen
+		End Get
+		Set
+			If ((Me._idQuyen = value)  _
+						= false) Then
+				Me._idQuyen = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenControl", DbType:="NVarChar(250)")>  _
+	Public Property TenControl() As String
+		Get
+			Return Me._TenControl
+		End Get
+		Set
+			If (String.Equals(Me._TenControl, value) = false) Then
+				Me._TenControl = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TrangThai", DbType:="Bit NOT NULL")>  _
+	Public Property TrangThai() As Boolean
+		Get
+			Return Me._TrangThai
+		End Get
+		Set
+			If ((Me._TrangThai = value)  _
+						= false) Then
+				Me._TrangThai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThuc", DbType:="Int NOT NULL")>  _
+	Public Property HinhThuc() As Integer
+		Get
+			Return Me._HinhThuc
+		End Get
+		Set
+			If ((Me._HinhThuc = value)  _
+						= false) Then
+				Me._HinhThuc = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheLoai", DbType:="Int NOT NULL")>  _
+	Public Property TheLoai() As Integer
+		Get
+			Return Me._TheLoai
+		End Get
+		Set
+			If ((Me._TheLoai = value)  _
+						= false) Then
+				Me._TheLoai = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuChi")>  _
+Partial Public Class vwPhieuChi
+	
+	Private _id As Integer
+	
+	Private _SoPhieu As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _TenNguoiNhan As String
+	
+	Private _DiaChi As String
+	
+	Private _LyDo As String
+	
+	Private _HinhThucThanhToan As String
+	
+	Private _SoTien As Decimal
+	
+	Private _ChungTuKemTheo As String
+	
+	Private _idNhanVien As Integer
+	
+	Private _TenDangNhap As String
+	
+	Private _TenNhanVien As String
+	
+	Private _idPhieuNhap As System.Nullable(Of Integer)
+	
+	Private _NguoiChiTien As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNguoiNhan", DbType:="NVarChar(350)")>  _
+	Public Property TenNguoiNhan() As String
+		Get
+			Return Me._TenNguoiNhan
+		End Get
+		Set
+			If (String.Equals(Me._TenNguoiNhan, value) = false) Then
+				Me._TenNguoiNhan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(350)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LyDo", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property LyDo() As String
+		Get
+			Return Me._LyDo
+		End Get
+		Set
+			If (String.Equals(Me._LyDo, value) = false) Then
+				Me._LyDo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property HinhThucThanhToan() As String
+		Get
+			Return Me._HinhThucThanhToan
+		End Get
+		Set
+			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
+				Me._HinhThucThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTien", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTien() As Decimal
+		Get
+			Return Me._SoTien
+		End Get
+		Set
+			If ((Me._SoTien = value)  _
+						= false) Then
+				Me._SoTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChungTuKemTheo", DbType:="NVarChar(50)")>  _
+	Public Property ChungTuKemTheo() As String
+		Get
+			Return Me._ChungTuKemTheo
+		End Get
+		Set
+			If (String.Equals(Me._ChungTuKemTheo, value) = false) Then
+				Me._ChungTuKemTheo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int")>  _
+	Public Property idPhieuNhap() As System.Nullable(Of Integer)
+		Get
+			Return Me._idPhieuNhap
+		End Get
+		Set
+			If (Me._idPhieuNhap.Equals(value) = false) Then
+				Me._idPhieuNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NguoiChiTien", DbType:="NVarChar(250)")>  _
+	Public Property NguoiChiTien() As String
+		Get
+			Return Me._NguoiChiTien
+		End Get
+		Set
+			If (String.Equals(Me._NguoiChiTien, value) = false) Then
+				Me._NguoiChiTien = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuNhap")>  _
+Partial Public Class vwPhieuNhap
+	
+	Private _id As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _idNhanVien As Integer
+	
+	Private _GhiChu As String
+	
+	Private _idLoaiPhieuNhap As Integer
+	
+	Private _isHoaDon As System.Nullable(Of Boolean)
+	
+	Private _idNhaCungCap As System.Nullable(Of Integer)
+	
+	Private _VAT As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _SoPhieu As Integer
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _SoNgayNo As Integer
+	
+	Private _LoaiPhieuNhap As String
+	
+	Private _Loai As Integer
+	
+	Private _TenNhanVien As String
+	
+	Private _TenDangNhap As String
+	
+	Private _MaKhachHang As String
+	
+	Private _TenKhachHang As String
+	
+	Private _idNhomKhachHang As System.Nullable(Of Integer)
+	
+	Private _TenNhomKhachHang As String
+	
+	Private _idNguoiLienHe As System.Nullable(Of Integer)
+	
+	Private _isThanhToan As System.Nullable(Of Boolean)
+	
+	Private _idKhachHangDatHang As System.Nullable(Of Integer)
+	
+	Private _TongVon As Double
+	
+	Private _SoLuong As Double
+	
+	Private _CongTien As Double
+	
+	Private _TongTienChietKhau As Double
+	
+	Private _TongTienTruocVAT As Double
+	
+	Private _TongTienVAT As Double
+	
+	Private _TongTienPhieuNhap As Double
+	
+	Private _SoTienThanhToan As Decimal
+	
+	Private _TenNhaCungCap As String
+	
+	Private _SoDienThoai As String
+	
+	Private _DiaChi As String
+	
+	Private _DaChiTienMat As System.Nullable(Of Integer)
+	
+	Private _GiaVonTraHang As Double
+	
+	Private _TongTienBanHang As Double
+	
+	Private _GiaoLanThu As System.Nullable(Of Integer)
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuNhap", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiPhieuNhap() As Integer
+		Get
+			Return Me._idLoaiPhieuNhap
+		End Get
+		Set
+			If ((Me._idLoaiPhieuNhap = value)  _
+						= false) Then
+				Me._idLoaiPhieuNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
+	Public Property isHoaDon() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isHoaDon
+		End Get
+		Set
+			If (Me._isHoaDon.Equals(value) = false) Then
+				Me._isHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhaCungCap", DbType:="Int")>  _
+	Public Property idNhaCungCap() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhaCungCap
+		End Get
+		Set
+			If (Me._idNhaCungCap.Equals(value) = false) Then
+				Me._idNhaCungCap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoNgayNo", DbType:="Int NOT NULL")>  _
+	Public Property SoNgayNo() As Integer
+		Get
+			Return Me._SoNgayNo
+		End Get
+		Set
+			If ((Me._SoNgayNo = value)  _
+						= false) Then
+				Me._SoNgayNo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiPhieuNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property LoaiPhieuNhap() As String
+		Get
+			Return Me._LoaiPhieuNhap
+		End Get
+		Set
+			If (String.Equals(Me._LoaiPhieuNhap, value) = false) Then
+				Me._LoaiPhieuNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
+	Public Property Loai() As Integer
+		Get
+			Return Me._Loai
+		End Get
+		Set
+			If ((Me._Loai = value)  _
+						= false) Then
+				Me._Loai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150)")>  _
+	Public Property MaKhachHang() As String
+		Get
+			Return Me._MaKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._MaKhachHang, value) = false) Then
+				Me._MaKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500)")>  _
+	Public Property TenKhachHang() As String
+		Get
+			Return Me._TenKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHang, value) = false) Then
+				Me._TenKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhomKhachHang", DbType:="Int")>  _
+	Public Property idNhomKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNhomKhachHang
+		End Get
+		Set
+			If (Me._idNhomKhachHang.Equals(value) = false) Then
+				Me._idNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhomKhachHang", DbType:="NVarChar(250)")>  _
+	Public Property TenNhomKhachHang() As String
+		Get
+			Return Me._TenNhomKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenNhomKhachHang, value) = false) Then
+				Me._TenNhomKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNguoiLienHe", DbType:="Int")>  _
+	Public Property idNguoiLienHe() As System.Nullable(Of Integer)
+		Get
+			Return Me._idNguoiLienHe
+		End Get
+		Set
+			If (Me._idNguoiLienHe.Equals(value) = false) Then
+				Me._idNguoiLienHe = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
+	Public Property isThanhToan() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isThanhToan
+		End Get
+		Set
+			If (Me._isThanhToan.Equals(value) = false) Then
+				Me._isThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
+	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If (Me._idKhachHangDatHang.Equals(value) = false) Then
+				Me._idKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
+	Public Property TongVon() As Double
+		Get
+			Return Me._TongVon
+		End Get
+		Set
+			If ((Me._TongVon = value)  _
+						= false) Then
+				Me._TongVon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
+	Public Property CongTien() As Double
+		Get
+			Return Me._CongTien
+		End Get
+		Set
+			If ((Me._CongTien = value)  _
+						= false) Then
+				Me._CongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property TongTienChietKhau() As Double
+		Get
+			Return Me._TongTienChietKhau
+		End Get
+		Set
+			If ((Me._TongTienChietKhau = value)  _
+						= false) Then
+				Me._TongTienChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienTruocVAT() As Double
+		Get
+			Return Me._TongTienTruocVAT
+		End Get
+		Set
+			If ((Me._TongTienTruocVAT = value)  _
+						= false) Then
+				Me._TongTienTruocVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienVAT() As Double
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuNhap", DbType:="Float NOT NULL")>  _
+	Public Property TongTienPhieuNhap() As Double
+		Get
+			Return Me._TongTienPhieuNhap
+		End Get
+		Set
+			If ((Me._TongTienPhieuNhap = value)  _
+						= false) Then
+				Me._TongTienPhieuNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTienThanhToan", DbType:="Decimal(38,0) NOT NULL")>  _
+	Public Property SoTienThanhToan() As Decimal
+		Get
+			Return Me._SoTienThanhToan
+		End Get
+		Set
+			If ((Me._SoTienThanhToan = value)  _
+						= false) Then
+				Me._SoTienThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhaCungCap", DbType:="NVarChar(500)")>  _
+	Public Property TenNhaCungCap() As String
+		Get
+			Return Me._TenNhaCungCap
+		End Get
+		Set
+			If (String.Equals(Me._TenNhaCungCap, value) = false) Then
+				Me._TenNhaCungCap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaChiTienMat", DbType:="Int")>  _
+	Public Property DaChiTienMat() As System.Nullable(Of Integer)
+		Get
+			Return Me._DaChiTienMat
+		End Get
+		Set
+			If (Me._DaChiTienMat.Equals(value) = false) Then
+				Me._DaChiTienMat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaVonTraHang", DbType:="Float NOT NULL")>  _
+	Public Property GiaVonTraHang() As Double
+		Get
+			Return Me._GiaVonTraHang
+		End Get
+		Set
+			If ((Me._GiaVonTraHang = value)  _
+						= false) Then
+				Me._GiaVonTraHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienBanHang", DbType:="Float NOT NULL")>  _
+	Public Property TongTienBanHang() As Double
+		Get
+			Return Me._TongTienBanHang
+		End Get
+		Set
+			If ((Me._TongTienBanHang = value)  _
+						= false) Then
+				Me._TongTienBanHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaoLanThu", DbType:="Int")>  _
+	Public Property GiaoLanThu() As System.Nullable(Of Integer)
+		Get
+			Return Me._GiaoLanThu
+		End Get
+		Set
+			If (Me._GiaoLanThu.Equals(value) = false) Then
+				Me._GiaoLanThu = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuThu")>  _
+Partial Public Class vwPhieuThu
+	
+	Private _id As Integer
+	
+	Private _SoPhieu As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _TenNguoiNop As String
+	
+	Private _DiaChi As String
+	
+	Private _LyDo As String
+	
+	Private _HinhThucThanhToan As String
+	
+	Private _SoTien As Decimal
+	
+	Private _ChungTuKemTheo As String
+	
+	Private _idNhanVien As Integer
+	
+	Private _TenDangNhap As String
+	
+	Private _TenNhanVien As String
+	
+	Private _idPhieuXuat As System.Nullable(Of Integer)
+	
+	Private _NguoiNhanTien As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNguoiNop", DbType:="NVarChar(350)")>  _
+	Public Property TenNguoiNop() As String
+		Get
+			Return Me._TenNguoiNop
+		End Get
+		Set
+			If (String.Equals(Me._TenNguoiNop, value) = false) Then
+				Me._TenNguoiNop = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(350)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LyDo", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property LyDo() As String
+		Get
+			Return Me._LyDo
+		End Get
+		Set
+			If (String.Equals(Me._LyDo, value) = false) Then
+				Me._LyDo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhThucThanhToan", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+	Public Property HinhThucThanhToan() As String
+		Get
+			Return Me._HinhThucThanhToan
+		End Get
+		Set
+			If (String.Equals(Me._HinhThucThanhToan, value) = false) Then
+				Me._HinhThucThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoTien", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property SoTien() As Decimal
+		Get
+			Return Me._SoTien
+		End Get
+		Set
+			If ((Me._SoTien = value)  _
+						= false) Then
+				Me._SoTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChungTuKemTheo", DbType:="NVarChar(50)")>  _
+	Public Property ChungTuKemTheo() As String
+		Get
+			Return Me._ChungTuKemTheo
+		End Get
+		Set
+			If (String.Equals(Me._ChungTuKemTheo, value) = false) Then
+				Me._ChungTuKemTheo = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
+	Public Property idPhieuXuat() As System.Nullable(Of Integer)
+		Get
+			Return Me._idPhieuXuat
+		End Get
+		Set
+			If (Me._idPhieuXuat.Equals(value) = false) Then
+				Me._idPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NguoiNhanTien", DbType:="NVarChar(250)")>  _
+	Public Property NguoiNhanTien() As String
+		Get
+			Return Me._NguoiNhanTien
+		End Get
+		Set
+			If (String.Equals(Me._NguoiNhanTien, value) = false) Then
+				Me._NguoiNhanTien = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwPhieuXuat")>  _
+Partial Public Class vwPhieuXuat
+	
+	Private _id As Integer
+	
+	Private _SoPhieuXuat As Integer
+	
+	Private _NgayLap As Date
+	
+	Private _idNhanVien As Integer
+	
+	Private _idLoaiPhieuXuat As Integer
+	
+	Private _GhiChu As String
+	
+	Private _idKhachHang As System.Nullable(Of Integer)
+	
+	Private _TenDangNhap As String
+	
+	Private _TenNhanVien As String
+	
+	Private _LoaiPhieuXuat As String
+	
+	Private _TenCongTrinh As String
+	
+	Private _HanThanhToan As System.Nullable(Of Date)
+	
+	Private _isThanhToan As System.Nullable(Of Boolean)
+	
+	Private _isHoaDon As System.Nullable(Of Boolean)
+	
+	Private _idKhachHangDatHang As System.Nullable(Of Integer)
+	
+	Private _TongTienTruocVAT As Double
+	
+	Private _TongTienVAT As Double
+	
+	Private _TongTienPhieuXuat As Double
+	
+	Private _TenNhaCungCap As String
+	
+	Private _SoDienThoai As String
+	
+	Private _DiaChi As String
+	
+	Private _SoLuong As Double
+	
+	Private _DaThuTienMat As System.Nullable(Of Integer)
+	
+	Private _DaXuatHoaDon As System.Nullable(Of Integer)
+	
+	Private _GiaoLanThu As System.Nullable(Of Integer)
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieuXuat", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieuXuat() As Integer
+		Get
+			Return Me._SoPhieuXuat
+		End Get
+		Set
+			If ((Me._SoPhieuXuat = value)  _
+						= false) Then
+				Me._SoPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiPhieuXuat", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiPhieuXuat() As Integer
+		Get
+			Return Me._idLoaiPhieuXuat
+		End Get
+		Set
+			If ((Me._idLoaiPhieuXuat = value)  _
+						= false) Then
+				Me._idLoaiPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(350)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
+	Public Property idKhachHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If (Me._idKhachHang.Equals(value) = false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenDangNhap", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenDangNhap() As String
+		Get
+			Return Me._TenDangNhap
+		End Get
+		Set
+			If (String.Equals(Me._TenDangNhap, value) = false) Then
+				Me._TenDangNhap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiPhieuXuat", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property LoaiPhieuXuat() As String
+		Get
+			Return Me._LoaiPhieuXuat
+		End Get
+		Set
+			If (String.Equals(Me._LoaiPhieuXuat, value) = false) Then
+				Me._LoaiPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(200)")>  _
+	Public Property TenCongTrinh() As String
+		Get
+			Return Me._TenCongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._TenCongTrinh, value) = false) Then
+				Me._TenCongTrinh = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HanThanhToan", DbType:="DateTime")>  _
+	Public Property HanThanhToan() As System.Nullable(Of Date)
+		Get
+			Return Me._HanThanhToan
+		End Get
+		Set
+			If (Me._HanThanhToan.Equals(value) = false) Then
+				Me._HanThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isThanhToan", DbType:="Bit")>  _
+	Public Property isThanhToan() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isThanhToan
+		End Get
+		Set
+			If (Me._isThanhToan.Equals(value) = false) Then
+				Me._isThanhToan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isHoaDon", DbType:="Bit")>  _
+	Public Property isHoaDon() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isHoaDon
+		End Get
+		Set
+			If (Me._isHoaDon.Equals(value) = false) Then
+				Me._isHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int")>  _
+	Public Property idKhachHangDatHang() As System.Nullable(Of Integer)
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If (Me._idKhachHangDatHang.Equals(value) = false) Then
+				Me._idKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienTruocVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienTruocVAT() As Double
+		Get
+			Return Me._TongTienTruocVAT
+		End Get
+		Set
+			If ((Me._TongTienTruocVAT = value)  _
+						= false) Then
+				Me._TongTienTruocVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienVAT() As Double
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienPhieuXuat", DbType:="Float NOT NULL")>  _
+	Public Property TongTienPhieuXuat() As Double
+		Get
+			Return Me._TongTienPhieuXuat
+		End Get
+		Set
+			If ((Me._TongTienPhieuXuat = value)  _
+						= false) Then
+				Me._TongTienPhieuXuat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhaCungCap", DbType:="NVarChar(500)")>  _
+	Public Property TenNhaCungCap() As String
+		Get
+			Return Me._TenNhaCungCap
+		End Get
+		Set
+			If (String.Equals(Me._TenNhaCungCap, value) = false) Then
+				Me._TenNhaCungCap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaThuTienMat", DbType:="Int")>  _
+	Public Property DaThuTienMat() As System.Nullable(Of Integer)
+		Get
+			Return Me._DaThuTienMat
+		End Get
+		Set
+			If (Me._DaThuTienMat.Equals(value) = false) Then
+				Me._DaThuTienMat = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaXuatHoaDon", DbType:="Int")>  _
+	Public Property DaXuatHoaDon() As System.Nullable(Of Integer)
+		Get
+			Return Me._DaXuatHoaDon
+		End Get
+		Set
+			If (Me._DaXuatHoaDon.Equals(value) = false) Then
+				Me._DaXuatHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaoLanThu", DbType:="Int")>  _
+	Public Property GiaoLanThu() As System.Nullable(Of Integer)
+		Get
+			Return Me._GiaoLanThu
+		End Get
+		Set
+			If (Me._GiaoLanThu.Equals(value) = false) Then
+				Me._GiaoLanThu = value
 			End If
 		End Set
 	End Property
@@ -21792,17 +22584,21 @@ Partial Public Class tbGiaCong
 	
 	Private _SoLuong As Integer
 	
-	Private _idPhieuNhap As Integer
-	
-	Private _idPhieuXuat As Integer
-	
 	Private _idNhanVien As Integer
 	
-	Private _GhiChu As String
+	Private _idPhieuNhap As System.Nullable(Of Integer)
+	
+	Private _idPhieuXuat As System.Nullable(Of Integer)
 	
 	Private _SoPhieu As Integer
 	
+	Private _TienLinhKien As Decimal
+	
+	Private _TienThanhPham As Decimal
+	
 	Private _tbGiaCongSanPhams As EntitySet(Of tbGiaCongSanPham)
+	
+	Private _tbNhanVien As EntityRef(Of tbNhanVien)
 	
 	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
 	
@@ -21837,31 +22633,36 @@ Partial Public Class tbGiaCong
     End Sub
     Partial Private Sub OnSoLuongChanged()
     End Sub
-    Partial Private Sub OnidPhieuNhapChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidPhieuNhapChanged()
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidPhieuXuatChanged()
-    End Sub
     Partial Private Sub OnidNhanVienChanging(value As Integer)
     End Sub
     Partial Private Sub OnidNhanVienChanged()
     End Sub
-    Partial Private Sub OnGhiChuChanging(value As String)
+    Partial Private Sub OnidPhieuNhapChanging(value As System.Nullable(Of Integer))
     End Sub
-    Partial Private Sub OnGhiChuChanged()
+    Partial Private Sub OnidPhieuNhapChanged()
+    End Sub
+    Partial Private Sub OnidPhieuXuatChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnidPhieuXuatChanged()
     End Sub
     Partial Private Sub OnSoPhieuChanging(value As Integer)
     End Sub
     Partial Private Sub OnSoPhieuChanged()
+    End Sub
+    Partial Private Sub OnTienLinhKienChanging(value As Decimal)
+    End Sub
+    Partial Private Sub OnTienLinhKienChanged()
+    End Sub
+    Partial Private Sub OnTienThanhPhamChanging(value As Decimal)
+    End Sub
+    Partial Private Sub OnTienThanhPhamChanged()
     End Sub
     #End Region
 	
 	Public Sub New()
 		MyBase.New
 		Me._tbGiaCongSanPhams = New EntitySet(Of tbGiaCongSanPham)(AddressOf Me.attach_tbGiaCongSanPhams, AddressOf Me.detach_tbGiaCongSanPhams)
+		Me._tbNhanVien = CType(Nothing, EntityRef(Of tbNhanVien))
 		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
 		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
 		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
@@ -21956,14 +22757,33 @@ Partial Public Class tbGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuNhap() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				If Me._tbNhanVien.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidNhanVienChanging(value)
+				Me.SendPropertyChanging
+				Me._idNhanVien = value
+				Me.SendPropertyChanged("idNhanVien")
+				Me.OnidNhanVienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int")>  _
+	Public Property idPhieuNhap() As System.Nullable(Of Integer)
 		Get
 			Return Me._idPhieuNhap
 		End Get
 		Set
-			If ((Me._idPhieuNhap = value)  _
-						= false) Then
+			If (Me._idPhieuNhap.Equals(value) = false) Then
 				If Me._tbPhieuNhap.HasLoadedOrAssignedValue Then
 					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 				End If
@@ -21976,14 +22796,13 @@ Partial Public Class tbGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int NOT NULL")>  _
-	Public Property idPhieuXuat() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
+	Public Property idPhieuXuat() As System.Nullable(Of Integer)
 		Get
 			Return Me._idPhieuXuat
 		End Get
 		Set
-			If ((Me._idPhieuXuat = value)  _
-						= false) Then
+			If (Me._idPhieuXuat.Equals(value) = false) Then
 				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
 					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 				End If
@@ -21992,39 +22811,6 @@ Partial Public Class tbGiaCong
 				Me._idPhieuXuat = value
 				Me.SendPropertyChanged("idPhieuXuat")
 				Me.OnidPhieuXuatChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
-	Public Property idNhanVien() As Integer
-		Get
-			Return Me._idNhanVien
-		End Get
-		Set
-			If ((Me._idNhanVien = value)  _
-						= false) Then
-				Me.OnidNhanVienChanging(value)
-				Me.SendPropertyChanging
-				Me._idNhanVien = value
-				Me.SendPropertyChanged("idNhanVien")
-				Me.OnidNhanVienChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(500)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me.OnGhiChuChanging(value)
-				Me.SendPropertyChanging
-				Me._GhiChu = value
-				Me.SendPropertyChanged("GhiChu")
-				Me.OnGhiChuChanged
 			End If
 		End Set
 	End Property
@@ -22046,6 +22832,40 @@ Partial Public Class tbGiaCong
 		End Set
 	End Property
 	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienLinhKien", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property TienLinhKien() As Decimal
+		Get
+			Return Me._TienLinhKien
+		End Get
+		Set
+			If ((Me._TienLinhKien = value)  _
+						= false) Then
+				Me.OnTienLinhKienChanging(value)
+				Me.SendPropertyChanging
+				Me._TienLinhKien = value
+				Me.SendPropertyChanged("TienLinhKien")
+				Me.OnTienLinhKienChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienThanhPham", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property TienThanhPham() As Decimal
+		Get
+			Return Me._TienThanhPham
+		End Get
+		Set
+			If ((Me._TienThanhPham = value)  _
+						= false) Then
+				Me.OnTienThanhPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._TienThanhPham = value
+				Me.SendPropertyChanged("TienThanhPham")
+				Me.OnTienThanhPhamChanged
+			End If
+		End Set
+	End Property
+	
 	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbGiaCong_tbGiaCongSanPham", Storage:="_tbGiaCongSanPhams", ThisKey:="id", OtherKey:="idSanPhamGiaCong")>  _
 	Public Property tbGiaCongSanPhams() As EntitySet(Of tbGiaCongSanPham)
 		Get
@@ -22056,7 +22876,35 @@ Partial Public Class tbGiaCong
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbGiaCong", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbNhanVien_tbGiaCong", Storage:="_tbNhanVien", ThisKey:="idNhanVien", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbNhanVien() As tbNhanVien
+		Get
+			Return Me._tbNhanVien.Entity
+		End Get
+		Set
+			Dim previousValue As tbNhanVien = Me._tbNhanVien.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbNhanVien.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbNhanVien.Entity = Nothing
+					previousValue.tbGiaCongs.Remove(Me)
+				End If
+				Me._tbNhanVien.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbGiaCongs.Add(Me)
+					Me._idNhanVien = value.id
+				Else
+					Me._idNhanVien = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbNhanVien")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbGiaCong", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbPhieuNhap() As tbPhieuNhap
 		Get
 			Return Me._tbPhieuNhap.Entity
@@ -22077,14 +22925,14 @@ Partial Public Class tbGiaCong
 					value.tbGiaCongs.Add(Me)
 					Me._idPhieuNhap = value.id
 				Else
-					Me._idPhieuNhap = CType(Nothing, Integer)
+					Me._idPhieuNhap = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbPhieuNhap")
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbGiaCong", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbGiaCong", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true)>  _
 	Public Property tbPhieuXuat() As tbPhieuXuat
 		Get
 			Return Me._tbPhieuXuat.Entity
@@ -22105,7 +22953,7 @@ Partial Public Class tbGiaCong
 					value.tbGiaCongs.Add(Me)
 					Me._idPhieuXuat = value.id
 				Else
-					Me._idPhieuXuat = CType(Nothing, Integer)
+					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
 				End If
 				Me.SendPropertyChanged("tbPhieuXuat")
 			End If
@@ -22169,978 +23017,26 @@ Partial Public Class tbGiaCong
 	End Sub
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbSanPham")>  _
-Partial Public Class tbSanPham
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _id As Integer
-	
-	Private _MaSanPham As String
-	
-	Private _MaVachSanPham As String
-	
-	Private _TenSanPham As String
-	
-	Private _DonVi As String
-	
-	Private _GiaBinhQuan As Double
-	
-	Private _SoLuong As Double
-	
-	Private _idLoaiSanPham As Integer
-	
-	Private _HetBan As Boolean
-	
-	Private _HinhAnh As System.Data.Linq.Binary
-	
-	Private _MoTa As String
-	
-	Private _NgayTao As Date
-	
-	Private _TonMin As Integer
-	
-	Private _MaSanPhamString As String
-	
-	Private _TenSanPhamString As String
-	
-	Private _GiaQuyCach As Double
-	
-	Private _QuyCach As Double
-	
-	Private _DonViQuyCach As String
-	
-	Private _GiaNhapQuyCach As Double
-	
-	Private _isGiaCong As System.Nullable(Of Boolean)
-	
-	Private _isSeri As System.Nullable(Of Boolean)
-	
-	Private _PhanTramBan As Double
-	
-	Private _PhanTramNhap As Double
-	
-	Private _GiaNiemYet As Double
-	
-	Private _TenTrenHoaDon As String
-	
-	Private _NgayNiemYet As Date
-	
-	Private _KhoiLuongRieng As System.Nullable(Of Double)
-	
-	Private _KyHieuKho As String
-	
-	Private _ThoiGianBaoHanh As System.Nullable(Of Integer)
-	
-	Private _isDanhMuc As System.Nullable(Of Boolean)
-	
-	Private _isKhongTinhTonKho As System.Nullable(Of Boolean)
-	
-	Private _tbChiTietHoaDons As EntitySet(Of tbChiTietHoaDon)
-	
-	Private _tbChiTietPhieuNhaps As EntitySet(Of tbChiTietPhieuNhap)
-	
-	Private _tbChiTietPhieuXuats As EntitySet(Of tbChiTietPhieuXuat)
-	
-	Private _tbChiTietKhachHangDatHangs As EntitySet(Of tbChiTietKhachHangDatHang)
-	
-	Private _tbChiTietBaoGias As EntitySet(Of tbChiTietBaoGia)
-	
-	Private _tbGiaCongSanPhams As EntitySet(Of tbGiaCongSanPham)
-	
-	Private _tbGiaCongs As EntitySet(Of tbGiaCong)
-	
-	Private _tbLoaiSanPham As EntityRef(Of tbLoaiSanPham)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidChanged()
-    End Sub
-    Partial Private Sub OnMaSanPhamChanging(value As String)
-    End Sub
-    Partial Private Sub OnMaSanPhamChanged()
-    End Sub
-    Partial Private Sub OnMaVachSanPhamChanging(value As String)
-    End Sub
-    Partial Private Sub OnMaVachSanPhamChanged()
-    End Sub
-    Partial Private Sub OnTenSanPhamChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenSanPhamChanged()
-    End Sub
-    Partial Private Sub OnDonViChanging(value As String)
-    End Sub
-    Partial Private Sub OnDonViChanged()
-    End Sub
-    Partial Private Sub OnGiaBinhQuanChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaBinhQuanChanged()
-    End Sub
-    Partial Private Sub OnSoLuongChanging(value As Double)
-    End Sub
-    Partial Private Sub OnSoLuongChanged()
-    End Sub
-    Partial Private Sub OnidLoaiSanPhamChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnidLoaiSanPhamChanged()
-    End Sub
-    Partial Private Sub OnHetBanChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnHetBanChanged()
-    End Sub
-    Partial Private Sub OnHinhAnhChanging(value As System.Data.Linq.Binary)
-    End Sub
-    Partial Private Sub OnHinhAnhChanged()
-    End Sub
-    Partial Private Sub OnMoTaChanging(value As String)
-    End Sub
-    Partial Private Sub OnMoTaChanged()
-    End Sub
-    Partial Private Sub OnNgayTaoChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayTaoChanged()
-    End Sub
-    Partial Private Sub OnTonMinChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnTonMinChanged()
-    End Sub
-    Partial Private Sub OnMaSanPhamStringChanging(value As String)
-    End Sub
-    Partial Private Sub OnMaSanPhamStringChanged()
-    End Sub
-    Partial Private Sub OnTenSanPhamStringChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenSanPhamStringChanged()
-    End Sub
-    Partial Private Sub OnGiaQuyCachChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaQuyCachChanged()
-    End Sub
-    Partial Private Sub OnQuyCachChanging(value As Double)
-    End Sub
-    Partial Private Sub OnQuyCachChanged()
-    End Sub
-    Partial Private Sub OnDonViQuyCachChanging(value As String)
-    End Sub
-    Partial Private Sub OnDonViQuyCachChanged()
-    End Sub
-    Partial Private Sub OnGiaNhapQuyCachChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaNhapQuyCachChanged()
-    End Sub
-    Partial Private Sub OnisGiaCongChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisGiaCongChanged()
-    End Sub
-    Partial Private Sub OnisSeriChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisSeriChanged()
-    End Sub
-    Partial Private Sub OnPhanTramBanChanging(value As Double)
-    End Sub
-    Partial Private Sub OnPhanTramBanChanged()
-    End Sub
-    Partial Private Sub OnPhanTramNhapChanging(value As Double)
-    End Sub
-    Partial Private Sub OnPhanTramNhapChanged()
-    End Sub
-    Partial Private Sub OnGiaNiemYetChanging(value As Double)
-    End Sub
-    Partial Private Sub OnGiaNiemYetChanged()
-    End Sub
-    Partial Private Sub OnTenTrenHoaDonChanging(value As String)
-    End Sub
-    Partial Private Sub OnTenTrenHoaDonChanged()
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanging(value As Date)
-    End Sub
-    Partial Private Sub OnNgayNiemYetChanged()
-    End Sub
-    Partial Private Sub OnKhoiLuongRiengChanging(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnKhoiLuongRiengChanged()
-    End Sub
-    Partial Private Sub OnKyHieuKhoChanging(value As String)
-    End Sub
-    Partial Private Sub OnKyHieuKhoChanged()
-    End Sub
-    Partial Private Sub OnThoiGianBaoHanhChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnThoiGianBaoHanhChanged()
-    End Sub
-    Partial Private Sub OnisDanhMucChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisDanhMucChanged()
-    End Sub
-    Partial Private Sub OnisKhongTinhTonKhoChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnisKhongTinhTonKhoChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._tbChiTietHoaDons = New EntitySet(Of tbChiTietHoaDon)(AddressOf Me.attach_tbChiTietHoaDons, AddressOf Me.detach_tbChiTietHoaDons)
-		Me._tbChiTietPhieuNhaps = New EntitySet(Of tbChiTietPhieuNhap)(AddressOf Me.attach_tbChiTietPhieuNhaps, AddressOf Me.detach_tbChiTietPhieuNhaps)
-		Me._tbChiTietPhieuXuats = New EntitySet(Of tbChiTietPhieuXuat)(AddressOf Me.attach_tbChiTietPhieuXuats, AddressOf Me.detach_tbChiTietPhieuXuats)
-		Me._tbChiTietKhachHangDatHangs = New EntitySet(Of tbChiTietKhachHangDatHang)(AddressOf Me.attach_tbChiTietKhachHangDatHangs, AddressOf Me.detach_tbChiTietKhachHangDatHangs)
-		Me._tbChiTietBaoGias = New EntitySet(Of tbChiTietBaoGia)(AddressOf Me.attach_tbChiTietBaoGias, AddressOf Me.detach_tbChiTietBaoGias)
-		Me._tbGiaCongSanPhams = New EntitySet(Of tbGiaCongSanPham)(AddressOf Me.attach_tbGiaCongSanPhams, AddressOf Me.detach_tbGiaCongSanPhams)
-		Me._tbGiaCongs = New EntitySet(Of tbGiaCong)(AddressOf Me.attach_tbGiaCongs, AddressOf Me.detach_tbGiaCongs)
-		Me._tbLoaiSanPham = CType(Nothing, EntityRef(Of tbLoaiSanPham))
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property id() As Integer
-		Get
-			Return Me._id
-		End Get
-		Set
-			If ((Me._id = value)  _
-						= false) Then
-				Me.OnidChanging(value)
-				Me.SendPropertyChanging
-				Me._id = value
-				Me.SendPropertyChanged("id")
-				Me.OnidChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
-	Public Property MaSanPham() As String
-		Get
-			Return Me._MaSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaSanPham, value) = false) Then
-				Me.OnMaSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._MaSanPham = value
-				Me.SendPropertyChanged("MaSanPham")
-				Me.OnMaSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaVachSanPham", DbType:="NVarChar(50)")>  _
-	Public Property MaVachSanPham() As String
-		Get
-			Return Me._MaVachSanPham
-		End Get
-		Set
-			If (String.Equals(Me._MaVachSanPham, value) = false) Then
-				Me.OnMaVachSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._MaVachSanPham = value
-				Me.SendPropertyChanged("MaVachSanPham")
-				Me.OnMaVachSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenSanPham() As String
-		Get
-			Return Me._TenSanPham
-		End Get
-		Set
-			If (String.Equals(Me._TenSanPham, value) = false) Then
-				Me.OnTenSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._TenSanPham = value
-				Me.SendPropertyChanged("TenSanPham")
-				Me.OnTenSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-	Public Property DonVi() As String
-		Get
-			Return Me._DonVi
-		End Get
-		Set
-			If (String.Equals(Me._DonVi, value) = false) Then
-				Me.OnDonViChanging(value)
-				Me.SendPropertyChanging
-				Me._DonVi = value
-				Me.SendPropertyChanged("DonVi")
-				Me.OnDonViChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBinhQuan", DbType:="Float NOT NULL")>  _
-	Public Property GiaBinhQuan() As Double
-		Get
-			Return Me._GiaBinhQuan
-		End Get
-		Set
-			If ((Me._GiaBinhQuan = value)  _
-						= false) Then
-				Me.OnGiaBinhQuanChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaBinhQuan = value
-				Me.SendPropertyChanged("GiaBinhQuan")
-				Me.OnGiaBinhQuanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me.OnSoLuongChanging(value)
-				Me.SendPropertyChanging
-				Me._SoLuong = value
-				Me.SendPropertyChanged("SoLuong")
-				Me.OnSoLuongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiSanPham", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiSanPham() As Integer
-		Get
-			Return Me._idLoaiSanPham
-		End Get
-		Set
-			If ((Me._idLoaiSanPham = value)  _
-						= false) Then
-				If Me._tbLoaiSanPham.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnidLoaiSanPhamChanging(value)
-				Me.SendPropertyChanging
-				Me._idLoaiSanPham = value
-				Me.SendPropertyChanged("idLoaiSanPham")
-				Me.OnidLoaiSanPhamChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HetBan", DbType:="Bit NOT NULL")>  _
-	Public Property HetBan() As Boolean
-		Get
-			Return Me._HetBan
-		End Get
-		Set
-			If ((Me._HetBan = value)  _
-						= false) Then
-				Me.OnHetBanChanging(value)
-				Me.SendPropertyChanging
-				Me._HetBan = value
-				Me.SendPropertyChanged("HetBan")
-				Me.OnHetBanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_HinhAnh", DbType:="VarBinary(MAX)", UpdateCheck:=UpdateCheck.Never)>  _
-	Public Property HinhAnh() As System.Data.Linq.Binary
-		Get
-			Return Me._HinhAnh
-		End Get
-		Set
-			If (Object.Equals(Me._HinhAnh, value) = false) Then
-				Me.OnHinhAnhChanging(value)
-				Me.SendPropertyChanging
-				Me._HinhAnh = value
-				Me.SendPropertyChanged("HinhAnh")
-				Me.OnHinhAnhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NVarChar(250)")>  _
-	Public Property MoTa() As String
-		Get
-			Return Me._MoTa
-		End Get
-		Set
-			If (String.Equals(Me._MoTa, value) = false) Then
-				Me.OnMoTaChanging(value)
-				Me.SendPropertyChanging
-				Me._MoTa = value
-				Me.SendPropertyChanged("MoTa")
-				Me.OnMoTaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayTao", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayTao() As Date
-		Get
-			Return Me._NgayTao
-		End Get
-		Set
-			If ((Me._NgayTao = value)  _
-						= false) Then
-				Me.OnNgayTaoChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayTao = value
-				Me.SendPropertyChanged("NgayTao")
-				Me.OnNgayTaoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TonMin", DbType:="Int NOT NULL")>  _
-	Public Property TonMin() As Integer
-		Get
-			Return Me._TonMin
-		End Get
-		Set
-			If ((Me._TonMin = value)  _
-						= false) Then
-				Me.OnTonMinChanging(value)
-				Me.SendPropertyChanging
-				Me._TonMin = value
-				Me.SendPropertyChanged("TonMin")
-				Me.OnTonMinChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPhamString", DbType:="NVarChar(250)")>  _
-	Public Property MaSanPhamString() As String
-		Get
-			Return Me._MaSanPhamString
-		End Get
-		Set
-			If (String.Equals(Me._MaSanPhamString, value) = false) Then
-				Me.OnMaSanPhamStringChanging(value)
-				Me.SendPropertyChanging
-				Me._MaSanPhamString = value
-				Me.SendPropertyChanged("MaSanPhamString")
-				Me.OnMaSanPhamStringChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPhamString", DbType:="NVarChar(350)")>  _
-	Public Property TenSanPhamString() As String
-		Get
-			Return Me._TenSanPhamString
-		End Get
-		Set
-			If (String.Equals(Me._TenSanPhamString, value) = false) Then
-				Me.OnTenSanPhamStringChanging(value)
-				Me.SendPropertyChanging
-				Me._TenSanPhamString = value
-				Me.SendPropertyChanged("TenSanPhamString")
-				Me.OnTenSanPhamStringChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaQuyCach", DbType:="Float NOT NULL")>  _
-	Public Property GiaQuyCach() As Double
-		Get
-			Return Me._GiaQuyCach
-		End Get
-		Set
-			If ((Me._GiaQuyCach = value)  _
-						= false) Then
-				Me.OnGiaQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaQuyCach = value
-				Me.SendPropertyChanged("GiaQuyCach")
-				Me.OnGiaQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
-	Public Property QuyCach() As Double
-		Get
-			Return Me._QuyCach
-		End Get
-		Set
-			If ((Me._QuyCach = value)  _
-						= false) Then
-				Me.OnQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._QuyCach = value
-				Me.SendPropertyChanged("QuyCach")
-				Me.OnQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonViQuyCach", DbType:="NVarChar(50)")>  _
-	Public Property DonViQuyCach() As String
-		Get
-			Return Me._DonViQuyCach
-		End Get
-		Set
-			If (String.Equals(Me._DonViQuyCach, value) = false) Then
-				Me.OnDonViQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._DonViQuyCach = value
-				Me.SendPropertyChanged("DonViQuyCach")
-				Me.OnDonViQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNhapQuyCach", DbType:="Float NOT NULL")>  _
-	Public Property GiaNhapQuyCach() As Double
-		Get
-			Return Me._GiaNhapQuyCach
-		End Get
-		Set
-			If ((Me._GiaNhapQuyCach = value)  _
-						= false) Then
-				Me.OnGiaNhapQuyCachChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaNhapQuyCach = value
-				Me.SendPropertyChanged("GiaNhapQuyCach")
-				Me.OnGiaNhapQuyCachChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaCong", DbType:="Bit")>  _
-	Public Property isGiaCong() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isGiaCong
-		End Get
-		Set
-			If (Me._isGiaCong.Equals(value) = false) Then
-				Me.OnisGiaCongChanging(value)
-				Me.SendPropertyChanging
-				Me._isGiaCong = value
-				Me.SendPropertyChanged("isGiaCong")
-				Me.OnisGiaCongChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isSeri", DbType:="Bit")>  _
-	Public Property isSeri() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isSeri
-		End Get
-		Set
-			If (Me._isSeri.Equals(value) = false) Then
-				Me.OnisSeriChanging(value)
-				Me.SendPropertyChanging
-				Me._isSeri = value
-				Me.SendPropertyChanged("isSeri")
-				Me.OnisSeriChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PhanTramBan", DbType:="Float NOT NULL")>  _
-	Public Property PhanTramBan() As Double
-		Get
-			Return Me._PhanTramBan
-		End Get
-		Set
-			If ((Me._PhanTramBan = value)  _
-						= false) Then
-				Me.OnPhanTramBanChanging(value)
-				Me.SendPropertyChanging
-				Me._PhanTramBan = value
-				Me.SendPropertyChanged("PhanTramBan")
-				Me.OnPhanTramBanChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PhanTramNhap", DbType:="Float NOT NULL")>  _
-	Public Property PhanTramNhap() As Double
-		Get
-			Return Me._PhanTramNhap
-		End Get
-		Set
-			If ((Me._PhanTramNhap = value)  _
-						= false) Then
-				Me.OnPhanTramNhapChanging(value)
-				Me.SendPropertyChanging
-				Me._PhanTramNhap = value
-				Me.SendPropertyChanged("PhanTramNhap")
-				Me.OnPhanTramNhapChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
-	Public Property GiaNiemYet() As Double
-		Get
-			Return Me._GiaNiemYet
-		End Get
-		Set
-			If ((Me._GiaNiemYet = value)  _
-						= false) Then
-				Me.OnGiaNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._GiaNiemYet = value
-				Me.SendPropertyChanged("GiaNiemYet")
-				Me.OnGiaNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenTrenHoaDon", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenTrenHoaDon() As String
-		Get
-			Return Me._TenTrenHoaDon
-		End Get
-		Set
-			If (String.Equals(Me._TenTrenHoaDon, value) = false) Then
-				Me.OnTenTrenHoaDonChanging(value)
-				Me.SendPropertyChanging
-				Me._TenTrenHoaDon = value
-				Me.SendPropertyChanged("TenTrenHoaDon")
-				Me.OnTenTrenHoaDonChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="DateTime NOT NULL")>  _
-	Public Property NgayNiemYet() As Date
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If ((Me._NgayNiemYet = value)  _
-						= false) Then
-				Me.OnNgayNiemYetChanging(value)
-				Me.SendPropertyChanging
-				Me._NgayNiemYet = value
-				Me.SendPropertyChanged("NgayNiemYet")
-				Me.OnNgayNiemYetChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KhoiLuongRieng", DbType:="Float")>  _
-	Public Property KhoiLuongRieng() As System.Nullable(Of Double)
-		Get
-			Return Me._KhoiLuongRieng
-		End Get
-		Set
-			If (Me._KhoiLuongRieng.Equals(value) = false) Then
-				Me.OnKhoiLuongRiengChanging(value)
-				Me.SendPropertyChanging
-				Me._KhoiLuongRieng = value
-				Me.SendPropertyChanged("KhoiLuongRieng")
-				Me.OnKhoiLuongRiengChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_KyHieuKho", DbType:="NChar(20)")>  _
-	Public Property KyHieuKho() As String
-		Get
-			Return Me._KyHieuKho
-		End Get
-		Set
-			If (String.Equals(Me._KyHieuKho, value) = false) Then
-				Me.OnKyHieuKhoChanging(value)
-				Me.SendPropertyChanging
-				Me._KyHieuKho = value
-				Me.SendPropertyChanged("KyHieuKho")
-				Me.OnKyHieuKhoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ThoiGianBaoHanh", DbType:="Int")>  _
-	Public Property ThoiGianBaoHanh() As System.Nullable(Of Integer)
-		Get
-			Return Me._ThoiGianBaoHanh
-		End Get
-		Set
-			If (Me._ThoiGianBaoHanh.Equals(value) = false) Then
-				Me.OnThoiGianBaoHanhChanging(value)
-				Me.SendPropertyChanging
-				Me._ThoiGianBaoHanh = value
-				Me.SendPropertyChanged("ThoiGianBaoHanh")
-				Me.OnThoiGianBaoHanhChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhMuc", DbType:="Bit")>  _
-	Public Property isDanhMuc() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isDanhMuc
-		End Get
-		Set
-			If (Me._isDanhMuc.Equals(value) = false) Then
-				Me.OnisDanhMucChanging(value)
-				Me.SendPropertyChanging
-				Me._isDanhMuc = value
-				Me.SendPropertyChanged("isDanhMuc")
-				Me.OnisDanhMucChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isKhongTinhTonKho", DbType:="Bit")>  _
-	Public Property isKhongTinhTonKho() As System.Nullable(Of Boolean)
-		Get
-			Return Me._isKhongTinhTonKho
-		End Get
-		Set
-			If (Me._isKhongTinhTonKho.Equals(value) = false) Then
-				Me.OnisKhongTinhTonKhoChanging(value)
-				Me.SendPropertyChanging
-				Me._isKhongTinhTonKho = value
-				Me.SendPropertyChanged("isKhongTinhTonKho")
-				Me.OnisKhongTinhTonKhoChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietHoaDon", Storage:="_tbChiTietHoaDons", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbChiTietHoaDons() As EntitySet(Of tbChiTietHoaDon)
-		Get
-			Return Me._tbChiTietHoaDons
-		End Get
-		Set
-			Me._tbChiTietHoaDons.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuNhap", Storage:="_tbChiTietPhieuNhaps", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbChiTietPhieuNhaps() As EntitySet(Of tbChiTietPhieuNhap)
-		Get
-			Return Me._tbChiTietPhieuNhaps
-		End Get
-		Set
-			Me._tbChiTietPhieuNhaps.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietPhieuXuat", Storage:="_tbChiTietPhieuXuats", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbChiTietPhieuXuats() As EntitySet(Of tbChiTietPhieuXuat)
-		Get
-			Return Me._tbChiTietPhieuXuats
-		End Get
-		Set
-			Me._tbChiTietPhieuXuats.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietKhachHangDatHang", Storage:="_tbChiTietKhachHangDatHangs", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbChiTietKhachHangDatHangs() As EntitySet(Of tbChiTietKhachHangDatHang)
-		Get
-			Return Me._tbChiTietKhachHangDatHangs
-		End Get
-		Set
-			Me._tbChiTietKhachHangDatHangs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietBaoGia", Storage:="_tbChiTietBaoGias", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbChiTietBaoGias() As EntitySet(Of tbChiTietBaoGia)
-		Get
-			Return Me._tbChiTietBaoGias
-		End Get
-		Set
-			Me._tbChiTietBaoGias.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCongSanPham", Storage:="_tbGiaCongSanPhams", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbGiaCongSanPhams() As EntitySet(Of tbGiaCongSanPham)
-		Get
-			Return Me._tbGiaCongSanPhams
-		End Get
-		Set
-			Me._tbGiaCongSanPhams.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbGiaCong", Storage:="_tbGiaCongs", ThisKey:="id", OtherKey:="idSanPham")>  _
-	Public Property tbGiaCongs() As EntitySet(Of tbGiaCong)
-		Get
-			Return Me._tbGiaCongs
-		End Get
-		Set
-			Me._tbGiaCongs.Assign(value)
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiSanPham_tbSanPham", Storage:="_tbLoaiSanPham", ThisKey:="idLoaiSanPham", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
-	Public Property tbLoaiSanPham() As tbLoaiSanPham
-		Get
-			Return Me._tbLoaiSanPham.Entity
-		End Get
-		Set
-			Dim previousValue As tbLoaiSanPham = Me._tbLoaiSanPham.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._tbLoaiSanPham.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._tbLoaiSanPham.Entity = Nothing
-					previousValue.tbSanPhams.Remove(Me)
-				End If
-				Me._tbLoaiSanPham.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.tbSanPhams.Add(Me)
-					Me._idLoaiSanPham = value.id
-				Else
-					Me._idLoaiSanPham = CType(Nothing, Integer)
-				End If
-				Me.SendPropertyChanged("tbLoaiSanPham")
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietHoaDons(ByVal entity As tbChiTietHoaDon)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietPhieuNhaps(ByVal entity As tbChiTietPhieuNhap)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietPhieuXuats(ByVal entity As tbChiTietPhieuXuat)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietKhachHangDatHangs(ByVal entity As tbChiTietKhachHangDatHang)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbChiTietBaoGias(ByVal entity As tbChiTietBaoGia)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbGiaCongSanPhams(ByVal entity As tbGiaCongSanPham)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbGiaCongSanPhams(ByVal entity As tbGiaCongSanPham)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-	
-	Private Sub attach_tbGiaCongs(ByVal entity As tbGiaCong)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Me
-	End Sub
-	
-	Private Sub detach_tbGiaCongs(ByVal entity As tbGiaCong)
-		Me.SendPropertyChanging
-		entity.tbSanPham = Nothing
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwChiTietBaoGia")>  _
-Partial Public Class vwChiTietBaoGia
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwGiaCong")>  _
+Partial Public Class vwGiaCong
 	
 	Private _id As Integer
 	
 	Private _idSanPham As Integer
 	
-	Private _GiaNiemYet As Double
-	
-	Private _idBaoGia As Integer
-	
-	Private _GhiChu As String
-	
-	Private _SoLuong As Double
-	
-	Private _ChietKhau As System.Nullable(Of Double)
-	
-	Private _NgayNiemYet As System.Nullable(Of Date)
-	
-	Private _TenLoaiBaoGia As String
-	
-	Private _Loai As Integer
-	
 	Private _NgayLap As Date
 	
-	Private _SoPhieu As Integer
+	Private _ChiPhiKhac As Double
 	
-	Private _TenNhanVien As String
+	Private _SoLuong As Integer
 	
 	Private _idNhanVien As Integer
 	
-	Private _isNhapHang As System.Nullable(Of Boolean)
+	Private _idPhieuNhap As System.Nullable(Of Integer)
 	
-	Private _idKhachHang As System.Nullable(Of Integer)
+	Private _idPhieuXuat As System.Nullable(Of Integer)
 	
-	Private _idTrangThai As Integer
-	
-	Private _idLoaiBaoGia As Integer
-	
-	Private _TenCongTrinh As String
-	
-	Private _DonGia As Double
+	Private _SoPhieu As Integer
 	
 	Private _MaSanPham As String
 	
@@ -23148,9 +23044,9 @@ Partial Public Class vwChiTietBaoGia
 	
 	Private _DonVi As String
 	
-	Private _isDanhMuc As System.Nullable(Of Boolean)
+	Private _TienLinhKien As Decimal
 	
-	Private _isKhongTinhTonKho As System.Nullable(Of Boolean)
+	Private _TienThanhPham As Decimal
 	
 	Public Sub New()
 		MyBase.New
@@ -23182,107 +23078,7 @@ Partial Public Class vwChiTietBaoGia
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaNiemYet", DbType:="Float NOT NULL")>  _
-	Public Property GiaNiemYet() As Double
-		Get
-			Return Me._GiaNiemYet
-		End Get
-		Set
-			If ((Me._GiaNiemYet = value)  _
-						= false) Then
-				Me._GiaNiemYet = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idBaoGia", DbType:="Int NOT NULL")>  _
-	Public Property idBaoGia() As Integer
-		Get
-			Return Me._idBaoGia
-		End Get
-		Set
-			If ((Me._idBaoGia = value)  _
-						= false) Then
-				Me._idBaoGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
-	Public Property GhiChu() As String
-		Get
-			Return Me._GhiChu
-		End Get
-		Set
-			If (String.Equals(Me._GhiChu, value) = false) Then
-				Me._GhiChu = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
-	Public Property SoLuong() As Double
-		Get
-			Return Me._SoLuong
-		End Get
-		Set
-			If ((Me._SoLuong = value)  _
-						= false) Then
-				Me._SoLuong = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float")>  _
-	Public Property ChietKhau() As System.Nullable(Of Double)
-		Get
-			Return Me._ChietKhau
-		End Get
-		Set
-			If (Me._ChietKhau.Equals(value) = false) Then
-				Me._ChietKhau = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date")>  _
-	Public Property NgayNiemYet() As System.Nullable(Of Date)
-		Get
-			Return Me._NgayNiemYet
-		End Get
-		Set
-			If (Me._NgayNiemYet.Equals(value) = false) Then
-				Me._NgayNiemYet = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiBaoGia", DbType:="NVarChar(120) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenLoaiBaoGia() As String
-		Get
-			Return Me._TenLoaiBaoGia
-		End Get
-		Set
-			If (String.Equals(Me._TenLoaiBaoGia, value) = false) Then
-				Me._TenLoaiBaoGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
-	Public Property Loai() As Integer
-		Get
-			Return Me._Loai
-		End Get
-		Set
-			If ((Me._Loai = value)  _
-						= false) Then
-				Me._Loai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="Date NOT NULL")>  _
 	Public Property NgayLap() As Date
 		Get
 			Return Me._NgayLap
@@ -23295,27 +23091,28 @@ Partial Public Class vwChiTietBaoGia
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
-	Public Property SoPhieu() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChiPhiKhac", DbType:="Float NOT NULL")>  _
+	Public Property ChiPhiKhac() As Double
 		Get
-			Return Me._SoPhieu
+			Return Me._ChiPhiKhac
 		End Get
 		Set
-			If ((Me._SoPhieu = value)  _
+			If ((Me._ChiPhiKhac = value)  _
 						= false) Then
-				Me._SoPhieu = value
+				Me._ChiPhiKhac = value
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property TenNhanVien() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Int NOT NULL")>  _
+	Public Property SoLuong() As Integer
 		Get
-			Return Me._TenNhanVien
+			Return Me._SoLuong
 		End Get
 		Set
-			If (String.Equals(Me._TenNhanVien, value) = false) Then
-				Me._TenNhanVien = value
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
 			End If
 		End Set
 	End Property
@@ -23333,77 +23130,39 @@ Partial Public Class vwChiTietBaoGia
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
-	Public Property isNhapHang() As System.Nullable(Of Boolean)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int")>  _
+	Public Property idPhieuNhap() As System.Nullable(Of Integer)
 		Get
-			Return Me._isNhapHang
+			Return Me._idPhieuNhap
 		End Get
 		Set
-			If (Me._isNhapHang.Equals(value) = false) Then
-				Me._isNhapHang = value
+			If (Me._idPhieuNhap.Equals(value) = false) Then
+				Me._idPhieuNhap = value
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int")>  _
-	Public Property idKhachHang() As System.Nullable(Of Integer)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
+	Public Property idPhieuXuat() As System.Nullable(Of Integer)
 		Get
-			Return Me._idKhachHang
+			Return Me._idPhieuXuat
 		End Get
 		Set
-			If (Me._idKhachHang.Equals(value) = false) Then
-				Me._idKhachHang = value
+			If (Me._idPhieuXuat.Equals(value) = false) Then
+				Me._idPhieuXuat = value
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTrangThai", DbType:="Int NOT NULL")>  _
-	Public Property idTrangThai() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
 		Get
-			Return Me._idTrangThai
+			Return Me._SoPhieu
 		End Get
 		Set
-			If ((Me._idTrangThai = value)  _
+			If ((Me._SoPhieu = value)  _
 						= false) Then
-				Me._idTrangThai = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiBaoGia", DbType:="Int NOT NULL")>  _
-	Public Property idLoaiBaoGia() As Integer
-		Get
-			Return Me._idLoaiBaoGia
-		End Get
-		Set
-			If ((Me._idLoaiBaoGia = value)  _
-						= false) Then
-				Me._idLoaiBaoGia = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenCongTrinh", DbType:="NVarChar(400)")>  _
-	Public Property TenCongTrinh() As String
-		Get
-			Return Me._TenCongTrinh
-		End Get
-		Set
-			If (String.Equals(Me._TenCongTrinh, value) = false) Then
-				Me._TenCongTrinh = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Float NOT NULL")>  _
-	Public Property DonGia() As Double
-		Get
-			Return Me._DonGia
-		End Get
-		Set
-			If ((Me._DonGia = value)  _
-						= false) Then
-				Me._DonGia = value
+				Me._SoPhieu = value
 			End If
 		End Set
 	End Property
@@ -23444,46 +23203,737 @@ Partial Public Class vwChiTietBaoGia
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhMuc", DbType:="Bit")>  _
-	Public Property isDanhMuc() As System.Nullable(Of Boolean)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienLinhKien", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property TienLinhKien() As Decimal
 		Get
-			Return Me._isDanhMuc
+			Return Me._TienLinhKien
 		End Get
 		Set
-			If (Me._isDanhMuc.Equals(value) = false) Then
-				Me._isDanhMuc = value
+			If ((Me._TienLinhKien = value)  _
+						= false) Then
+				Me._TienLinhKien = value
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isKhongTinhTonKho", DbType:="Bit")>  _
-	Public Property isKhongTinhTonKho() As System.Nullable(Of Boolean)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TienThanhPham", DbType:="Decimal(18,0) NOT NULL")>  _
+	Public Property TienThanhPham() As Decimal
 		Get
-			Return Me._isKhongTinhTonKho
+			Return Me._TienThanhPham
 		End Get
 		Set
-			If (Me._isKhongTinhTonKho.Equals(value) = false) Then
-				Me._isKhongTinhTonKho = value
+			If ((Me._TienThanhPham = value)  _
+						= false) Then
+				Me._TienThanhPham = value
 			End If
 		End Set
 	End Property
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbLoaiPhieuThu")>  _
-Partial Public Class tbLoaiPhieuThu
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.vwChiTietKhachHangDatHang")>  _
+Partial Public Class vwChiTietKhachHangDatHang
+	
+	Private _id As Integer
+	
+	Private _idKhachHangDatHang As Integer
+	
+	Private _SoLuong As Double
+	
+	Private _NgayNiemYet As Date
+	
+	Private _DonGia As Integer
+	
+	Private _idSanPham As Integer
+	
+	Private _ChietKhau As Double
+	
+	Private _GhiChu As String
+	
+	Private _QuyCach As Double
+	
+	Private _ThanhTien As System.Nullable(Of Double)
+	
+	Private _NgayLap As Date
+	
+	Private _NgayDuKienGiaoHang As System.Nullable(Of Date)
+	
+	Private _idKhachHang As Integer
+	
+	Private _idNhanVien As Integer
+	
+	Private _ChietKhauKhachHangDatHang As Double
+	
+	Private _SoPhieu As Integer
+	
+	Private _VAT As Integer
+	
+	Private _TenNhanVien As String
+	
+	Private _MaKhachHang As String
+	
+	Private _TenKhachHang As String
+	
+	Private _DiaChi As String
+	
+	Private _MaSoThue As String
+	
+	Private _SoFAX As String
+	
+	Private _SoDienThoai As String
+	
+	Private _TongVon As Double
+	
+	Private _CongTien As Double
+	
+	Private _TongTienChietKhau As Double
+	
+	Private _TongTienVAT As Double
+	
+	Private _TongTien As Double
+	
+	Private _DaLapHoaDon As Boolean
+	
+	Private _MaSanPham As String
+	
+	Private _MaVachSanPham As String
+	
+	Private _TenSanPham As String
+	
+	Private _DonVi As String
+	
+	Private _idLoaiSanPham As Integer
+	
+	Private _TenLoaiSanPham As String
+	
+	Private _MaLoaiSanPham As String
+	
+	Private _TheoDonVi As Boolean
+	
+	Private _isNhapHang As System.Nullable(Of Boolean)
+	
+	Private _CongTrinh As String
+	
+	Private _STT As Integer
+	
+	Private _isGiaoHangXong As Integer
+	
+	Private _Expr1 As String
+	
+	Private _GiaBan As Double
+	
+	Private _SoLuongConLai As Double
+	
+	Private _SoLuongDaGiao As Double
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_id", DbType:="Int NOT NULL")>  _
+	Public Property id() As Integer
+		Get
+			Return Me._id
+		End Get
+		Set
+			If ((Me._id = value)  _
+						= false) Then
+				Me._id = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHangDatHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHangDatHang() As Integer
+		Get
+			Return Me._idKhachHangDatHang
+		End Get
+		Set
+			If ((Me._idKhachHangDatHang = value)  _
+						= false) Then
+				Me._idKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuong", DbType:="Float NOT NULL")>  _
+	Public Property SoLuong() As Double
+		Get
+			Return Me._SoLuong
+		End Get
+		Set
+			If ((Me._SoLuong = value)  _
+						= false) Then
+				Me._SoLuong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNiemYet", DbType:="Date NOT NULL")>  _
+	Public Property NgayNiemYet() As Date
+		Get
+			Return Me._NgayNiemYet
+		End Get
+		Set
+			If ((Me._NgayNiemYet = value)  _
+						= false) Then
+				Me._NgayNiemYet = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonGia", DbType:="Int NOT NULL")>  _
+	Public Property DonGia() As Integer
+		Get
+			Return Me._DonGia
+		End Get
+		Set
+			If ((Me._DonGia = value)  _
+						= false) Then
+				Me._DonGia = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				Me._idSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhau() As Double
+		Get
+			Return Me._ChietKhau
+		End Get
+		Set
+			If ((Me._ChietKhau = value)  _
+						= false) Then
+				Me._ChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GhiChu", DbType:="NVarChar(250)")>  _
+	Public Property GhiChu() As String
+		Get
+			Return Me._GhiChu
+		End Get
+		Set
+			If (String.Equals(Me._GhiChu, value) = false) Then
+				Me._GhiChu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_QuyCach", DbType:="Float NOT NULL")>  _
+	Public Property QuyCach() As Double
+		Get
+			Return Me._QuyCach
+		End Get
+		Set
+			If ((Me._QuyCach = value)  _
+						= false) Then
+				Me._QuyCach = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ThanhTien", DbType:="Float")>  _
+	Public Property ThanhTien() As System.Nullable(Of Double)
+		Get
+			Return Me._ThanhTien
+		End Get
+		Set
+			If (Me._ThanhTien.Equals(value) = false) Then
+				Me._ThanhTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayLap", DbType:="DateTime NOT NULL")>  _
+	Public Property NgayLap() As Date
+		Get
+			Return Me._NgayLap
+		End Get
+		Set
+			If ((Me._NgayLap = value)  _
+						= false) Then
+				Me._NgayLap = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayDuKienGiaoHang", DbType:="DateTime")>  _
+	Public Property NgayDuKienGiaoHang() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayDuKienGiaoHang
+		End Get
+		Set
+			If (Me._NgayDuKienGiaoHang.Equals(value) = false) Then
+				Me._NgayDuKienGiaoHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idKhachHang", DbType:="Int NOT NULL")>  _
+	Public Property idKhachHang() As Integer
+		Get
+			Return Me._idKhachHang
+		End Get
+		Set
+			If ((Me._idKhachHang = value)  _
+						= false) Then
+				Me._idKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idNhanVien", DbType:="Int NOT NULL")>  _
+	Public Property idNhanVien() As Integer
+		Get
+			Return Me._idNhanVien
+		End Get
+		Set
+			If ((Me._idNhanVien = value)  _
+						= false) Then
+				Me._idNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ChietKhauKhachHangDatHang", DbType:="Float NOT NULL")>  _
+	Public Property ChietKhauKhachHangDatHang() As Double
+		Get
+			Return Me._ChietKhauKhachHangDatHang
+		End Get
+		Set
+			If ((Me._ChietKhauKhachHangDatHang = value)  _
+						= false) Then
+				Me._ChietKhauKhachHangDatHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoPhieu", DbType:="Int NOT NULL")>  _
+	Public Property SoPhieu() As Integer
+		Get
+			Return Me._SoPhieu
+		End Get
+		Set
+			If ((Me._SoPhieu = value)  _
+						= false) Then
+				Me._SoPhieu = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VAT", DbType:="Int NOT NULL")>  _
+	Public Property VAT() As Integer
+		Get
+			Return Me._VAT
+		End Get
+		Set
+			If ((Me._VAT = value)  _
+						= false) Then
+				Me._VAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenNhanVien", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenNhanVien() As String
+		Get
+			Return Me._TenNhanVien
+		End Get
+		Set
+			If (String.Equals(Me._TenNhanVien, value) = false) Then
+				Me._TenNhanVien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaKhachHang", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaKhachHang() As String
+		Get
+			Return Me._MaKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._MaKhachHang, value) = false) Then
+				Me._MaKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenKhachHang", DbType:="NVarChar(500) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenKhachHang() As String
+		Get
+			Return Me._TenKhachHang
+		End Get
+		Set
+			If (String.Equals(Me._TenKhachHang, value) = false) Then
+				Me._TenKhachHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DiaChi", DbType:="NVarChar(500)")>  _
+	Public Property DiaChi() As String
+		Get
+			Return Me._DiaChi
+		End Get
+		Set
+			If (String.Equals(Me._DiaChi, value) = false) Then
+				Me._DiaChi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSoThue", DbType:="NVarChar(50)")>  _
+	Public Property MaSoThue() As String
+		Get
+			Return Me._MaSoThue
+		End Get
+		Set
+			If (String.Equals(Me._MaSoThue, value) = false) Then
+				Me._MaSoThue = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoFAX", DbType:="NVarChar(100)")>  _
+	Public Property SoFAX() As String
+		Get
+			Return Me._SoFAX
+		End Get
+		Set
+			If (String.Equals(Me._SoFAX, value) = false) Then
+				Me._SoFAX = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoDienThoai", DbType:="NVarChar(50)")>  _
+	Public Property SoDienThoai() As String
+		Get
+			Return Me._SoDienThoai
+		End Get
+		Set
+			If (String.Equals(Me._SoDienThoai, value) = false) Then
+				Me._SoDienThoai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongVon", DbType:="Float NOT NULL")>  _
+	Public Property TongVon() As Double
+		Get
+			Return Me._TongVon
+		End Get
+		Set
+			If ((Me._TongVon = value)  _
+						= false) Then
+				Me._TongVon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTien", DbType:="Float NOT NULL")>  _
+	Public Property CongTien() As Double
+		Get
+			Return Me._CongTien
+		End Get
+		Set
+			If ((Me._CongTien = value)  _
+						= false) Then
+				Me._CongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienChietKhau", DbType:="Float NOT NULL")>  _
+	Public Property TongTienChietKhau() As Double
+		Get
+			Return Me._TongTienChietKhau
+		End Get
+		Set
+			If ((Me._TongTienChietKhau = value)  _
+						= false) Then
+				Me._TongTienChietKhau = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTienVAT", DbType:="Float NOT NULL")>  _
+	Public Property TongTienVAT() As Double
+		Get
+			Return Me._TongTienVAT
+		End Get
+		Set
+			If ((Me._TongTienVAT = value)  _
+						= false) Then
+				Me._TongTienVAT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TongTien", DbType:="Float NOT NULL")>  _
+	Public Property TongTien() As Double
+		Get
+			Return Me._TongTien
+		End Get
+		Set
+			If ((Me._TongTien = value)  _
+						= false) Then
+				Me._TongTien = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DaLapHoaDon", DbType:="Bit NOT NULL")>  _
+	Public Property DaLapHoaDon() As Boolean
+		Get
+			Return Me._DaLapHoaDon
+		End Get
+		Set
+			If ((Me._DaLapHoaDon = value)  _
+						= false) Then
+				Me._DaLapHoaDon = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSanPham", DbType:="NVarChar(250) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaSanPham() As String
+		Get
+			Return Me._MaSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaSanPham, value) = false) Then
+				Me._MaSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaVachSanPham", DbType:="NVarChar(50)")>  _
+	Public Property MaVachSanPham() As String
+		Get
+			Return Me._MaVachSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaVachSanPham, value) = false) Then
+				Me._MaVachSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenSanPham", DbType:="NVarChar(350) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenSanPham() As String
+		Get
+			Return Me._TenSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenSanPham, value) = false) Then
+				Me._TenSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DonVi", DbType:="NVarChar(50)")>  _
+	Public Property DonVi() As String
+		Get
+			Return Me._DonVi
+		End Get
+		Set
+			If (String.Equals(Me._DonVi, value) = false) Then
+				Me._DonVi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLoaiSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idLoaiSanPham() As Integer
+		Get
+			Return Me._idLoaiSanPham
+		End Get
+		Set
+			If ((Me._idLoaiSanPham = value)  _
+						= false) Then
+				Me._idLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TenLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property TenLoaiSanPham() As String
+		Get
+			Return Me._TenLoaiSanPham
+		End Get
+		Set
+			If (String.Equals(Me._TenLoaiSanPham, value) = false) Then
+				Me._TenLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaLoaiSanPham", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaLoaiSanPham() As String
+		Get
+			Return Me._MaLoaiSanPham
+		End Get
+		Set
+			If (String.Equals(Me._MaLoaiSanPham, value) = false) Then
+				Me._MaLoaiSanPham = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TheoDonVi", DbType:="Bit NOT NULL")>  _
+	Public Property TheoDonVi() As Boolean
+		Get
+			Return Me._TheoDonVi
+		End Get
+		Set
+			If ((Me._TheoDonVi = value)  _
+						= false) Then
+				Me._TheoDonVi = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isNhapHang", DbType:="Bit")>  _
+	Public Property isNhapHang() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isNhapHang
+		End Get
+		Set
+			If (Me._isNhapHang.Equals(value) = false) Then
+				Me._isNhapHang = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CongTrinh", DbType:="NVarChar(200)")>  _
+	Public Property CongTrinh() As String
+		Get
+			Return Me._CongTrinh
+		End Get
+		Set
+			If (String.Equals(Me._CongTrinh, value) = false) Then
+				Me._CongTrinh = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_STT", DbType:="Int NOT NULL")>  _
+	Public Property STT() As Integer
+		Get
+			Return Me._STT
+		End Get
+		Set
+			If ((Me._STT = value)  _
+						= false) Then
+				Me._STT = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isGiaoHangXong", DbType:="Int NOT NULL")>  _
+	Public Property isGiaoHangXong() As Integer
+		Get
+			Return Me._isGiaoHangXong
+		End Get
+		Set
+			If ((Me._isGiaoHangXong = value)  _
+						= false) Then
+				Me._isGiaoHangXong = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Expr1", DbType:="NVarChar(50)")>  _
+	Public Property Expr1() As String
+		Get
+			Return Me._Expr1
+		End Get
+		Set
+			If (String.Equals(Me._Expr1, value) = false) Then
+				Me._Expr1 = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GiaBan", DbType:="Float NOT NULL")>  _
+	Public Property GiaBan() As Double
+		Get
+			Return Me._GiaBan
+		End Get
+		Set
+			If ((Me._GiaBan = value)  _
+						= false) Then
+				Me._GiaBan = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongConLai", DbType:="Float NOT NULL")>  _
+	Public Property SoLuongConLai() As Double
+		Get
+			Return Me._SoLuongConLai
+		End Get
+		Set
+			If ((Me._SoLuongConLai = value)  _
+						= false) Then
+				Me._SoLuongConLai = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SoLuongDaGiao", DbType:="Float NOT NULL")>  _
+	Public Property SoLuongDaGiao() As Double
+		Get
+			Return Me._SoLuongDaGiao
+		End Get
+		Set
+			If ((Me._SoLuongDaGiao = value)  _
+						= false) Then
+				Me._SoLuongDaGiao = value
+			End If
+		End Set
+	End Property
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.tbChiTietSeri")>  _
+Partial Public Class tbChiTietSeri
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 	
 	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
 	
 	Private _id As Integer
 	
-	Private _LoaiThu As String
+	Private _MaSeri As String
 	
-	Private _MoTa As String
+	Private _idPhieuNhap As Integer
 	
-	Private _Loai As Integer
+	Private _idPhieuXuat As System.Nullable(Of Integer)
 	
-	Private _tbPhieuThus As EntitySet(Of tbPhieuThu)
+	Private _NgayNhap As System.Nullable(Of Date)
+	
+	Private _idSanPham As Integer
+	
+	Private _isDanhSo As System.Nullable(Of Boolean)
+	
+	Private _tbPhieuNhap As EntityRef(Of tbPhieuNhap)
+	
+	Private _tbPhieuXuat As EntityRef(Of tbPhieuXuat)
+	
+	Private _tbSanPham As EntityRef(Of tbSanPham)
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -23496,23 +23946,37 @@ Partial Public Class tbLoaiPhieuThu
     End Sub
     Partial Private Sub OnidChanged()
     End Sub
-    Partial Private Sub OnLoaiThuChanging(value As String)
+    Partial Private Sub OnMaSeriChanging(value As String)
     End Sub
-    Partial Private Sub OnLoaiThuChanged()
+    Partial Private Sub OnMaSeriChanged()
     End Sub
-    Partial Private Sub OnMoTaChanging(value As String)
+    Partial Private Sub OnidPhieuNhapChanging(value As Integer)
     End Sub
-    Partial Private Sub OnMoTaChanged()
+    Partial Private Sub OnidPhieuNhapChanged()
     End Sub
-    Partial Private Sub OnLoaiChanging(value As Integer)
+    Partial Private Sub OnidPhieuXuatChanging(value As System.Nullable(Of Integer))
     End Sub
-    Partial Private Sub OnLoaiChanged()
+    Partial Private Sub OnidPhieuXuatChanged()
+    End Sub
+    Partial Private Sub OnNgayNhapChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnNgayNhapChanged()
+    End Sub
+    Partial Private Sub OnidSanPhamChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnidSanPhamChanged()
+    End Sub
+    Partial Private Sub OnisDanhSoChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnisDanhSoChanged()
     End Sub
     #End Region
 	
 	Public Sub New()
 		MyBase.New
-		Me._tbPhieuThus = New EntitySet(Of tbPhieuThu)(AddressOf Me.attach_tbPhieuThus, AddressOf Me.detach_tbPhieuThus)
+		Me._tbPhieuNhap = CType(Nothing, EntityRef(Of tbPhieuNhap))
+		Me._tbPhieuXuat = CType(Nothing, EntityRef(Of tbPhieuXuat))
+		Me._tbSanPham = CType(Nothing, EntityRef(Of tbSanPham))
 		OnCreated
 	End Sub
 	
@@ -23533,62 +23997,194 @@ Partial Public Class tbLoaiPhieuThu
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_LoaiThu", DbType:="NVarChar(150) NOT NULL", CanBeNull:=false)>  _
-	Public Property LoaiThu() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MaSeri", DbType:="NChar(25) NOT NULL", CanBeNull:=false)>  _
+	Public Property MaSeri() As String
 		Get
-			Return Me._LoaiThu
+			Return Me._MaSeri
 		End Get
 		Set
-			If (String.Equals(Me._LoaiThu, value) = false) Then
-				Me.OnLoaiThuChanging(value)
+			If (String.Equals(Me._MaSeri, value) = false) Then
+				Me.OnMaSeriChanging(value)
 				Me.SendPropertyChanging
-				Me._LoaiThu = value
-				Me.SendPropertyChanged("LoaiThu")
-				Me.OnLoaiThuChanged
+				Me._MaSeri = value
+				Me.SendPropertyChanged("MaSeri")
+				Me.OnMaSeriChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MoTa", DbType:="NVarChar(350)")>  _
-	Public Property MoTa() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuNhap", DbType:="Int NOT NULL")>  _
+	Public Property idPhieuNhap() As Integer
 		Get
-			Return Me._MoTa
+			Return Me._idPhieuNhap
 		End Get
 		Set
-			If (String.Equals(Me._MoTa, value) = false) Then
-				Me.OnMoTaChanging(value)
-				Me.SendPropertyChanging
-				Me._MoTa = value
-				Me.SendPropertyChanged("MoTa")
-				Me.OnMoTaChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Loai", DbType:="Int NOT NULL")>  _
-	Public Property Loai() As Integer
-		Get
-			Return Me._Loai
-		End Get
-		Set
-			If ((Me._Loai = value)  _
+			If ((Me._idPhieuNhap = value)  _
 						= false) Then
-				Me.OnLoaiChanging(value)
+				If Me._tbPhieuNhap.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidPhieuNhapChanging(value)
 				Me.SendPropertyChanging
-				Me._Loai = value
-				Me.SendPropertyChanged("Loai")
-				Me.OnLoaiChanged
+				Me._idPhieuNhap = value
+				Me.SendPropertyChanged("idPhieuNhap")
+				Me.OnidPhieuNhapChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbLoaiPhieuThu_tbPhieuThu", Storage:="_tbPhieuThus", ThisKey:="id", OtherKey:="idLoaiPhieuThu")>  _
-	Public Property tbPhieuThus() As EntitySet(Of tbPhieuThu)
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPhieuXuat", DbType:="Int")>  _
+	Public Property idPhieuXuat() As System.Nullable(Of Integer)
 		Get
-			Return Me._tbPhieuThus
+			Return Me._idPhieuXuat
 		End Get
 		Set
-			Me._tbPhieuThus.Assign(value)
+			If (Me._idPhieuXuat.Equals(value) = false) Then
+				If Me._tbPhieuXuat.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidPhieuXuatChanging(value)
+				Me.SendPropertyChanging
+				Me._idPhieuXuat = value
+				Me.SendPropertyChanged("idPhieuXuat")
+				Me.OnidPhieuXuatChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NgayNhap", DbType:="Date")>  _
+	Public Property NgayNhap() As System.Nullable(Of Date)
+		Get
+			Return Me._NgayNhap
+		End Get
+		Set
+			If (Me._NgayNhap.Equals(value) = false) Then
+				Me.OnNgayNhapChanging(value)
+				Me.SendPropertyChanging
+				Me._NgayNhap = value
+				Me.SendPropertyChanged("NgayNhap")
+				Me.OnNgayNhapChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idSanPham", DbType:="Int NOT NULL")>  _
+	Public Property idSanPham() As Integer
+		Get
+			Return Me._idSanPham
+		End Get
+		Set
+			If ((Me._idSanPham = value)  _
+						= false) Then
+				If Me._tbSanPham.HasLoadedOrAssignedValue Then
+					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+				End If
+				Me.OnidSanPhamChanging(value)
+				Me.SendPropertyChanging
+				Me._idSanPham = value
+				Me.SendPropertyChanged("idSanPham")
+				Me.OnidSanPhamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_isDanhSo", DbType:="Bit")>  _
+	Public Property isDanhSo() As System.Nullable(Of Boolean)
+		Get
+			Return Me._isDanhSo
+		End Get
+		Set
+			If (Me._isDanhSo.Equals(value) = false) Then
+				Me.OnisDanhSoChanging(value)
+				Me.SendPropertyChanging
+				Me._isDanhSo = value
+				Me.SendPropertyChanged("isDanhSo")
+				Me.OnisDanhSoChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuNhap_tbChiTietSeri", Storage:="_tbPhieuNhap", ThisKey:="idPhieuNhap", OtherKey:="id", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuNhap() As tbPhieuNhap
+		Get
+			Return Me._tbPhieuNhap.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuNhap = Me._tbPhieuNhap.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuNhap.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuNhap.Entity = Nothing
+					previousValue.tbChiTietSeris.Remove(Me)
+				End If
+				Me._tbPhieuNhap.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietSeris.Add(Me)
+					Me._idPhieuNhap = value.id
+				Else
+					Me._idPhieuNhap = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbPhieuNhap")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbPhieuXuat_tbChiTietSeri", Storage:="_tbPhieuXuat", ThisKey:="idPhieuXuat", OtherKey:="id", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+	Public Property tbPhieuXuat() As tbPhieuXuat
+		Get
+			Return Me._tbPhieuXuat.Entity
+		End Get
+		Set
+			Dim previousValue As tbPhieuXuat = Me._tbPhieuXuat.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbPhieuXuat.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbPhieuXuat.Entity = Nothing
+					previousValue.tbChiTietSeris.Remove(Me)
+				End If
+				Me._tbPhieuXuat.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietSeris.Add(Me)
+					Me._idPhieuXuat = value.id
+				Else
+					Me._idPhieuXuat = CType(Nothing, Nullable(Of Integer))
+				End If
+				Me.SendPropertyChanged("tbPhieuXuat")
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="tbSanPham_tbChiTietSeri", Storage:="_tbSanPham", ThisKey:="idSanPham", OtherKey:="id", IsForeignKey:=true)>  _
+	Public Property tbSanPham() As tbSanPham
+		Get
+			Return Me._tbSanPham.Entity
+		End Get
+		Set
+			Dim previousValue As tbSanPham = Me._tbSanPham.Entity
+			If ((Object.Equals(previousValue, value) = false)  _
+						OrElse (Me._tbSanPham.HasLoadedOrAssignedValue = false)) Then
+				Me.SendPropertyChanging
+				If ((previousValue Is Nothing)  _
+							= false) Then
+					Me._tbSanPham.Entity = Nothing
+					previousValue.tbChiTietSeris.Remove(Me)
+				End If
+				Me._tbSanPham.Entity = value
+				If ((value Is Nothing)  _
+							= false) Then
+					value.tbChiTietSeris.Add(Me)
+					Me._idSanPham = value.id
+				Else
+					Me._idSanPham = CType(Nothing, Integer)
+				End If
+				Me.SendPropertyChanged("tbSanPham")
+			End If
 		End Set
 	End Property
 	
@@ -23608,16 +24204,6 @@ Partial Public Class tbLoaiPhieuThu
 					= false) Then
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
-	End Sub
-	
-	Private Sub attach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbLoaiPhieuThu = Me
-	End Sub
-	
-	Private Sub detach_tbPhieuThus(ByVal entity As tbPhieuThu)
-		Me.SendPropertyChanging
-		entity.tbLoaiPhieuThu = Nothing
 	End Sub
 End Class
 

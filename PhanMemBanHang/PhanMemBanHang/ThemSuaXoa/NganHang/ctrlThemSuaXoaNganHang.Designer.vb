@@ -22,6 +22,7 @@
         'Do not modify it using the code editor.
         <System.Diagnostics.DebuggerStepThrough()> _
         Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btnThem = New System.Windows.Forms.ToolStripButton()
         Me.btnSua = New System.Windows.Forms.ToolStripButton()
@@ -39,9 +40,12 @@
         Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -108,6 +112,7 @@
         '
         'gridControl
         '
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
         Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gridControl.Location = New System.Drawing.Point(0, 25)
         Me.gridControl.MainView = Me.gridViewData
@@ -120,6 +125,8 @@
         '
         Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -215,6 +222,20 @@
         Me.GridColumn12.Name = "GridColumn12"
         Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuItemExportExcel})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 48)
+        '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
+        '
         'ctrlThemSuaXoaNganHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,6 +248,7 @@
         Me.ToolStrip1.PerformLayout()
         CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,4 +270,6 @@
     Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class

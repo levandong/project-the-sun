@@ -69,6 +69,7 @@ Partial Class ctrlThongKePhieuNhap
         Me.btnInPhieu = New System.Windows.Forms.ToolStripDropDownButton()
         Me.NhậpCóKýHiệuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PhiếuNhậpKhoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonSplitContainer1.Panel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonSplitContainer1.Panel1.SuspendLayout()
@@ -244,34 +245,34 @@ Partial Class ctrlThongKePhieuNhap
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.XóaPhiếuToolStripMenuItem, Me.SửaPhiếuToolStripMenuItem, Me.ToolStripSeparator2, Me.InPhiếuNhậpToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.XóaPhiếuToolStripMenuItem, Me.SửaPhiếuToolStripMenuItem, Me.ToolStripSeparator2, Me.InPhiếuNhậpToolStripMenuItem, Me.mnuItemExportExcel})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(148, 76)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 120)
         '
         'XóaPhiếuToolStripMenuItem
         '
         Me.XóaPhiếuToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Xoa_16
         Me.XóaPhiếuToolStripMenuItem.Name = "XóaPhiếuToolStripMenuItem"
-        Me.XóaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.XóaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.XóaPhiếuToolStripMenuItem.Text = "Xóa phiếu"
         '
         'SửaPhiếuToolStripMenuItem
         '
         Me.SửaPhiếuToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Sua_16
         Me.SửaPhiếuToolStripMenuItem.Name = "SửaPhiếuToolStripMenuItem"
-        Me.SửaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.SửaPhiếuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SửaPhiếuToolStripMenuItem.Text = "Sửa phiếu"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(144, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'InPhiếuNhậpToolStripMenuItem
         '
         Me.InPhiếuNhậpToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.In_16
         Me.InPhiếuNhậpToolStripMenuItem.Name = "InPhiếuNhậpToolStripMenuItem"
-        Me.InPhiếuNhậpToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.InPhiếuNhậpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InPhiếuNhậpToolStripMenuItem.Text = "In phiếu nhập"
         '
         'gridViewData
@@ -546,6 +547,13 @@ Partial Class ctrlThongKePhieuNhap
         Me.PhiếuNhậpKhoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.PhiếuNhậpKhoToolStripMenuItem.Text = "Phiếu nhập kho"
         '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
+        '
         'ctrlThongKePhieuNhap
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -621,4 +629,5 @@ Partial Class ctrlThongKePhieuNhap
     Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class

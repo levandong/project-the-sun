@@ -39,28 +39,26 @@ Partial Class ctrlTraCuuSoSeri
         Me.btnChuaXacNhanSoSeri = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.btnTimKiem = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonPanel3 = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
-        Me.dgvMain = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ĐiềuChỉnhSeriPhiếuNhậpNàyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SửaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.bsChiTietSoSeri = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.btnDieuChinh = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.btnChuaTaoSeri = New System.Windows.Forms.ToolStripButton()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenSanPham = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaSeriDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KhachHangNhaCungCap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayNhapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaPhieuNhap = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KhachHangNhaCungCapXuat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaPhieuXuat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GhiChu = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,10 +72,9 @@ Partial Class ctrlTraCuuSoSeri
         CType(Me.cmbSanPham, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonPanel3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel3.SuspendLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.bsChiTietSoSeri, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip3.SuspendLayout()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -246,8 +243,7 @@ Partial Class ctrlTraCuuSoSeri
         '
         'KryptonPanel3
         '
-        Me.KryptonPanel3.Controls.Add(Me.dgvMain)
-        Me.KryptonPanel3.Controls.Add(Me.ToolStrip3)
+        Me.KryptonPanel3.Controls.Add(Me.gridControl)
         Me.KryptonPanel3.Controls.Add(Me.ToolStrip2)
         Me.KryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonPanel3.Location = New System.Drawing.Point(0, 0)
@@ -255,22 +251,16 @@ Partial Class ctrlTraCuuSoSeri
         Me.KryptonPanel3.Size = New System.Drawing.Size(920, 505)
         Me.KryptonPanel3.TabIndex = 1
         '
-        'dgvMain
+        'gridControl
         '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.TenSanPham, Me.MaSeriDataGridViewTextBoxColumn, Me.KhachHangNhaCungCap, Me.NgayNhapDataGridViewTextBoxColumn, Me.MaPhieuNhap, Me.KhachHangNhaCungCapXuat, Me.MaPhieuXuat, Me.GhiChu})
-        Me.dgvMain.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.dgvMain.DataSource = Me.bsChiTietSoSeri
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Location = New System.Drawing.Point(0, 25)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 5
-        Me.dgvMain.Size = New System.Drawing.Size(920, 455)
-        Me.dgvMain.TabIndex = 3
-        Me.dgvMain.VirtualMode = True
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 25)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(920, 480)
+        Me.gridControl.TabIndex = 7
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
         'ContextMenuStrip1
         '
@@ -291,27 +281,121 @@ Partial Class ctrlTraCuuSoSeri
         Me.SửaToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.SửaToolStripMenuItem.Text = "Sửa"
         '
-        'bsChiTietSoSeri
+        'gridViewData
         '
-        Me.bsChiTietSoSeri.DataSource = GetType(PhanMemBanHang.tbChiTietSeri)
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn9, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
         '
-        'ToolStrip3
+        'GridColumn1
         '
-        Me.ToolStrip3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3})
-        Me.ToolStrip3.Location = New System.Drawing.Point(0, 480)
-        Me.ToolStrip3.Name = "ToolStrip3"
-        Me.ToolStrip3.Size = New System.Drawing.Size(920, 25)
-        Me.ToolStrip3.TabIndex = 2
-        Me.ToolStrip3.Text = "ToolStrip3"
+        Me.GridColumn1.Caption = "Tên sản phẩm"
+        Me.GridColumn1.FieldName = "TenSanPham"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 250
         '
-        'ToolStripLabel3
+        'GridColumn2
         '
-        Me.ToolStripLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(14, 22)
-        Me.ToolStripLabel3.Text = "0"
+        Me.GridColumn2.Caption = "Mã Seri"
+        Me.GridColumn2.FieldName = "MaSeri"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.Width = 200
+        '
+        'GridColumn3
+        '
+        Me.GridColumn3.Caption = "Khách hàng/Nhà cung cấp nhập"
+        Me.GridColumn3.FieldName = "NhaCungCapKhachHang"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        Me.GridColumn3.Width = 300
+        '
+        'GridColumn9
+        '
+        Me.GridColumn9.Caption = "Ngày nhập"
+        Me.GridColumn9.DisplayFormat.FormatString = "dd/MM/yyyy HH:mm"
+        Me.GridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn9.FieldName = "NgayNhap"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 3
+        Me.GridColumn9.Width = 130
+        '
+        'GridColumn4
+        '
+        Me.GridColumn4.Caption = "Mã phiếu nhập"
+        Me.GridColumn4.FieldName = "MaPhieuNhap"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 4
+        Me.GridColumn4.Width = 150
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.Caption = "Khách hàng xuất"
+        Me.GridColumn5.FieldName = "NhaCungCapKhachHangXuat"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 5
+        Me.GridColumn5.Width = 250
+        '
+        'GridColumn6
+        '
+        Me.GridColumn6.Caption = "Mã phiếu xuất"
+        Me.GridColumn6.FieldName = "MaPhieuXuat"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 6
+        Me.GridColumn6.Width = 150
+        '
+        'GridColumn7
+        '
+        Me.GridColumn7.Caption = "Ghi chú"
+        Me.GridColumn7.FieldName = "GhiChu"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 7
+        Me.GridColumn7.Width = 300
+        '
+        'GridColumn12
+        '
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
         'ToolStrip2
         '
@@ -365,74 +449,6 @@ Partial Class ctrlTraCuuSoSeri
         Me.btnChuaTaoSeri.Size = New System.Drawing.Size(191, 22)
         Me.btnChuaTaoSeri.Text = "Có 0 sản phẩm chưa tạo số seri"
         '
-        'STT
-        '
-        Me.STT.HeaderText = "STT"
-        Me.STT.MinimumWidth = 35
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 40
-        '
-        'TenSanPham
-        '
-        Me.TenSanPham.DataPropertyName = "TenSanPham"
-        Me.TenSanPham.HeaderText = "Tên sản phẩm"
-        Me.TenSanPham.Name = "TenSanPham"
-        Me.TenSanPham.ReadOnly = True
-        Me.TenSanPham.Width = 140
-        '
-        'MaSeriDataGridViewTextBoxColumn
-        '
-        Me.MaSeriDataGridViewTextBoxColumn.DataPropertyName = "MaSeri"
-        Me.MaSeriDataGridViewTextBoxColumn.HeaderText = "Mã Seri"
-        Me.MaSeriDataGridViewTextBoxColumn.Name = "MaSeriDataGridViewTextBoxColumn"
-        Me.MaSeriDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'KhachHangNhaCungCap
-        '
-        Me.KhachHangNhaCungCap.DataPropertyName = "NhaCungCapKhachHang"
-        Me.KhachHangNhaCungCap.HeaderText = "KH - NCC Nhập"
-        Me.KhachHangNhaCungCap.Name = "KhachHangNhaCungCap"
-        Me.KhachHangNhaCungCap.ReadOnly = True
-        Me.KhachHangNhaCungCap.Width = 130
-        '
-        'NgayNhapDataGridViewTextBoxColumn
-        '
-        Me.NgayNhapDataGridViewTextBoxColumn.DataPropertyName = "NgayNhap"
-        Me.NgayNhapDataGridViewTextBoxColumn.HeaderText = "Ngày nhập"
-        Me.NgayNhapDataGridViewTextBoxColumn.Name = "NgayNhapDataGridViewTextBoxColumn"
-        Me.NgayNhapDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'MaPhieuNhap
-        '
-        Me.MaPhieuNhap.DataPropertyName = "MaPhieuNhap"
-        Me.MaPhieuNhap.HeaderText = "Mã phiếu nhập"
-        Me.MaPhieuNhap.Name = "MaPhieuNhap"
-        Me.MaPhieuNhap.ReadOnly = True
-        '
-        'KhachHangNhaCungCapXuat
-        '
-        Me.KhachHangNhaCungCapXuat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.KhachHangNhaCungCapXuat.DataPropertyName = "NhaCungCapKhachHangXuat"
-        Me.KhachHangNhaCungCapXuat.HeaderText = "KH Xuất"
-        Me.KhachHangNhaCungCapXuat.Name = "KhachHangNhaCungCapXuat"
-        Me.KhachHangNhaCungCapXuat.ReadOnly = True
-        Me.KhachHangNhaCungCapXuat.Width = 79
-        '
-        'MaPhieuXuat
-        '
-        Me.MaPhieuXuat.DataPropertyName = "MaPhieuXuat"
-        Me.MaPhieuXuat.HeaderText = "Mã phiếu xuất"
-        Me.MaPhieuXuat.Name = "MaPhieuXuat"
-        Me.MaPhieuXuat.ReadOnly = True
-        '
-        'GhiChu
-        '
-        Me.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.GhiChu.HeaderText = "Ghi chú"
-        Me.GhiChu.Name = "GhiChu"
-        Me.GhiChu.ReadOnly = True
-        '
         'ctrlTraCuuSoSeri
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -456,11 +472,9 @@ Partial Class ctrlTraCuuSoSeri
         CType(Me.KryptonPanel3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonPanel3.ResumeLayout(False)
         Me.KryptonPanel3.PerformLayout()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.bsChiTietSoSeri, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip3.ResumeLayout(False)
-        Me.ToolStrip3.PerformLayout()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
@@ -483,11 +497,6 @@ Partial Class ctrlTraCuuSoSeri
     Friend WithEvents txtTimKiem As TextBox
     Friend WithEvents btnChuaXacNhanSoSeri As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents btnTimKiem As ComponentFactory.Krypton.Toolkit.KryptonButton
-    Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
-    Friend WithEvents bsChiTietSoSeri As BindingSource
-    Friend WithEvents IdSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents IdPhieuNhapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents IdPhieuXuatDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents KryptonLabel3 As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonLabel2 As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents dtpTuNgay As ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker
@@ -501,13 +510,15 @@ Partial Class ctrlTraCuuSoSeri
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents ĐiềuChỉnhSeriPhiếuNhậpNàyToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SửaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents STT As DataGridViewTextBoxColumn
-    Friend WithEvents TenSanPham As DataGridViewTextBoxColumn
-    Friend WithEvents MaSeriDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents KhachHangNhaCungCap As DataGridViewTextBoxColumn
-    Friend WithEvents NgayNhapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MaPhieuNhap As DataGridViewTextBoxColumn
-    Friend WithEvents KhachHangNhaCungCapXuat As DataGridViewTextBoxColumn
-    Friend WithEvents MaPhieuXuat As DataGridViewTextBoxColumn
-    Friend WithEvents GhiChu As DataGridViewTextBoxColumn
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

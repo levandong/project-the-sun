@@ -64,6 +64,8 @@ Partial Class ctrlThongKePhieuXuat
         Me.PhiếuXuấtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CóKýHiệuKhoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MaPhieu = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonSplitContainer1.Panel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonSplitContainer1.Panel1.SuspendLayout()
@@ -239,22 +241,22 @@ Partial Class ctrlThongKePhieuXuat
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InPhiếuXuấtToolStripMenuItem, Me.XuấtHóaĐơnToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InPhiếuXuấtToolStripMenuItem, Me.XuấtHóaĐơnToolStripMenuItem, Me.ToolStripSeparator1, Me.mnuItemExportExcel})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(146, 48)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 98)
         '
         'InPhiếuXuấtToolStripMenuItem
         '
         Me.InPhiếuXuấtToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.In_16
         Me.InPhiếuXuấtToolStripMenuItem.Name = "InPhiếuXuấtToolStripMenuItem"
-        Me.InPhiếuXuấtToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.InPhiếuXuấtToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.InPhiếuXuấtToolStripMenuItem.Text = "In phiếu xuất"
         '
         'XuấtHóaĐơnToolStripMenuItem
         '
         Me.XuấtHóaĐơnToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.Bill16
         Me.XuấtHóaĐơnToolStripMenuItem.Name = "XuấtHóaĐơnToolStripMenuItem"
-        Me.XuấtHóaĐơnToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.XuấtHóaĐơnToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.XuấtHóaĐơnToolStripMenuItem.Text = "Xuất hóa đơn"
         '
         'gridViewData
@@ -482,6 +484,18 @@ Partial Class ctrlThongKePhieuXuat
         '
         Me.MaPhieu.Name = "MaPhieu"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
+        '
         'ctrlThongKePhieuXuat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -553,4 +567,6 @@ Partial Class ctrlThongKePhieuXuat
     Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class

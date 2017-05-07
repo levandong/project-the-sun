@@ -274,7 +274,7 @@ Partial Class ctrlThongKeHoaDon
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnXemPhieu, Me.btnSuaHoaDon, Me.btnXoaHoaDon, Me.ToolStripSeparator1, Me.btnInDanhSach, Me.btnXuatExcel})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(142, 120)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 142)
         '
         'btnXemPhieu
         '
@@ -313,7 +313,7 @@ Partial Class ctrlThongKeHoaDon
         '
         Me.btnXuatExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
         Me.btnXuatExcel.Name = "btnXuatExcel"
-        Me.btnXuatExcel.Size = New System.Drawing.Size(141, 22)
+        Me.btnXuatExcel.Size = New System.Drawing.Size(152, 22)
         Me.btnXuatExcel.Text = "Xuất Excel"
         '
         'gridViewData

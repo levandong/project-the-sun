@@ -2,9 +2,9 @@
     Private _TenSanPham As String
     Property TenSanPham As String
         Get
-            'If Me.tbSanPham IsNot Nothing Then
-            '    _TenSanPham = Me.tbSanPham.TenSanPham
-            'End If
+            If Me.tbSanPham IsNot Nothing Then
+                _TenSanPham = Me.tbSanPham.TenSanPham
+            End If
             Return _TenSanPham
         End Get
         Set(value As String)

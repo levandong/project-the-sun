@@ -22,6 +22,7 @@ Partial Class ctrlKhachHangDatHangChuaGiao
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ctrlKhachHangDatHangChuaGiao))
         Me.KryptonSplitContainer1 = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.gridControl = New DevExpress.XtraGrid.GridControl()
@@ -55,6 +56,8 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         Me.btnInKhachHangDatHang = New System.Windows.Forms.ToolStripDropDownButton()
         Me.btnXemVaInTuDong = New System.Windows.Forms.ToolStripMenuItem()
         Me.XemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonSplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonSplitContainer1.Panel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonSplitContainer1.Panel2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +67,7 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'KryptonSplitContainer1
@@ -85,6 +89,7 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         '
         'gridControl
         '
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
         Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gridControl.Location = New System.Drawing.Point(0, 0)
         Me.gridControl.MainView = Me.gridViewData
@@ -303,6 +308,7 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         Me.GridColumn14.Caption = "Ngày lập"
         Me.GridColumn14.DisplayFormat.FormatString = "dd/MM/yyyy"
         Me.GridColumn14.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime
+        Me.GridColumn14.FieldName = "NgayLap"
         Me.GridColumn14.Name = "GridColumn14"
         Me.GridColumn14.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn14.Visible = True
@@ -401,15 +407,29 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         '
         Me.btnXemVaInTuDong.Image = Global.PhanMemBanHang.My.Resources.Resources.Print16
         Me.btnXemVaInTuDong.Name = "btnXemVaInTuDong"
-        Me.btnXemVaInTuDong.Size = New System.Drawing.Size(184, 22)
+        Me.btnXemVaInTuDong.Size = New System.Drawing.Size(173, 22)
         Me.btnXemVaInTuDong.Text = "In lại đơn đặt hàng"
         '
         'XemToolStripMenuItem
         '
         Me.XemToolStripMenuItem.Image = Global.PhanMemBanHang.My.Resources.Resources.TuyChinhTimKiem16
         Me.XemToolStripMenuItem.Name = "XemToolStripMenuItem"
-        Me.XemToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.XemToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.XemToolStripMenuItem.Text = "Xem nhanh"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuItemExportExcel})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 48)
+        '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
         '
         'ctrlKhachHangDatHangChuaGiao
         '
@@ -429,6 +449,7 @@ Partial Class ctrlKhachHangDatHangChuaGiao
         CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip2.ResumeLayout(False)
         Me.ToolStrip2.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -468,4 +489,6 @@ Partial Class ctrlKhachHangDatHangChuaGiao
     Friend WithEvents btnXemVaInTuDong As ToolStripMenuItem
     Friend WithEvents XemToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class
