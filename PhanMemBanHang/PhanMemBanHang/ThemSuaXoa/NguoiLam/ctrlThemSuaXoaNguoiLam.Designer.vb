@@ -48,14 +48,15 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.btnTimKiem = New System.Windows.Forms.ToolStripButton()
         Me.txtTuKhoa = New System.Windows.Forms.ToolStripTextBox()
-        Me.bsNguoiLam = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonPanel1.SuspendLayout()
         CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'KryptonPanel1
@@ -71,6 +72,7 @@ Partial Class ctrlThemSuaXoaNguoiLam
         '
         'gridControl
         '
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
         Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gridControl.Location = New System.Drawing.Point(0, 25)
         Me.gridControl.MainView = Me.gridViewData
@@ -83,6 +85,8 @@ Partial Class ctrlThemSuaXoaNguoiLam
         '
         Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -110,7 +114,7 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.GridColumn1.FieldName = "MaNguoiLam"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
-        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Cộng: {0:n0}")})
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
         Me.GridColumn1.Width = 100
@@ -298,9 +302,19 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.txtTuKhoa.Name = "txtTuKhoa"
         Me.txtTuKhoa.Size = New System.Drawing.Size(130, 25)
         '
-        'bsNguoiLam
+        'ContextMenuStrip1
         '
-        Me.bsNguoiLam.DataSource = GetType(PhanMemBanHang.tbNguoiLam)
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuItemExportExcel})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 48)
+        '
+        'mnuItemExportExcel
+        '
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
         '
         'ctrlThemSuaXoaNguoiLam
         '
@@ -318,7 +332,7 @@ Partial Class ctrlThemSuaXoaNguoiLam
         Me.ToolStrip2.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.bsNguoiLam, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -337,7 +351,6 @@ Partial Class ctrlThemSuaXoaNguoiLam
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents lblSoDong As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents bsNguoiLam As BindingSource
     Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
     Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
@@ -349,4 +362,6 @@ Partial Class ctrlThemSuaXoaNguoiLam
     Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class

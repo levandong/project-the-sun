@@ -95,6 +95,8 @@ Partial Class ctrlDGVKhachHang
         '
         Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
         Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
@@ -119,6 +121,7 @@ Partial Class ctrlDGVKhachHang
         '
         Me.GridColumn1.Caption = "Mã"
         Me.GridColumn1.FieldName = "MaKhachHang"
+        Me.GridColumn1.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
@@ -130,6 +133,7 @@ Partial Class ctrlDGVKhachHang
         '
         Me.GridColumn2.Caption = "Khách hàng/Nhà cung cấp"
         Me.GridColumn2.FieldName = "TenKhachHang"
+        Me.GridColumn2.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         Me.GridColumn2.Visible = True

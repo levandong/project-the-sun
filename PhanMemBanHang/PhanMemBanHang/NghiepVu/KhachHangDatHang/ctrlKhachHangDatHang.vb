@@ -88,9 +88,6 @@
 
 #Region "CHỌN SẢN PHẨM"
     Public Sub CtrlTimKiemSanPham1_ChonSanPhamThanhCong(SanPham As tbSanPham, SoLuong As Double, TheoDonVi As Boolean) Handles CtrlTimKiemSanPham1.ChonSanPhamThanhCong
-        If lstChiTietDatHang.Where(Function(s) s.idSanPham = SanPham.id).Count > 0 Then
-            Exit Sub
-        End If
         Dim newChiTietDatHang As New tbChiTietKhachHangDatHang
         With newChiTietDatHang
             .TheoDonVi = TheoDonVi

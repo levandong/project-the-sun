@@ -226,22 +226,33 @@
             End If
             .STT = lstChiTietBaoGia.Count + 1
         End With
+        Dim flag = False
         For Each itm In lstChiTietBaoGia
             If itm.idSanPham = newChiTietBaoGia.idSanPham Then
                 For Each row As DataGridViewRow In dgvMain.Rows
 
                     If CType(row.DataBoundItem, tbChiTietBaoGia).idSanPham = newChiTietBaoGia.idSanPham Then
-                        If XacNhanYesNo(CType(row.DataBoundItem, tbChiTietBaoGia).TenSanPham + ": đã tồn tại ở STT- " + row.Cells(0).Value.ToString()) = DialogResult.Yes Then
+                        Dim dialog = MessageBox.Show(CType(row.DataBoundItem, tbChiTietBaoGia).TenSanPham + ": đã tồn tại ở STT- " + row.Cells(0).Value.ToString(), "Cảnh báo", MessageBoxButtons.YesNoCancel)
+                        If dialog = DialogResult.No Then
                             txtSearch.Text = ""
                             'row.Selected = True
                             dgvMain.Focus()
                             dgvMain.CurrentCell = dgvMain.Item("SoLuong", row.Index)
                             dgvMain.BeginEdit(True)
+                        ElseIf dialog = DialogResult.Cancel Then
+                            Exit Sub
+                        Else
+                            newChiTietBaoGia.DonGia = CType(row.DataBoundItem, tbChiTietBaoGia).DonGia
+                            newChiTietBaoGia.ChietKhau = CType(row.DataBoundItem, tbChiTietBaoGia).ChietKhau
+                            flag = True
                         End If
                     End If
                 Next
-
-                Exit Sub
+                If flag Then
+                    Exit For
+                Else
+                    Exit Sub
+                End If
             End If
         Next
         lstChiTietBaoGia.Add(newChiTietBaoGia)

@@ -1,4 +1,6 @@
-﻿Public Class ctrlThongKeKhachHangDatHang
+﻿Imports DevExpress.XtraGrid.Views.Grid
+
+Public Class ctrlThongKeKhachHangDatHang
     Private _isNhapHang As Boolean
     Property isNhapHang As Boolean
         Get
@@ -36,6 +38,9 @@
 
     Dim TuNgay, DenNgay As DateTime
     Private Sub ctrlThongKeKhachHangDatHangMoi_Load(sender As Object, e As EventArgs) Handles Me.Load
+        RepositoryItemCheckEdit1.ValueChecked = 1
+        RepositoryItemCheckEdit1.ValueUnchecked = 0
+
         'cmbTrangThai.SelectedIndex = 0
         btnCapNhatKhachHang_Click(Nothing, Nothing)
         btnCapNhatNhanVien_Click(Nothing, Nothing)
@@ -82,28 +87,28 @@
                       Where hd.isNhapHang = isNhapHang
                       Select hd Order By hd.NgayLap Descending).ToList
 
-        bsKhachHangDatHang.DataSource = rlsDatHang
-        If bsKhachHangDatHang.Count > 0 Then
+        gridControl.DataSource = rlsDatHang
+        gridViewData.RefreshData()
+
+        If gridViewData.DataRowCount > 0 Then
             lblThongBao.Visible = False
-            lblCong.Text = rlsDatHang.Sum(Function(s) s.CongTien).ToString("N0") + "đ"
-            lblChietKhau.Text = rlsDatHang.Sum(Function(s) s.TongTienChietKhau).ToString("N0") + "đ"
-            lblVAT.Text = rlsDatHang.Sum(Function(s) s.TongTienVAT).ToString("N0") + "đ"
-            lblTongTien.Text = rlsDatHang.Sum(Function(s) s.TongTien).ToString("N0") + "đ"
-            lblSoLuong.Text = bsKhachHangDatHang.Count.ToString + " phiếu"
         Else
             lblThongBao.Text = "[Không tìm thấy dữ liệu phù hợp]"
             lblThongBao.Visible = True
-            lblCong.Text = "0đ"
-            lblChietKhau.Text = "0đ"
-            lblVAT.Text = "0đ"
-            lblTongTien.Text = "0đ"
-            lblSoLuong.Text = "0 phiếu"
+
         End If
-        For i As Integer = 0 To dgvMain.RowCount - 1
-            If dgvMain.Rows(i).Cells("isGiaoHangXong").Value = 1 Then
-                dgvMain.Rows(i).DefaultCellStyle.BackColor = Color.LightBlue
+
+    End Sub
+
+    Private Sub gridViewData_RowStyle(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs) Handles gridViewData.RowStyle
+        Dim View As GridView = sender
+        If (e.RowHandle >= 0) Then
+            Dim category = View.GetRowCellDisplayText(e.RowHandle, View.Columns("isGiaoHangXong"))
+            If (category = "Checked") Then
+                e.Appearance.BackColor = Color.LightBlue
+                e.Appearance.BackColor2 = Color.Azure
             End If
-        Next
+        End If
     End Sub
 
 #Region "CẬP NHẬT - TÌM KIẾM KHÁCH HÀNG"
@@ -135,16 +140,7 @@
 #End Region
 
 #Region "KHÁC"
-    Private Sub dgvMain_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgvMain.CellMouseDown
-        If e.Button = MouseButtons.Right Then
-            Dim rowSelected As Integer = e.RowIndex
-            If (e.RowIndex <> -1) Then
-                Me.dgvMain.ClearSelection()
-                Me.dgvMain.Rows(rowSelected).Selected = True
-                bsKhachHangDatHang.Position = e.RowIndex
-            End If
-        End If
-    End Sub
+
     Public Sub btnCapNhatNhanVien_Click(sender As Object, e As EventArgs) Handles btnCapNhatNhanVien.Click
         cmbNhanVien.DataSource = From nv In dt.tbNhanViens
                                  Select nv
@@ -153,10 +149,13 @@
     Private Sub chkTheoNhanVien_CheckedChanged(sender As Object, e As EventArgs) Handles chkTheoNhanVien.CheckedChanged
         cmbNhanVien.Enabled = chkTheoNhanVien.Checked
     End Sub
-
-    Private Sub dgvMain_CellValueNeeded(sender As Object, e As DataGridViewCellValueEventArgs) Handles dgvMain.CellValueNeeded
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = Me.STT.Index Then
-            e.Value = e.RowIndex + 1
+    Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
+        If (e.Info.IsRowIndicator) Then
+            If e.RowHandle < 0 Then
+                e.Info.DisplayText = ""
+            Else
+                e.Info.DisplayText = (e.RowHandle + 1).ToString()
+            End If
         End If
     End Sub
 
@@ -164,8 +163,8 @@
 
 #Region "TẠO HÓA ĐƠN BÁN HÀNG - SỬA - XÓA PHIẾU"
     Private Sub btnTaoHoaDon_Click(sender As Object, e As EventArgs)
-        If bsKhachHangDatHang.Current Is Nothing Then Exit Sub
-        Dim vKHDH As vwKhachHangDatHang = bsKhachHangDatHang.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vKHDH As vwKhachHangDatHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         Dim DonDatHang As tbKhachHangDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vKHDH.id)
         dt.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues, DonDatHang)
         'If DonDatHang.DaLapHoaDon Then
@@ -200,11 +199,11 @@
     End Sub
 
     Private Sub btnXoaKhachHangDatHang_Click(sender As Object, e As EventArgs) Handles btnXoaDonDatHang.Click
-        If bsKhachHangDatHang.Current Is Nothing Then Exit Sub
-        If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa đơn đặt hàng " + bsKhachHangDatHang.Current.MaDatHang.ToString + "?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vKHDH As vwKhachHangDatHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+        If ComponentFactory.Krypton.Toolkit.KryptonMessageBox.Show("Bạn muốn xóa đơn đặt hàng " + vKHDH.MaDatHang.ToString + "?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = MsgBoxResult.Yes Then
 
-            Dim vKhachHangDatHang As vwKhachHangDatHang = bsKhachHangDatHang.Current
-            Dim KhachHangDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vKhachHangDatHang.id)
+            Dim KhachHangDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vKHDH.id)
 
             dt.tbKhachHangDatHangs.DeleteOnSubmit(KhachHangDatHang)
 
@@ -225,10 +224,10 @@
     End Sub
 
     Private Sub btnSuaDonDatHang_Click(sender As Object, e As EventArgs) Handles btnSuaDonDatHang.Click
-        'If bsKhachHangDatHang.Current Is Nothing Then Exit Sub
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vKHDH As vwKhachHangDatHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         'Dim frm As New frmSuaKhachHangDatHang
-        'Dim vwDH As vwKhachHangDatHang = bsKhachHangDatHang.Current
-        'frm.KhachHangDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vwDH.id)
+        'frm.KhachHangDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vKHDH.id)
         'If frm.ShowDialog() = DialogResult.OK Then
         '    btnTimKiem_Click(Nothing, Nothing)
         'End If
@@ -244,12 +243,12 @@
 
 
     Private Sub btnInDanhSach_Click(sender As Object, e As EventArgs) Handles btnInDanhSach.Click
-        If bsKhachHangDatHang.Count > 0 Then
+        If gridViewData.DataRowCount > 0 Then
             Dim frm As New frmInDanhSach
             frm.Text = "DANH SÁCH ĐƠN ĐẶT HÀNG"
             frm.rptName = ".\Report\KhachHangDatHang\rptDanhSachKhachHangDatHang.rdlc"
             frm.dsName = "dsDanhSachKhachHangDatHang"
-            frm._bs = bsKhachHangDatHang
+            frm._bs.DataSource = gridControl.DataSource
             If TuNgay.Date = DenNgay.Date Then
                 frm.ThoiGianTimKiem = "Ngày " + String.Format("{0:dd/MM/yyyy}", TuNgay)
             Else
@@ -261,11 +260,11 @@
     End Sub
 
     Private Sub DanhSáchMặtHàngToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DanhSáchMặtHàngToolStripMenuItem.Click
-        If bsKhachHangDatHang.Count > 0 Then
+        If gridViewData.DataRowCount > 0 Then
             Dim rlsidPhieu = From itm In rlsDatHang
                              Select itm.id
             Dim rlsSanPham = From itm In dt.vwChiTietKhachHangDatHangs
-                             Where rlsidPhieu.Any(Function(s) s = itm.idKhachHangDatHang)
+                             Where rlsidPhieu.Contains(itm.idKhachHangDatHang)
 
             Dim frm As New frmInDanhSach
             frm.Text = "DANH SÁCH MẶT HÀNG"
@@ -281,36 +280,46 @@
             frm.Show()
         End If
     End Sub
+
+
     Event ThemTabpageMoi(TenHienThi As String, Ten As String, control As Control)
-
-
-    Private Sub dgvMain_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMain.CellDoubleClick
-        If bsKhachHangDatHang.Current Is Nothing Then Exit Sub
-        Dim ctrlKhachHangDatHang As New ctrlSuaKhachHangDatHang
-        Dim KhachHangDatHang As vwKhachHangDatHang = bsKhachHangDatHang.Current
-        ctrlKhachHangDatHang.XemPhieu(dt.tbKhachHangDatHangs.First(Function(s) s.id = KhachHangDatHang.id))
-        ctrlKhachHangDatHang.DonDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = KhachHangDatHang.id)
-        If KhachHangDatHang.isNhapHang Then
-            ctrlKhachHangDatHang.TenKhachHangDatHang = "Đơn đặt hàng"
-        Else
-            ctrlKhachHangDatHang.TenKhachHangDatHang = "Phiếu đặt hàng"
-        End If
-        RaiseEvent ThemTabpageMoi("DH/" + bsKhachHangDatHang.Current.MaDatHang.ToString(), bsKhachHangDatHang.Current.MaDatHang.ToString(), ctrlKhachHangDatHang)
-    End Sub
 
     Private Sub XóaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XóaToolStripMenuItem.Click
         btnXoaKhachHangDatHang_Click(Nothing, Nothing)
     End Sub
 
     Private Sub btnInKhachHangDatHang_Click(sender As Object, e As EventArgs) Handles btnInKhachHangDatHang.Click
-        If bsKhachHangDatHang.Current Is Nothing Then Exit Sub
-        Dim vKhachHangDatHang As vwKhachHangDatHang = bsKhachHangDatHang.Current
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vKhachHangDatHang As vwKhachHangDatHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
         If vKhachHangDatHang.isNhapHang Then
             TaoPhieuDatHangExcel(Application.StartupPath + "\UyNhiemChi\PhieuDatHang.xlsx", vKhachHangDatHang)
         Else
             TaoDonDatHangExcel(Application.StartupPath + "\UyNhiemChi\DonDatHang.xlsx", vKhachHangDatHang)
         End If
     End Sub
+
+    Private Sub gridControl_DoubleClick(sender As Object, e As EventArgs) Handles gridControl.DoubleClick
+        If gridViewData.FocusedRowHandle < 0 Then Exit Sub
+        Dim vKHDH As vwKhachHangDatHang = gridViewData.GetRow(gridViewData.FocusedRowHandle)
+        Dim ctrlKhachHangDatHang As New ctrlSuaKhachHangDatHang
+
+        ctrlKhachHangDatHang.XemPhieu(dt.tbKhachHangDatHangs.First(Function(s) s.id = vKHDH.id))
+        ctrlKhachHangDatHang.DonDatHang = dt.tbKhachHangDatHangs.First(Function(s) s.id = vKHDH.id)
+        If vKHDH.isNhapHang Then
+            ctrlKhachHangDatHang.TenKhachHangDatHang = "Đơn đặt hàng"
+        Else
+            ctrlKhachHangDatHang.TenKhachHangDatHang = "Phiếu đặt hàng"
+        End If
+        RaiseEvent ThemTabpageMoi("DH/" + vKHDH.MaDatHang.ToString(), vKHDH.MaDatHang.ToString(), ctrlKhachHangDatHang)
+    End Sub
+
+    Private Sub mnuItemExportExcel_Click(sender As Object, e As EventArgs) Handles mnuItemExportExcel.Click
+        If gridViewData.DataRowCount > 0 Then
+            ExportExcelFromGridView(gridControl)
+        End If
+    End Sub
+
+
 
     'Private Sub InPhiếuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InPhiếuToolStripMenuItem.Click
     '    If bsKhachHangDatHang.Current Is Nothing Then Exit Sub

@@ -10,11 +10,12 @@ Imports System.IO.Ports
 Imports System.Net
 Imports System.Web
 Imports System.ComponentModel
+
 Imports Microsoft.Office.Interop
 
 Module mdlGlobals
 
-    ' LÊ VĂN ĐÔNG - 30/04/2017
+    ' LÊ VĂN ĐÔNG - 30/04/2017 d
     Public mh As New clsMaHoa
 
     Public ChuoiConnectString As String = mh.Decrypt(My.Settings.ThongTinKetNoi, "tmt6364")
@@ -339,18 +340,39 @@ Module mdlGlobals
             xlWorkSheet.Cells(9, 3) = tPhieuXuat.tbKhachHangDatHang.DiaChiGiaoHang
         End If
         xlWorkSheet.Cells(10, 3) = tPhieuXuat.TenCongTrinh
+        Dim CoSanPhamDanhMuc = False
         Dim rls = From itm In dt.vwChiTietPhieuXuats.Where(Function(s) s.idPhieuXuat = PhieuXuat.id)
+        If rls.Where(Function(s) s.isDanhMuc = True).Count > 1 Then
+            CoSanPhamDanhMuc = True
+        End If
         Dim SoDong As Integer = 12
         Dim count As Integer = 1
+        Dim STT = 0
         For Each itm In rls.OrderBy(Function(s) s.id)
-            xlWorkSheet.Cells(SoDong, 1) = count
-            xlWorkSheet.Cells(SoDong, 2) = itm.MaSanPham
-            xlWorkSheet.Cells(SoDong, 3) = itm.TenSanPham
-            xlWorkSheet.Cells(SoDong, 4) = itm.DonVi
-            xlWorkSheet.Cells(SoDong, 5) = itm.SoLuong
-            xlWorkSheet.Cells(SoDong, 6) = itm.GiaBan
-            xlWorkSheet.Cells(SoDong, 8) = itm.KyHieuKho
-            xlWorkSheet.Cells(SoDong, 9) = itm.GhiChu
+            If CoSanPhamDanhMuc Then
+                If itm.isDanhMuc Then
+                    STT += 1
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "."
+                    InDam(xlWorkSheet.Cells(SoDong, 1), "'" + STT.ToString() + ".")
+                    count = 1
+                Else
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString()
+                End If
+            Else
+                xlWorkSheet.Cells(SoDong, 1) = count
+            End If
+            xlWorkSheet.Cells(SoDong, 2) = itm.TenSanPham
+
+            If itm.isDanhMuc Then
+                InDam(xlWorkSheet.Cells(SoDong, 2), itm.TenSanPham)
+                SoDong += 1
+                Continue For
+            End If
+            xlWorkSheet.Cells(SoDong, 3) = itm.DonVi
+            xlWorkSheet.Cells(SoDong, 4) = itm.SoLuong
+            xlWorkSheet.Cells(SoDong, 5) = itm.DonGia
+            'xlWorkSheet.Cells(SoDong, 6) = itm.ThanhTien
+            xlWorkSheet.Cells(SoDong, 7) = itm.GhiChu
             SoDong += 1
             count += 1
         Next
@@ -426,7 +448,7 @@ Module mdlGlobals
                     InDam(xlWorkSheet.Cells(SoDong, 1), "'" + STT.ToString() + ".")
                     count = 1
                 Else
-                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString() + "."
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString()
                 End If
             Else
                 xlWorkSheet.Cells(SoDong, 1) = count
@@ -497,19 +519,41 @@ Module mdlGlobals
         End If
         xlWorkSheet.Cells(10, 1) = "Địa chỉ giao hàng: " + tKhachHangDatHang.DiaChiGiaoHang
         InNghieng(xlWorkSheet.Cells(10, 1), "Địa chỉ giao hàng:")
-        Dim rls = From itm In dt.vwChiTietKhachHangDatHangs.Where(Function(s) s.idKhachHangDatHang = tKhachHangDatHang.id)
+        Dim CoSanPhamDanhMuc = False
+        Dim rls = From itm In dt.vwChiTietKhachHangDatHangs.Where(Function(s) s.idKhachHangDatHang = KhachHangDatHang.id)
+        If rls.Where(Function(s) s.isDanhMuc = True).Count > 1 Then
+            CoSanPhamDanhMuc = True
+        End If
         Dim SoDong As Integer = 13
         Dim count As Integer = 1
+        Dim STT As Integer = 0
         For Each itm In rls.OrderBy(Function(s) s.id)
-            xlWorkSheet.Cells(SoDong, 1) = count
+            If CoSanPhamDanhMuc Then
+                If itm.isDanhMuc Then
+                    STT += 1
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "."
+                    InDam(xlWorkSheet.Cells(SoDong, 1), "'" + STT.ToString() + ".")
+                    count = 1
+                Else
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString()
+                End If
+            Else
+                xlWorkSheet.Cells(SoDong, 1) = count
+            End If
             xlWorkSheet.Cells(SoDong, 2) = itm.TenSanPham
+
+            If itm.isDanhMuc Then
+                InDam(xlWorkSheet.Cells(SoDong, 2), itm.TenSanPham)
+                SoDong += 1
+                Continue For
+            End If
             xlWorkSheet.Cells(SoDong, 3) = itm.DonVi
             xlWorkSheet.Cells(SoDong, 4) = itm.SoLuong
-            xlWorkSheet.Cells(SoDong, 5) = itm.GiaBan
-            'xlWorkSheet.Cells(SoDong, 6) = itm.ThanhTien
-            xlWorkSheet.Cells(SoDong, 7) = itm.GhiChu
-            SoDong += 1
-            count += 1
+                xlWorkSheet.Cells(SoDong, 5) = itm.DonGia
+                'xlWorkSheet.Cells(SoDong, 6) = itm.ThanhTien
+                xlWorkSheet.Cells(SoDong, 7) = itm.GhiChu
+                SoDong += 1
+                count += 1
         Next
         AnCacDongTrongExcel(xlWorkSheet, SoDong, 213)
         ' xlWorkSheet.Cells(215, 1) = "Bằng chữ: " + Number2Text.Number2Text.Num2Text((tBaoGia.TongTien * 1.1).ToString())
@@ -562,15 +606,37 @@ Module mdlGlobals
             InDam(xlWorkSheet.Cells(10, 5), tKhachHangDatHang.tbChiTietLienHe.Email)
         End If
         xlWorkSheet.Cells(11, 2) = tKhachHangDatHang.GhiChu
+        Dim CoSanPhamDanhMuc = False
         Dim rls = From itm In dt.vwChiTietKhachHangDatHangs.Where(Function(s) s.idKhachHangDatHang = tKhachHangDatHang.id)
+        If rls.Where(Function(s) s.isDanhMuc = True).Count > 1 Then
+            CoSanPhamDanhMuc = True
+        End If
         Dim SoDong As Integer = 13
         Dim count As Integer = 1
+        Dim STT As Integer = 0
         For Each itm In rls.OrderBy(Function(s) s.id)
-            xlWorkSheet.Cells(SoDong, 1) = count
+            If CoSanPhamDanhMuc Then
+                If itm.isDanhMuc Then
+                    STT += 1
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "."
+                    InDam(xlWorkSheet.Cells(SoDong, 1), "'" + STT.ToString() + ".")
+                    count = 1
+                Else
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString()
+                End If
+            Else
+                xlWorkSheet.Cells(SoDong, 1) = count
+            End If
             xlWorkSheet.Cells(SoDong, 2) = itm.TenSanPham
+
+            If itm.isDanhMuc Then
+                InDam(xlWorkSheet.Cells(SoDong, 2), itm.TenSanPham)
+                SoDong += 1
+                Continue For
+            End If
             xlWorkSheet.Cells(SoDong, 3) = itm.DonVi
             xlWorkSheet.Cells(SoDong, 4) = itm.SoLuong
-            xlWorkSheet.Cells(SoDong, 5) = itm.GiaBan
+            xlWorkSheet.Cells(SoDong, 5) = itm.DonGia
             'xlWorkSheet.Cells(SoDong, 6) = itm.ThanhTien
             xlWorkSheet.Cells(SoDong, 7) = itm.GhiChu
             SoDong += 1
@@ -645,19 +711,39 @@ Module mdlGlobals
         End If
         xlWorkSheet.Cells(8, 3) = tPhieuNhap.tbKhachHangDatHang.DiaChiGiaoHang
         xlWorkSheet.Cells(9, 3) = tPhieuNhap.TenCongTrinh
+        Dim CoSanPhamDanhMuc = False
         Dim rls = From itm In dt.vwChiTietPhieuNhaps.Where(Function(s) s.idPhieuNhap = PhieuNhap.id)
+        If rls.Where(Function(s) s.isDanhMuc = True).Count > 1 Then
+            CoSanPhamDanhMuc = True
+        End If
+        Dim STT As Integer = 0
         Dim SoDong As Integer = 11
         Dim count As Integer = 1
         For Each itm In rls.OrderBy(Function(s) s.id)
-            xlWorkSheet.Cells(SoDong, 1) = count
+            If CoSanPhamDanhMuc Then
+                If itm.isDanhMuc Then
+                    STT += 1
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "."
+                    InDam(xlWorkSheet.Cells(SoDong, 1), "'" + STT.ToString() + ".")
+                    count = 1
+                Else
+                    xlWorkSheet.Cells(SoDong, 1) = "'" + STT.ToString() + "." + count.ToString()
+                End If
+            Else
+                xlWorkSheet.Cells(SoDong, 1) = count
+            End If
             xlWorkSheet.Cells(SoDong, 2) = itm.TenSanPham
+
+            If itm.isDanhMuc Then
+                InDam(xlWorkSheet.Cells(SoDong, 2), itm.TenSanPham)
+                SoDong += 1
+                Continue For
+            End If
             xlWorkSheet.Cells(SoDong, 3) = itm.DonVi
             xlWorkSheet.Cells(SoDong, 4) = itm.SoLuong
             xlWorkSheet.Cells(SoDong, 5) = itm.DonGia
-            xlWorkSheet.Cells(SoDong, 6) = itm.ChietKhau
-            xlWorkSheet.Cells(SoDong, 7) = itm.GiaBan
-            'xlWorkSheet.Cells(SoDong, 8) = itm.ThanhTien
-            xlWorkSheet.Cells(SoDong, 9) = itm.GhiChu
+            'xlWorkSheet.Cells(SoDong, 6) = itm.ThanhTien
+            xlWorkSheet.Cells(SoDong, 7) = itm.GhiChu
             SoDong += 1
             count += 1
         Next
@@ -1473,7 +1559,25 @@ Module mdlGlobals
         End Try
     End Sub
 
-
+    Public Sub ExportExcelFromGridView(gridControl As DevExpress.XtraGrid.GridControl)
+        Dim filename As String
+        Dim SaveFileDialog As New SaveFileDialog()
+        SaveFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx"
+        SaveFileDialog.FilterIndex = 2
+        SaveFileDialog.RestoreDirectory = True
+        If SaveFileDialog.ShowDialog() = DialogResult.OK Then
+            filename = SaveFileDialog.FileName
+            Dim gridview As DevExpress.XtraGrid.Views.Grid.GridView = gridControl.ViewCollection(0)
+            gridview.OptionsPrint.AutoWidth = False
+            gridControl.ExportToXlsx(filename)
+            If System.IO.File.Exists(filename) Then
+                Dim DialogResult As DialogResult = MessageBox.Show("Đã xuất " & filename & vbNewLine & "Bạn có muốn mở file Excel vừa tạo?", "Export...", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                If DialogResult = Windows.Forms.DialogResult.Yes Then
+                    System.Diagnostics.Process.Start(filename)
+                End If
+            End If
+        End If
+    End Sub
 
 #End Region
 End Module

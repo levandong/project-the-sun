@@ -625,8 +625,14 @@
 
 
     Private Sub gridViewData_FocusedRowChanged(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles gridViewData.FocusedRowChanged
+        LoadChiTiet()
+    End Sub
+
+    Private Sub LoadChiTiet()
         rlsListChonTam.Clear()
+
         If rlsThongKe Is Nothing Then Exit Sub
+
         Dim rlsTemp = (From itm In rlsThongKe
                        Where itm.Chon = True
                        Select itm.idNganHang).ToList
@@ -702,10 +708,10 @@
     Private Sub gridViewData_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewData.CustomDrawRowIndicator
         If (e.Info.IsRowIndicator) Then
             If e.RowHandle < 0 Then
-                e.Info.ImageIndex = 0
+
                 e.Info.DisplayText = ""
             Else
-                e.Info.ImageIndex = 1
+
                 e.Info.DisplayText = (e.RowHandle + 1).ToString()
             End If
         End If
@@ -714,10 +720,8 @@
     Private Sub gridViewDetail_CustomDrawRowIndicator(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs) Handles gridViewDetail.CustomDrawRowIndicator
         If (e.Info.IsRowIndicator) Then
             If e.RowHandle < 0 Then
-                e.Info.ImageIndex = 0
                 e.Info.DisplayText = ""
             Else
-                e.Info.ImageIndex = 1
                 e.Info.DisplayText = (e.RowHandle + 1).ToString()
             End If
         End If
@@ -737,6 +741,27 @@
         Else
             btnChonTatCa.Image = My.Resources.Checked
             btnChonTatCa.Text = "Chọn tất cả"
+        End If
+    End Sub
+
+
+
+    Private Sub RepositoryItemCheckEdit1_CheckedChanged(sender As Object, e As EventArgs) Handles RepositoryItemCheckEdit1.CheckedChanged
+        gridViewData.CloseEditor()
+        gridViewData.UpdateCurrentRow()
+        gridViewData_FocusedRowChanged(Nothing, Nothing)
+        LoadChiTiet()
+    End Sub
+
+    Private Sub mnuItemExportExcel_Click(sender As Object, e As EventArgs) Handles mnuItemExportExcel.Click
+        If gridViewDetail.DataRowCount > 0 Then
+            ExportExcelFromGridView(gridDetailControl)
+        End If
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        If gridViewData.DataRowCount > 0 Then
+            ExportExcelFromGridView(gridControl)
         End If
     End Sub
 End Class

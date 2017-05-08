@@ -23,220 +23,222 @@ Partial Class ctrlDGVReport
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.dgvMain = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
-        Me.STT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenReportDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SizeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenMayInDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SizeWidthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SizeHeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MarginTopDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MarginBotDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MarginLeftDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MarginRightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PixelWidthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PixelHeightDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FileRDLCDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.bsReport = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.lblSoLuong = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bsReport, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip1.SuspendLayout()
+        Me.gridControl = New DevExpress.XtraGrid.GridControl()
+        Me.gridViewData = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuItemExportExcel = New System.Windows.Forms.ToolStripMenuItem()
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'dgvMain
+        'gridControl
         '
-        Me.dgvMain.AllowUserToAddRows = False
-        Me.dgvMain.AllowUserToDeleteRows = False
-        Me.dgvMain.AllowUserToResizeRows = False
-        Me.dgvMain.AutoGenerateColumns = False
-        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.STT, Me.IdDataGridViewTextBoxColumn, Me.TenReportDataGridViewTextBoxColumn, Me.SizeDataGridViewTextBoxColumn, Me.TenMayInDataGridViewTextBoxColumn, Me.SizeWidthDataGridViewTextBoxColumn, Me.SizeHeightDataGridViewTextBoxColumn, Me.MarginTopDataGridViewTextBoxColumn, Me.MarginBotDataGridViewTextBoxColumn, Me.MarginLeftDataGridViewTextBoxColumn, Me.MarginRightDataGridViewTextBoxColumn, Me.PixelWidthDataGridViewTextBoxColumn, Me.PixelHeightDataGridViewTextBoxColumn, Me.FileRDLCDataGridViewTextBoxColumn})
-        Me.dgvMain.DataSource = Me.bsReport
-        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvMain.Location = New System.Drawing.Point(0, 0)
-        Me.dgvMain.Name = "dgvMain"
-        Me.dgvMain.ReadOnly = True
-        Me.dgvMain.RowHeadersWidth = 10
-        Me.dgvMain.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvMain.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvMain.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect
-        Me.dgvMain.Size = New System.Drawing.Size(645, 298)
-        Me.dgvMain.TabIndex = 3
-        Me.dgvMain.VirtualMode = True
+        Me.gridControl.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.gridControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridControl.Location = New System.Drawing.Point(0, 0)
+        Me.gridControl.MainView = Me.gridViewData
+        Me.gridControl.Name = "gridControl"
+        Me.gridControl.Size = New System.Drawing.Size(1230, 404)
+        Me.gridControl.TabIndex = 7
+        Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridViewData})
         '
-        'STT
+        'gridViewData
         '
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.STT.DefaultCellStyle = DataGridViewCellStyle3
-        Me.STT.HeaderText = "STT"
-        Me.STT.MinimumWidth = 40
-        Me.STT.Name = "STT"
-        Me.STT.ReadOnly = True
-        Me.STT.Width = 40
+        Me.gridViewData.Appearance.FooterPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.FooterPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.gridViewData.Appearance.GroupFooter.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.GroupFooter.Options.UseFont = True
+        Me.gridViewData.Appearance.GroupFooter.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseFont = True
+        Me.gridViewData.Appearance.HeaderPanel.Options.UseTextOptions = True
+        Me.gridViewData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.gridViewData.Appearance.Row.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridViewData.Appearance.Row.Options.UseFont = True
+        Me.gridViewData.Appearance.Row.Options.UseTextOptions = True
+        Me.gridViewData.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn11, Me.GridColumn13, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10, Me.GridColumn12})
+        Me.gridViewData.GridControl = Me.gridControl
+        Me.gridViewData.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", Me.GridColumn1, "Cộng: {0:n0}")})
+        Me.gridViewData.IndicatorWidth = 50
+        Me.gridViewData.Name = "gridViewData"
+        Me.gridViewData.OptionsBehavior.Editable = False
+        Me.gridViewData.OptionsView.ColumnAutoWidth = False
+        Me.gridViewData.OptionsView.ShowAutoFilterRow = True
+        Me.gridViewData.OptionsView.ShowFooter = True
         '
-        'IdDataGridViewTextBoxColumn
+        'GridColumn1
         '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IdDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn1.Caption = "Tên Report"
+        Me.GridColumn1.FieldName = "TenReport"
+        Me.GridColumn1.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn1.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "id", "Tổng cộng: {0:n0}")})
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 250
         '
-        'TenReportDataGridViewTextBoxColumn
+        'GridColumn2
         '
-        Me.TenReportDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenReportDataGridViewTextBoxColumn.DataPropertyName = "TenReport"
-        Me.TenReportDataGridViewTextBoxColumn.HeaderText = "Tên Report"
-        Me.TenReportDataGridViewTextBoxColumn.Name = "TenReportDataGridViewTextBoxColumn"
-        Me.TenReportDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TenReportDataGridViewTextBoxColumn.Width = 94
+        Me.GridColumn2.Caption = "Kích thước"
+        Me.GridColumn2.FieldName = "Size"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.Width = 120
         '
-        'SizeDataGridViewTextBoxColumn
+        'GridColumn3
         '
-        Me.SizeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.SizeDataGridViewTextBoxColumn.DataPropertyName = "Size"
-        Me.SizeDataGridViewTextBoxColumn.HeaderText = "Kích Thước"
-        Me.SizeDataGridViewTextBoxColumn.Name = "SizeDataGridViewTextBoxColumn"
-        Me.SizeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SizeDataGridViewTextBoxColumn.Width = 96
+        Me.GridColumn3.Caption = "Máy in mặc định"
+        Me.GridColumn3.FieldName = "TenMayIn"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        Me.GridColumn3.Width = 200
         '
-        'TenMayInDataGridViewTextBoxColumn
+        'GridColumn4
         '
-        Me.TenMayInDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.TenMayInDataGridViewTextBoxColumn.DataPropertyName = "TenMayIn"
-        Me.TenMayInDataGridViewTextBoxColumn.HeaderText = "Máy In Mặc Định"
-        Me.TenMayInDataGridViewTextBoxColumn.Name = "TenMayInDataGridViewTextBoxColumn"
-        Me.TenMayInDataGridViewTextBoxColumn.ReadOnly = True
-        Me.TenMayInDataGridViewTextBoxColumn.Width = 126
+        Me.GridColumn4.Caption = "File Rdlc"
+        Me.GridColumn4.FieldName = "FileRDLC"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 3
+        Me.GridColumn4.Width = 300
         '
-        'SizeWidthDataGridViewTextBoxColumn
+        'GridColumn5
         '
-        Me.SizeWidthDataGridViewTextBoxColumn.DataPropertyName = "SizeWidth"
-        Me.SizeWidthDataGridViewTextBoxColumn.HeaderText = "SizeWidth"
-        Me.SizeWidthDataGridViewTextBoxColumn.Name = "SizeWidthDataGridViewTextBoxColumn"
-        Me.SizeWidthDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SizeWidthDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn5.Caption = "Width"
+        Me.GridColumn5.FieldName = "SizeWidth"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 4
+        Me.GridColumn5.Width = 90
         '
-        'SizeHeightDataGridViewTextBoxColumn
+        'GridColumn6
         '
-        Me.SizeHeightDataGridViewTextBoxColumn.DataPropertyName = "SizeHeight"
-        Me.SizeHeightDataGridViewTextBoxColumn.HeaderText = "SizeHeight"
-        Me.SizeHeightDataGridViewTextBoxColumn.Name = "SizeHeightDataGridViewTextBoxColumn"
-        Me.SizeHeightDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SizeHeightDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn6.Caption = "Height"
+        Me.GridColumn6.FieldName = "SizeHeight"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 5
+        Me.GridColumn6.Width = 90
         '
-        'MarginTopDataGridViewTextBoxColumn
+        'GridColumn11
         '
-        Me.MarginTopDataGridViewTextBoxColumn.DataPropertyName = "MarginTop"
-        Me.MarginTopDataGridViewTextBoxColumn.HeaderText = "MarginTop"
-        Me.MarginTopDataGridViewTextBoxColumn.Name = "MarginTopDataGridViewTextBoxColumn"
-        Me.MarginTopDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MarginTopDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn11.Caption = "P_Width"
+        Me.GridColumn11.FieldName = "PixelWidth"
+        Me.GridColumn11.Name = "GridColumn11"
+        Me.GridColumn11.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn11.Visible = True
+        Me.GridColumn11.VisibleIndex = 6
+        Me.GridColumn11.Width = 90
         '
-        'MarginBotDataGridViewTextBoxColumn
+        'GridColumn13
         '
-        Me.MarginBotDataGridViewTextBoxColumn.DataPropertyName = "MarginBot"
-        Me.MarginBotDataGridViewTextBoxColumn.HeaderText = "MarginBot"
-        Me.MarginBotDataGridViewTextBoxColumn.Name = "MarginBotDataGridViewTextBoxColumn"
-        Me.MarginBotDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MarginBotDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn13.Caption = "P_Height"
+        Me.GridColumn13.FieldName = "PixelHeight"
+        Me.GridColumn13.Name = "GridColumn13"
+        Me.GridColumn13.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn13.Visible = True
+        Me.GridColumn13.VisibleIndex = 7
+        Me.GridColumn13.Width = 90
         '
-        'MarginLeftDataGridViewTextBoxColumn
+        'GridColumn7
         '
-        Me.MarginLeftDataGridViewTextBoxColumn.DataPropertyName = "MarginLeft"
-        Me.MarginLeftDataGridViewTextBoxColumn.HeaderText = "MarginLeft"
-        Me.MarginLeftDataGridViewTextBoxColumn.Name = "MarginLeftDataGridViewTextBoxColumn"
-        Me.MarginLeftDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MarginLeftDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn7.Caption = "Top"
+        Me.GridColumn7.FieldName = "MarginTop"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 8
+        Me.GridColumn7.Width = 90
         '
-        'MarginRightDataGridViewTextBoxColumn
+        'GridColumn8
         '
-        Me.MarginRightDataGridViewTextBoxColumn.DataPropertyName = "MarginRight"
-        Me.MarginRightDataGridViewTextBoxColumn.HeaderText = "MarginRight"
-        Me.MarginRightDataGridViewTextBoxColumn.Name = "MarginRightDataGridViewTextBoxColumn"
-        Me.MarginRightDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MarginRightDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn8.Caption = "Left"
+        Me.GridColumn8.FieldName = "MarginLeft"
+        Me.GridColumn8.Name = "GridColumn8"
+        Me.GridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn8.Visible = True
+        Me.GridColumn8.VisibleIndex = 9
+        Me.GridColumn8.Width = 90
         '
-        'PixelWidthDataGridViewTextBoxColumn
+        'GridColumn9
         '
-        Me.PixelWidthDataGridViewTextBoxColumn.DataPropertyName = "PixelWidth"
-        Me.PixelWidthDataGridViewTextBoxColumn.HeaderText = "PixelWidth"
-        Me.PixelWidthDataGridViewTextBoxColumn.Name = "PixelWidthDataGridViewTextBoxColumn"
-        Me.PixelWidthDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PixelWidthDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn9.Caption = "Right"
+        Me.GridColumn9.FieldName = "MarginRight"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 10
+        Me.GridColumn9.Width = 90
         '
-        'PixelHeightDataGridViewTextBoxColumn
+        'GridColumn10
         '
-        Me.PixelHeightDataGridViewTextBoxColumn.DataPropertyName = "PixelHeight"
-        Me.PixelHeightDataGridViewTextBoxColumn.HeaderText = "PixelHeight"
-        Me.PixelHeightDataGridViewTextBoxColumn.Name = "PixelHeightDataGridViewTextBoxColumn"
-        Me.PixelHeightDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PixelHeightDataGridViewTextBoxColumn.Visible = False
+        Me.GridColumn10.Caption = "Bottom"
+        Me.GridColumn10.FieldName = "MarginBot"
+        Me.GridColumn10.Name = "GridColumn10"
+        Me.GridColumn10.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
+        Me.GridColumn10.Visible = True
+        Me.GridColumn10.VisibleIndex = 11
+        Me.GridColumn10.Width = 90
         '
-        'FileRDLCDataGridViewTextBoxColumn
+        'GridColumn12
         '
-        Me.FileRDLCDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.FileRDLCDataGridViewTextBoxColumn.DataPropertyName = "FileRDLC"
-        Me.FileRDLCDataGridViewTextBoxColumn.HeaderText = "FileRDLC"
-        Me.FileRDLCDataGridViewTextBoxColumn.MinimumWidth = 200
-        Me.FileRDLCDataGridViewTextBoxColumn.Name = "FileRDLCDataGridViewTextBoxColumn"
-        Me.FileRDLCDataGridViewTextBoxColumn.ReadOnly = True
+        Me.GridColumn12.Caption = "id"
+        Me.GridColumn12.FieldName = "id"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains
         '
-        'bsReport
+        'ContextMenuStrip1
         '
-        Me.bsReport.DataSource = GetType(PhanMemBanHang.tbReport)
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuItemExportExcel})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 48)
         '
-        'ToolStrip1
+        'mnuItemExportExcel
         '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSoLuong, Me.ToolStripSeparator1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 298)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.ShowItemToolTips = False
-        Me.ToolStrip1.Size = New System.Drawing.Size(645, 25)
-        Me.ToolStrip1.TabIndex = 2
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'lblSoLuong
-        '
-        Me.lblSoLuong.Name = "lblSoLuong"
-        Me.lblSoLuong.Size = New System.Drawing.Size(51, 22)
-        Me.lblSoLuong.Text = "0 report."
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.mnuItemExportExcel.Image = Global.PhanMemBanHang.My.Resources.Resources.Excel16
+        Me.mnuItemExportExcel.Name = "mnuItemExportExcel"
+        Me.mnuItemExportExcel.Size = New System.Drawing.Size(152, 22)
+        Me.mnuItemExportExcel.Text = "Xuất Excel"
         '
         'ctrlDGVReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.dgvMain)
-        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.gridControl)
         Me.Name = "ctrlDGVReport"
-        Me.Size = New System.Drawing.Size(645, 323)
-        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bsReport, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
+        Me.Size = New System.Drawing.Size(1230, 404)
+        CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewData, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents bsReport As System.Windows.Forms.BindingSource
-    Friend WithEvents dgvMain As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
-    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents lblSoLuong As System.Windows.Forms.ToolStripLabel
     Friend WithEvents DonGia As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents DonVi As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SoLuong As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn
     Friend WithEvents GiaNhap As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewNumericUpDownColumn
@@ -245,19 +247,21 @@ Partial Class ctrlDGVReport
     Friend WithEvents TenReport As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MaDeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TenDeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents STT As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenReportDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SizeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TenMayInDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SizeWidthDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SizeHeightDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MarginTopDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MarginBotDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MarginLeftDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MarginRightDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PixelWidthDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PixelHeightDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FileRDLCDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-
+    Friend WithEvents gridControl As DevExpress.XtraGrid.GridControl
+    Friend WithEvents gridViewData As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents mnuItemExportExcel As ToolStripMenuItem
 End Class
